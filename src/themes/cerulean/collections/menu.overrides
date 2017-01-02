@@ -1,0 +1,7 @@
+.ui.secondary.menu .item {
+  color: @secondaryItemColor;
+}
+
+.ui.tabular.menu .item {
+  color: @secondaryItemColor;
+}
