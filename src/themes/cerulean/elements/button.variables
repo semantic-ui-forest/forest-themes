@@ -1,0 +1,19 @@
+@textColor: #555;
+@basicBorder: rgba(0, 0, 0, 0.1);
+
+@textShadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+
+@backgroundImage: linear-gradient(lighten(@backgroundColor, 8%),
+  @backgroundColor 60%, darken(@backgroundColor, 4%));
+
+@primaryBackgroundImage: linear-gradient(lighten(@primaryColor, 8%),
+  @primaryColor 60%, darken(@primaryColor, 4%));
+
+@positiveBackgroundImage: linear-gradient(lighten(@positiveColor, 8%),
+  @positiveColor 60%, darken(@positiveColor, 4%));
+
+@secondaryBackgroundImage: linear-gradient(lighten(@secondaryColor, 8%),
+  @secondaryColor 60%, darken(@secondaryColor, 4%));
+
+@negativeBackgroundImage: linear-gradient(lighten(@negativeColor, 8%),
+  @negativeColor 60%, darken(@negativeColor, 4%));

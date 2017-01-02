@@ -1,0 +1,23 @@
+.ui.button .icon {
+  border-top-color: #fff;
+}
+
+.ui.primary.button {
+  background-image: @primaryBackgroundImage;
+  border-bottom: 1px solid darken(@primaryColor, 10%);
+}
+
+.ui.secondary.button {
+  background-image: @secondaryBackgroundImage;
+  border-bottom: 1px solid darken(@secondaryColor, 10%);
+}
+
+.ui.positive.button {
+  background-image: @positiveBackgroundImage;
+  border-bottom: 1px solid darken(@positiveColor, 10%);
+}
+
+.ui.negative.button {
+  background-image: @negativeBackgroundImage;
+  border-bottom: 1px solid darken(@negativeColor, 10%);
+}
