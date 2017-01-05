@@ -1,0 +1,25 @@
+.transition(@transition) {
+  -webkit-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}
+
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android
+  box-shadow: @shadow;
+}
+
+.ui.segment {
+  border: none;
+  border-radius: 2px;
+  .box-shadow(0 1px 4px rgba(0,0,0,.3));
+
+  .header {
+    border-bottom: none;
+  }
+
+  .footer {
+    border-top: none;
+  }
+}
+  
