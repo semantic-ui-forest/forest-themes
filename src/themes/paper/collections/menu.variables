@@ -1,0 +1,14 @@
+@minHeight: 64px;
+@itemTextColor: @gray-light;
+@background: #fff;
+@border: transparent;
+@itemTextColor: @gray;
+@hoverItemTextColor: @gray-dark;
+@activeItemTextColor: @gray-dark;
+@labelBackground: @gray-dark;
+@pressedItemBackground: transparent;
+@invertedItemTextColor: @gray-light;
+@invertedBorder: transparent;
+@invertedMenuPressedBackground: transparent;
+@tabularBorderColor: transparent;
+@tabularActiveBackground: transparent;

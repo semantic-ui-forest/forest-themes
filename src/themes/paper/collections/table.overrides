@@ -1,0 +1,13 @@
+.transition(@transition) {
+  -webkit-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}
+
+.selectable.table {
+  > tbody > tr,
+  > tbody > tr > th,
+  > tbody > tr > td {
+    .transition(all 0.2s);
+  }
+}

@@ -1,0 +1,41 @@
+.transition(@transition) {
+  -webkit-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}
+
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android
+  box-shadow: @shadow;
+}
+
+.ui.message {
+  border: none;
+  color: #fff;
+  .box-shadow(none);
+
+  &.positive {
+    background-color: @positiveColor;
+  }
+
+  &.info {
+    background-color: @infoColor;
+  }
+
+  &.warning {
+    background-color: @warningColor;
+  }
+
+  &.negative {
+    background-color: @negativeColor;
+  }
+
+  a:not(.button) {
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .close {
+    color: #fff;
+  }
+}
