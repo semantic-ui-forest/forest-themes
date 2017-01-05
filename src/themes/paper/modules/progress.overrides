@@ -1,0 +1,48 @@
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android
+  box-shadow: @shadow;
+}
+
+.ui.progress {
+  position: relative;
+  z-index: 1;
+  height: 6px;
+  border-radius: 0;
+
+  .box-shadow(none);
+
+  .bar {
+    .box-shadow(none);
+    height: 6px;
+
+    &:last-child {
+      border-radius: 0 3px 3px 0;
+    }
+
+    &:last-child {
+      &:before {
+        display: block;
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 6px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        background-color: lighten(@barBackground, 35%);
+      }
+    }
+
+    &.success:last-child.bar:before {
+      background-color: lighten(@positiveColor, 35%);
+    }
+
+    &.warning:last-child.bar:before {
+      background-color: lighten(@warningColor, 35%);
+    }
+
+    &.danger:last-child.bar:before {
+      background-color: lighten(@negativeColor, 25%);
+    }
+  }
+}

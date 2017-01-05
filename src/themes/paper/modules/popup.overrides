@@ -1,0 +1,9 @@
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android
+  box-shadow: @shadow;
+}
+
+.ui.popup {
+  border: none;
+  .box-shadow(0 1px 4px rgba(0,0,0,.3));
+}

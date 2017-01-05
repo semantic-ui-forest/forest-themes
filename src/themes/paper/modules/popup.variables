@@ -1,0 +1,3 @@
+@tooltipBackground: #727272;
+@borderColor: transparent;
+@arrowColor: fadein(@borderColor, 12%);

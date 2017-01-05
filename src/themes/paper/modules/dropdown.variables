@@ -1,0 +1,2 @@
+@itemColor: @textColor;
+@hoveredItemColor: @gray-lighter;
