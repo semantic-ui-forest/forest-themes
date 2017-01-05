@@ -1,0 +1,38 @@
+.transition(@transition) {
+  -webkit-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}
+
+.box-shadow(@shadow) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android
+  box-shadow: @shadow;
+}
+
+
+.ui.header {
+  color: #444;
+}
+
+h6 {
+ font-size: 14px;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: .1px;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+.input,
+.button {
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: .1px;
+}
+
+a {
+  .transition(all 0.2s);
+}
