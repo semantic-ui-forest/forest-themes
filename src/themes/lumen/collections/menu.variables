@@ -1,0 +1,18 @@
+@itemTextColor: @textColor;
+@border: darken(#f8f8f8, 6.5%);
+@hoverItemTextColor: @gray-dark;
+@activeItemTextColor: @gray-dark;
+@activeItemBackground: transparent;
+@labelTextColor: @hoverItemTextColor;
+@pressedItemBackground: #fff;
+@invertedItemTextColor: @gray-light;
+@invertedBackground: #fff;
+@invertedHoverColor: @gray-dark;
+@invertedActiveBackground: transparent;
+@invertedMenuPressedBackground: @gray-lighter;
+@hoverItemBackground: #fff;
+@tabularBorderColor: @border;
+@tabularActiveBackground: #fff;
+
+@paginationActiveBorder: @primaryColor;
+@paginationActiveBackground: @gray-lighter;

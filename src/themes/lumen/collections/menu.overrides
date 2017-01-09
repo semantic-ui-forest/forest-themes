@@ -1,0 +1,119 @@
+.shadow (@width: 4px) {
+  border-width: 0 1px @width 1px;
+}
+
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow; // iOS <4.3 & Android
+    box-shadow: @shadow;
+}
+
+.transition(@transition) {
+    -webkit-transition: @transition;
+    -o-transition: @transition;
+    transition: @transition;
+}
+
+
+.ui.menu .label:hover {
+  background-color: @gray-dark;
+}
+
+.ui.inverted.menu .label:hover {
+  color: @gray-dark;
+}
+
+.ui.menu {
+  .shadow();
+}
+
+.ui.menu {
+    .dropdown > a,
+    .dropdown > a:hover,
+    .dropdown > a:focus {
+        border-color: transparent;
+    }
+}
+
+.ui.tabular.menu {
+
+    > a {
+        margin-top: 6px;
+        border-color: darken(#f8f8f8, 6.5%);
+        color: @gray-dark;
+        .transition(all 0.2s ease-in-out);
+    }
+
+    > a:hover,
+    > a:focus,
+    a.item.active,
+    a.item.active:hover,
+    a.item.active:focus,
+    .dropdown > a,
+    .dropdown > a:hover,
+    .dropdown > a:focus {
+        padding-bottom: (@padding-large-vertical + 3);
+        margin-top: 0;
+    }
+
+    .dropdown > a,
+    .dropdown > a:hover,
+    .dropdown > a:focus {
+        border-color: darken(#f8f8f8, 6.5%);
+    }
+
+    a.item.disabled:hover,
+    a.item.disabled:focus {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        margin-top: 6px;
+    }
+
+    &.fluid.item > .item {
+        vertical-align: bottom;
+    }
+}
+
+
+.dropdown {
+    margin-top: 0;
+    .shadow();
+    border-top-width: 1px;
+    .box-shadow(none);
+}
+
+.pagination.menu {
+    > a,
+    > .item {
+        position: relative;
+        top: 0;
+        .shadow();
+        color: @gray;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        &:hover {
+            top: 1px;
+            border-bottom-width: 3px;
+        }
+
+        &:active {
+            top: 2px;
+            border-bottom-width: 2px;
+        }
+    }
+
+    > a.disabled,
+    > .disabled.item {
+
+        &:hover {
+            top: 0;
+            .shadow();
+        }
+
+        &:active {
+            top: 0;
+            .shadow();
+        }
+    }
+}
