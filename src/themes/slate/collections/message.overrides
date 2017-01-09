@@ -1,0 +1,13 @@
+.message {
+
+  .item,
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .close {
+    color: #000;
+    text-decoration: none;
+  }
+}

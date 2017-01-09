@@ -1,0 +1,25 @@
+table, .table {
+
+  .positive,
+  .warning,
+  .negative,
+  .error {
+    color: #fff;
+  }
+
+  &.celled tbody {
+
+    tr.positive,
+    tr.warning,
+    tr.negative {
+
+      td,
+      &:hover td {
+        border-color: darken(@gray-darker, 5%);
+      }
+    }
+}
+
+.table.stackable {
+  background-color: @lighten(@pageBackground, 3%);
+}

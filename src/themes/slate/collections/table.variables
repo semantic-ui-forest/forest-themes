@@ -1,0 +1,4 @@
+@background: lighten(@pageBackground, 3%);
+@stripedBackground: lighten(@background, 3%);
+@activeBackgroundHover: lighten(@background, 12%);
+@border: darken(@gray-darker, 5%);
