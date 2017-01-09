@@ -1,0 +1,3 @@
+.popup .header {
+  background-color: darken(#fff, 3%);
+}
