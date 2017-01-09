@@ -1,0 +1,3 @@
+.ui.dropdown .divider {
+  background-color: @gray-lighter;
+}
