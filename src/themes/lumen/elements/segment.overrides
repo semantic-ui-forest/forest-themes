@@ -1,0 +1,14 @@
+.shadow (@width: 4px) {
+  border-width: 0 1px @width 1px;
+}
+
+.ui.segment {
+  border: 1px solid @gray;
+  .shadow();
+
+  & {
+    .close {
+      color: @textColor;
+    }
+  }
+}

@@ -1,0 +1,2 @@
+@backgroundColor: @primaryColor;
+@fontWeight: normal;
