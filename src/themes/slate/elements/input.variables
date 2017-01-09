@@ -1,0 +1,2 @@
+@border: #000;
+@placeholderColor: @gray-light;

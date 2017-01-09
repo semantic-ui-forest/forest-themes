@@ -1,0 +1,2 @@
+@backgroundColor: @gray-dark;
+@labelActiveBackgroundColor: @gray-light;

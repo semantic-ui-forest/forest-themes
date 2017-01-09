@@ -1,0 +1,8 @@
+.segment {
+  * {
+    border-color: #ddd;
+  }
+  .header {
+    border-color: #000;
+  }
+}

@@ -1,0 +1,2 @@
+@background: lighten(@pageBackground, 3%);
+@@border: rgba(0, 0, 0, 0.6);
