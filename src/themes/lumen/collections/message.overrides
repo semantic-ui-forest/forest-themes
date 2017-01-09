@@ -1,0 +1,13 @@
+.shadow (@width: 4px) {
+  border-width: 0 1px @width 1px;
+}
+
+.ui.message {
+  .shadow();
+
+  a {
+    font-weight: normal;
+    color: #fff;
+    text-decoration: underline;
+  }
+}
