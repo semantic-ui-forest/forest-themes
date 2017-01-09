@@ -1,0 +1,107 @@
+input,
+textarea {
+  color: @inputColor;
+}
+
+.ui.form {
+  background: #272b30;
+}
+
+.form.warning {
+  .label,
+  .radio,
+  .checkbox,
+  .inline .radio,
+  .inline .checkbox,
+  &.radio label,
+  &.checkbox label,
+  &.inline .radio label,
+  &.inline .checkbox label,
+  .icon {
+    color: @warningColor;
+  }
+
+  *,
+  *:focus {
+    border-color: @warningColor;
+  }
+
+  .input .icon {
+      border-color: rgba(0, 0, 0, 0.6);
+  }
+}
+
+.form.error {
+    .label,
+    .radio,
+    .checkbox,
+    .inline .radio,
+    .inline .checkbox,
+    &.radio label,
+    &.checkbox label,
+    &.inline .radio label,
+    &.inline .checkbox label,
+    .icon {
+        color: @negativeColor;
+    }
+
+    *,
+    *:focus {
+        border-color: @negativeColor;
+    }
+
+    .input .icon {
+        border-color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+.form.success {
+    .label,
+    .radio,
+    .checkbox,
+    .inline .radio,
+    .inline .checkbox,
+    &.radio label,
+    &.checkbox label,
+    &.inline .radio label,
+    &.inline .checkbox label,
+    .icon {
+        color: @positiveColor;
+    }
+
+    *,
+    *:focus {
+        border-color: @positiveColor;
+    }
+
+    .input .icon {
+        border-color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+legend {
+  color: #fff;
+}
+
+.input .icon {
+  .btn-shadow(@gray-dark);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+
+#gradient {
+    .vertical-three-colors(@start-color: #00b3ee; @mid-color: #7a43b6; @color-stop: 50%; @end-color: #c3325f) {
+        background-image: -webkit-linear-gradient(@start-color, @mid-color @color-stop, @end-color);
+        background-image: -o-linear-gradient(@start-color, @mid-color @color-stop, @end-color);
+        background-image: linear-gradient(@start-color, @mid-color @color-stop, @end-color);
+        background-repeat: no-repeat;
+        filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@start-color),argb(@end-color))); // IE9 and down, gets no color-stop at all for proper fallback
+    }
+}
+
+.btn-shadow(@color) {
+    #gradient > .vertical-three-colors(lighten(@color, 6%), @color, 60%, darken(@color, 4%));
+    filter: none;
+}
+
