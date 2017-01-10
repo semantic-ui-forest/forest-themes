@@ -1,0 +1,3 @@
+@tooltipBackground: @gray-dark;
+@background: @gray-dark;
+@borderColor: transparent;

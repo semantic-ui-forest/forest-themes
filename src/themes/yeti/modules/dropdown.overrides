@@ -1,0 +1,22 @@
+.ui.dropdown .divider {
+    background-color: rbga(0,0,0,.2);
+}
+
+.dropdown {
+    &.menu {
+        padding: 0;
+        margin-top: 0;
+        font-size: 12px;
+
+        > a {
+            padding: 12px 15px;
+        }
+    }
+
+    & .header {
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 9px;
+        text-transform: uppercase;
+    }
+}
