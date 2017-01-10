@@ -1,0 +1,10 @@
+.message {
+  font-size: 12px;
+  font-weight: 300;
+
+  a {
+    font-weight: normal;
+    color: #fff;
+    text-decoration: underline;
+  }
+}

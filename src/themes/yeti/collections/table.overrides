@@ -1,0 +1,3 @@
+table, .table {
+  font-size: 12px;
+}
