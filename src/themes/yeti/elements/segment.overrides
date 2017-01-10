@@ -1,0 +1,17 @@
+.ui.segment {
+  * {
+    border: #ddd;
+  }
+
+  & .header,
+  & .footer {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+
+  & {
+    .close {
+      color: @textColor;
+    }
+  }
+}
