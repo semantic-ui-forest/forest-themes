@@ -96,7 +96,7 @@
   &.inverted {
     .btn-shadow(@primaryColor);
 
-    .icon {
+    .label {
       background-color: darken(@primaryColor, 12%);
     }
 

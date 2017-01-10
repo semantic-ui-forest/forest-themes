@@ -1,0 +1,17 @@
+@minHeight: 45px;
+@itemTextColor: #fff;
+@background: @gray-dark;
+@itemTextColor: #fff;
+@hoverItemTextColor: #fff;
+@hoverItemBackground: #272727;
+@activeItemTextColor: #fff;
+@activeItemBackground: #272727;
+@labelBackground: #fff;
+@pressedItemBackground: transparent;
+@invertedItemTextColor: #fff;
+@invertedBackground: @primaryColor;
+@invertedItemTextColor: #fff;
+@invertedHoverBackground: darken(@primaryColor, 10%);
+@invertedActiveColor: #fff;
+@invertedMenuPressedBackground: transparent;
+@tabularBorderColor: #ddd;
