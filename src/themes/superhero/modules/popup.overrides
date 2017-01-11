@@ -1,0 +1,4 @@
+.ui.popup .header {
+    background-color: darken(@gray-light, 3%);
+    border: none;
+}

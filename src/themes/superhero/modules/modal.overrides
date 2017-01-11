@@ -1,0 +1,10 @@
+.ui.modal {
+    padding: 0;
+
+    & .header,
+    & .footer {
+        background-color:  darken(@gray-light, 3%);
+        border: none;
+        border-radius: 0;
+    }
+}

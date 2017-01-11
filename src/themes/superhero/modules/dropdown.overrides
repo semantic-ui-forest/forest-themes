@@ -1,0 +1,20 @@
+.ui.dropdown .divider {
+    background-color: @pageBackground;
+}
+
+.dropdown {
+    border: none;
+    margin: 0;
+    .box-shadow(none);
+
+    > a,
+    + .text,
+    > .item {
+        font-size: 12px;
+    }
+}
+
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+    box-shadow: @shadow;
+}

@@ -1,0 +1,3 @@
+@contentBackground: @gray-light;
+@border: transparent;
+@headerBorder: @pageBackground;

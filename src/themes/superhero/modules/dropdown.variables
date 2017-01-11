@@ -1,0 +1,6 @@
+@menuBackground: @gray-light;
+@menuBorder: transparent;
+@itemColor: @textColor;
+@hoveredItemColor: @textColor;
+@hoveredItemBackground: darken(@gray-light, 3%);
+@menuHeaderColor: @pageBackground;
