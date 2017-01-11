@@ -1,0 +1,2 @@
+@contentBackground: @gray-dark;
+@headerBorder: @gray;
