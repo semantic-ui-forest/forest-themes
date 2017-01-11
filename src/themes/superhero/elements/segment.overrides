@@ -1,0 +1,7 @@
+.ui.segment * {
+    border: none;
+
+    > .header {
+        color: @textColor;
+    }
+}

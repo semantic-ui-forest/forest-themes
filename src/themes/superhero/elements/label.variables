@@ -1,0 +1,2 @@
+@color: @textColor;
+@fontWeight: 300;

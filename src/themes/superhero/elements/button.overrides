@@ -1,0 +1,26 @@
+.ui.button {
+    border: transparent;
+    &.primary,
+    &.positive,
+    &.negative {
+        border: transparent;
+    }
+
+    &:hover {
+        background-color: darken(@gray-light, 3%);
+    }
+
+    &.small,
+    &.mini {
+        font-size: 12px;
+    }
+}
+
+.ui.buttons .dropdown {
+    .box-shadow(none);
+}
+
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+    box-shadow: @shadow;
+}
