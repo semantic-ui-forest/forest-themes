@@ -1,0 +1,41 @@
+table,
+.table {
+    a:not(.button) {
+        text-decoration: underline;
+    }
+
+    .dropdown a {
+        text-decoration: none;
+    }
+
+    .positive,
+    .warning,
+    .negative,
+    .info {
+        color: #fff;
+
+        > th > a,
+        > td > a,
+        > a {
+            color: #fff;
+        }
+    }
+
+    > thead > tr > th,
+    > tbody > tr > th,
+    > tfoot > tr > th,
+    > thead > tr > td,
+    > tbody > tr > td,
+    > tfoot > tr > td {
+        border: none;
+    }
+
+    &.celled > thead > tr > th,
+    &.celled > tbody > tr > th,
+    &.celled > tfoot > tr > th,
+    &.celled > thead > tr > td,
+    &.celled > tbody > tr > td,
+    &.celled > tfoot > tr > td {
+        border: 1px solid @gray;
+    }
+}

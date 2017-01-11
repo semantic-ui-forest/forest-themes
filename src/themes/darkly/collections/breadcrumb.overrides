@@ -1,0 +1,7 @@
+.ui.breadcrumb {
+    background-color: @gray;
+    color: @textColor;
+    a {
+        color: #fff;
+    }
+}
