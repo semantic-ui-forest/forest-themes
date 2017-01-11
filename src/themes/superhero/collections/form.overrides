@@ -1,0 +1,102 @@
+input,
+.input,
+textarea {
+    color: @pageBackground;
+}
+
+label,
+.radio label,
+.checkbox label {
+    font-size: 12px;
+}
+
+.input .icon,
+.input i  {
+    color: @textColor;
+}
+
+.form.warning {
+    .label,
+    .radio,
+    .checkbox,
+    .inline .radio,
+    .inline .checkbox,
+    &.radio label,
+    &.checkbox label,
+    &.inline .radio label,
+    &.inline .checkbox label,
+    .icon {
+        color: @warningColor;
+    }
+
+    *,
+    *:focus {
+        border: 4px solid @warningColor;
+    }
+
+    .input .icon {
+        border: none;
+    }
+}
+
+.form.error {
+    .label,
+    .radio,
+    .checkbox,
+    .inline .radio,
+    .inline .checkbox,
+    &.radio label,
+    &.checkbox label,
+    &.inline .radio label,
+    &.inline .checkbox label,
+    .icon {
+        color: @negativeColor;
+    }
+
+    *,
+    *:focus {
+        border: 4px solid @negativeColor;
+    }
+
+    .input .icon {
+        border: none;
+    }
+}
+
+.form.success {
+    .label,
+    .radio,
+    .checkbox,
+    .inline .radio,
+    .inline .checkbox,
+    &.radio label,
+    &.checkbox label,
+    &.inline .radio label,
+    &.inline .checkbox label,
+    .icon {
+        color: @positiveColor;
+    }
+
+    *,
+    *:focus {
+        border: 4px solid @positiveColor;
+    }
+
+    .input .icon {
+        border: none;
+    }
+}
+
+.ui.form,
+.ui.form.success,
+.ui.form.error,
+.ui.form.warning {
+    *:focus {
+        .box-shadow(none);
+    }
+}
+
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+    box-shadow: @shadow;
+}
