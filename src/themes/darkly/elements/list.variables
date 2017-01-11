@@ -1,0 +1,2 @@
+@itemLinkColor: @linkColor;
+@itemHeaderLinkColor: darken(@linkColor, 5%);
