@@ -1,0 +1,69 @@
+.ui.inverted.menu .label:hover {
+    color: @textColor;
+}
+
+.ui.pagination.menu {
+    color: @textColor;
+    background-color: @gray-light;
+    border-color: transparent;
+    .item:hover {
+        color: @textColor;
+        background-color: darken(@gray-light, 3%);
+        border-color: transparent;
+    }
+    .item.active {
+        border-color: transparent;
+    }
+}
+
+.ui.menu {
+    .box-shadow(none);
+    border: none;
+    font-size: 12px;
+
+    .label {
+        background-color: #fff;
+        color: @gray-light;
+    }
+
+    &.inverted {
+
+        .label {
+            background-color: #fff;
+            color: @primaryColor;
+        }
+    }
+
+    .dropdown > a,
+    .dropdown > a:hover,
+    .dropdown > a:focus {
+        border-color: transparent;
+    }
+
+    &.tabular {
+        > .item,
+        > a {
+            color: @textColor;
+        }
+    }
+
+    &.secondary {
+        > .item,
+        > a {
+            color: @textColor;
+        }
+    }
+
+    .ui.dropdown .menu {
+      > .item {
+      background-color: @gray-light!important;
+    }
+      border: transparent;
+    }
+
+}
+
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+    box-shadow: @shadow;
+}
