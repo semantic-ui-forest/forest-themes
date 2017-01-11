@@ -1,0 +1,11 @@
+.close {
+    color: #fff;
+    text-decoration: none;
+    text-shadow: none;
+    opacity: 0.4;
+
+    &:hover,
+    &:focus {
+        opacity: 1;
+    }
+}
