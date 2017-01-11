@@ -1,0 +1,5 @@
+@cellVerticalPadding, @cellHorizontalPadding: 6px;
+@compactVerticalPadding, @compactHorizontalPadding: 3px;
+@stripedBackground: @gray-light;
+@activeBackgroundHover: darken(@gray-light, 3%);
+@border: @gray-light;

@@ -1,0 +1,13 @@
+.ui.message {
+    color: #fff;
+    .box-shadow(none);
+
+    a {
+        color: #fff;
+    }
+}
+
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+    box-shadow: @shadow;
+}
