@@ -1,0 +1,99 @@
+input,
+.input,
+textarea {
+    color: @gray;
+}
+
+.ui.form {
+    input,
+    .input,
+    textarea {
+        border: 2px hidden transparent;
+        .box-shadow(none);
+
+        &:focus {
+            .box-shadow(none);
+        }
+    }
+}
+
+.form.warning {
+    .label,
+    .radio,
+    .checkbox,
+    .inline .radio,
+    .inline .checkbox,
+    &.radio label,
+    &.checkbox label,
+    &.inline .radio label,
+    &.inline .checkbox label,
+    .icon {
+        color: @warningColor;
+    }
+
+    *,
+    *:focus {
+        .box-shadow(none);
+    }
+
+    .input .icon {
+        border-color: @warningColor;
+    }
+}
+
+.form.error {
+    .label,
+    .radio,
+    .checkbox,
+    .inline .radio,
+    .inline .checkbox,
+    &.radio label,
+    &.checkbox label,
+    &.inline .radio label,
+    &.inline .checkbox label,
+    .icon {
+        color: @negativeColor;
+    }
+
+    *,
+    *:focus {
+        .box-shadow(none);
+    }
+
+    .input .icon {
+        border-color: @negativeColor;
+    }
+}
+
+.form.success {
+    .label,
+    .radio,
+    .checkbox,
+    .inline .radio,
+    .inline .checkbox,
+    &.radio label,
+    &.checkbox label,
+    &.inline .radio label,
+    &.inline .checkbox label,
+    .icon {
+        color: @positiveColor;
+    }
+
+    *,
+    *:focus {
+        .box-shadow(none);
+    }
+
+    .input .icon {
+        border-color: @positiveColor;
+    }
+}
+
+.input .icon {
+    color: @textColor;
+}
+
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+    box-shadow: @shadow;
+}
