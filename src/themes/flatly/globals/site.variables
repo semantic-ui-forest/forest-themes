@@ -1,0 +1,44 @@
+@gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              #7b8a8b;   // #333
+@gray:                   #95a5a6; // #555
+@gray-light:             #b4bcc2;   // #999
+@gray-lighter:           #ecf0f1; // #eee
+
+@primaryColor:         #2C3E50;
+@positiveColor:        #18BC9C;
+@infoColor:            #3498DB;
+@warningColor:         #F39C12;
+@negativeColor:        #E74C3C;
+
+@textColor: @primaryColor;
+@linkColor: @positiveColor;
+@linkHoverColor: @linkColor;
+@fontName:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@emSize, @fontSize: 15px;
+@headerFont: @fontName;
+@headerFontWeight: 400;
+@padding-base-vertical: 10px;
+@padding-base-horizontal: 15px;
+@padding-large-vertical: 18px;
+@padding-large-horizontal: 27px;
+@padding-small-vertical: 6px;
+@padding-small-horizontal: 9px;
+@inputColor: @textColor;
+@invertedDisabledTextColor: #ccc;
+@disabledTextColor: @gray-lighter;
+@disabledBorderColor: transparent;
+@positiveTextColor: #fff;
+@positiveBackgroundColor: @positiveColor;
+@positiveBorderColor: @positiveColor;
+@infoTextColor: #fff;
+@infoBackgroundColor: @infoColor;
+@infoBorderColor: @infoColor;
+@warningTextColor: #fff;
+@warningBackgroundColor: @warningColor;
+@warningBorderColor: @warningColor;
+@negativeTextColor: #fff;
+@negativeBackgroundColor: @negativeColor;
+@negativeBorderColor: @negativeColor;
+
+@line-height-computed:    floor((@emSize * 1.428571429)); // ~20px
