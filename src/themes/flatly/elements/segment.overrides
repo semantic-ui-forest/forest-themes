@@ -1,0 +1,9 @@
+.ui.segment {
+    * {
+        border-color: @gray-lighter;
+    }
+
+    .close {
+        color: @textColor;
+    }
+}

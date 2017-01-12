@@ -1,0 +1,27 @@
+.ui.button {
+    border: @gray;
+    border-width: 2px;
+    &.primary {
+        border: @primaryColor;
+    }
+    &.positive {
+        border: @positiveColor;
+    }
+    &.negative {
+        border: @negativeColor;
+    }
+}
+
+.ui.button:active {
+    .box-shadow(none);
+}
+
+.ui.buttons .dropdown {
+    .box-shadow(none);
+}
+
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+    box-shadow: @shadow;
+}
+

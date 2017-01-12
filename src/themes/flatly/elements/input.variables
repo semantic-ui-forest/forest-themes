@@ -1,0 +1,4 @@
+@border: #dce4ec;
+@focusBorderColor: @primaryColor;
+@placeholderColor: #acb6c0;
+@lineHeight: (@line-height-computed + (@padding-base-vertical * 2) + 4);

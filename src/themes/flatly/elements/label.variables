@@ -1,0 +1,3 @@
+@backgroundColor: @gray;
+@backgroundColor: @primaryColor;
+@labelActiveTextColor: @primaryColor;
