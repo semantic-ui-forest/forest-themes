@@ -1,0 +1,34 @@
+@gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              lighten(@gray-base, 20%);   // #333
+@gray:                   lighten(@gray-base, 33.5%); // #555
+@gray-light:             lighten(@gray-base, 60%);   // #999
+@gray-lighter:           lighten(@gray-base, 90%); // #eee
+
+@brand-primary:         #2780E3;
+@brand-success:         #3FB618;
+@brand-info:            #9954BB;
+@brand-warning:         #FF7518;
+@brand-danger:          #FF0039;
+
+@emSize, @fontSize: 15px;
+@fontName: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+@headerFont: @fontName;
+@headerFontWeight: 300;
+@padding-base-vertical: 10px;
+@padding-base-horizontal: 18px;
+@padding-large-vertical: 18px;
+@padding-large-horizontal: 30px;
+@absoluteBorderRadius: 0;
+@inputColor: @textColor;
+@invertedDisabledTextColor: #fff;
+@positiveTextColor: #fff;
+@positiveBackgroundColor: @positiveColor;
+@infoTextColor: #fff;
+@infoBackgroundColor: @infoColor;
+@warningTextColor: #fff;
+@warningBackgroundColor: @warningColor;
+@warningBorderColor: darken(spin(@warningBackgroundColor, -10), 3%);
+@negativeTextColor: #fff;
+@negativeBackgroundColor: @negativeColor;
+@negativeBorderColor: darken(spin(@negativeBackgroundColor, -10), 3%);
