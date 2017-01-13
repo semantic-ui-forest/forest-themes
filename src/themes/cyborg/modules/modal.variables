@@ -1,0 +1,2 @@
+@contentBackground: lighten(@pageBackground, 10%);
+@headerBorder: @gray-dark;
