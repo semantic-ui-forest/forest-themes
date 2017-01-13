@@ -1,0 +1,34 @@
+@gray-base:              #000;
+@gray-darker:            #222; // #222
+@gray-dark:              #282828;   // #333
+@gray:                   #555; // #555
+@gray-light:             #888;   // #999
+@gray-lighter:           #ADAFAE; // #eee
+
+@primaryColor:         #2A9FD6;
+@positiveColor:         #77B300;
+@infoColor:            #9933CC;
+@warningColor:         #FF8800;
+@negativeColor, @negativeBackgroundColor:          #CC0000;
+
+@pageBackground: #060606;
+@textColor: @gray-light;
+@fontName:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@linkHoverColor: @linkColor;
+@headerFont: @fontName;
+@padding-base-vertical: 8px;
+@padding-large-vertical: 14px;
+@inputColor: @textColor;
+@disabledTextColor: @gray-light;
+@invertedDisabledTextColor: #aaa;
+@disabledBorderColor: @gray-dark;
+@positiveTextColor: #fff;
+@positiveBackgroundColor: @positiveColor;
+@infoTextColor: #fff;
+@infoBackgroundColor: @infoColor;
+@warningTextColor: #fff;
+@warningBackgroundColor: @warningColor;
+@warningBorderColor: darken(spin(@warningBackgroundColor, -10), 3%);
+@negativeTextColor: #fff;
+@negativeBackgroundColor: @negativeColor;
+@negativeBorderColor: darken(spin(@negativeBackgroundColor, -10), 3%);
