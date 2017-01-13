@@ -1,0 +1,30 @@
+.header {
+    color: #fff!important;
+    &.huge {
+        font-size: 56px!important;
+    }
+
+    &.h1 {
+        font-size: 56px;
+    }
+
+    &.h2 {
+        font-size: 45px;
+    }
+
+    &.h3 {
+        font-size: 34px;
+    }
+    
+    &.h4 {
+        font-size: 24px;
+    }
+
+    &.h5 {
+        font-size: 20px;
+    }
+
+    &.h6 {
+        font-size: 16px;
+    }
+}

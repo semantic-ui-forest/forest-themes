@@ -1,0 +1,3 @@
+@backgroundColor: darken(@gray-dark, 10%);
+@backgroundColor: @primaryColor;
+@labelActiveTextColor: @primaryColor;
