@@ -1,0 +1,62 @@
+.form.warning {
+    .label,
+    .radio,
+    .checkbox,
+    .inline .radio,
+    .inline .checkbox,
+    &.radio label,
+    &.checkbox label,
+    &.inline .radio label,
+    &.inline .checkbox label,
+    .icon {
+        color: @warningColor;
+    }
+
+    *,
+    *:focus,
+    .input .icon {
+        border: 1px solid @warningColor;
+    }
+}
+
+.form.error {
+    .label,
+    .radio,
+    .checkbox,
+    .inline .radio,
+    .inline .checkbox,
+    &.radio label,
+    &.checkbox label,
+    &.inline .radio label,
+    &.inline .checkbox label,
+    .icon {
+        color: @negativeColor;
+    }
+
+    *,
+    *:focus,
+    .input .icon {
+        border: 1px solid @negativeColor;
+    }
+}
+
+.form.success {
+    .label,
+    .radio,
+    .checkbox,
+    .inline .radio,
+    .inline .checkbox,
+    &.radio label,
+    &.checkbox label,
+    &.inline .radio label,
+    &.inline .checkbox label,
+    .icon {
+        color: @positiveColor;
+    }
+
+    *,
+    *:focus,
+    .input .icon {
+        border: 1px solid @positiveColor;
+    }
+}
