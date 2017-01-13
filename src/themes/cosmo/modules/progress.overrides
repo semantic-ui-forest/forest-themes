@@ -1,0 +1,14 @@
+.ui.progress {
+    height: 8px!important;
+    .box-shadow(none);
+    .bar {
+        font-size: 8px;
+        height: 8px;
+        line-height: 8px;
+    }
+}
+
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+    box-shadow: @shadow;
+}
