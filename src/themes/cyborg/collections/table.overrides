@@ -1,0 +1,18 @@
+table,
+.table {
+    color: #fff;
+
+    a:not(.button) {
+        color: #fff;
+        text-decoration: underline;
+    }
+
+    .dropdown a {
+        text-decoration: none;
+    }
+
+    &.stackable {
+        background-color: darken(@gray-darker, 4%);
+    }
+}
+

@@ -1,0 +1,33 @@
+.ui.pagination.menu {
+    color: #fff;
+    background-color: @gray-darker;
+    border-color: @gray-dark;
+    .item:hover {
+        color: #fff;
+        background-color: @primaryColor;
+        border-color: transparent;
+    }
+    .item.active {
+        border-color: transparent;
+    }
+}
+
+.ui.menu {
+    &.tabular,
+    &.secondary,
+    &.pagination {
+        a,
+        .item {
+            color: #fff;
+        }
+    }
+
+    border: 1px solid @gray-light;
+    
+    .item, a {
+        color: #888!important;
+        &.active {
+            color: #fff!important;
+        }
+    }
+}

@@ -1,0 +1,4 @@
+@background: darken(@gray-darker, 4%);
+@stripedBackground: darken(darken(@gray-darker, 4%), 6%);
+@activeBackgroundHover: @gray-dark;
+@border: @gray-dark;
