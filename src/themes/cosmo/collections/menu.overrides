@@ -1,0 +1,34 @@
+.ui.menu .label:hover {
+    background-color: none;
+}
+
+.ui.pagination.menu .item.active {
+    border-color: #ddd;
+}
+
+.ui.menu {
+    &.inverted {
+        .label {
+            background-color: #fff;
+            color: @primaryColor;
+        }
+    }
+
+    &.secondary {
+        & > a,
+        & > .item {
+            border-radius: 0;
+        }
+    }
+
+    &.dropdown {
+
+        & > a:hover,
+        & > a:focus,
+        & > .item:hover,
+        & > .item:focus {
+            background-image: none;
+        }
+    }
+
+}

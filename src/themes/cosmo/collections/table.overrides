@@ -1,0 +1,21 @@
+table,
+.table {
+    a:not(.button) {
+        text-decoration: underline;
+    }
+
+    .dropdown a {
+        text-decoration: none;
+    }
+
+    .positive,
+    .warning,
+    .negative,
+    .info {
+        color: #fff;
+
+        a {
+            color: #fff;
+        }
+    }
+}
