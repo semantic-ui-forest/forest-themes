@@ -1,0 +1,91 @@
+.sandstone {
+    font-size: 11px;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+.ui.pagination.menu {
+    .sandstone;
+    color: @gray;
+    background-color: @gray-lighter;
+    border-color: @gray-light;
+    .item:hover {
+        color: @gray-dark;
+        background-color: @gray-light;
+        border-color: @gray-light;
+    }
+    .item.active {
+        border-color: @gray-light;
+    }
+
+    > a,
+    > .item {
+        color: @gray;
+    }
+}
+
+.ui.menu {
+    > a,
+    > .item {
+        .sandstone;
+    }
+
+    & input {
+        border: none;
+    }
+
+    & .form {
+        * {
+            border: none;
+        }
+    }
+
+    .sandstone;
+
+    .dropdown > a,
+    .dropdown > a:hover,
+    .dropdown > a:focus {
+        .sandstone;
+        border-color: @gray-light;
+    }
+    &.tabular {
+
+        & > a
+        & > .item, {
+            background-color: @gray-lighter;
+            border-color: @gray-light;
+            color: @gray;
+        }
+
+        > a.disabled:hover,
+        > .item.disabled:hover {
+            background-color: @gray-lighter;
+        }
+    }
+
+    &.secondary {
+        a,
+        .item {
+            color: @gray;
+        }
+
+        > a,
+        > .item {
+            border: 1px solid transparent;
+        }
+
+        > a.active,
+        > .item.active,
+        > a:hover,
+        > .item:hover {
+            border-color: @gray-light;
+        }
+
+        > a.disabled,
+        > .item.disabled {
+            border-color: transparent;
+        }
+    }
+}
