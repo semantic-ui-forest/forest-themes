@@ -1,0 +1,25 @@
+@gray-base:              #000;
+@gray-darker:            #3E3F3A;
+@gray-dark:              #8E8C84;
+@gray:                   #98978B;
+@gray-light:             #DFD7CA;
+@gray-lighter:           #F8F5F0;
+
+@primaryColor:         #325D88;
+@positiveColor, @positiveTextColor:         #93C54B;
+@infoColor, @infoTextColor:            #29ABE0;
+@warningColor, @warningTextColor:         #F47C3C;
+@negativeColor, @negativeTextColor:          #d9534f;
+
+@textColor: #3E3F3A;
+@fontName:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@linkColor: @positiveColor;
+@linkHoverColor: darken(@linkColor, 10%);
+@headerFontWeight: 400;
+@padding-base-vertical: 12px;
+@padding-base-horizontal: 16px;
+@padding-large-vertical: 20px;
+@padding-large-horizontal: 30px;
+@inputColor: @textColor;
+@disabledBorderColor: @gray-light;
+@mutedTextColor: @gray;
