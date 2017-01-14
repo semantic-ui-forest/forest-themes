@@ -1,0 +1,16 @@
+.ui.list {
+    border-color: @gray-light;
+    .item:hover {
+        background-color: @gray-lighter;
+    }
+
+    .item.active {
+        color: @textColor;
+        border-color: @gray-light;
+    }
+
+    .item,
+    a {
+        padding: 16px 24px;
+    }
+}
