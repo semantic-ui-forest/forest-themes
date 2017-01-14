@@ -1,0 +1,19 @@
+.ui.breadcrumb {
+    background-color: @gray-lighter;
+    color: @gray-light;
+
+    .sandstone;
+
+    border: 1px solid @gray-light;
+
+    a {
+        color: @gray;
+    }
+}
+
+.sandstone {
+    font-size: 11px;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
