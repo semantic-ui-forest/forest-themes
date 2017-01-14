@@ -1,0 +1,16 @@
+.sandstone {
+    font-size: 11px;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.ui.dropdown .divider {
+    background-color: @gray-lighter;
+}
+
+.dropdown > a,
+.dropdown > .item {
+    .sandstone;
+}
+

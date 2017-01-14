@@ -1,0 +1,14 @@
+.sandstone {
+    font-size: 11px;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.ui.popup .header {
+    background-color: @gray-lighter;
+}
+
+.ui.popup {
+    .sandstone;
+}
