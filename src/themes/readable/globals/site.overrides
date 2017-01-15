@@ -1,0 +1,7 @@
+legend {
+    font-family: @fontName;
+}
+
+body {
+    font-family: Georgia, "Times New Romen", Times, serif;
+}
