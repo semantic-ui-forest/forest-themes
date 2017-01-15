@@ -1,0 +1,10 @@
+.label {
+    font-family: @fontName;
+    font-weight: normal;
+
+    border: 1px solid #ddd;
+    color: @textColor;
+
+    padding: 1px 7px 5px;
+    vertical-align: 2px;
+}

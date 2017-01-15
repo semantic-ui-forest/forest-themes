@@ -1,0 +1,13 @@
+.ui.button {
+    font-family: @fontName;
+    border: #ddd;
+    &.primary {
+        border: @primaryColor;
+    }
+    &.positive {
+        border: @positiveColor;
+    }
+    &.negative {
+        border: @negativeColor;
+    }
+}
