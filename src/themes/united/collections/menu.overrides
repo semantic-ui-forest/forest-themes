@@ -1,0 +1,40 @@
+.ui.pagination.menu .item.active {
+    border-color: #ddd;
+}
+
+.ui.menu .label:hover {
+    background-color: none;
+}
+
+.ui.menu {
+
+    & {
+
+        .label {
+            background-color: #fff;
+            color: @primaryColor;
+        }
+    }
+
+    &.inverted {
+
+        .label {
+            background-color: #fff;
+            color: @infoColor;
+        }
+    }
+}
+}
+
+ @media (max-width: 767px) {
+
+     .ui.menu {
+
+         .dropdown {
+             a,
+             .item {
+                 color: #fff;
+             }
+         }
+     }
+ }
