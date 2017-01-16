@@ -1,0 +1,37 @@
+.ui.pagination.menu {
+    color: @gray-dark;
+    .item:hover {
+        color: #fff;
+        background-color: @primaryColor;
+        border-color: @primaryColor;
+    }
+
+    a,
+    .item {
+        color: @gray-dark;
+    }
+
+    a:hover,
+    .item:hover,
+    > .item.active,
+    > a.active, {
+        border-color: @primaryColor;
+        color: #fff;
+    }
+
+    > a.disabled,
+    > .item.disabled {
+        border-color: #ddd;
+    }
+}
+
+.ui.menu {
+
+    &.inverted {
+
+        .label {
+            background-color: #fff;
+            color: @primaryColor;
+        }
+    }
+}
