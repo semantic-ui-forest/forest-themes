@@ -1,0 +1,12 @@
+.ui.button {
+    border: @gray-light;
+    &.primary {
+        border: @primaryColor;
+    }
+    &.positive {
+        border: @positiveColor;
+    }
+    &.negative {
+        border: @negativeColor;
+    }
+}
