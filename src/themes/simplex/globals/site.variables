@@ -1,0 +1,31 @@
+@gray-base:              #000;
+@gray-darker:            lighten(@gray-base, 13.5%); // #222
+@gray-dark:              #444;
+@gray:                   #777;
+@gray-light:             #808080;
+@gray-lighter:           #ddd;
+
+@primaryColor:         #D9230F;
+@positiveColor:        #469408;
+@infoColor:            #029ACF;
+@warningColor:         #9B479F;
+@negativeColor:        #D9831F;
+
+@pageBackground: #FCFCFC;
+@textColor: @gray;
+@emSize, @fontSize: 13px;
+@fontName: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@headerFont: @fontName;
+@headerFontWeight: 300;
+@padding-base-vertical: 8px;
+@padding-large-vertical: 14px;
+@inputColor: @textColor;
+@disabledTextColor: #444;
+@invertedDisabledTextColor: #ccc;
+@disabledTextColor: @gray-lighter;
+@positiveTextColor: #468847;
+@infoTextColor: #3a87ad;
+@warningTextColor: #c09853;
+@warningBorderColor: darken(spin(@warningBackgroundColor, -10), 3%);
+@negativeTextColor: #b94a48;
+@negativeBorderColor: darken(spin(@negativeBackgroundColor, -10), 3%);
