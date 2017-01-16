@@ -1,0 +1,60 @@
+#gradient {
+    .vertical-three-colors(@start-color: #00b3ee; @mid-color: #7a43b6; @color-stop: 50%; @end-color: #c3325f) {
+        background-image: -webkit-linear-gradient(@start-color, @mid-color @color-stop, @end-color);
+        background-image: -o-linear-gradient(@start-color, @mid-color @color-stop, @end-color);
+        background-image: linear-gradient(@start-color, @mid-color @color-stop, @end-color);
+        background-repeat: no-repeat;
+        filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@start-color),argb(@end-color))); // IE9 and down, gets no color-stop at all for proper fallback
+    }
+}
+
+.btn-shadow(@color) {
+    #gradient > .vertical-three-colors(lighten(@color, 3%), @color, 6%, darken(@color, 3%));
+    filter: none;
+    border: 1px solid darken(@color, 10%);
+}
+
+
+.ui.button {
+    border: #474949;
+    font-family: @fontName;
+    &.primary {
+        border: @primaryColor;
+    }
+    &.positive {
+        border: @positiveColor;
+    }
+    &.negative {
+        border: @negativeColor;
+    }
+
+    &,
+    &:hover {
+        .btn-shadow(#474949);
+    }
+
+    &.primary,
+    &.primary:hover {
+        .btn-shadow(@primaryColor);
+    }
+
+    &.positive,
+    &.positive:hover {
+        .btn-shadow(@positiveColor);
+    }
+
+    &.info,
+    &.info:hover {
+        .btn-shadow(@infoColor);
+    }
+
+    &.warning,
+    &.warning:hover {
+        .btn-shadow(@warningColor);
+    }
+
+    &.negative,
+    &.negative:hover {
+        .btn-shadow(@negativeColor);
+    }
+}

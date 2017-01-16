@@ -1,0 +1,3 @@
+label, .label {
+    font-weight: normal;
+}
