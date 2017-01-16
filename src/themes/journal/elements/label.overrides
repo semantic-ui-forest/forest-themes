@@ -1,0 +1,5 @@
+.label {
+  padding-bottom: 4px;
+  vertical-align: 3px;
+  font-size: 10px;
+}
