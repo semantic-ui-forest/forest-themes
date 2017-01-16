@@ -1,0 +1,7 @@
+.ui.segment {
+    &.primary {
+        .header {
+            color: #fff;
+        }
+    }
+}

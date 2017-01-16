@@ -1,0 +1,5 @@
+@textColor: #fff;
+@backgroundColor: #474949;
+@primaryTextColor: #fff;
+@positiveTextColor: #fff;
+@negativeTextColor: #fff;
