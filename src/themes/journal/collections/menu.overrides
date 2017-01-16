@@ -1,0 +1,29 @@
+.ui.menu {
+    .label:hover{
+        background-color: darken(#fff, 6.5%);
+    }
+
+    font-size: 18px;
+    font-family: "News Cycle", "Arial Narrow Bold", sans-serif;
+    font-weight: @headerFontWeight;
+
+    & {
+
+        .label {
+            background-color: #000;
+            color: #fff;
+        }
+    }
+
+    &.inverted {
+
+        .label {
+            background-color: #fff;
+            color: @primaryColor;
+        }
+    }
+}
+
+.ui.pagination.menu .item.active {
+    border-color: #ddd;
+}
