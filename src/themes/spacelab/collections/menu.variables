@@ -1,0 +1,13 @@
+@background: #eee;
+@hoverItemTextColor: @infoColor;
+@activeItemTextColor: @infoColor;
+@activeItemBackground: transparent;
+@labelBackground: @infoColor;
+@pressedItemBackground: darken(#eee, 6.5%);
+@invertedItemTextColor: #ddd;
+@invertedBackground: @primaryColor;
+@invertedItemTextColor: #ddd;
+@invertedActiveBackground: transparent;
+@invertedMenuPressedBackground: darken(@primaryColor, 10%);
+@paginationActiveTextColor: @gray-light;
+@paginationActiveBackground: #f5f5f5;
