@@ -19,3 +19,5 @@
 @warningBorderColor: darken(spin(@warningBackgroundColor, -10), 3%);
 @negativeTextColor: #b94a48;
 @negativeBorderColor: darken(spin(@negativeBackgroundColor, -10), 3%);
+
+@fontName: 'Helvetica Neue';
