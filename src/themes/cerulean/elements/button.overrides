@@ -1,23 +1,45 @@
-.ui.button .icon {
-  border-top-color: #fff;
+#gradient {
+    .vertical-three-colors(@start-color: #00b3ee; @mid-color: #7a43b6; @color-stop: 50%; @end-color: #c3325f) {
+        background-image: -webkit-linear-gradient(@start-color, @mid-color @color-stop, @end-color);
+        background-image: -o-linear-gradient(@start-color, @mid-color @color-stop, @end-color);
+        background-image: linear-gradient(@start-color, @mid-color @color-stop, @end-color);
+        background-repeat: no-repeat;
+        filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@start-color),argb(@end-color))); // IE9 and down, gets no color-stop at all for proper fallback
+    }
 }
 
-.ui.primary.button {
-  background-image: @primaryBackgroundImage;
-  border-bottom: 1px solid darken(@primaryColor, 10%);
+.btn-shadow(@color) {
+    #gradient > .vertical-three-colors(lighten(@color, 8%), @color, 60%, darken(@color, 4%));
+    filter: none;
+    border: 1px solid darken(@color, 10%);
 }
 
-.ui.secondary.button {
-  background-image: @secondaryBackgroundImage;
-  border-bottom: 1px solid darken(@secondaryColor, 10%);
-}
+.ui.button  {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
 
-.ui.positive.button {
-  background-image: @positiveBackgroundImage;
-  border-bottom: 1px solid darken(@positiveColor, 10%);
-}
+  .icon {
+    border-top-color: #fff;
+  }
 
-.ui.negative.button {
-  background-image: @negativeBackgroundImage;
-  border-bottom: 1px solid darken(@negativeColor, 10%);
+  .btn-shadow(#fff);
+
+  &.primary {
+    .btn-shadow(@primaryColor);
+  }
+
+  &.positive {
+    .btn-shadow(@positiveColor);
+  }
+
+  &.info {
+    .btn-shadow(@infoColor);
+  }
+
+  &.warning {
+    .btn-shadow(@warningColor);
+  }
+
+  &.negative {
+    .btn-shadow(@negativeColor);
+  }
 }
