@@ -1,7 +1,98 @@
-.ui.secondary.menu .item {
-  color: @secondaryItemColor;
+#gradient {
+    .vertical-three-colors(@start-color: #00b3ee; @mid-color: #7a43b6; @color-stop: 50%; @end-color: #c3325f) {
+        background-image: -webkit-linear-gradient(@start-color, @mid-color @color-stop, @end-color);
+        background-image: -o-linear-gradient(@start-color, @mid-color @color-stop, @end-color);
+        background-image: linear-gradient(@start-color, @mid-color @color-stop, @end-color);
+        background-repeat: no-repeat;
+        filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@start-color),argb(@end-color))); // IE9 and down, gets no color-stop at all for proper fallback
+    }
 }
 
-.ui.tabular.menu .item {
-  color: @secondaryItemColor;
+.btn-shadow(@color) {
+    #gradient > .vertical-three-colors(lighten(@color, 8%), @color, 60%, darken(@color, 4%));
+    filter: none;
+    border: 1px solid darken(@color, 10%);
+}
+
+.box-shadow(@shadow) {
+    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+    box-shadow: @shadow;
+}
+
+.ui.menu {
+
+    color: @textColor;
+    .btn-shadow(@primaryColor);
+    .box-shadow(0 1px 10px rgba(0, 0, 0, 0.1));
+
+    .item {
+        color: #fff;
+        &:hover {
+            color: darken(#fff, 10%);
+        }
+
+        &.active {
+            color: #fff;
+            &:hover {
+                color: darken(#fff, 10%);
+            }
+        }
+    }
+
+    .label, label  {
+        background-color: #fff;
+        color: darken(@primaryColor, 10%);
+    }
+
+
+    &.inverted {
+        .btn-shadow(@infoColor);
+        .label, label {
+            background-color: #fff;
+            color: @infoColor;
+        }
+    }
+
+    &.vertical:not(.accordion), &.tabular, &.secondary {
+        .item {
+            color: @secondaryItemColor;
+            .label, label {
+                color: @secondaryItemColor;
+            }
+        }
+    }
+
+    &.accordion {
+        border: none;
+    }
+
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+
+    & > li > a {
+        text-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+    }
+
+}
+
+.ui.vertical.menu {
+    border: none;
+}
+
+
+@screen-small: 768px;
+@media (max-width: (@screen-small - 1)) {
+
+    .ui.menu {
+        .dropdown > .header {
+            color: #fff;
+        }
+
+        .dropdown {
+            &.menu, > .menu {
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
 }

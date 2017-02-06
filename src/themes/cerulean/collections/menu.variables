@@ -1,10 +1,8 @@
 @itemTextColor: #fff;
-@background: linear-gradient(lighten(@primaryColor, 10%),
-lighten(@primaryColor, 4%) 60%, darken(@primaryColor, 6%)) @primaryColor;
+@background: @primaryColor;
 
-@hoverItemTextColor: #fff;
 @hoverItemBackground: darken(@primaryColor, 10%);
-@activeItemColor: #fff;
+@activeItemTextColor: #000;
 @activeItemBackground: darken(@primaryColor, 10%);
 
 @labelTextColor: #fff;
@@ -13,9 +11,7 @@ lighten(@primaryColor, 4%) 60%, darken(@primaryColor, 6%)) @primaryColor;
 @dropdownHoveredItemBackground: darken(@primaryColor, 10%);
 @dropdownBackground: #fff;
 
-@invertedItemTextColor: #fff;
-@invertedBackground: linear-gradient(lighten(@infoColor, 8%),
-lighten(@infoColor, 4%) 60%, darken(@infoColor, 2%)) @infoColor;
+@invertedItemTextColor: #ddd;
 @invertedBorder: darken(@infoColor, 5%);
 
 @secondaryItemColor: #ddd;
