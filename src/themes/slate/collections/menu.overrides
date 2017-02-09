@@ -8,12 +8,12 @@
     }
 }
 
-.btn-shadow(@color) {
+.button-shadow(@color) {
     #gradient > .vertical-three-colors(lighten(@color, 6%), @color, 60%, darken(@color, 4%));
     filter: none;
 }
 
-.btn-shadow-inverse(@color) {
+.button-shadow-inverse(@color) {
     #gradient > .vertical-three-colors(darken(@color, 24%), darken(@color, 18%), 40%, darken(@color, 16%));
     filter: none;
 }
@@ -23,16 +23,16 @@
     & > a,
     & > .item {
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-        .btn-shadow(@gray-dark);
+        .button-shadow(@gray-dark);
 
         &:hover {
-            .btn-shadow-inverse(@gray-dark);
+            .button-shadow-inverse(@gray-dark);
         }
     }
 
     & > a.active,
     & > .item.active {
-        .btn-shadow-inverse(@gray-dark);
+        .button-shadow-inverse(@gray-dark);
     }
 
     & > a.disabled,
@@ -40,7 +40,7 @@
     & > a.disabled,
     & > .item.disabled:hover {
         background-color: transparent;
-        .btn-shadow(@gray-dark);
+        .button-shadow(@gray-dark);
     }
   background-color: #fff;
   border-color: #ddd;
@@ -84,17 +84,17 @@
   }
 
   & {
-    .btn-shadow(@gray-dark);
+    .button-shadow(@gray-dark);
 
     > a {
       &:hover {
-        .btn-shadow-inverse(@gray-dark);
+        .button-shadow-inverse(@gray-dark);
       }
     }
   }
 
   &.inverted {
-    .btn-shadow(@primaryColor);
+    .button-shadow(@primaryColor);
 
     .label {
       background-color: darken(@primaryColor, 12%);
@@ -103,19 +103,19 @@
     > a {
 
       &:hover {
-        .btn-shadow-inverse(@primaryColor);
+        .button-shadow-inverse(@primaryColor);
       }
     }
   }
 
   &.secondary {
       & > a {
-          .btn-shadow(@gray-dark);
+          .button-shadow(@gray-dark);
           border: 1px solid rgba(0, 0, 0, 0.6);
           text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 
           &:hover {
-              .btn-shadow-inverse(@gray-dark);
+              .button-shadow-inverse(@gray-dark);
               border: 1px solid rgba(0, 0, 0, 0.6);
           }
       }
@@ -123,13 +123,13 @@
       & > a.active,
       & > a.active:hover {
           background-color: none;
-          .btn-shadow-inverse(@gray-dark);
+          .button-shadow-inverse(@gray-dark);
           border: 1px solid rgba(0, 0, 0, 0.6);
       }
 
       & > a.disabled,
       & > a.disabled:hover {
-          .btn-shadow(@gray-dark);
+          .button-shadow(@gray-dark);
       }
   }
 }

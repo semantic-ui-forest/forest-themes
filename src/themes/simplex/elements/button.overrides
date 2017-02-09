@@ -8,7 +8,7 @@
     }
 }
 
-.btn-shadow(@color) {
+.button-shadow(@color) {
     #gradient > .vertical-three-colors(lighten(@color, 3%), @color, 6%, darken(@color, 3%));
     filter: none;
     border: 1px solid darken(@color, 10%);
@@ -30,31 +30,31 @@
 
     &,
     &:hover {
-        .btn-shadow(#474949);
+        .button-shadow(#474949);
     }
 
     &.primary,
     &.primary:hover {
-        .btn-shadow(@primaryColor);
+        .button-shadow(@primaryColor);
     }
 
     &.positive,
     &.positive:hover {
-        .btn-shadow(@positiveColor);
+        .button-shadow(@positiveColor);
     }
 
     &.info,
     &.info:hover {
-        .btn-shadow(@infoColor);
+        .button-shadow(@infoColor);
     }
 
     &.warning,
     &.warning:hover {
-        .btn-shadow(@warningColor);
+        .button-shadow(@warningColor);
     }
 
     &.negative,
     &.negative:hover {
-        .btn-shadow(@negativeColor);
+        .button-shadow(@negativeColor);
     }
 }

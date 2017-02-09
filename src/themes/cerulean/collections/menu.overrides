@@ -8,7 +8,7 @@
     }
 }
 
-.btn-shadow(@color) {
+.button-shadow(@color) {
     #gradient > .vertical-three-colors(lighten(@color, 8%), @color, 60%, darken(@color, 4%));
     filter: none;
     border: 1px solid darken(@color, 10%);
@@ -22,7 +22,7 @@
 .ui.menu {
 
     color: @textColor;
-    .btn-shadow(@primaryColor);
+    .button-shadow(@primaryColor);
     .box-shadow(0 1px 10px rgba(0, 0, 0, 0.1));
 
     .item {
@@ -46,7 +46,7 @@
 
 
     &.inverted {
-        .btn-shadow(@infoColor);
+        .button-shadow(@infoColor);
         .label, label {
             background-color: #fff;
             color: @infoColor;

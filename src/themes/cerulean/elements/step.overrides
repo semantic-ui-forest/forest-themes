@@ -8,14 +8,14 @@
     }
 }
 
-.btn-shadow(@color) {
+.button-shadow(@color) {
     #gradient > .vertical-three-colors(lighten(@color, 8%), @color, 60%, darken(@color, 4%));
     filter: none;
     border: 1px solid darken(@color, 10%);
 }
 
 .ui.steps .step {
-    .btn-shadow(@primaryColor);
+    .button-shadow(@primaryColor);
 }
 
 .ui.steps .step .title {
@@ -32,7 +32,7 @@
 }
 
 .ui.steps .active.step {
-    .btn-shadow(darken(@primaryColor, 20%));
+    .button-shadow(darken(@primaryColor, 20%));
     .icon {
         color: @white;
     }

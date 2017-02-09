@@ -2,7 +2,7 @@
   background-color: #f5f5f5;
   border: 1px solid rgba(0, 0, 0, 0.6);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  .btn-shadow(@gray-dark);
+  .button-shadow(@gray-dark);
 }
 
 
@@ -16,7 +16,7 @@
     }
 }
 
-.btn-shadow(@color) {
+.button-shadow(@color) {
     #gradient > .vertical-three-colors(lighten(@color, 6%), @color, 60%, darken(@color, 4%));
     filter: none;
 }
