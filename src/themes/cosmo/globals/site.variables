@@ -5,11 +5,23 @@
 @gray-light:             lighten(@gray-base, 60%);   // #999
 @gray-lighter:           lighten(@gray-base, 90%); // #eee
 
-@brand-primary:         #2780E3;
-@brand-success:         #3FB618;
-@brand-info:            #9954BB;
-@brand-warning:         #FF7518;
-@brand-danger:          #FF0039;
+@primaryColor: #2780E3;
+@positiveColor: #3FB618;
+@infoColor: #9954BB;
+@warningColor: #FF7518;
+@negativeColor: #FF0039;
+@primaryBackgroundColor: #2780E3;
+@positiveBackgroundColor: #3fb618;
+@infoBackgroundColor: #9954BB;
+@warningBackgroundColor: #FF7518;
+@negativeBackgroundColor: #ff0039;
+
+@positiveTextColor: #fff;
+@infoTextColor: #fff;
+@warningTextColor: #fff;
+@warningBorderColor: darken(spin(@warningBackgroundColor, -10), 3%);
+@negativeTextColor: #fff;
+@negativeBorderColor: darken(spin(@negativeBackgroundColor, -10), 3%);
 
 @emSize, @fontSize: 15px;
 @fontName: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
@@ -20,15 +32,6 @@
 @padding-large-vertical: 18px;
 @padding-large-horizontal: 30px;
 @absoluteBorderRadius: 0;
+@textColor: #000;
 @inputColor: @textColor;
 @invertedDisabledTextColor: #fff;
-@positiveTextColor: #fff;
-@positiveBackgroundColor: @positiveColor;
-@infoTextColor: #fff;
-@infoBackgroundColor: @infoColor;
-@warningTextColor: #fff;
-@warningBackgroundColor: @warningColor;
-@warningBorderColor: darken(spin(@warningBackgroundColor, -10), 3%);
-@negativeTextColor: #fff;
-@negativeBackgroundColor: @negativeColor;
-@negativeBorderColor: darken(spin(@negativeBackgroundColor, -10), 3%);
