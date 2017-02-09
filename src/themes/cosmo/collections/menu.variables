@@ -2,7 +2,7 @@
 @background: @gray-darker;
 @itemTextColor: #fff;
 @hoverItemTextColor: #fff;
-@hoverItemBackground: darken(@gray-darker, 10%);
+@hoverItemBackground: darken(@gray-darker, 5%);
 @activeItemTextColor: #fff;
 @activeItemBackground: darken(@gray-darker, 10%);
 @labelBackground: #fff;
