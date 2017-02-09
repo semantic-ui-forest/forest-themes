@@ -1,1 +1,2 @@
 @backgroundColor: @gray-darker;
+@color: @white;
