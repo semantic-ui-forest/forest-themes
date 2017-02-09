@@ -1,5 +1,4 @@
-table,
-.table {
+.ui.table {
     a:not(.button) {
         text-decoration: underline;
     }
