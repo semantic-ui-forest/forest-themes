@@ -10,4 +10,10 @@
     &.negative {
         border: @negativeColor;
     }
+    &.basic {
+        color: rgba(0, 0, 0, 0.7) !important;
+        &:hover {
+            color: rgba(0, 0, 0, 0.8) !important;
+        }
+    }
 }
