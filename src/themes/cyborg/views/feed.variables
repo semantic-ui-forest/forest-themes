@@ -1,0 +1,3 @@
+@metadataActionColor: @gray-lighter;
+@metadataColor: @gray-light;
+@dateColor: @gray-light;
