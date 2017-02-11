@@ -9,3 +9,7 @@
         opacity: 1;
     }
 }
+
+.code.icon {
+    color: @gray-light !important;
+}
