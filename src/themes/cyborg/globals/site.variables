@@ -9,11 +9,17 @@
 @positiveColor:         #77B300;
 @infoColor:            #9933CC;
 @warningColor:         #FF8800;
-@negativeColor, @negativeBackgroundColor:          #CC0000;
+@negativeColor:          #CC0000;
+@primaryBackgroundColor:         #2A9FD6;
+@positiveBackgroundColor:         #77B300;
+@infoBackgroundColor:            #9933CC;
+@warningBackgroundColor:         #FF8800;
+@negativeBackgroundColor:          #CC0000;
 
 @pageBackground: #060606;
 @textColor: @gray-light;
-@fontName:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@fontName:  "Roboto";
+@linkColor: #4183C4;
 @linkHoverColor: @linkColor;
 @headerFont: @fontName;
 @padding-base-vertical: 8px;
@@ -23,12 +29,21 @@
 @invertedDisabledTextColor: #aaa;
 @disabledBorderColor: @gray-dark;
 @positiveTextColor: #fff;
-@positiveBackgroundColor: @positiveColor;
 @infoTextColor: #fff;
-@infoBackgroundColor: @infoColor;
 @warningTextColor: #fff;
-@warningBackgroundColor: @warningColor;
 @warningBorderColor: darken(spin(@warningBackgroundColor, -10), 3%);
 @negativeTextColor: #fff;
-@negativeBackgroundColor: @negativeColor;
 @negativeBorderColor: darken(spin(@negativeBackgroundColor, -10), 3%);
+
+@unselectedTextColor: @gray-light;
+@hoveredTextColor:@gray-lighter;
+@pressedTextColor: @white;
+@selectedTextColor: @gray;
+
+@borderColor: @gray;
+
+@inputPlaceholderColor: @gray-lighter;
+@inputPlaceholderFocusColor: @gray-light;
+
+@disabledOpacity: 0.7;
+@lightTextColor: @gray-light;
