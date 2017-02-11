@@ -31,3 +31,11 @@
         }
     }
 }
+
+.ui.vertical.menu {
+    background-color: transparent;
+    .item > .label,
+    .item > label {
+        background-color: @gray;
+    }
+}
