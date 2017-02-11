@@ -26,3 +26,7 @@
 legend {
     color: #fff;
 }
+
+pre .code {
+    color: @gray-light !important;
+}
