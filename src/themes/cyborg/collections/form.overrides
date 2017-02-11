@@ -1,4 +1,5 @@
-.form.warning {
+.form.warning .field {
+    label,
     .label,
     .radio,
     .checkbox,
@@ -12,14 +13,13 @@
         color: @warningColor;
     }
 
-    *,
-    *:focus,
-    .input .icon {
+    .input, input {
         border: 1px solid @warningColor;
     }
 }
 
-.form.error {
+.form.error .field.error {
+    label,
     .label,
     .radio,
     .checkbox,
@@ -33,14 +33,14 @@
         color: @negativeColor;
     }
 
-    *,
-    *:focus,
-    .input .icon {
+    .input, input {
         border: 1px solid @negativeColor;
+        background-color: @white!important;
     }
 }
 
-.form.success {
+.form.success .field {
+    label,
     .label,
     .radio,
     .checkbox,
@@ -54,9 +54,34 @@
         color: @positiveColor;
     }
 
-    *,
-    *:focus,
-    .input .icon {
+    .input, input {
         border: 1px solid @positiveColor;
+    }
+}
+
+.ui.form .field {
+    border: none;
+    color: @gray-light;
+
+    label,
+    .label,
+    .radio,
+    .checkbox,
+    .inline .radio,
+    .inline .checkbox,
+    &.radio label,
+    &.checkbox label,
+    &.inline .radio label,
+    &.inline .checkbox label,
+    .icon {
+        color: @gray-light;
+    }
+
+    .input, input {
+        border: 1px solid @gray-light;
+    }
+
+    .ui.checkbox label {
+        color: @gray-light;
     }
 }
