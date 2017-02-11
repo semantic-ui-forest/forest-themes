@@ -2,4 +2,15 @@
     * {
         border: @gray-dark;
     }
+    &.piled {
+        &::after, &::before {
+            background-color: darken(@background, 5%);
+        }
+    }
+    &.stacked {
+        &::after {
+            background-color: darken(@background, 5%);
+            border: none;
+        }
+    }
 }
