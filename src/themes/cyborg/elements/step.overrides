@@ -1,0 +1,17 @@
+.ui.steps .step .title {
+    color: @titleColor;
+}
+
+.ui.ordered.steps .step:before {
+    color: @white;
+}
+
+.ui.vertical.steps .active.step:before {
+    color: @white;
+}
+
+.ui.steps .active.step {
+    .icon {
+        color: @white;
+    }
+}
