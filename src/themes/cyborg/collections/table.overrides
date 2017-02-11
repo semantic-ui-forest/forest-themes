@@ -16,3 +16,7 @@ table,
     }
 }
 
+
+.ui.table thead:not(.full-width) th:first-child {
+    box-shadow: none !important;
+}
