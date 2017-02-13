@@ -1,7 +1,7 @@
 .ui.breadcrumb {
-    background-color: @gray;
+    background-color: transparent;
     color: @textColor;
     a {
-        color: #fff;
+        color: @gray-light;
     }
 }
