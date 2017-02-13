@@ -1,0 +1,3 @@
+@backgroundColor: @gray;
+@activeBackground: @gray-dark;
+@disabledBackground: lighten(@gray, 3%);
