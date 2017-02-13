@@ -17,7 +17,8 @@ textarea {
     }
 }
 
-.form.warning {
+.form.warning .field {
+    label,
     .label,
     .radio,
     .checkbox,
@@ -31,17 +32,13 @@ textarea {
         color: @warningColor;
     }
 
-    *,
-    *:focus {
-        .box-shadow(none);
-    }
-
-    .input .icon {
-        border-color: @warningColor;
+    .input, input {
+        border: 1px solid @warningColor;
     }
 }
 
-.form.error {
+.form.error .field.error {
+    label,
     .label,
     .radio,
     .checkbox,
@@ -55,17 +52,13 @@ textarea {
         color: @negativeColor;
     }
 
-    *,
-    *:focus {
-        .box-shadow(none);
-    }
-
-    .input .icon {
-        border-color: @negativeColor;
+    .input, input {
+        border: 1px solid @negativeColor;
     }
 }
 
-.form.success {
+.form.success .field {
+    label,
     .label,
     .radio,
     .checkbox,
@@ -79,13 +72,8 @@ textarea {
         color: @positiveColor;
     }
 
-    *,
-    *:focus {
-        .box-shadow(none);
-    }
-
-    .input .icon {
-        border-color: @positiveColor;
+    .input, input {
+        border: 1px solid @positiveColor;
     }
 }
 
