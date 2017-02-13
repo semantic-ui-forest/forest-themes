@@ -21,3 +21,9 @@
 @tabularBorderColor: @gray;
 @tabularActiveColor: @positiveColor;
 @paginationActiveBackground: lighten(@positiveColor, 6%);
+@subMenuTextColor: @gray-light;
+@verticalBackground: none;
+@dropdownHoveredItemBackground: @primaryColor;
+@secondaryItemBackground: lighten(@gray-dark, 5%);
+@secondaryActiveItemBackground: @primaryColor;
+@tabularActiveBackground: @primaryColor;

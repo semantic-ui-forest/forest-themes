@@ -47,16 +47,6 @@
         }
     }
 
-    & .form {
-        * {
-            background-color: white;
-
-            &:focus {
-                border-color: white;
-            }
-        }
-    }
-
     .dropdown > a,
     .dropdown > a:hover,
     .dropdown > a:focus {
