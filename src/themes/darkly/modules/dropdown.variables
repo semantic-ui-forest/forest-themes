@@ -3,3 +3,4 @@
 @hoveredItemColor: #fff;
 @hoveredItemBackground: @primaryColor;
 @activeItemColor: #fff;
+@menuHeaderColor: @gray-base;
