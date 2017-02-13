@@ -1,5 +1,5 @@
 .ui.list {
-    background-color: @gray-dark;
+    background-color: transparent;
     border-color: @gray;
     .item:hover {
         background-color: transparent;
