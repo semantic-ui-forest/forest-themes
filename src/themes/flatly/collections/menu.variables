@@ -19,3 +19,5 @@
 @tabularBorderColor: @gray-lighter;
 @tabularActiveColor: @primaryColor;
 @paginationActiveBackground: darken(@positiveColor, 15%);
+@activeHoverItemColor: @gray-light;
+@tabularTextColor: @gray-light;

@@ -57,3 +57,12 @@
         }
     }
 }
+
+.ui.rail .ui.vertical.menu .active.item {
+    color: @gray-base;
+}
+
+.ui.vertical.menu .item,
+.ui.secondary.menu .item {
+    color: @gray-light;
+}
