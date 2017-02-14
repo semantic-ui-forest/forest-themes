@@ -11,7 +11,8 @@ input,
     }
 }
 
-.form.warning {
+.form.warning .field {
+    label,
     .label,
     .radio,
     .checkbox,
@@ -25,17 +26,13 @@ input,
         color: @warningColor;
     }
 
-    *,
-    *:focus {
-        border: 2px solid @warningColor;
-    }
-
-    .input .icon {
-        border-color: @warningColor;
+    .input, input {
+        border: 1px solid @warningColor;
     }
 }
 
-.form.error {
+.form.error .field.error {
+    label,
     .label,
     .radio,
     .checkbox,
@@ -49,17 +46,13 @@ input,
         color: @negativeColor;
     }
 
-    *,
-    *:focus {
-        border: 2px solid @negativeColor;
-    }
-
-    .input .icon {
-        border-color: @negativeColor;
+    .input, input {
+        border: 1px solid @negativeColor;
     }
 }
 
-.form.success {
+.form.success .field {
+    label,
     .label,
     .radio,
     .checkbox,
@@ -73,16 +66,14 @@ input,
         color: @positiveColor;
     }
 
-    *,
-    *:focus {
-        border: 2px solid @positiveColor;
-    }
-
-    .input .icon {
-        border-color: @positiveColor;
+    .input, input {
+        border: 1px solid @positiveColor;
     }
 }
 
+.input .icon {
+    color: @textColor;
+}
 
 .box-shadow(@shadow) {
     -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
