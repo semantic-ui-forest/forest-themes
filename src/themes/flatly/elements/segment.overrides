@@ -7,3 +7,9 @@
         color: @textColor;
     }
 }
+
+.ui.piled.segment:before,
+.ui.stacked.segment:before,
+.ui.piled.segment:after {
+    background-color: darken(@white, 5%);
+}
