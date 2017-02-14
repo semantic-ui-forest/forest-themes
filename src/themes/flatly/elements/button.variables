@@ -1,4 +1,3 @@
-@textColor: #fff;
 @backgroundColor: @gray;
 @primaryTextColor: #fff;
 @positiveTextColor: #fff;
