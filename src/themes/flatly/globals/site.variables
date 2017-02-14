@@ -11,11 +11,11 @@
 @warningColor:         #F39C12;
 @negativeColor:        #E74C3C;
 
-@textColor: @primaryColor;
-@linkColor: @positiveColor;
-@linkHoverColor: @linkColor;
-@fontName:  "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-@emSize, @fontSize: 15px;
+@textColor: #2c3e50;
+@linkColor: #19bc9c;
+@linkHoverColor: #19bc9c;
+@emSize: 15px;
+@fontSize: 15px;
 @headerFont: @fontName;
 @headerFontWeight: 400;
 @padding-base-vertical: 10px;
@@ -29,16 +29,20 @@
 @disabledTextColor: @gray-lighter;
 @disabledBorderColor: transparent;
 @positiveTextColor: #fff;
-@positiveBackgroundColor: @positiveColor;
-@positiveBorderColor: @positiveColor;
+@positiveBackgroundColor: #19bc9c;
+@positiveBorderColor: #19bc9c;
 @infoTextColor: #fff;
-@infoBackgroundColor: @infoColor;
-@infoBorderColor: @infoColor;
+@infoBackgroundColor: #3498db;
+@infoBorderColor: #3498db;
 @warningTextColor: #fff;
-@warningBackgroundColor: @warningColor;
-@warningBorderColor: @warningColor;
+@warningBackgroundColor: #f39c12;
+@warningBorderColor: #f39c12;
 @negativeTextColor: #fff;
-@negativeBackgroundColor: @negativeColor;
-@negativeBorderColor: @negativeColor;
+@negativeBackgroundColor: #e74c3c;
+@negativeBorderColor: #e74c3c;
 
 @line-height-computed:    floor((@emSize * 1.428571429)); // ~20px
+
+@selectedTextColor: @gray-base;
+@mutedTextColor: @gray-light;
+@inputPlaceholderColor: @gray-light;
