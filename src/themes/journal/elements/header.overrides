@@ -1,4 +1,0 @@
-.ui.header {
-    font-family: 'News Cycle', 'Arial Narrow Bold', sans-serif;
-    color: @gray-darker;
-}

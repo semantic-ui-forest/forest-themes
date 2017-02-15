@@ -11,10 +11,13 @@
 @warningColor:         #F5E625;
 @negativeColor:          #F57A00;
 
-@textColor: @gray;
-@fontName: Georgia, "Times New Roman", Times, serif;
-@emSize, @fontSize: 15px;
+@textColor: @gray-darker;
+@fontName: Georgia;
+@pageFont: Georgia, "Times New Roman", Times, serif;
+@emSize: 15px;
+@fontSize: 15px;
 @headerFont: "News Cycle", "Arial Narrow Bold", sans-serif;
+@googleFontName: 'News Cycle'; // Georgia, Arial, Times are not Open Source
 @headerFontWeight: 700;
 @padding-base-vertical: 8px;
 @padding-large-vertical: 14px;
