@@ -16,7 +16,7 @@
 @linkHoverColor: #19bc9c;
 @emSize: 15px;
 @fontSize: 15px;
-@headerFont: @fontName;
+@importGoogleFonts: false;
 @headerFontWeight: 400;
 @padding-base-vertical: 10px;
 @padding-base-horizontal: 15px;

@@ -23,9 +23,11 @@
 @negativeTextColor: #fff;
 @negativeBorderColor: darken(spin(@negativeBackgroundColor, -10), 3%);
 
-@emSize, @fontSize: 15px;
-@fontName: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-@headerFont: @fontName;
+@emSize: 15px;
+@fontSize: 15px;
+@fontName: "Source Sans Pro";
+@headerFont: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+@pageFont: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 @headerFontWeight: 300;
 @padding-base-vertical: 10px;
 @padding-base-horizontal: 18px;
