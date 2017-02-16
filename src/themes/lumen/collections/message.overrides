@@ -4,6 +4,8 @@
 
 .ui.message {
   .shadow();
+  border-color: rgba(0, 0, 0, 0.15);
+  border-style: solid;
 
   a {
     font-weight: normal;
