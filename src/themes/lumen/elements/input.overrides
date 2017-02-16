@@ -1,0 +1,3 @@
+.ui.labeled.input:not(.corner) .label {
+    line-height: @lineHeight;
+}

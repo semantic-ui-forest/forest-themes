@@ -1,3 +1,2 @@
-@border: darken(#f8f8f8, 6.5%);
 @placeholderColor: @gray-light;
 @lineHeight: (@line-height-computed + (@padding-base-vertical * 2) + 4);
