@@ -3,10 +3,6 @@
     box-shadow: @shadow;
 }
 
-.ui.form {
-    .box-shadow(inset 0 2px 0 rgba(0, 0, 0, 0.075));
-}
-
 label, .label {
     font-weight: normal;
 }
