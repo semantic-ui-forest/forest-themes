@@ -1,0 +1,11 @@
+.shadow (@width: 4px) {
+    border-width: 0 1px @width 1px;
+    border-style: solid;
+}
+
+.ui.card,
+.ui.cards .card {
+    border-color: rgba(0, 0, 0, 0.15);
+    .shadow();
+}
+
