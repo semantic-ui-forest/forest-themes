@@ -3,8 +3,8 @@
 }
 
 .ui.segment {
-  border: 1px solid @gray;
   .shadow();
+  border-color: rgba(0, 0, 0, 0.15);
 
   & {
     .close {
