@@ -2,7 +2,7 @@
 @positiveColor: #28B62C;
 @infoColor: #75CAEB;
 @warningColor: #FF851B;
-@negativeColor, @negativeTextColor: #FF4136;  // weird part
+@negativeColor: #ff4136;
 
 // New variables from bootstrap
 @gray-base:              #000;
@@ -24,8 +24,8 @@
 @line-height-computed: floor((@emSize * 1.428571429));
 
 @textColor: @gray;
-@linkHoverColor: @primaryColor;
-@fontName: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@linkHoverColor: #158cba;
+@fontName: "Source Sans Pro";
 
 @headerFontWeight: 400;
 
@@ -33,16 +33,16 @@
 @invertedDisabledTextColor: @gray-lighter;
 
 @positiveTextColor: #fff;
-@positiveBackgroundColor: @positiveColor;
+@positiveBackgroundColor: #28b62c;
 @positiveBorderColor: darken(@positiveBackgroundColor, 4%);
 @infoTextColor: #fff;
-@infoBackgroundColor: @infoColor;
+@infoBackgroundColor: #75caeb;
 @infoBorderColor: darken(@infoBackgroundColor, 12%);
 @warningTextColor: #fff;
-@warningBackgroundColor: @warningColor;
+@warningBackgroundColor: #ff851b;
 @warningBorderColor: darken(@warningBackgroundColor, 5%);
 @negativeTextColor: #fff;
-@negativeBackgroundColor: @negativeColor;
+@negativeBackgroundColor: #ff4136;
 @negativeBorderColor: darken(@negativeBackgroundColor, 10%);
 
-
+@borderColor: @gray-lighter;
