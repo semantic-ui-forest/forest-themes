@@ -1,5 +1,5 @@
-.shadow (@width: 4px) {
-  border-width: 0 1px @width 1px;
+.shadow(@width: 4px) {
+    border-width: 0 1px @width 1px;
 }
 
 .box-shadow(@shadow) {
@@ -23,7 +23,8 @@
 }
 
 .ui.menu {
-  .shadow();
+    .shadow();
+    border-bottom-style: solid;
 }
 
 .ui.menu {
