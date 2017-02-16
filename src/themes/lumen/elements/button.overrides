@@ -1,5 +1,6 @@
 .shadow (@width: 4px) {
     border-width: 0 1px @width 1px;
+    border-style: solid;
 }
 
 .box-shadow(@shadow) {
@@ -7,16 +8,12 @@
     box-shadow: @shadow;
 }
 
-.button {
-  border: transparent;
-}
-
-.button {
-  padding: (@padding-base-vertical + 2) @padding-base-horizontal @padding-base-vertical;
+.ui.button,
+.ui.basic.button {
   .shadow();
-  font-size: 12px;
+  border-color: rgba(0, 0, 0, 0.15); // bind border color with background color
   font-weight: bold;
-  text-transform: uppercase;
+  text-transform: @textTransform;
 
   &:hover {
     margin-top: 1px;
@@ -29,50 +26,10 @@
     .box-shadow(none);
   }
 
-  &.large,
-  &s.large > .button {
-    padding: (@padding-large-vertical + 2) @padding-large-horizontal @padding-large-vertical;
-    line-height: 15px;
-  }
-
-  &.small,
-  &s.small > .button {
-    padding: (@padding-small-vertical + 2) @padding-small-horizontal @padding-small-vertical;
-  }
-
-  &.mini,
-  &s.mini .button {
-    padding: (@padding-xs-vertical + 2) @padding-xs-horizontal @padding-xs-vertical;
-  }
-
   &:hover,
   &:focus {
     background-color: @backgroundColor;
-    border-color: darken(@backgroundColor, 5%);
-  }
-
-  &.primary:hover,
-  &.primary:focus {
-    background-color: @primaryColor;
-    border-color: darken(@primaryColor, 5%);
-  }
-
-  &.positive:hover,
-  &.positive:focus {
-    background-color: @positiveColor;
-    border-color: darken(@positiveColor, 5%);
-  }
-
-  &.sedondary:hover,
-  &.sedondary:focus {
-    background-color: @secondaryColor;
-    border-color: darken(@secondaryColor, 5%);
-  }
-
-  &.negative:hover,
-  &.negative:focus {
-    background-color: @negativeColor;
-    border-color: darken(@negativeColor, 5%);
+    border-color: rgba(0, 0, 0, 0.25);
   }
 
   &s .dropdown {
@@ -88,29 +45,9 @@
     &:active {
         margin-top: 9px
     }
-
-    &.small {
-        &:hover {
-            margin-top: 11px
-        }
-
-        &:active {
-            margin-top: 12px
-        }
-    }
-
-    &.mini {
-        &:hover {
-            margin-top: 15px
-        }
-
-        &:active {
-            margin-top: 16px
-        }
-    }
 }
 
-.vertical.buttons {
+.ui.vertical.buttons {
     .button + .button {
         &:hover {
             border-top-width: 1px;
@@ -119,5 +56,39 @@
         &:active {
             border-top-width: 2px;
         }
+    }
+}
+
+.ui.button {
+    &.mini {
+        font-size: @miniSize * 12px;
+    }
+
+    &.tiny {
+        font-size: @tinySize * 12px;
+    }
+
+    &.small {
+        font-size: @smallSize * 12px;
+    }
+
+    & {
+        font-size: @mediumSize * 12px;
+    }
+
+    &.large {
+        font-size: @largeSize * 12px;
+    }
+
+    &.big {
+        font-size: @bigSize * 12px;
+    }
+
+    &.huge {
+        font-size: @hugeSize * 12px;
+    }
+
+    &.massive {
+        font-size: @massiveSize * 12px;
     }
 }

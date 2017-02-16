@@ -1,2 +1,4 @@
 @textColor: @gray;
 @backgroundColor: @gray-lighter;
+@verticalPadding: @inputVerticalPadding * 1.2;
+@textTransform: uppercase;
