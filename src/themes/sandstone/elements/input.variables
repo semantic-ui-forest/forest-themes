@@ -1,3 +1,2 @@
-@border: @gray-light;
 @focusBorderColor: transparent;
 @placeholderColor: @gray-light;
