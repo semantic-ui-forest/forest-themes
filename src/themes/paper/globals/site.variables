@@ -6,21 +6,25 @@
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
 @primaryColor: #2196F3;
-@positiveColor, @positiveTextColor: #4CAF50;
-@infoColor, @infoTextColor: #9C27B0;
-@warningColor, @warningTextClor: #ff9800;
-@negativeColor, @negativeTextColor: #e51c23;
+@positiveColor: #4CAF50;
+@positiveTextColor: #4CAF50;
+@infoColor: #9C27B0;
+@infoTextColor: #9C27B0;
+@warningColor: #ff9800;
+@warningTextClor: #ff9800;
+@negativeColor: #e51c23;
+@negativeTextColor: #e51c23;
 
 @textcolor: @gray;
-@fontName: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@fontName: "Roboto";
 @emSize: 13px;
 @fontSize: 13px;
 
-@h1: 56px;
-@h2: 45px;
-@h3: 34px;
-@h4: 24px;
-@h5: 20px;
+@h1: 56 / 13;
+@h2: 45 / 13;
+@h3: 34 / 13;
+@h4: 24 / 13;
+@h5: 20 / 13;
 
 @lineHeight: 1.846;
 
