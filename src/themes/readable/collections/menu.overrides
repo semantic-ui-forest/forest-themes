@@ -33,7 +33,6 @@
 }
 
 .ui.menu {
-    font-family: @fontName;
 
     &,
     & .form,
@@ -47,7 +46,6 @@
         @margin-vertical: ((@minHeight - 2*@padding-base-vertical - @line-height-computed - 2px) / 2);
         margin: @margin-vertical 6px;
         padding: @padding-base-vertical @padding-base-horizontal;
-        border: 1px solid transparent;
         border-radius: 4px;
 
         &:hover {
