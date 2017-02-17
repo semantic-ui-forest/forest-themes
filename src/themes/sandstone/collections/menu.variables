@@ -7,7 +7,7 @@
 @activeItemTextColor: #fff;
 @activeItemBackground: darken(@gray-darker, 2%);
 @labelTextColor: #fff;
-@labelBackground: #fff;
+@labelBackground: #000;
 @pressedItemBackground: darken(@gray-darker, 2%);
 @invertedItemTextColor: @gray-light;
 @invertedBackground: @positiveColor;
@@ -18,3 +18,5 @@
 @tabularBorderColor: @gray-light;
 @paginationActiveTextColor: @gray-dark;
 @paginationActiveBackground: @gray-light;
+@itemTextTransform: uppercase;
+@activeHoverItemColor: @gray-light;

@@ -89,3 +89,7 @@
         }
     }
 }
+
+.ui.rail .ui.vertical.menu .item .menu .active.item {
+    color: @gray-darker;
+}
