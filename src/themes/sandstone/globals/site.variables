@@ -5,14 +5,18 @@
 @gray-light:             #DFD7CA;
 @gray-lighter:           #F8F5F0;
 
-@primaryColor:         #325D88;
-@positiveColor, @positiveTextColor:         #93C54B;
-@infoColor, @infoTextColor:            #29ABE0;
-@warningColor, @warningTextColor:         #F47C3C;
-@negativeColor, @negativeTextColor:          #d9534f;
+@primaryColor:           #325D88;
+@positiveColor:          #93C54B;
+@positiveTextColor:      #93C54B;
+@infoColor:              #29ABE0;
+@infoTextColor:          #29ABE0;
+@warningColor:           #F47C3C;
+@warningTextColor:       #F47C3C;
+@negativeColor:          #d9534f;
+@negativeTextColor:      #d9534f;
 
 @textColor: #3E3F3A;
-@fontName:  "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@fontName:  "Roboto";
 @linkColor: @positiveColor;
 @linkHoverColor: darken(@linkColor, 10%);
 @headerFontWeight: 400;
@@ -23,3 +27,4 @@
 @inputColor: @textColor;
 @disabledBorderColor: @gray-light;
 @mutedTextColor: @gray;
+@inputPlaceholderColor: @gray-light;
