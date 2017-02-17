@@ -1,2 +1,5 @@
 @textColor: #fff;
 @backgroundColor: @gray-darker;
+@basicTextColor: #000;
+@textTransform: uppercase;
+@basicTextTransform: uppercase;
