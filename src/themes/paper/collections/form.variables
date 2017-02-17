@@ -1,0 +1,1 @@
+@formErrorColor: darken(@negativeColor, 20%);
