@@ -2,14 +2,9 @@
     font-size: 11px;
     line-height: 22px;
     font-weight: 500;
-    text-transform: uppercase;
 }
 
 .ui.segment {
-    * {
-        border: @gray-light;
-    }
-
     .box-shadow(none);
 
     > .header,
