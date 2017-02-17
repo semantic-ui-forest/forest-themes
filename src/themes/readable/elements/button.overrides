@@ -1,5 +1,4 @@
 .ui.button {
-    font-family: @fontName;
     border: #ddd;
     &.primary {
         border: @primaryColor;
