@@ -1,5 +1,4 @@
-.label {
-    font-family: @fontName;
+label, .label {
     font-weight: normal;
 
     border: 1px solid #ddd;
@@ -7,4 +6,12 @@
 
     padding: 1px 7px 5px;
     vertical-align: 2px;
+}
+
+.ui.corner.label {
+    border-color: @gray-lighter;
+    border-width: 1px 1px 0 0;
+    &.left {
+        border-width: 1px 0 0 1px;
+    }
 }
