@@ -6,15 +6,23 @@
 @gray-lighter:           lighten(@gray-base, 93.5%); // #eee
 
 @primaryColor: #4582EC;
-@positiveColor, @positiveTextColor, @positiveBorderColor: #3FAD46;
-@infoColor, @infoTextColor, @infoBorderColor: #5bc0de;
-@warningColor, @warningTextColor, @warningBorderColor: #f0ad4e;
-@negativeColor, @negativeTextColor, @negativeBorderColor: #d9534f;
+@positiveColor: #3FAD46;
+@positiveTextColor: #3FAD46;
+@positiveBorderColor: #3FAD46;
+@infoColor: #5bc0de;
+@infoTextColor: #5bc0de;
+@infoBorderColor: #5bc0de;
+@warningColor: #f0ad4e;
+@warningTextColor: #f0ad4e;
+@warningBorderColor: #f0ad4e;
+@negativeColor: #d9534f;
+@negativeTextColor: #d9534f;
+@negativeBorderColor: #d9534f;
 
+@fontName: "Raleway";
 @linkHoverColor: darken(@linkColor, 20%);
-@fontName: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
-@emSize, @fontSize: 16px;
-@headerFont: @fontName;
+@emSize: 16px;
+@fontSize: 16px;
 @headerFontWeight: bold;
 @inputColor: @textColor;
 @disabledTextColor: #333;
