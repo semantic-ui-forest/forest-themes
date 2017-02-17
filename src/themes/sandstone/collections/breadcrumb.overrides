@@ -1,14 +1,19 @@
 .ui.breadcrumb {
     background-color: @gray-lighter;
     color: @gray-light;
+    padding: 0.5em;
 
     .sandstone;
 
     border: 1px solid @gray-light;
 
     a {
-        color: @gray;
+        color: @gray-light;
     }
+
+   .active {
+       color: @gray-dark;
+   }
 }
 
 .sandstone {
