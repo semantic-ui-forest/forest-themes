@@ -1,5 +1,5 @@
-@backgroundColor: @gray-darker;
 @backgroundColor: @positiveColor;
 @labelActiveTextColor: #fff;
 @labelActiveBackgroundColor: @positiveColor;
 @fontWeight: normal;
+@color: @white;
