@@ -3,10 +3,6 @@ textarea {
   color: @inputColor;
 }
 
-.ui.form {
-  background: #272b30;
-}
-
 .form.warning {
   .label,
   .radio,
@@ -83,8 +79,14 @@ legend {
   color: #fff;
 }
 
-.input .icon {
+.ui.labeled.input:not(.corner) .label {
   .button-shadow(@gray-dark);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.ui.input .button {
+  .button-shadow(@primaryColor);
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
   color: #fff;
 }
