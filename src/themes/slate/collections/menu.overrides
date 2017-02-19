@@ -19,7 +19,7 @@
 }
 
 
-.pagination.menu {
+.ui.pagination.menu {
     & > a,
     & > .item {
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
@@ -50,7 +50,7 @@
   }
 }
 
-.menu {
+.ui.menu {
   &,
   &.inverted {
     border: 1px solid rgba(0, 0, 0, 0.6);
@@ -111,12 +111,10 @@
   &.secondary {
       & > a {
           .button-shadow(@gray-dark);
-          border: 1px solid rgba(0, 0, 0, 0.6);
           text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 
           &:hover {
               .button-shadow-inverse(@gray-dark);
-              border: 1px solid rgba(0, 0, 0, 0.6);
           }
       }
 
@@ -124,7 +122,6 @@
       & > a.active:hover {
           background-color: none;
           .button-shadow-inverse(@gray-dark);
-          border: 1px solid rgba(0, 0, 0, 0.6);
       }
 
       & > a.disabled,

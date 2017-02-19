@@ -1,4 +1,3 @@
-@itemTextColor: @textColor;
 @background: @gray-dark;
 @itemTextColor: @textColor;
 @hoverItemTextColor: #fff;
@@ -18,3 +17,12 @@
 @tabularActiveBackground: lighten(@pageBackground, 10%);
 @tabularActiveColor: #fff;
 @paginationActiveBackground: darken(@gray-dark, 10%);
+@dropdownBackground: @gray-dark;
+@dropdownHoveredItemBackground: @gray-darker;
+@subMenuTextColor: @gray-light;
+@activeHoverItemBackground: @gray-dark;
+@labelBackground: @gray;
+@verticalBackground: @gray;
+@secondaryPointingActiveBorderColor: @gray-light;
+@secondaryActiveItemBackground: darken(@gray-darker, 5%);
+@secondaryPointingActiveBorderColor: @white;
