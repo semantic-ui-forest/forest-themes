@@ -1,4 +1,4 @@
-table, .table {
+.ui.table {
 
   .positive,
   .warning,
@@ -20,6 +20,6 @@ table, .table {
     }
 }
 
-.table.stackable {
+.ui.table.stackable {
   background-color: @lighten(@pageBackground, 3%);
 }
