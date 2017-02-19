@@ -28,3 +28,8 @@ h1, h2, h3, h4, h5, h6, .ui.header {
 .text.info:hover {
     color: @infoColor;
 }
+
+// code color
+pre .code {
+    color: @gray-light !important;
+}
