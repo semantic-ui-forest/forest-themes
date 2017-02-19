@@ -33,13 +33,13 @@
   }
 }
 
-.button,
-.button:hover {
+.ui.button,
+.ui.button:hover {
     border-color: rgba(0, 0, 0, 0.6);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-.button {
+.ui.button {
     .button-shadow(@gray-dark);
 
     &:hover {
@@ -47,7 +47,7 @@
     }
 }
 
-.button.primary {
+.ui.button.primary {
     .button-shadow(@primaryColor);
 
     &:hover {
@@ -55,7 +55,7 @@
     }
 }
 
-.button.positive {
+.ui.button.positive {
     .button-shadow(@positiveColor);
 
     &:hover {
@@ -63,7 +63,7 @@
     }
 }
 
-.button.info {
+.ui.button.info {
     .button-shadow(@infoColor);
 
     &:hover {
@@ -71,7 +71,7 @@
     }
 }
 
-.button.warning {
+.ui.button.warning {
     .button-shadow(@warningColor);
 
     &:hover {
@@ -79,7 +79,7 @@
     }
 }
 
-.button.negative {
+.ui.button.negative {
     .button-shadow(@negativeColor);
 
     &:hover {
@@ -87,7 +87,7 @@
     }
 }
 
-.button a,
-.button a:hover {
+.ui.button a,
+.ui.button a:hover {
     border-color: transparent;
 }
