@@ -1,10 +1,23 @@
-.breadcrumb {
-  background-color: #f5f5f5;
-  border: 1px solid rgba(0, 0, 0, 0.6);
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-  .button-shadow(@gray-dark);
-}
+.ui.breadcrumb {
+    border: 1px solid rgba(0, 0, 0, 0.6);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    .button-shadow(@gray-dark);
+    padding: 0.6em;
 
+    color: @gray-light;
+    a {
+        color: @gray-light;
+    }
+    .divider {
+        color: @gray-light;
+    }
+    .active.section {
+        color: darken(@white, 10%);
+        &:hover {
+            color: darken(@white, 20%);
+        }
+    }
+}
 
 #gradient {
     .vertical-three-colors(@start-color: #00b3ee; @mid-color: #7a43b6; @color-stop: 50%; @end-color: #c3325f) {
