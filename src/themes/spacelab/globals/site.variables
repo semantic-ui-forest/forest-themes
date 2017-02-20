@@ -9,13 +9,13 @@
 @positiveColor:        #3CB521;
 @infoColor:            #3399F3;
 @warningColor:         #D47500;
-@negativeColor, @negativeTextColor:        #CD0200;
+@negativeColor:        #CD0200;
+@negativeTextColor:    #CD0200;
 
-@fontName: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@fontName: "Open Sans";
 @textColor: @gray;
 @linkColor: @infoColor;
 @linkHoverColor: @linkColor;
-@headerFont: @fontName;
 @padding-base-vertical: 8px;
 @padding-large-vertical: 14px;
 @inputColor: @textColor;
