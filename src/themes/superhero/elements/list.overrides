@@ -1,5 +1,5 @@
 .ui.list {
-    background-color: @gray-light;
+    background-color: transparent;
     border-color: transparent;
     .item:hover {
         background-color: darken(@gray-light, 3%);
