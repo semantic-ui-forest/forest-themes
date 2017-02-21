@@ -1,0 +1,1 @@
+@inactiveColor: lighten(@primaryColor, 5%);
