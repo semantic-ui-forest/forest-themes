@@ -1,7 +1,21 @@
-.ui.segment * {
+.ui.segment {
     border: none;
 
     > .header {
         color: @textColor;
+    }
+
+    &.piled {
+        &::after, &::before {
+            background-color: lighten(@background, 10%);
+        }
+    }
+    &.stacked {
+        &::after {
+            background-color: lighten(@background, 10%);
+        }
+    }
+    &.attached {
+        border-top: @borderWidth solid @solidBorderColor !important;
     }
 }
