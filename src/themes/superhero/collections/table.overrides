@@ -1,5 +1,5 @@
 table,
-.table {
+.ui.table {
   font-size: 12px;
 
   a:not(.button) {
@@ -20,4 +20,3 @@ table,
     border-color: transparent;
   }
 }
- 

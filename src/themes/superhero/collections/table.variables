@@ -1,5 +1,12 @@
-@cellVerticalPadding, @cellHorizontalPadding: 6px;
-@compactVerticalPadding, @compactHorizontalPadding: 3px;
-@stripedBackground: @gray-light;
-@activeBackgroundHover: darken(@gray-light, 3%);
+@cellVerticalPadding: 6px;
+@cellHorizontalPadding: 6px;
+@compactVerticalPadding: 3px;
+@compactHorizontalPadding: 3px;
+@stripedBackground: lighten(@pageBackground, 3%);
+@activeBackgroundHover: darken(@pageBackground, 3%);
+@activeBackgroundColor: darken(@pageBackground, 5%);
 @border: @gray-light;
+@background: lighten(@pageBackground, 5%);
+@headerBackground: darken(@pageBackground, 5%);
+@footerBackground: darken(@pageBackground, 3%);
+@definitionPageBackground: transparent;
