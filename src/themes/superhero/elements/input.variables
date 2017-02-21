@@ -1,3 +1,4 @@
 @border: transparent;
 @focusBorderColor: transparent;
 @placeholderColor: #ccc;
+@borderWidth: 0;
