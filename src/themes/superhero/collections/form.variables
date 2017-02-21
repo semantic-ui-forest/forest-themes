@@ -1,0 +1,2 @@
+@selectColor: @gray-light;
+@formErrorColor: @gray-light;
