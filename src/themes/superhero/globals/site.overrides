@@ -22,3 +22,7 @@
 .text.info:hover {
     color: @infoColor;
 }
+
+pre .code {
+    color: darken(@gray-lighter, 5%) !important;
+}
