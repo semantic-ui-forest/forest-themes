@@ -8,12 +8,9 @@
 
 .ui.menu {
 
-    & {
-
-        .label {
-            background-color: #fff;
-            color: @primaryColor;
-        }
+    .label {
+        background-color: #fff;
+        color: @primaryColor;
     }
 
     &.inverted {
@@ -23,18 +20,21 @@
             color: @infoColor;
         }
     }
+
+    &.secondary .item {
+        color: @gray-light;
+    }
 }
+
+@media (max-width: 767px) {
+
+    .ui.menu {
+
+        .dropdown {
+            a,
+            .item {
+                color: #fff;
+            }
+        }
+    }
 }
-
- @media (max-width: 767px) {
-
-     .ui.menu {
-
-         .dropdown {
-             a,
-             .item {
-                 color: #fff;
-             }
-         }
-     }
- }
