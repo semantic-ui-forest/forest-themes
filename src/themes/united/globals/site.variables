@@ -9,10 +9,10 @@
 @positiveColor:        #38B44A;
 @infoColor:            #772953;
 @warningColor:         #EFB73E;
-@negativeColor, @negativeTextColor:        #DF382C;
+@negativeColor:        #df382c;
+@negativeTextColor:    #DF382C;
 
-@fontName: "Ubuntu", Tahoma, "Helvetica Neue", Helvetica, Arial, sans-serif;
-@headerFont: @fontName;
+@fontName: "Ubuntu";
 @padding-base-vertical: 8px;
 @padding-large-vertical: 14px;
 @inputColor: @textColor;
@@ -23,3 +23,5 @@
 @warningBorderColor: darken(spin(@warningBackgroundColor, -10), 3%);
 @negativeTextColor: #b94a48;
 @negativeBorderColor: darken(spin(@negativeBackgroundColor, -10), 3%);
+
+@mutedTextColor: @gray-light;
