@@ -1,0 +1,2 @@
+@valueColor: @white;
+@labelColor: darken(@white, 15%);
