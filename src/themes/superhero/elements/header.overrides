@@ -3,7 +3,3 @@ h1, h2, h3, h4, h5, h6 {
         border-bottom-color: @gray-light;
     }
 }
-
-.header {
-    background-color: @pageBackground;
-}
