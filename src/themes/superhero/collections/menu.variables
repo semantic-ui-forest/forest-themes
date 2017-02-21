@@ -1,13 +1,10 @@
 @minHeight: 40px;
-@itemTextColor: @textColor;
 @background: @gray-light;
 @border: transparent;
 @itemTextColor: @textColor;
-@hoverItemTextColor: @textColor;
-@hoverItemBackground: darken(@gray-light, 3%);
+@hoverItemTextColor: lighten(@textColor, 5%);
 @activeItemTextColor: @textColor;
-@activeItemBackground: darken(@gray-light, 3%);
-@labelBackground: @textColor;
+@activeItemBackground: darken(@pageBackground, 3%);
 @pressedItemBackground: darken(@gray-light, 3%);
 @invertedItemTextColor: @textColor;
 @invertedBackground: @primaryColor;
@@ -22,3 +19,11 @@
 @tabularBorderColor: transparent;
 @tabularActiveColor: @textColor;
 @paginationActiveTextColor: @textColor;
+@dropdownBackground: @gray-dark;
+@dropdownHoveredItemBackground: @gray-darker;
+@subMenuTextColor: lighten(@gray-light, 10%);
+@activeHoverItemBackground: @gray-dark;
+@labelBackground: @primaryColor;
+@verticalBackground: transparent;
+@tabularActiveBackground: darken(@pageBackground, 5%);
+@secondaryActiveItemBackground: darken(@pageBackground, 10%);
