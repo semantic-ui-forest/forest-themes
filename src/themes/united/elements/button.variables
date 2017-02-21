@@ -3,3 +3,4 @@
 @primaryTextColor: #fff;
 @positiveTextColor: #fff;
 @negativeTextColor: #fff;
+@basicTextColor: @gray-dark;
