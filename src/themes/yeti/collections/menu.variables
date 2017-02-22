@@ -6,7 +6,7 @@
 @hoverItemBackground: #272727;
 @activeItemTextColor: #fff;
 @activeItemBackground: #272727;
-@labelBackground: #fff;
+@labelBackground: @gray;
 @pressedItemBackground: transparent;
 @invertedItemTextColor: #fff;
 @invertedBackground: @primaryColor;
@@ -15,3 +15,13 @@
 @invertedActiveColor: #fff;
 @invertedMenuPressedBackground: transparent;
 @tabularBorderColor: #ddd;
+@activeHoverItemColor: @gray-lighter;
+@dropdownBackground: @gray-dark;
+@dropdownItemColor: @gray-lighter;
+@dropdownHoveredItemBackground: @gray-darker;
+@dropdownHoveredItemColor: @white;
+@subMenuTextColor: lighten(@gray-light, 10%);
+@subMenuActiveTextColor: @gray-dark;
+@verticalItemBackground: @gray-dark;
+@activeHoverItemBackground: lighten(#272727, 5%);
+@tabularTextColor: @gray;

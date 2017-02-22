@@ -45,10 +45,6 @@
     font-size: 13px;
     font-weight: 300;
 
-    .dropdown:hover .icon {
-        background-color: #b3b3b3;
-    }
-
     .dropdown {
         border-top-color:  rgba(0,0,0,.2);
         .box-shadow(none);
@@ -59,16 +55,7 @@
         padding-bottom: 6px;
     }
 
-    .input {
-        margin-top: 7px;
-        margin-bottom: 5px;
-
-        height: auto;
-        padding: @padding-xs-vertical @padding-xs-horizontal;
-    }
-
     .dropdown {
-        background-color: @gray-dark;
         border: none;
 
         > a,
@@ -124,7 +111,12 @@
 
     }
 
-    &.secondary {
+    &.secondary .item {
         font-weight: 300;
+        color: @gray;
     }
+}
+
+.ui.accordion.vertical.menu .item {
+    background: transparent;
 }
