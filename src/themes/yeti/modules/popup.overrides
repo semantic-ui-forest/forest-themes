@@ -1,9 +1,4 @@
-.ui.popup .header {
-  background-color: @gray-dark;
-}
-
 .ui.popup {
-  color: #fff;
-  font-size: 12px;
-  font-weight: 300;
+    font-size: 12px;
+    font-weight: 300;
 }
