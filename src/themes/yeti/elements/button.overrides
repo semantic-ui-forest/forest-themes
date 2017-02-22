@@ -1,109 +1,96 @@
 .ui.button {
-  padding: @padding-base-vertical @padding-base-horizontal;
-
-  &.large {
-    padding: @padding-large-vertical @padding-large-horizontal;
-  }
-
-  &.small {
-    padding: @padding-small-vertical @padding-small-horizontal;
-  }
-
-  &.mini {
-    padding: @padding-xs-vertical @padding-xs-horizontal;
-  }
+    padding: @padding-base-vertical @padding-base-horizontal !important;
 }
 
-.buttons {
+.ui.buttons {
 
-  .button ~ .dropdown {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-
-  .dropdown.menu {
-    border-top-width: 0;
-  }
-
-  .dropdown {
-
-    .button ~ .dropdown.menu {
-      background-color: #e7e7e7;
-      border-color: #ccc;
-
-      > a {
-        color: @gray-dark;
-      }
-
-      > a:hover {
-        background-color: darken(#e7e7e7, 8%);
-      }
+    .button ~ .dropdown {
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
-    .primary.button ~ .dropdown.menu {
-      background-color: @primaryColor;
-      border-color: darken(@primaryColor, 5%);
-
-      > a {
-        color: #fff;
-      }
-
-      > a:hover {
-        background-color: darken(@primaryColor, 8%);
-      }
+    .dropdown.menu {
+        border-top-width: 0;
     }
 
-    .positive.button ~ .dropdown.menu {
-      background-color: @positiveColor;
-      border-color: darken(@positiveColor, 5%);
+    .dropdown {
 
-      > a {
-        color: #fff;
-      }
+        .button ~ .dropdown.menu {
+            background-color: #e7e7e7;
+            border-color: #ccc;
 
-      > a:hover {
-        background-color: darken(@positiveColor, 8%);
-      }
+            > a {
+                color: @gray-dark;
+            }
+
+            > a:hover {
+                background-color: darken(#e7e7e7, 8%);
+            }
+        }
+
+        .primary.button ~ .dropdown.menu {
+            background-color: @primaryColor;
+            border-color: darken(@primaryColor, 5%);
+
+            > a {
+                color: #fff;
+            }
+
+            > a:hover {
+                background-color: darken(@primaryColor, 8%);
+            }
+        }
+
+        .positive.button ~ .dropdown.menu {
+            background-color: @positiveColor;
+            border-color: darken(@positiveColor, 5%);
+
+            > a {
+                color: #fff;
+            }
+
+            > a:hover {
+                background-color: darken(@positiveColor, 8%);
+            }
+        }
+
+        .info.button ~ .dropdown.menu {
+            background-color: @infoColor;
+            border-color: darken(@infoColor, 5%);
+
+            > a {
+                color: #fff;
+            }
+
+            > a:hover {
+                background-color: darken(@infoColor, 8%);
+            }
+        }
+
+        .warning.button ~ .dropdown.menu {
+            background-color: @warningColor;
+            border-color: darken(@warningColor, 5%);
+
+            > a {
+                color: #fff;
+            }
+
+            > a:hover {
+                background-color: darken(@warningColor, 8%);
+            }
+        }
+
+        .negative.button ~ .dropdown.menu {
+            background-color: @negativeColor;
+            border-color: darken(@negativeColor, 5%);
+
+            > a {
+                color: #fff;
+            }
+
+            > a:hover {
+                background-color: darken(@negativeColor, 8%);
+            }
+        }
     }
-
-    .info.button ~ .dropdown.menu {
-      background-color: @infoColor;
-      border-color: darken(@infoColor, 5%);
-
-      > a {
-        color: #fff;
-      }
-
-      > a:hover {
-        background-color: darken(@infoColor, 8%);
-      }
-    }
-
-    .warning.button ~ .dropdown.menu {
-      background-color: @warningColor;
-      border-color: darken(@warningColor, 5%);
-
-      > a {
-        color: #fff;
-      }
-
-      > a:hover {
-        background-color: darken(@warningColor, 8%);
-      }
-    }
-
-    .negative.button ~ .dropdown.menu {
-      background-color: @negativeColor;
-      border-color: darken(@negativeColor, 5%);
-
-      > a {
-        color: #fff;
-      }
-
-      > a:hover {
-        background-color: darken(@negativeColor, 8%);
-      }
-    }
-  }
 }
-
