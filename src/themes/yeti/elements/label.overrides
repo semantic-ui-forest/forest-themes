@@ -1,10 +1,8 @@
-label, .label {
+.ui.label {
   font-size: 12px;
   padding-left: 1em;
   padding-right: 1em;
   border-radius: 0;
   font-weight: 300;
-
-  background-color: #e7e7e7;
   color: @gray-dark;
 }
