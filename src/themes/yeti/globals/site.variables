@@ -13,10 +13,10 @@
 
 @textColor: @gray-darker;
 @linkHoverColor: @linkColor;
-@fontName:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-@emSize, @fontSize: 15px;
+@fontName:  "Open Sans";
+@emSize: 15px;
+@fontSize: 15px;
 @lineHeight: 1.4;
-@headerFont: @fontName;
 @headerFontWeight: 300;
 @padding-base-vertical: 8px;
 @padding-base-horizontal:   12px;
