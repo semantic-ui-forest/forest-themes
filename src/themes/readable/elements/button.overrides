@@ -1,5 +1,5 @@
 .ui.button {
-    border: #ddd;
+    border: 1px solid #ddd;
     &.primary {
         border: @primaryColor;
     }
@@ -9,4 +9,8 @@
     &.negative {
         border: @negativeColor;
     }
+}
+
+.ui.buttons .button:first-child {
+    border-left: 1px solid #ddd;
 }
