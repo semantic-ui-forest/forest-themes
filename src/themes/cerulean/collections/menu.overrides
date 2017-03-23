@@ -55,7 +55,7 @@
 
     &.vertical:not(.accordion), &.tabular, &.secondary {
         .item {
-            color: @secondaryItemColor;
+            color: lighten(black, 10%);
             .label, label {
                 color: @secondaryItemColor;
             }

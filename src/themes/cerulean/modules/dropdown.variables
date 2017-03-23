@@ -1,3 +1,4 @@
 @hoveredItemColor: #fff;
 @hoveredItemBackground: @primaryColor;
 @activeItemColor: #fff;
+@selectionTextUnderlayColor: lighten(black, 10%);
