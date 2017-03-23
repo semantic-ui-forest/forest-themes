@@ -8,7 +8,7 @@
 @labelBackground: #fff;
 @pressedItemBackground: darken(@gray-darker, 10%);
 @invertedItemTextColor: #fff;
-@invertedBackground: @primaryColor;
+@invertedBackground: @gray-darker;
 @invertedItemTextColor: #fff;
 @invertedHoverBackground: darken(@primaryColor, 10%);
 @invertedActiveBackground: none;
