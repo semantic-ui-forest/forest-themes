@@ -1,4 +1,9 @@
-label,
-.label {
+.ui.label {
     border-radius: 0;
+    i.close.icon {
+        color: white !important;
+    }
+    &:hover .close.icon {
+        color: @gray-darker !important;
+    }
 } 

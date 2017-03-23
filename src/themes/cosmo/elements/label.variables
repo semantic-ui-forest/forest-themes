@@ -1,2 +1,3 @@
 @backgroundColor: @gray-darker;
 @color: @white;
+@ribbonShadowColor: @gray;
