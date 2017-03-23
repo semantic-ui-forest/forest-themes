@@ -14,3 +14,5 @@
 @invertedActiveColor: @textColor;
 @invertedActiveBackground: transparent;
 @invertedMenuPressedBackground: #ddd;
+@dividerSize: 0;
+@arrowBorder: 2px solid @gray;

@@ -32,36 +32,24 @@
 
 }
 
-.ui.menu {
+.ui.menu:not(.pointing) {
 
-    &,
-    & .form,
-    & .input {
+    .form,
+    .input {
         margin-left: 0;
         margin-right: 0;
     }
 
-    & > a,
-    & > .item {
+    > a,
+    > .item {
         @margin-vertical: ((@minHeight - 2*@padding-base-vertical - @line-height-computed - 2px) / 2);
-        margin: @margin-vertical 6px;
+        margin: @margin-vertical 0px;
         padding: @padding-base-vertical @padding-base-horizontal;
-        border-radius: 4px;
-
-        &:hover {
-            border: 1px solid #ddd;
-        }
+        border-radius: 4px !important;
     }
 
-    & > a.active,
-    & > .item.active,
-    & > a.active:hover, 
-    & > .item.active:hover {
-        border: 1px solid #ddd;
-    }
-
-    & > .active > a:hover,
-    & > .active > .item:hover {
+    > .active > a:hover,
+    > .active > .item:hover {
         color: @linkColor;
     }
 
@@ -75,6 +63,18 @@
     .dropdown > a:focus {
         border: 1px solid #ddd;
     }
+}
+
+.ui.item.menu:not(.pointing) {
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+    .active.item {
+        border: 1px solid  #ddd;
+    }
+}
+
+.ui.vertical.menu .item {
+    border: none;
 }
 
 @media (min-width: 768px) {
