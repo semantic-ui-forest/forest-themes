@@ -1,1 +1,2 @@
 @placeholderColor: @gray-light;
+@focusColor: @black;
