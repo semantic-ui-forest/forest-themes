@@ -58,3 +58,8 @@
         .button-shadow(@negativeColor);
     }
 }
+
+.ui.inverted.button:focus,
+.ui.inverted.button:hover {
+    background-color: @gray-darker;
+}

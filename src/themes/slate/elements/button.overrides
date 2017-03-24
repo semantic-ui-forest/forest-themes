@@ -91,3 +91,8 @@
 .ui.button a:hover {
     border-color: transparent;
 }
+
+.ui.inverted.button:focus,
+.ui.inverted.button:hover {
+    background-color: @gray-base;
+}

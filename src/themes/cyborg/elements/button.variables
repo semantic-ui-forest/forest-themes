@@ -3,3 +3,5 @@
 @primaryTextColor: #fff;
 @positiveTextColor: #fff;
 @negativeTextColor: #fff;
+@hoverColor: @gray-dark;
+@focusColor: @gray-dark;

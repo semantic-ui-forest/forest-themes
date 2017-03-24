@@ -2,3 +2,5 @@
 @backgroundColor: @gray;
 @positiveTextColor: #fff;
 @negativeTextColor: #fff;
+@hoverColor: @gray-base;
+@focusColor: @gray-base;

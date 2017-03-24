@@ -6,3 +6,8 @@
     margin-top: auto;
     top: 45%;
 }
+
+.ui.inverted.button:focus,
+.ui.inverted.button:hover {
+    background-color: black;
+}
