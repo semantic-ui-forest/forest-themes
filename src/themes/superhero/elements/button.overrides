@@ -20,6 +20,11 @@
     .box-shadow(none);
 }
 
+.ui.inverted.button:focus,
+.ui.inverted.button:hover {
+    background-color: @gray-dark;
+}
+
 .box-shadow(@shadow) {
     -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
     box-shadow: @shadow;
