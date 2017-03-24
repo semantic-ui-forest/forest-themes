@@ -1,1 +1,2 @@
 @backgroundColor: @primaryColor;
+@ribbonShadowColor: @primaryColor;

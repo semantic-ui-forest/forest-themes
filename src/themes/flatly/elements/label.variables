@@ -1,3 +1,4 @@
 @backgroundColor: @primaryColor;
 @labelActiveTextColor: @primaryColor;
 @verticalAlign: middle!important;
+@ribbonShadowColor: @primaryColor;
