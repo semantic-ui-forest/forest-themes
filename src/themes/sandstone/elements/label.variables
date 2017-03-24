@@ -3,3 +3,4 @@
 @labelActiveBackgroundColor: @positiveColor;
 @fontWeight: normal;
 @color: @white;
+@ribbonShadowColor: @positiveColor;
