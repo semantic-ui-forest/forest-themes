@@ -1,24 +1,19 @@
 .ui.breadcrumb {
     background-color: @gray-lighter;
-    color: @gray-light;
     padding: 0.5em;
+    border-radius: 4px;
 
-    .sandstone;
-
-    border: 1px solid @gray-light;
-
-    a {
-        color: @gray-light;
-    }
-
-   .active {
-       color: @gray-dark;
-   }
-}
-
-.sandstone {
     font-size: 11px;
     line-height: 22px;
     font-weight: 500;
     text-transform: uppercase;
+
+    border: 1px solid @gray-light;
+
+    .active.section {
+        color: darken(@linkColor, 10%);
+        &:hover {
+            color: darken(@linkHoverColor, 10%);
+        }
+    }
 }
