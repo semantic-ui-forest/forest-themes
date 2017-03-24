@@ -87,9 +87,32 @@
         > .item.disabled {
             border-color: transparent;
         }
+
+    }
+
+    &.vertical:not(.pointing) {
+        .item:first-child {
+            border-top: 1px solid #ddd;
+        }
+        i.icon {
+            color: @gray-light;
+            &.dropdown {
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+        }
     }
 }
 
-.ui.rail .ui.vertical.menu .item .menu .active.item {
-    color: @gray-darker;
+.ui.secondary.pointing.menu {
+    .active.item {
+        border-width: 0 0 @secondaryPointingBorderWidth 0;
+    }
+    &.vertical .active.item {
+        border-width: 0 @secondaryPointingBorderWidth 0 0;
+    }
+}
+
+.ui.rail .ui.vertical.menu .item {
+    border: none;
 }

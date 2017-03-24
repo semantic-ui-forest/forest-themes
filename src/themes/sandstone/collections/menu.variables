@@ -2,15 +2,14 @@
 @itemTextColor: @gray-dark;
 @background: @gray-darker;
 @border: @gray-darker;
-@itemTextColor: @gray;
 @hoverItemTextColor: #fff;
 @activeItemTextColor: #fff;
-@activeItemBackground: darken(@gray-darker, 2%);
+@activeItemBackground: @gray-base;
 @labelTextColor: #fff;
 @labelBackground: #000;
 @pressedItemBackground: darken(@gray-darker, 2%);
 @invertedItemTextColor: @gray-light;
-@invertedBackground: @positiveColor;
+@invertedBackground: black;
 @invertedBorder: @positiveColor;
 @invertedItemTextColor: darken(@positiveColor, 15%);
 @invertedActiveBackground: darken(@positiveColor, 4%);
@@ -20,3 +19,8 @@
 @paginationActiveBackground: @gray-light;
 @itemTextTransform: uppercase;
 @activeHoverItemColor: @gray-light;
+@activeHoverItemBackground: @gray-base;
+@verticalItemBackground: @white;
+@hoverItemBackground: @gray-base;
+@subMenuActiveBackground: @gray-base;
+@subMenuActiveTextColor: white;
