@@ -2,11 +2,7 @@
     a {
         color: #fff;
     }
-
-    .box-shadow(none);
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: none !important;
 }
 
-.box-shadow(@shadow) {
-    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
-    box-shadow: @shadow;
-}

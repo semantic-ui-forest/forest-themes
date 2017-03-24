@@ -1,8 +1,4 @@
 .ui.segment {
-    * {
-        border: @gray;
-    }
-
     &.piled {
         &::after, &::before {
             background-color: lighten(@background, 5%);

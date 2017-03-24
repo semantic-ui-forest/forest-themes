@@ -1,13 +1,15 @@
-.message {
+.ui.message {
+    .item,
+    a {
+        color: #fff;
+        text-decoration: underline;
+    }
 
-  .item,
-  a {
-    color: #fff;
-    text-decoration: underline;
-  }
+    .close {
+        color: #000;
+        text-decoration: none;
+    }
 
-  .close {
-    color: #000;
-    text-decoration: none;
-  }
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: none !important;
 }

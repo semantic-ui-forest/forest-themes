@@ -1,24 +1,13 @@
-.transition(@transition) {
-    -webkit-transition: @transition;
-    -o-transition: @transition;
-    transition: @transition;
-}
-
-.box-shadow(@shadow) {
-    -webkit-box-shadow: @shadow; // iOS <4.3 & Android
-    box-shadow: @shadow;
-}
-
 .ui.message {
     border: none;
-    .box-shadow(none);
+    box-shadow: none !important;
 
     &.positive {
-        background-color: @positiveColor;
+        background-color: darken(@positiveColor, 25%);
     }
 
     &.info {
-        background-color: @infoColor;
+        background-color: lighten(@infoColor, 25%);
     }
 
     &.warning {

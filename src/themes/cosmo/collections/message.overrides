@@ -1,5 +1,6 @@
 .ui.message {
     border: none;
+    box-shadow: none !important;
 
     a {
         text-decoration: underline;

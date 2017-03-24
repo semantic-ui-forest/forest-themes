@@ -3,10 +3,6 @@
         color: #fff;
         text-decoration: underline;
     }
-    .box-shadow(none);
-}
-
-.box-shadow(@shadow) {
-    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
-    box-shadow: @shadow;
+    box-shadow: none !important;
+    border: 1px solid rgba(0,0,0,.1);
 }

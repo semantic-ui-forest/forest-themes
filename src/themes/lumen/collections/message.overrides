@@ -6,6 +6,7 @@
   .shadow();
   border-color: rgba(0, 0, 0, 0.15);
   border-style: solid;
+  box-shadow: none !important;
 
   a {
     font-weight: normal;
