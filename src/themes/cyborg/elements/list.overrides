@@ -6,6 +6,7 @@
     }
 
     a, .item {
+        color: @textColor;
 
         &.active,
         &.active:hover,

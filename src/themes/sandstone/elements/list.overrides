@@ -8,4 +8,8 @@
         color: @textColor;
         border-color: @gray-light;
     }
+
+    a, .item {
+        color: @textColor;
+    }
 }
