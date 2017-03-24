@@ -1,34 +1,8 @@
-.sandstone {
-    font-size: 11px;
-    line-height: 22px;
-    font-weight: 500;
-    text-transform: uppercase;
+.ui.circular.button {
+    width: 44px;
 }
 
-
-.ui.button {
-    border: transparent;
-    &.primary {
-        border: transparent;
-    }
-    &.positive {
-        border: transparent;
-    }
-    &.negative {
-        border: transparent;
-    }
-}
-
-.ui.button {
-    border: none;
-    .sandstone;
-
-    &:hover {
-        border-color: transparent;
-        background-color: transparent;
-    }
-
-    &.large {
-        line-height: 26px;
-    }
+.ui.buttons .or:before {
+    margin-top: auto;
+    top: 45%;
 }
