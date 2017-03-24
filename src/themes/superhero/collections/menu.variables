@@ -19,7 +19,7 @@
 @tabularBorderColor: transparent;
 @tabularActiveColor: @textColor;
 @paginationActiveTextColor: @textColor;
-@dropdownBackground: @gray-dark;
+@dropdownBackground: @gray-light;
 @dropdownHoveredItemBackground: @gray-darker;
 @subMenuTextColor: lighten(@gray-light, 10%);
 @activeHoverItemBackground: @gray-dark;
