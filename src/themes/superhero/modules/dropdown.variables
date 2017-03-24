@@ -3,4 +3,6 @@
 @itemColor: @textColor;
 @hoveredItemColor: @textColor;
 @hoveredItemBackground: darken(@gray-light, 3%);
-@menuHeaderColor: @pageBackground;
+@menuHeaderColor: white;
+@pointingArrowBackground: @gray-dark;
+@pointingArrowBoxShadow: none;
