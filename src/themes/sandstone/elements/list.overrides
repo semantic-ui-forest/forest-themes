@@ -8,9 +8,4 @@
         color: @textColor;
         border-color: @gray-light;
     }
-
-    .item,
-    a {
-        padding: 16px 24px;
-    }
 }
