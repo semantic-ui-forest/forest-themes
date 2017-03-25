@@ -1,0 +1,4 @@
+@background: @gray-darker;
+@border: 1px solid @gray;
+@descriptionColor: white;
+@boxShadow: none;
