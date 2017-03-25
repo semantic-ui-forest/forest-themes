@@ -16,7 +16,7 @@
 @invertedMenuPressedBackground: transparent;
 @tabularBorderColor: #ddd;
 @activeHoverItemColor: @gray-lighter;
-@dropdownBackground: @gray-dark;
+@dropdownBackground: @gray-darker;
 @dropdownItemColor: @gray-lighter;
 @dropdownHoveredItemBackground: @gray-darker;
 @dropdownHoveredItemColor: @white;

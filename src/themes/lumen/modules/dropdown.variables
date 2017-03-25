@@ -2,3 +2,4 @@
 @itemColor: @gray-light;
 @hoveredItemColor: @gray-dark;
 @hoverItemBackground: transparent;
+@selectionTextUnderlayColor: @gray-darker;

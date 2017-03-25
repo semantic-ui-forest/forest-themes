@@ -16,3 +16,4 @@
 @tabularBorderColor: @gray-dark;
 @tabularActiveBackground: @primaryColor;
 @tabularActiveColor: #fff;
+@dropdownBackground: @gray-darker;

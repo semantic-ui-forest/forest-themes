@@ -17,7 +17,7 @@
 @tabularActiveBackground: lighten(@pageBackground, 10%);
 @tabularActiveColor: #fff;
 @paginationActiveBackground: darken(@gray-dark, 10%);
-@dropdownBackground: @gray-dark;
+@dropdownBackground: @gray-darker;
 @dropdownHoveredItemBackground: @gray-darker;
 @subMenuTextColor: @gray-light;
 @activeHoverItemBackground: @gray-dark;

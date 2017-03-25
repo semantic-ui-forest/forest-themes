@@ -3,4 +3,7 @@
 @hoveredItemColor: #fff;
 @hoveredItemBackground: @primaryColor;
 @activeItemColor: #fff;
-@menuHeaderColor: @gray-base;
+@selectionTextUnderlayColor: white;
+@menuHeaderColor: @gray-light;
+@pointingArrowBackground: @gray-dark;
+@pointingArrowBoxShadow: none;

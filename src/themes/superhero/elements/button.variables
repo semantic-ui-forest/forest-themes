@@ -1,3 +1,4 @@
 @textColor: #fff;
 @backgroundColor: @gray-light;
 @basicHoverBackground: @gray-dark;
+@activeBackgroundColor: @gray;

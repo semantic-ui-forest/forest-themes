@@ -1,2 +1,2 @@
 @itemColor: @textColor;
-@hoveredItemColor: @gray-lighter;
+@selectionTextUnderlayColor: darken(@textColor, 10%);

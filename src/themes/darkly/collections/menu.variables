@@ -27,3 +27,4 @@
 @secondaryItemBackground: lighten(@gray-dark, 5%);
 @secondaryActiveItemBackground: @primaryColor;
 @tabularActiveBackground: @primaryColor;
+@dropdownBackground: @gray-dark;
