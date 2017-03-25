@@ -1,0 +1,14 @@
+.ui.vertical.accordion.menu {
+    box-shadow: none !important;
+    border: 1px solid @gray !important;
+    .item:first-child {
+        border: none;
+    }
+    .item {
+        border-top: 1px solid @gray;
+    }
+
+    .ui.rail & {
+        border: none !important;
+    }
+}
