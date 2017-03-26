@@ -1,2 +1,3 @@
 @background: lighten(@pageBackground, 3%);
 @headerBorder: darken(@gray-darker, 5%);
+@arrowBackground: lighten(@pageBackground, 3%);
