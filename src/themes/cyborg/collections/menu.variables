@@ -1,7 +1,6 @@
-@itemTextColor: @textColor;
 @background: @pageBackground;
 @border: @gray-dark;
-@itemTextColor: @textColor;
+@itemTextColor: white;
 @hoverItemTextColor: #fff;
 @activeItemTextColor: #fff;
 @activeItemBackground: transparent;
@@ -10,10 +9,12 @@
 @pressedItemBackground: @gray-dark;
 @invertedItemTextColor: @gray-light;
 @invertedBackground: @gray-darker;
-@invertedItemTextColor: @gray-light;
+@invertedItemTextColor: white;
 @invertedActiveBackground: transparent;
 @hoverItemBackground: @gray-darker;
 @tabularBorderColor: @gray-dark;
 @tabularActiveBackground: @primaryColor;
 @tabularActiveColor: #fff;
 @dropdownBackground: @gray-darker;
+@subMenuTextColor: @gray-lighter;
+@darkTextColor: white;

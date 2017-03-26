@@ -23,13 +23,6 @@
     }
 
     border: 1px solid @gray-light;
-    
-    .item, a {
-        color: #888!important;
-        &.active {
-            color: #fff!important;
-        }
-    }
 }
 
 .ui.vertical.menu {

@@ -4,4 +4,4 @@
 @negativeTextColor: #fff;
 @hoverColor: @gray-base;
 @focusColor: @gray-base;
-@activeBackgroundColor: @gray;
+@activeBackgroundColor: @gray-dark;

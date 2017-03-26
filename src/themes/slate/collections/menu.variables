@@ -6,9 +6,8 @@
 @activeItemBackground: darken(@gray-dark, 8%);
 @labelBackground: #fff;
 @pressedItemBackground: darken(@gray-dark, 8%);
-@invertedItemTextColor: #ccc;
 @invertedBackground: @primaryColor;
-@invertedItemTextColor: #ccc;
+@invertedItemTextColor: white;
 @invertedHoverBackground: darken(@primaryColor, 12%);
 @invertedActiveBackground: darken(@primaryColor, 12%);
 @invertedMenuPressedBackground: darken(@primaryColor, 12%);
