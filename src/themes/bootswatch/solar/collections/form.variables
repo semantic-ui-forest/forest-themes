@@ -1,0 +1,2 @@
+@inputColor: @gray-darker;
+@textAreaFocusColor: @gray-base;

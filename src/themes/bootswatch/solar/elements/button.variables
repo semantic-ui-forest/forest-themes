@@ -1,0 +1,7 @@
+@textColor: #fff;
+@activeColor: @gray-dark;
+@downBackgroundColor: @gray-dark;
+@backgroundColor: #586E75;
+@orBackgroundColor: @gray-dark;
+@basicHoverBackground: @gray;
+@hoverBackgroundColor: lighten(@gray-dark, 10%);

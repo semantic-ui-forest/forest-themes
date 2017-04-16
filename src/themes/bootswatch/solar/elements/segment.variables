@@ -1,0 +1,4 @@
+@background: transparent;
+@secondaryBackground: transparent;
+@tertiaryBackground:  transparent;
+@attachedBorder: 1px solid lighten(@gray-dark, 5%);
