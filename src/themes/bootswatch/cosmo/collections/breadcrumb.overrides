@@ -1,15 +1,19 @@
 .ui.breadcrumb {
-    background-color: @gray-darker;
-    padding: 0.6em;
+  background-color: @gray-darker;
+  padding: 0.6em;
 
-    .divider {
-        color: @gray-light;
+  .section {
+    color: darken(@white, 10%);
+
+    &:hover {
+      color: darken(@white, 15%);
     }
 
-    .active.section {
-        color: @white;
-        &:hover {
-            color: darken(@white, 20%);
-        }
+    &.active {
+      color: @white;
+      &:hover {
+        color: darken(@white, 5%);
+      }
     }
+  }
 }
