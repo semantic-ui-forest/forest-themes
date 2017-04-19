@@ -1,66 +1,66 @@
-.form.warning  .field {
-    label,
-    .label,
-    .radio,
-    .checkbox,
-    .inline .radio,
-    .inline .checkbox,
-    &.radio label,
-    &.checkbox label,
-    &.inline .radio label,
-    &.inline .checkbox label,
-    .icon {
-        color: @warningColor;
-    }
+.ui.form.warning  .field {
+  label,
+  .label,
+  .radio,
+  .checkbox,
+  .inline .radio,
+  .inline .checkbox,
+  &.radio label,
+  &.checkbox label,
+  &.inline .radio label,
+  &.inline .checkbox label,
+  .icon {
+    color: @warningColor;
+  }
 
-    .input, input {
-        border: 1px solid @warningColor;
-    }
+  .input, input {
+    border: 1px solid @warningColor;
+  }
 }
 
-.form.error  .field.error {
-    label,
-    .label,
-    .radio,
-    .checkbox,
-    .inline .radio,
-    .inline .checkbox,
-    &.radio label,
-    &.checkbox label,
-    &.inline .radio label,
-    &.inline .checkbox label,
-    .icon {
-        color: @negativeColor;
-    }
+.ui.form.error  .field.error {
+  label,
+  .label,
+  .radio,
+  .checkbox,
+  .inline .radio,
+  .inline .checkbox,
+  &.radio label,
+  &.checkbox label,
+  &.inline .radio label,
+  &.inline .checkbox label,
+  .icon {
+    color: @negativeColor;
+  }
 
-    .input, input {
-        border: 1px solid @negativeColor;
-        background-color: #fff!important;
-    }
+  .input, input {
+    border: 1px solid @negativeColor;
+    background-color: #fff!important;
+  }
 }
 
-.form.success .field {
-    label,
-    .label,
-    .radio,
-    .checkbox,
-    .inline .radio,
-    .inline .checkbox,
-    &.radio label,
-    &.checkbox label,
-    &.inline .radio label,
-    &.inline .checkbox label,
-    .icon {
-        color: @positiveColor;
-    }
+.ui.form.success .field {
+  label,
+  .label,
+  .radio,
+  .checkbox,
+  .inline .radio,
+  .inline .checkbox,
+  &.radio label,
+  &.checkbox label,
+  &.inline .radio label,
+  &.inline .checkbox label,
+  .icon {
+    color: @positiveColor;
+  }
 
-    .input, input {
-        border: 1px solid @positiveColor;
-    }
+  .input, input {
+    border: 1px solid @positiveColor;
+  }
 }
 
-.form {
-    .field, .fields {
-        border: none;
-    }
+.ui.form {
+  .field, .fields {
+    border: none;
+  }
 }
