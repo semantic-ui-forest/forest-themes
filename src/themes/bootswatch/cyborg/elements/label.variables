@@ -1,4 +1,4 @@
-@backgroundColor: darken(@gray-dark, 10%);
+@color: #fff;
 @backgroundColor: @primaryColor;
 @labelActiveTextColor: @primaryColor;
 @ribbonShadowColor: @primaryColor;

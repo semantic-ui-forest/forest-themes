@@ -1,20 +1,38 @@
 @background: @pageBackground;
-@border: @gray-dark;
-@itemTextColor: white;
+@itemTextColor: @gray-light;
+@borderColor: @gray-dark;
 @hoverItemTextColor: #fff;
+@hoverItemBackground: @gray-base; 
 @activeItemTextColor: #fff;
 @activeItemBackground: transparent;
+@activeHoverItemColor: #fff;
 @labelTextColor: #fff;
-@labelBackground: #fff;
+@labelBackground: @gray;
 @pressedItemBackground: @gray-dark;
 @invertedItemTextColor: @gray-light;
 @invertedBackground: @gray-darker;
 @invertedItemTextColor: white;
 @invertedActiveBackground: transparent;
-@hoverItemBackground: @gray-darker;
 @tabularBorderColor: @gray-dark;
 @tabularActiveBackground: @primaryColor;
 @tabularActiveColor: #fff;
 @dropdownBackground: @gray-darker;
 @subMenuTextColor: @gray-lighter;
 @darkTextColor: white;
+
+@textMenuActiveItemColor: #fff;
+@textMenuItemColor: @gray-light;
+
+@verticalBackground: @background;
+
+@secondaryActiveItemColor: #fff;
+@secondaryActiveItemBackground: @gray-dark;
+@secondaryItemTextColor: @gray-light;
+@secondaryHoverItemColor: #fff;
+@secondaryActiveHoverItemColor: #fff;
+@secondaryActiveHoverItemBackground: @gray-dark;
+@secondaryHoverItemBackground: @gray-dark;
+
+@secondaryPointingActiveTextColor: #fff;
+@secondaryPointingBorderColor: @gray-dark;
+@secondaryPointingActiveBorderColor: @gray;

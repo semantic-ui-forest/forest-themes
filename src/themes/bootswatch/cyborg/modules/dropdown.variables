@@ -8,3 +8,4 @@
 @menuHeaderColor: white;
 @pointingArrowBackground: @gray-dark;
 @pointingArrowBoxShadow: none;
+@menuDividerColor: lighten(@gray-dark, 5%);
