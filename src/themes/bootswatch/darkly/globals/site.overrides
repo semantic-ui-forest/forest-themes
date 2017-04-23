@@ -26,3 +26,7 @@
 pre .code {
     color: @gray-light !important;
 }
+
+.ui.rating .icon:not(.active) {
+  color: @gray-light !important;
+}

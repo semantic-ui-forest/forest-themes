@@ -1,3 +1,7 @@
-.ui.labeled.input:not(.corner) .label {
-    line-height: @lineHeight;
+.ui.transparent.input input {
+  color: @gray-lighter;
+}
+
+.ui.transparent.input .icon {
+  color: @gray-lighter;
 }

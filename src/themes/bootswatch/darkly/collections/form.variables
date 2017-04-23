@@ -1,3 +1,5 @@
 @inputColor: @gray-dark;
 @inputPlaceholderColor: @gray;
-@inputPlaceholderColor: @gray-light;
+@inputFocusColor: #000;
+@formErrorColor: @gray-lighter;
+@inputErrorFocusColor: @formErrorColor;
