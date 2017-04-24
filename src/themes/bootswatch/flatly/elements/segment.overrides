@@ -1,15 +1,6 @@
-.ui.segment {
-    * {
-        border-color: @gray-lighter;
-    }
-
-    .close {
-        color: @textColor;
-    }
-}
-
-.ui.piled.segment:before,
-.ui.stacked.segment:before,
-.ui.piled.segment:after {
-    background-color: darken(@white, 5%);
+.ui.piled.segments:after,
+.ui.piled.segments:before,
+.ui.piled.segment:after,
+.ui.piled.segment:before {
+  background-color: darken(#fff, 5%);
 }

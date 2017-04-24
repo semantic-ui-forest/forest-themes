@@ -1,7 +1,0 @@
-.ui.modal {
-    padding: 20x;
-
-    .close {
-        color: @textColor;
-    }
-}

@@ -1,3 +1,0 @@
-.ui.corner.label .icon {
-    color: @gray-light;
-}
