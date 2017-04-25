@@ -1,2 +1,2 @@
 @placeholderColor: @gray-light;
-@lineHeight: (@line-height-computed + (@padding-base-vertical * 2) + 4);
+@verticalPadding: 1.3em;

@@ -1,10 +1,5 @@
-.shadow (@width: 4px) {
-    border-width: 0 1px @width 1px;
-    border-style: solid;
-}
-
 .ui.steps {
-    border-color: rgba(0, 0, 0, 0.15);
-    .shadow();
+  border-color: rgba(0, 0, 0, 0.15);
+  border-width: 1px 1px 4px 1px;
+  border-style: solid;
 }
-

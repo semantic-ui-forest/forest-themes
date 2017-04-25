@@ -1,16 +1,10 @@
-.shadow (@width: 4px) {
-  border-width: 0 1px @width 1px;
-}
-
 .ui.message {
-  .shadow();
+  border-width: 0 1px 4px 1px;
   border-color: rgba(0, 0, 0, 0.15);
   border-style: solid;
   box-shadow: none !important;
 
   a {
-    font-weight: normal;
-    color: #fff;
     text-decoration: underline;
   }
 }

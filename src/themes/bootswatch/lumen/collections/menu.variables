@@ -4,11 +4,6 @@
 @activeItemBackground: darken(@white, 3%);
 @labelTextColor: @hoverItemTextColor;
 @pressedItemBackground: #fff;
-@invertedItemTextColor: @gray-light;
-@invertedBackground: #fff;
-@invertedHoverColor: @gray-dark;
-@invertedActiveBackground: transparent;
-@invertedMenuPressedBackground: @gray-lighter;
 @hoverItemBackground: #fff;
 @tabularBorderColor: @border;
 @tabularActiveBackground: #fff;
