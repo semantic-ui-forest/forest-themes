@@ -1,13 +1,7 @@
-.transition(@transition) {
-  -webkit-transition: @transition;
-  -o-transition: @transition;
-  transition: @transition;
-}
-
-.selectable.table {
+.ui.selectable.table {
   > tbody > tr,
   > tbody > tr > th,
   > tbody > tr > td {
-    .transition(all 0.2s);
+    transition: all 0.2s;
   }
 }

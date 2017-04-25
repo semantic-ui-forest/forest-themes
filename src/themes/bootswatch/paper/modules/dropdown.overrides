@@ -1,3 +1,0 @@
-.ui.dropdown > .dropdown.icon {
-  color: @gray-light;
-}

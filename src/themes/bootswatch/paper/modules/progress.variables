@@ -1,1 +1,3 @@
 @barHeight: 6px;
+@borderRadius: 0;
+@boxShadow: none;
