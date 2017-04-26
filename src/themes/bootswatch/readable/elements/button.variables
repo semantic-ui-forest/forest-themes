@@ -1,2 +1,5 @@
 @textColor: @gray-dark;
 @background: white;
+@basicBoxShadow: none;
+@basicHoverBoxShadow: none;
+@basicFocusBoxShadow: none;

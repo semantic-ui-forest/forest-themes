@@ -1,6 +1,0 @@
-.input,
-input {
-    &:not(i, .icon) {
-        font-family: @fontName;
-    }
-}

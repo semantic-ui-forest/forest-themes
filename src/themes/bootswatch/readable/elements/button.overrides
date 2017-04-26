@@ -1,16 +1,17 @@
 .ui.button {
-    border: 1px solid #ddd;
-    &.primary {
-        border: @primaryColor;
-    }
-    &.positive {
-        border: @positiveColor;
-    }
-    &.negative {
-        border: @negativeColor;
-    }
+  border: 1px solid #ddd;
+}
+
+.ui.basic.buttons .button,
+.ui.basic.button {
+  border: none;
+}
+
+.ui.basic.button:focus,
+.ui.basic.button:hover {
+  text-decoration: underline;
 }
 
 .ui.buttons .button:first-child {
-    border-left: 1px solid #ddd;
+  border-left: 1px solid #ddd;
 }
