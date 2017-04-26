@@ -1,118 +1,25 @@
-.sandstone {
-    font-size: 11px;
-    line-height: 22px;
-    font-weight: 500;
-    text-transform: uppercase;
+.ui.menu .item {
+  font-size: 12px;
 }
 
-
-.ui.pagination.menu {
-    .sandstone;
-    color: @gray;
-    background-color: @gray-lighter;
-    border-color: @gray-light;
-    .item:hover {
-        color: @gray-dark;
-        background-color: @gray-light;
-        border-color: @gray-light;
-    }
-    .item.active {
-        border-color: @gray-light;
-    }
-
-    > a,
-    > .item {
-        color: @gray;
-    }
+.ui.secondary.menu:not(.pointing) .active.item,
+.ui.secondary.menu:not(.pointing) .item:hover {
+  border: 1px solid @gray-light;
 }
 
-.ui.menu {
-    > a,
-    > .item {
-        .sandstone;
-    }
-
-    & input {
-        border: none;
-    }
-
-    & .form {
-        * {
-            border: none;
-        }
-    }
-
-    .sandstone;
-
-    .dropdown > a,
-    .dropdown > a:hover,
-    .dropdown > a:focus {
-        .sandstone;
-        border-color: @gray-light;
-    }
-    &.tabular {
-
-        & > a
-        & > .item, {
-            background-color: @gray-lighter;
-            border-color: @gray-light;
-            color: @gray;
-        }
-
-        > a.disabled:hover,
-        > .item.disabled:hover {
-            background-color: @gray-lighter;
-        }
-    }
-
-    &.secondary {
-        a,
-        .item {
-            color: @gray;
-        }
-
-        > a,
-        > .item {
-            border: 1px solid transparent;
-        }
-
-        > a.active,
-        > .item.active,
-        > a:hover,
-        > .item:hover {
-            border-color: @gray-light;
-        }
-
-        > a.disabled,
-        > .item.disabled {
-            border-color: transparent;
-        }
-
-    }
-
-    &.vertical:not(.pointing) {
-        .item:first-child {
-            border-top: 1px solid #ddd;
-        }
-        i.icon {
-            color: @gray-light;
-            &.dropdown {
-                padding-top: 1em;
-                padding-bottom: 1em;
-            }
-        }
-    }
+.ui.menu input,
+.ui.menu input:focus,
+.ui.menu input:active,
+.ui.menu .ui.form input,
+.ui.menu .ui.form input:focus,
+.ui.menu .ui.form input:active {
+  color: #fff;
 }
 
-.ui.secondary.pointing.menu {
-    .active.item {
-        border-width: 0 0 @secondaryPointingBorderWidth 0;
-    }
-    &.vertical .active.item {
-        border-width: 0 @secondaryPointingBorderWidth 0 0;
-    }
+.ui.secondary.menu .item {
+  color: @secondaryItemColor;
 }
 
-.ui.rail .ui.vertical.menu .item {
-    border: none;
+.ui.menu i.icon {
+  color: @gray-light !important;
 }
