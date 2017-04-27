@@ -6,30 +6,34 @@ h1, h2, h3, h4, h5, h6, .ui.header {
 // '.text' class is newly defined
 .text.primary,
 .text.primary:hover {
-    color: @primaryColor;
+  color: @primaryColor;
 }
 
 .text.positive,
 .text.positive:hover {
-    color: @positiveColor;
+  color: @positiveColor;
 }
 
 .text.negative,
 .text.negative:hover {
-    color: @negativeColor;
+  color: @negativeColor;
 }
 
 .text.warning,
 .text.warning:hover {
-    color: @warningColor;
+  color: @warningColor;
 }
 
 .text.info,
 .text.info:hover {
-    color: @infoColor;
+  color: @infoColor;
 }
 
 // code color
 pre .code {
-    color: @gray-light !important;
+  color: @gray-light !important;
+}
+
+.ui.rating i.icon {
+  color: @gray-light !important;
 }
