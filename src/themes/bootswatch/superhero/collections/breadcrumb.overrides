@@ -1,5 +1,5 @@
 .ui.breadcrumb {
-    background-color: @gray-light;
-    color: @textColor;
-    padding: 0.6em;
+  background-color: @gray-light;
+  color: @textColor;
+  padding: 0.6em;
 }

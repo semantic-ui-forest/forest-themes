@@ -1,9 +1,0 @@
-.ui.modal {
-    padding: 0;
-
-    & .header,
-    & .footer {
-        border: none;
-        border-radius: 0;
-    }
-}

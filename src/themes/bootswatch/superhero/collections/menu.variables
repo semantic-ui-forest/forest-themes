@@ -1,6 +1,8 @@
 @minHeight: 40px;
+@fontSize: 12px !important;
 @background: @gray-light;
 @border: transparent;
+@boxShadow: none;
 @itemTextColor: @textColor;
 @hoverItemTextColor: lighten(@textColor, 5%);
 @activeItemTextColor: @textColor;
@@ -24,6 +26,12 @@
 @subMenuTextColor: lighten(@gray-light, 10%);
 @activeHoverItemBackground: @gray-dark;
 @labelBackground: @primaryColor;
-@verticalBackground: transparent;
+@verticalBackground: @gray-light;
 @tabularActiveBackground: darken(@pageBackground, 5%);
+@tabularBorderColor: @gray-light;
 @secondaryActiveItemBackground: darken(@pageBackground, 10%);
+@secondaryActiveHoverItemBackground: darken(@pageBackground, 10%);
+@secondaryHoverItemBackground: @gray-dark;
+@secondaryActiveItemColor: #fff;
+@secondaryItemTextColor: @gray-light;
+@secondaryActiveHoverItemColor: #fff;

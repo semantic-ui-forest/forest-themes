@@ -2,3 +2,4 @@
 @border: transparent;
 @headerBorder: @pageBackground;
 @headerBackground: @gray-dark;
+@borderRadius: 0;
