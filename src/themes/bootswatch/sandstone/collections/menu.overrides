@@ -23,3 +23,7 @@
 .ui.menu i.icon {
   color: @gray-light !important;
 }
+
+.ui.text.menu .item:hover {
+  color: @gray-dark;
+}

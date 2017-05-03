@@ -21,3 +21,14 @@
 .ui.secondary.menu .item {
   color: @secondaryItemColor;
 }
+
+.ui.menu .item .input {
+  color: @gray-light;
+  input {
+    color: #fff;
+  }
+}
+
+.ui.text.menu .item:hover {
+  color: @gray-dark;
+}
