@@ -1,12 +1,9 @@
-.ui.button {
-    border: @gray-light;
-    &.primary {
-        border: @primaryColor;
-    }
-    &.positive {
-        border: @positiveColor;
-    }
-    &.negative {
-        border: @negativeColor;
-    }
+.ui.basic.buttons .button:hover,
+.ui.basic.button:hover {
+  text-decoration: underline;
+  box-shadow: @basicBoxShadow;
+}
+
+.ui.inverted.button:hover {
+  color: @gray-dark;
 }
