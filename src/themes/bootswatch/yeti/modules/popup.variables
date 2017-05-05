@@ -1,1 +1,2 @@
 @borderColor: transparent;
+@fontWeight: 300;

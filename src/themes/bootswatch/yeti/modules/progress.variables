@@ -1,0 +1,5 @@
+@padding: 2px;
+@boxShadow: none;
+@border: 1px solid #ccc;
+@background: #f6f6f6;
+@barHeight: 22px;

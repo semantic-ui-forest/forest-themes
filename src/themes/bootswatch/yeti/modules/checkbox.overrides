@@ -1,5 +1,0 @@
-.checkbox,
-.radio {
-  font-size: 12px;
-  font-weight: normal;
-}
