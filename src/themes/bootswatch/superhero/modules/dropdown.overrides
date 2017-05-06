@@ -1,20 +1,14 @@
 .ui.dropdown .divider {
-    background-color: @pageBackground;
+  background-color: @pageBackground;
 }
 
-.ui.dropdown {
-    border: none;
-    margin: 0;
-    .box-shadow(none);
-
-    > a,
-    + .text,
-    > .item {
-        font-size: 12px;
-    }
+.ui.dropdown,
+.ui.dropdown .menu,
+.ui.dropdown .item,
+.ui.dropdown .menu .item {
+  font-size: 12px !important;
 }
 
-.box-shadow(@shadow) {
-    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
-    box-shadow: @shadow;
+.ui.active.search.dropdown input.search:focus + .text {
+  color: @gray-base !important;
 }

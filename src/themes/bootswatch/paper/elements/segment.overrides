@@ -1,21 +1,6 @@
-.transition(@transition) {
-  -webkit-transition: @transition;
-  -o-transition: @transition;
-  transition: @transition;
+.ui.piled.segments:after,
+.ui.piled.segments:before,
+.ui.piled.segment:after,
+.ui.piled.segment:before {
+  background-color: darken(#fff, 5%);
 }
-
-.box-shadow(@shadow) {
-  -webkit-box-shadow: @shadow; // iOS <4.3 & Android
-  box-shadow: @shadow;
-}
-
-.ui.segment {
-  border: none;
-  border-radius: 2px;
-  .box-shadow(0 1px 4px rgba(0,0,0,.3));
-
-  .footer {
-    border-top: none;
-  }
-}
-  

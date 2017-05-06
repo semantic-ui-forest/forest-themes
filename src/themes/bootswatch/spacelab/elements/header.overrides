@@ -1,4 +1,0 @@
-.ui.header {
-    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: @gray-darker;
-}

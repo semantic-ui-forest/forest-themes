@@ -20,10 +20,6 @@
 @linkColor: @positiveColor;
 @linkHoverColor: darken(@linkColor, 10%);
 @headerFontWeight: 400;
-@padding-base-vertical: 12px;
-@padding-base-horizontal: 16px;
-@padding-large-vertical: 20px;
-@padding-large-horizontal: 30px;
 @inputColor: @textColor;
 @disabledBorderColor: @gray-light;
 @mutedTextColor: @gray;

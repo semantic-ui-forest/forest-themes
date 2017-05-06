@@ -1,7 +1,5 @@
-table,
 .ui.table {
   font-size: 12px;
-
   a:not(.button) {
     color: #fff;
     text-decoration: underline;

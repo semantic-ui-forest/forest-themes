@@ -1,1 +1,3 @@
 @background: #ccc;
+@boxShadow: none;
+@barHeight: 8px;

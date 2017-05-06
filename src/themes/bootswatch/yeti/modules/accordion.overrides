@@ -1,14 +1,13 @@
-.ui.vertical.accordion.menu {
-    box-shadow: none !important;
-    border: 1px solid rgba(0,0,0,.1) !important;
-    .item:first-child {
-        border: none;
+.ui.vertical.accordion.menu:not(.following) {
+  * {
+    color: darken(@white, 10%);
+    &:hover {
+     color: darken(@white, 20%);
     }
-    .item {
-        border-top: 1px solid rgba(0,0,0,-.9);
+    &:active,
+    &.checked,
+    &.active {
+      color: @white;
     }
-
-    .ui.rail & {
-        border: none !important;
-    }
+  }
 }

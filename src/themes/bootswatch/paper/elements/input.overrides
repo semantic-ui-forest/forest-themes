@@ -3,11 +3,13 @@
 }
 
 .ui.labeled.input:not(.corner) .label {
-    line-height: @lineHeight;
+  line-height: @lineHeight;
 }
 
-.ui.input, input {
-    border-width: 0 0 1px 0 !important;
-    border-style: solid;
-    border-color: rgba(0,0,0,0.15);
+.ui.input input {
+  border-width: 0 0 1px 0 !important;
+}
+
+.ui.input input:focus {
+  border-width: 0 0 2px 0 !important;
 }

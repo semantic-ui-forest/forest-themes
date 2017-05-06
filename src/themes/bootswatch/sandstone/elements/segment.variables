@@ -1,1 +1,2 @@
-@border-color: @gray-light;
+@borderColor: @gray-light;
+@boxShadow: none;

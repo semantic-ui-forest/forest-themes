@@ -1,16 +1,7 @@
-.shadow (@width: 4px) {
-    border-width: 0 1px @width 1px;
-    border-style: solid;
-}
-
-.box-shadow(@shadow) {
-    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
-    box-shadow: @shadow;
-}
-
 .ui.button,
 .ui.basic.button {
-  .shadow();
+  border-width: 0 1px 4px 1px;
+  border-style: solid;
   border-color: rgba(0, 0, 0, 0.15); // bind border color with background color
   font-weight: bold;
   text-transform: @textTransform;
@@ -23,7 +14,6 @@
   &:active {
     margin-top: 2px;
     border-bottom-width: 2px;
-    .box-shadow(none);
   }
 
   &:hover,
@@ -31,64 +21,26 @@
     background-color: @backgroundColor;
     border-color: rgba(0, 0, 0, 0.25);
   }
-
-  &s .dropdown {
-    .box-shadow(none);
-  }
 }
 
 .ui.menu .button {
-    &:hover {
-        margin-top: 8px
-    }
+  &:hover {
+    margin-top: 8px;
+  }
 
-    &:active {
-        margin-top: 9px
-    }
+  &:active {
+    margin-top: 9px;
+  }
 }
 
 .ui.vertical.buttons {
-    .button + .button {
-        &:hover {
-            border-top-width: 1px;
-        }
-
-        &:active {
-            border-top-width: 2px;
-        }
-    }
-}
-
-.ui.button {
-    &.mini {
-        font-size: @miniSize * 12px;
+  .button + .button {
+    &:hover {
+      border-top-width: 1px;
     }
 
-    &.tiny {
-        font-size: @tinySize * 12px;
+    &:active {
+      border-top-width: 2px;
     }
-
-    &.small {
-        font-size: @smallSize * 12px;
-    }
-
-    & {
-        font-size: @mediumSize * 12px;
-    }
-
-    &.large {
-        font-size: @largeSize * 12px;
-    }
-
-    &.big {
-        font-size: @bigSize * 12px;
-    }
-
-    &.huge {
-        font-size: @hugeSize * 12px;
-    }
-
-    &.massive {
-        font-size: @massiveSize * 12px;
-    }
+  }
 }

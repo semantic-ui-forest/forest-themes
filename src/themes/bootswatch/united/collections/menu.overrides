@@ -1,40 +1,14 @@
-.ui.pagination.menu .item.active {
-    border-color: #ddd;
+.ui.secondary.menu .item {
+  color: @gray-light;
 }
 
-.ui.menu .label:hover {
-    background-color: none;
+.ui.text.menu .item:hover {
+  color: @gray-dark;
 }
 
-.ui.menu {
-
-    .label {
-        background-color: #fff;
-        color: @primaryColor;
-    }
-
-    &.inverted {
-
-        .label {
-            background-color: #fff;
-            color: @infoColor;
-        }
-    }
-
-    &.secondary .item {
-        color: @gray-light;
-    }
-}
-
-@media (max-width: 767px) {
-
-    .ui.menu {
-
-        .dropdown {
-            a,
-            .item {
-                color: #fff;
-            }
-        }
-    }
+.ui.menu .item .input {
+  color: @gray-light;
+  input {
+    color: #fff;
+  }
 }

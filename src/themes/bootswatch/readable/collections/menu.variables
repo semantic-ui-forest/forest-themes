@@ -6,13 +6,5 @@
 @activeItemTextColor: @linkColor;
 @activeItemBackground: transparent;
 @labelBackground: @linkColor;
-@invertedItemTextColor: @textColor;
-@invertedBackground: @pageBackground;
-@invertedBorder: #ddd;
-@invertedItemTextColor: @textColor;
-@invertedHoverColor: @textColor;
-@invertedActiveColor: @textColor;
-@invertedActiveBackground: transparent;
-@invertedMenuPressedBackground: #ddd;
 @dividerSize: 0;
 @arrowBorder: 2px solid @gray;

@@ -1,132 +1,36 @@
 #gradient {
-    .vertical-three-colors(@start-color: #00b3ee; @mid-color: #7a43b6; @color-stop: 50%; @end-color: #c3325f) {
-        background-image: -webkit-linear-gradient(@start-color, @mid-color @color-stop, @end-color);
-        background-image: -o-linear-gradient(@start-color, @mid-color @color-stop, @end-color);
-        background-image: linear-gradient(@start-color, @mid-color @color-stop, @end-color);
-        background-repeat: no-repeat;
-        filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@start-color),argb(@end-color))); // IE9 and down, gets no color-stop at all for proper fallback
-    }
+  .vertical-three-colors(@start-color: #00b3ee; @mid-color: #7a43b6; @color-stop: 50%; @end-color: #c3325f) {
+    background-image: -webkit-linear-gradient(@start-color, @mid-color @color-stop, @end-color);
+    background-image: -o-linear-gradient(@start-color, @mid-color @color-stop, @end-color);
+    background-image: linear-gradient(@start-color, @mid-color @color-stop, @end-color);
+    background-repeat: no-repeat;
+    filter: e(%("progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",argb(@start-color),argb(@end-color))); // IE9 and down, gets no color-stop at all for proper fallback
+  }
 }
 
 .button-shadow(@color) {
-    #gradient > .vertical-three-colors(lighten(@color, 6%), @color, 60%, darken(@color, 4%));
-    filter: none;
+  #gradient > .vertical-three-colors(lighten(@color, 6%), @color, 60%, darken(@color, 4%));
+  filter: none;
 }
 
 .button-shadow-inverse(@color) {
-    #gradient > .vertical-three-colors(darken(@color, 24%), darken(@color, 18%), 40%, darken(@color, 16%));
-    filter: none;
-}
-
-
-.ui.pagination.menu {
-    & > a,
-    & > .item {
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-        .button-shadow(@gray-dark);
-
-        &:hover {
-            .button-shadow-inverse(@gray-dark);
-        }
-    }
-
-    & > a.active,
-    & > .item.active {
-        .button-shadow-inverse(@gray-dark);
-    }
-
-    & > a.disabled,
-    & > .item.disabled:hover,
-    & > a.disabled,
-    & > .item.disabled:hover {
-        background-color: transparent;
-        .button-shadow(@gray-dark);
-    }
-  background-color: #fff;
-  border-color: #ddd;
-  .item:hover {
-    background-color: @gray-lighter;
-    border-color: @primaryColor;
-  }
+  #gradient > .vertical-three-colors(darken(@color, 24%), darken(@color, 18%), 40%, darken(@color, 16%));
+  filter: none;
 }
 
 .ui.menu {
-  &,
-  &.inverted {
-    border: 1px solid rgba(0, 0, 0, 0.6);
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  .button-shadow(@gray-dark);
 
-    @media (min-width: 768px) {
-      > a {
-        border-right: 1px solid rgba(0, 0, 0, 0.2);
-        border-left: 1px solid rgba(255, 255, 255, 0.1);
-
-        &:hover {
-          border-left-color: transparent;
-        }
-      }
-
-      .dropdown > a.active {
-        border-left-color: transparent;
-      }
-
-      .dropdown > a,
-      .dropdown > a:hover,
-      .dropdown > a:focus {
-          border-color: rgba(0, 0, 0, 0.6);
-      }
-
-      .input {
-        margin-left: 5px;
-        margin-right: 5px;
-      }
-    }
-  }
-
-  & {
-    .button-shadow(@gray-dark);
-
-    > a {
-      &:hover {
-        .button-shadow-inverse(@gray-dark);
-      }
-    }
+  .item:hover {
+    .button-shadow-inverse(@gray-dark);
   }
 
   &.inverted {
     .button-shadow(@primaryColor);
 
-    .label {
-      background-color: darken(@primaryColor, 12%);
+    .item:hover {
+      .button-shadow-inverse(@primaryColor);
     }
-
-    > a {
-
-      &:hover {
-        .button-shadow-inverse(@primaryColor);
-      }
-    }
-  }
-
-  &.secondary {
-      & > a {
-          .button-shadow(@gray-dark);
-          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
-
-          &:hover {
-              .button-shadow-inverse(@gray-dark);
-          }
-      }
-
-      & > a.active,
-      & > a.active:hover {
-          background-color: none;
-          .button-shadow-inverse(@gray-dark);
-      }
-
-      & > a.disabled,
-      & > a.disabled:hover {
-          .button-shadow(@gray-dark);
-      }
   }
 }

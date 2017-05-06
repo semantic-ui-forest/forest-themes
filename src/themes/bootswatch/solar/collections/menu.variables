@@ -27,3 +27,7 @@
 @verticalItemBackground: @gray-darker;
 
 @tabularActiveBackground: @gray-dark;
+
+@secondaryActiveItemBackground: darken(@gray-darker, 5%);
+@secondaryHoverItemBackground: darken(@gray-darker, 5%);
+@secondaryActiveHoverItemBackground: darken(@gray-darker, 5%);

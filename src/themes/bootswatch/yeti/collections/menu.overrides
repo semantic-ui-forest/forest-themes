@@ -1,122 +1,18 @@
-.box-shadow(@shadow) {
-    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
-    box-shadow: @shadow;
-}
-
-
-.ui.pagination.menu {
-    background-color: transparent;
-    border-color: transparent;  
-    font-size: 12px;
-    font-weight: 300;
-    color: @gray-light;
-
-    .item:hover {
-        border-color: transparent;
-    }
-    .item.active {
-        border-color: transparent;
-    }
-
-    > .active {
-        color: #fff;
-    }
-
-    > .item,
-    > .item:first-child,
-    > .item:last-child {
-        border-radius: 3px;
-    }
-
-    &.large > a,
-    &.large > span {
-        padding-left: 22px;
-        padding-right: 22px;
-    }
-
-    &.small > a,
-    &.small > span {
-        padding: 0 5px;
-    }
-}
-
 .ui.menu {
-    border: none;
-    font-size: 13px;
-    font-weight: 300;
-
-    .dropdown {
-        border-top-color:  rgba(0,0,0,.2);
-        .box-shadow(none);
-    }
-
-    .button {
-        padding-top: 6px;
-        padding-bottom: 6px;
-    }
-
-    .dropdown {
-        border: none;
-
-        > a,
-        > a:focus {
-            background-color: transparent;
-            color: #fff;
-            font-size: 13px;
-            font-weight: 300;
-            border-color: transparent;
-        }
-
-        > a:hover,
-        > a.active,
-        > a.active:hover {
-            background-color: #272727;
-            border-color: transparent;
-        }
-
-        .header {
-            color: rgba(255, 255, 255, 0.5);
-        }
-
-    }
-
-    &.inverted {
-
-        .dropdown.menu {
-            background-color: @primaryColor;
-
-            > a,
-            > a:focus {
-                color: #fff;
-            }
-
-            > a:hover,
-            > a.active,
-            > a.active:hover {
-                background-color: darken(@primaryColor, 10%);
-            }
-        }
-    }
-
-    &.tabular {
-        > a {
-            background-color: #e7e7e7;
-            color: @textColor;
-        }
-
-        .icon {
-            border-top-color: @textColor;
-            border-bottom-color: @textColor;
-        }
-
-    }
-
-    &.secondary .item {
-        font-weight: 300;
-        color: @gray;
-    }
+  font-size: 13px;
 }
 
-.ui.accordion.vertical.menu .item {
-    background: transparent;
+.ui.secondary.menu .item {
+  color: @secondaryItemColor;
+}
+
+.ui.text.menu .item:hover {
+  color: @gray-dark;
+}
+
+.ui.menu .item .input {
+  color: @gray-light;
+  input {
+    color: #fff;
+  }
 }

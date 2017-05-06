@@ -1,96 +1,19 @@
-.ui.inverted.menu .label:hover {
-    color: @textColor;
-}
-
-.ui.pagination.menu {
-    color: @textColor;
-    .item:hover {
-        color: #fff;
-        background-color: @primaryColor;
-        border-color: @primaryColor;
-    }
-
-    font-family: @fontName;
-
-    &.large > a,
-    &.large > span {
-        padding: 14px 24px;
-    }
-
-    a {
-        color: @textColor;
-    }
-
-    a:hover {
-        border-color: transparent;
-        color: #fff;
-    }
-
-    .disabled a {
-        border-color: #ddd;
-    }
-
-}
-
-.ui.menu:not(.pointing) {
-
-    .form,
-    .input {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    > a,
-    > .item {
-        @margin-vertical: ((@minHeight - 2*@padding-base-vertical - @line-height-computed - 2px) / 2);
-        margin: @margin-vertical 0px;
-        padding: @padding-base-vertical @padding-base-horizontal;
-        border-radius: 4px !important;
-    }
-
-    > .active > a:hover,
-    > .active > .item:hover {
-        color: @linkColor;
-    }
-
-    &.inverted > .active > a:hover, 
-    &.inverted > .active > .item:hover {
-        color: @textColor;
-    }
-
-    .dropdown > a,
-    .dropdown > a:hover,
-    .dropdown > a:focus {
-        border: 1px solid #ddd;
-    }
+.ui.menu:not(.pointing) .item {
+  margin: 10px 0px;
+  padding: 8px 12px;
+  border-radius: 4px;
 }
 
 .ui.item.menu:not(.pointing) {
-    padding-left: 1em !important;
-    padding-right: 1em !important;
-    .active.item {
-        border: 1px solid  #ddd;
-    }
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+  .active.item {
+    border: 1px solid #ddd;
+  }
 }
 
-.ui.vertical.menu .item {
-    border: none;
-}
-
-@media (min-width: 768px) {
-    .ui.menu {
-        > a,
-        > .item {
-            padding: @padding-base-vertical @padding-base-horizontal;
-        }
-    }
-}
-
-@media (max-width: (768px - 1)) {
-    .ui.menu {
-        > a,
-        > .item {
-            margin: 0;
-        }
-    }
+// make active item in vertical menu more detectable
+.ui.vertical.menu .active.item {
+  color: darken(@primaryColor, 15%);
+  font-weight: bold;
 }

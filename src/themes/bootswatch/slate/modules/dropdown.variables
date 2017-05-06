@@ -6,5 +6,7 @@
 @activeItemBackground: @gray-darker;
 @selectionTextUnderlayColor: white;
 @menuHeaderColor: @gray-light;
-@pointingArrowBackground: @gray-darker;
+@pointingArrowBackground: @gray-dark;
 @pointingArrowBoxShadow: none;
+@selectionTextColor: @gray-darker;
+@selectionVisibleTextColor: @gray-darker;

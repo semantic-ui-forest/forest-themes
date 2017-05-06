@@ -1,103 +1,14 @@
-.ui.menu .label:hover {
-    background-color: none;
+.ui.menu .item .input {
+  color: @gray-light;
+  input {
+    color: #fff;
+  }
 }
 
-.ui.pagination.menu .item.active {
-    border-color: #ddd;
+.ui.secondary.menu .item {
+  color: @secondaryItemColor;
 }
 
-.ui.menu:not(.secondary) {
-    &.inverted {
-        .label {
-            background-color: #fff;
-            color: @primaryColor;
-        }
-    }
-
-    &.secondary {
-        & > a,
-        & > .item {
-            border-radius: 0;
-        }
-    }
-
-    &.dropdown {
-
-        & > a:hover,
-        & > a:focus,
-        & > .item:hover,
-        & > .item:focus {
-            background-image: none;
-        }
-    }
-    
-    .item {
-
-        .label {
-            background-color: @gray-base;
-        }
-
-        &.active:hover {
-             color: darken(#fff, 10%);
-             background-color: @gray-dark;
-        }
-    }
-
-}
-
-.ui.rail .ui.vertical.menu .item {
-    background-color: #fff;
-    &.active {
-        color: @gray-base;
-        background-color: #fff;
-    }
-    &:hover {
-        color: @gray-light;
-        background-color: #fff;
-    }
-}
-
-.ui.vertical.menu:not(.secondary) {
-    .item {
-        background-color: @gray-darker;
-        > .label {
-            background-color: @gray-darker;
-        }
-    
-        &.active {
-            background-color: darken(@gray-darker, 10%);
-            > .label {
-                background-color: darken(@gray-darker, 10%);
-            }
-            &:hover {
-                color: #fff;
-            }
-        }
-
-        &:hover {
-            background-color: darken(@gray-darker, 5%);
-        }
-
-    }
-
-}
-
-
-.ui.secondary.menu, .ui.tabular.menu, .ui.accordion.menu {
-    .item {
-        color: @secondaryItemColor;
-    }
-}
-
-
-.ui.tabular.menu .active.item:hover {
-    background-color: #fff;
-    color: @gray;
-}
-
-.ui.text.menu .item {
-    &:hover {
-        background-color: #fff;
-        color: @gray-darker;
-    }
+.ui.text.menu .item:hover {
+  color: @gray-dark;
 }

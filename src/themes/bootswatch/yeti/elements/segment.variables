@@ -1,1 +1,2 @@
-@border: #ddd;
+@borderColor: #ddd;
+@borderRadius: 0;

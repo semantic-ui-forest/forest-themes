@@ -1,22 +1,13 @@
-.ui.accordion.menu:not(.following) {
-    .title,
-    a,
-    label,
-    .lable,
-    .item,
-    .dropdown,
-    .icon,
-    .radio,
-    .checkbox
-    {
-        color: darken(@white, 10%);
-        &:hover {
-            color: darken(@white, 20%);
-        }
-        &:active,
-        &.checked,
-        &.active {
-            color: @white;
-        }
+.ui.vertical.accordion.menu:not(.following) {
+  * {
+    color: darken(@white, 10%);
+    &:hover {
+     color: darken(@white, 20%);
     }
+    &:active,
+    &.checked,
+    &.active {
+      color: @white;
+    }
+  }
 }

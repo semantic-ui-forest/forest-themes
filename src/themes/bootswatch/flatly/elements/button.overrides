@@ -1,27 +1,9 @@
-.ui.button {
-    border: @gray;
-    border-width: 2px;
-    &.primary {
-        border: @primaryColor;
-    }
-    &.positive {
-        border: @positiveColor;
-    }
-    &.negative {
-        border: @negativeColor;
-    }
+.ui.basic.buttons .button:hover,
+.ui.basic.button:hover {
+  text-decoration: underline;
+  box-shadow: @basicBoxShadow;
 }
 
-.ui.button:active {
-    .box-shadow(none);
+.ui.inverted.button:hover {
+  background: @gray-darker;
 }
-
-.ui.buttons .dropdown {
-    .box-shadow(none);
-}
-
-.box-shadow(@shadow) {
-    -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
-    box-shadow: @shadow;
-}
-

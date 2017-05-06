@@ -40,7 +40,7 @@
 @pressedTextColor: @white;
 @selectedTextColor: @gray;
 
-@borderColor: @gray;
+@borderColor: @gray-dark;
 
 @inputPlaceholderColor: @gray-lighter;
 @inputPlaceholderFocusColor: @gray-light;

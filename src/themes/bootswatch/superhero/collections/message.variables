@@ -1,1 +1,2 @@
 @background: lighten(@pageBackground, 10%);
+@boxShadow: none;

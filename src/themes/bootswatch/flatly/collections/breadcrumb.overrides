@@ -1,4 +1,0 @@
-.ui.breadcrumb {
-    background-color: @gray-lighter;
-    padding: 0.6em;
-}

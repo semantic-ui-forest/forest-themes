@@ -1,22 +1,6 @@
-.ui.segment {
-    * {
-        border-color: @gray;
-    }
-    .header {
-        border-color: @gray;
-    }
-
-    &.piled {
-        &::after, &::before {
-            background-color: lighten(@background, 5%);
-        }
-    }
-    &.stacked {
-        &::after {
-            background-color: lighten(@background, 5%);
-        }
-    }
-    &.attached {
-        border-top: @borderWidth solid @solidBorderColor !important;
-    }
+.ui.piled.segments:after,
+.ui.piled.segments:before,
+.ui.piled.segment:after,
+.ui.piled.segment:before {
+  background-color: lighten(@background, 5%);
 }

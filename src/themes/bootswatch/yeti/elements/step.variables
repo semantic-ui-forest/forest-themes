@@ -1,3 +1,4 @@
+@textColor: #fff;
 @backgroundColor: lighten(@gray-dark, 5%);
 
 @titleColor: @gray-lighter;
@@ -5,8 +6,15 @@
 
 @activeBackground: darken(@gray-dark, 5%);
 @activeColor: @white;
+@activeIconColor: @white;
+@hoverColor: #fff;
 @hoverBackground: darken(@gray-dark, 10%);
 @activeHoverBackground: darken(@gray-dark, 10%);
 
+@downColor: @white;
+@downBackground: darken(@gray-dark, 15%);
+
 @disabledColor: darken(@white, 30%);
 @disabledBackground: @gray;
+
+@arrowBackgroundColor: @backgroundColor;

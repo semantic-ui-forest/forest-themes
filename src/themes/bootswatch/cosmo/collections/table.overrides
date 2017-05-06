@@ -1,20 +1,9 @@
 .ui.table {
-    a:not(.button) {
-        text-decoration: underline;
-    }
+  a:not(.button) {
+    text-decoration: underline;
+  }
 
-    .dropdown a {
-        text-decoration: none;
-    }
-
-    .positive,
-    .warning,
-    .negative,
-    .info {
-        color: #fff;
-
-        a {
-            color: #fff;
-        }
-    }
+  .dropdown a {
+    text-decoration: none;
+  }
 }

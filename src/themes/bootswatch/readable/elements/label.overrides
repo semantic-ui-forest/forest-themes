@@ -1,19 +1,17 @@
 .ui.label:not(.corner) {
-    font-family: @fontName;
-    font-weight: normal;
-    color: @textColor;
-    border: 1px solid rgba(0,0,0,.1) !important;
-    background-color: @white;
+  font-family: @fontName;
+  border: 1px solid rgba(0,0,0,.1) !important;
+  background-color: @white;
 }
 
 .ui.tag.label:before {
-    border-style: solid;
-    border-color: #ddd;
-    border-width: 1px 0 0 1px;
+  border-style: solid;
+  border-color: #ddd;
+  border-width: 1px 0 0 1px;
 }
 
 .ui.ribbon.label:after {
-    left: -1px;
-    border-right-color: darken(white, 5%);
-    border-top: 1px solid #ddd;
+  left: -1px;
+  border-right-color: darken(white, 5%);
+  border-top: 1px solid #ddd;
 }

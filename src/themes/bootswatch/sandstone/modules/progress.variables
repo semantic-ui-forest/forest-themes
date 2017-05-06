@@ -1,0 +1,4 @@
+@borderRadius: 10px;
+@barBorderRadius: 10px;
+@boxShadow: none;
+@background: @gray-light;

@@ -1,1 +1,2 @@
 @border: transparent;
+@closeColor: #fff;
