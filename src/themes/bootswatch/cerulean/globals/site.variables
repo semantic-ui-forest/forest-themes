@@ -20,7 +20,6 @@
 @negativeTextColor: #b94a48;
 @negativeBorderColor: darken(spin(@negativeBackgroundColor, -10), 3%);
 
-
 @pageFont: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 @headerFont: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 @importGoogleFonts: false;
