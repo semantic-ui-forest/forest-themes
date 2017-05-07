@@ -726,7 +726,8 @@ legend {
 
 .ui.button:hover {
   background-color: #CACBCD;
-  background-image: none;
+  background-image: -webkit-linear-gradient(#4f5151, #474949 6%, #3f4141);
+  background-image: linear-gradient(#4f5151, #474949 6%, #3f4141);
   box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
   color: #ddd;
 }
@@ -4614,23 +4615,6 @@ legend {
   border-radius: 0.30769231rem;
 }
 
-.ui.button {
-  border: #474949;
-  font-family: "Open Sans";
-}
-
-.ui.button.primary {
-  border: #D9230F;
-}
-
-.ui.button.positive {
-  border: #469408;
-}
-
-.ui.button.negative {
-  border: #D9831F;
-}
-
 .ui.button,
 .ui.button:hover {
   background-image: -webkit-linear-gradient(#4f5151, #474949 6%, #3f4141);
@@ -6424,11 +6408,11 @@ i.flag.zimbabwe:before {
   border: none;
   margin: calc(2rem -  0.14285714em ) 0em 1rem;
   padding: 0em 0em;
-  font-family: "Open Sans", 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 300;
   line-height: 1.28571429em;
   text-transform: none;
-  color: #777;
+  color: #222222;
 }
 
 .ui.header:first-child {
@@ -7216,11 +7200,6 @@ a.ui.inverted.grey.header:hover {
 
 .ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
   font-size: 1.28571429em;
-}
-
-.ui.header {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222222;
 }
 
 /*******************************
@@ -12370,9 +12349,9 @@ img.ui.bordered.image {
   background-color: #4183C4;
   background-image: none;
   padding: 0.5833em 0.833em;
-  color: rgba(0, 0, 0, 0.6);
+  color: #fff;
   text-transform: none;
-  font-weight: bold;
+  font-weight: normal;
   border: 0px solid transparent;
   border-radius: 0.30769231rem;
   -webkit-transition: background 0.1s ease;
@@ -13764,11 +13743,6 @@ a.ui.basic.label:hover {
 .ui.massive.labels .label,
 .ui.massive.label {
   font-size: 1.69230769rem;
-}
-
-label,
-.label {
-  font-weight: normal;
 }
 
 /*******************************
@@ -17409,10 +17383,6 @@ ol.ui.horizontal.list li:before,
   font-size: 1.69230769rem;
 }
 
-.ui.breadcrumb {
-  background-color: transparent;
-}
-
 /*******************************
          Site Overrides
 *******************************/
@@ -17687,7 +17657,7 @@ ol.ui.horizontal.list li:before,
 .ui.form .field .prompt.label {
   white-space: normal;
   background: #FFFFFF !important;
-  border: 1px solid #ffe7eb !important;
+  border: 1px solid #D9831F !important;
   color: #b94a48 !important;
 }
 
@@ -17925,7 +17895,7 @@ ol.ui.horizontal.list li:before,
 .ui.form .field.error input[type="file"],
 .ui.form .field.error input[type="url"] {
   background: #FFF6F6;
-  border-color: #ffe7eb;
+  border-color: #D9831F;
   color: #b94a48;
   border-radius: '';
   box-shadow: none;
@@ -17946,7 +17916,7 @@ ol.ui.horizontal.list li:before,
 .ui.form .field.error input[type="file"]:focus,
 .ui.form .field.error input[type="url"]:focus {
   background: #FFF6F6;
-  border-color: #ffe7eb;
+  border-color: #D9831F;
   color: #b94a48;
   -webkit-appearance: none;
   box-shadow: none;
@@ -17973,17 +17943,17 @@ ol.ui.horizontal.list li:before,
 
 .ui.form .fields.error .field .ui.dropdown,
 .ui.form .field.error .ui.dropdown {
-  border-color: #ffe7eb !important;
+  border-color: #D9831F !important;
 }
 
 .ui.form .fields.error .field .ui.dropdown:hover,
 .ui.form .field.error .ui.dropdown:hover {
-  border-color: #ffe7eb !important;
+  border-color: #D9831F !important;
 }
 
 .ui.form .fields.error .field .ui.dropdown:hover .menu,
 .ui.form .field.error .ui.dropdown:hover .menu {
-  border-color: #ffe7eb;
+  border-color: #D9831F;
 }
 
 .ui.form .fields.error .field .ui.multiple.selection.dropdown > .label,
@@ -18029,7 +17999,7 @@ ol.ui.horizontal.list li:before,
 .ui.form .fields.error .field .checkbox:not(.toggle):not(.slider) .box:before,
 .ui.form .field.error .checkbox:not(.toggle):not(.slider) .box:before {
   background: #FFF6F6;
-  border-color: #ffe7eb;
+  border-color: #D9831F;
 }
 
 .ui.form .fields.error .field .checkbox label:after,
@@ -18573,60 +18543,6 @@ ol.ui.horizontal.list li:before,
 
 .ui.massive.form {
   font-size: 1.69230769rem;
-}
-
-.form.warning .label,
-.form.warning .radio,
-.form.warning .checkbox,
-.form.warning .inline .radio,
-.form.warning .inline .checkbox,
-.form.warning.radio label,
-.form.warning.checkbox label,
-.form.warning.inline .radio label,
-.form.warning.inline .checkbox label,
-.form.warning .icon {
-  color: #D9831F;
-}
-
-.form.warning *,
-.form.warning *:focus {
-  border-color: #D9831F;
-}
-
-.form.error .label,
-.form.error .radio,
-.form.error .checkbox,
-.form.error .inline .radio,
-.form.error .inline .checkbox,
-.form.error.radio label,
-.form.error.checkbox label,
-.form.error.inline .radio label,
-.form.error.inline .checkbox label,
-.form.error .icon {
-  color: #D9230F;
-}
-
-.form.error *,
-.form.error *:focus {
-  border-color: #D9230F;
-}
-
-.form.success .label,
-.form.success .radio,
-.form.success .checkbox,
-.form.success .inline .radio,
-.form.success .inline .checkbox,
-.form.success.radio label,
-.form.success.checkbox label,
-.form.success.inline .radio label,
-.form.success.inline .checkbox label,
-.form.success .icon {
-  color: #469408;
-}
-
-.form.success *,
-.form.success *:focus {
-  border-color: #469408;
 }
 
 /*******************************
@@ -23140,39 +23056,6 @@ Floated Menu / Item
   width: 25rem;
 }
 
-.ui.pagination.menu {
-  color: #444;
-}
-
-.ui.pagination.menu .item:hover {
-  color: #fff;
-  background-color: #D9230F;
-  border-color: #D9230F;
-}
-
-.ui.pagination.menu a,
-.ui.pagination.menu .item {
-  color: #444;
-}
-
-.ui.pagination.menu a:hover,
-.ui.pagination.menu .item:hover,
-.ui.pagination.menu > .item.active,
-.ui.pagination.menu > a.active {
-  border-color: #D9230F;
-  color: #fff;
-}
-
-.ui.pagination.menu > a.disabled,
-.ui.pagination.menu > .item.disabled {
-  border-color: #ddd;
-}
-
-.ui.menu.inverted .label {
-  background-color: #fff;
-  color: #D9230F;
-}
-
 /*******************************
          Site Overrides
 *******************************/
@@ -23201,7 +23084,7 @@ Floated Menu / Item
   -webkit-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
   transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
   border-radius: 0.30769231rem;
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: none;
 }
 
 .ui.message:first-child {
@@ -23712,7 +23595,6 @@ Floated Menu / Item
 
 .ui.message {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: none !important;
 }
 
 /*******************************
@@ -31436,10 +31318,6 @@ select.ui.dropdown {
     width: 1140px;
     margin: 0em 0em 0em -570px;
   }
-}
-
-.ui.modal {
-  padding: 20px;
 }
 
 /*******************************

@@ -1468,7 +1468,7 @@ body {
   border-radius: 0.25rem;
   text-transform: none;
   text-shadow: none !important;
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.15) inset;
+  box-shadow: none;
 }
 
 .ui.basic.buttons {
@@ -1485,14 +1485,14 @@ body {
 .ui.basic.button:hover {
   background: #FFFFFF !important;
   color: rgba(0, 0, 0, 0.8) !important;
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px rgba(34, 36, 38, 0.15) inset;
+  box-shadow: none;
 }
 
 .ui.basic.buttons .button:focus,
 .ui.basic.button:focus {
   background: #FFFFFF !important;
   color: rgba(0, 0, 0, 0.8) !important;
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px rgba(34, 36, 38, 0.15) inset;
+  box-shadow: none;
 }
 
 .ui.basic.buttons .button:active,
@@ -1517,7 +1517,7 @@ body {
 /* Vertical */
 
 .ui.basic.buttons .button:hover {
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px rgba(34, 36, 38, 0.15) inset inset;
+  box-shadow: none inset;
 }
 
 .ui.basic.buttons .button:active {
@@ -4614,16 +4614,14 @@ body {
   border: 1px solid #ddd;
 }
 
-.ui.button.primary {
-  border: #4582EC;
+.ui.basic.buttons .button,
+.ui.basic.button {
+  border: none;
 }
 
-.ui.button.positive {
-  border: #3FAD46;
-}
-
-.ui.button.negative {
-  border: #d9534f;
+.ui.basic.button:focus,
+.ui.basic.button:hover {
+  text-decoration: underline;
 }
 
 .ui.buttons .button:first-child {
@@ -12254,11 +12252,6 @@ img.ui.bordered.image {
   font-size: 1.6875em;
 }
 
-.input:not(i, .icon),
-input:not(i, .icon) {
-  font-family: "Raleway";
-}
-
 /*******************************
          Site Overrides
 *******************************/
@@ -12284,9 +12277,9 @@ input:not(i, .icon) {
   background-color: #E8E8E8;
   background-image: none;
   padding: 0.5833em 0.833em;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.87);
   text-transform: none;
-  font-weight: bold;
+  font-weight: normal;
   border: 0px solid transparent;
   border-radius: 0.25rem;
   -webkit-transition: background 0.1s ease;
@@ -13682,8 +13675,6 @@ a.ui.basic.label:hover {
 
 .ui.label:not(.corner) {
   font-family: "Raleway";
-  font-weight: normal;
-  color: rgba(0, 0, 0, 0.87);
   border: 1px solid rgba(0, 0, 0, 0.1) !important;
   background-color: #FFFFFF;
 }
@@ -15638,7 +15629,7 @@ ol.ui.horizontal.list li:before,
 .ui.segment {
   position: relative;
   background: #FFFFFF;
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  box-shadow: none;
   margin: 1rem 0em;
   padding: 1em 1em;
   border-radius: 0.25rem;
@@ -15721,7 +15712,7 @@ ol.ui.horizontal.list li:before,
 .ui.basic.table.segment {
   background: #FFFFFF;
   border: 1px solid rgba(34, 36, 38, 0.15);
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  box-shadow: none;
 }
 
 .ui[class*="very basic"].table.segment {
@@ -15928,7 +15919,7 @@ ol.ui.horizontal.list li:before,
   position: relative;
   margin: 1rem 0em;
   border: 1px solid rgba(34, 36, 38, 0.15);
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  box-shadow: none;
   border-radius: 0.25rem;
 }
 
@@ -15969,7 +15960,7 @@ ol.ui.horizontal.list li:before,
   bottom: 0px;
   margin-top: 0em;
   margin-bottom: 0em;
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15), none;
+  box-shadow: none, none;
   border-radius: 0em 0em 0.25rem 0.25rem;
 }
 
@@ -16008,7 +15999,7 @@ ol.ui.horizontal.list li:before,
   border-radius: 0px;
   padding: 0em;
   background-color: #FFFFFF;
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
+  box-shadow: none;
   margin: 1rem 0em;
   border-radius: 0.25rem;
   border: 1px solid rgba(34, 36, 38, 0.15);
@@ -16443,7 +16434,7 @@ ol.ui.horizontal.list li:before,
   margin-top: 0em;
   top: 0px;
   margin-bottom: 1rem;
-  box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15), none;
+  box-shadow: none, none;
   border-radius: 0em 0em 0.25rem 0.25rem;
 }
 
@@ -16493,14 +16484,6 @@ ol.ui.horizontal.list li:before,
 .ui.massive.segments .segment,
 .ui.massive.segment {
   font-size: 1.6875rem;
-}
-
-.ui.segment {
-  box-shadow: none;
-}
-
-.ui.segment .close {
-  color: rgba(0, 0, 0, 0.87);
 }
 
 /*******************************
@@ -22225,8 +22208,8 @@ Floated Menu / Item
 ---------------*/
 
 .ui.inverted.menu {
-  border: #ddd;
-  background: #FFFFFF;
+  border: 0px solid transparent;
+  background: #1B1C1D;
   box-shadow: none;
 }
 
@@ -22235,7 +22218,7 @@ Floated Menu / Item
 .ui.inverted.menu .item,
 .ui.inverted.menu .item > a:not(.ui) {
   background: transparent;
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .ui.inverted.menu .item.menu {
@@ -22281,7 +22264,7 @@ Floated Menu / Item
 .ui.inverted.menu .link.item:hover,
 .ui.inverted.menu a.item:hover {
   background: rgba(255, 255, 255, 0.08);
-  color: rgba(0, 0, 0, 0.87);
+  color: #ffffff;
 }
 
 .ui.vertical.inverted.menu .item .menu a.item:hover,
@@ -22294,15 +22277,15 @@ Floated Menu / Item
 
 .ui.inverted.menu a.item:active,
 .ui.inverted.menu .link.item:active {
-  background: #ddd;
+  background: rgba(255, 255, 255, 0.08);
   color: #ffffff;
 }
 
 /*--- Active ---*/
 
 .ui.inverted.menu .active.item {
-  background: transparent;
-  color: rgba(0, 0, 0, 0.87) !important;
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff !important;
 }
 
 .ui.inverted.vertical.menu .item .menu .active.item {
@@ -22320,7 +22303,7 @@ Floated Menu / Item
 /*--- Active Hover ---*/
 
 .ui.inverted.menu .active.item:hover {
-  background: transparent;
+  background: rgba(255, 255, 255, 0.15);
   color: #FFFFFF !important;
 }
 
@@ -22981,66 +22964,10 @@ Floated Menu / Item
   width: 25rem;
 }
 
-.ui.inverted.menu .label:hover {
-  color: rgba(0, 0, 0, 0.87);
-}
-
-.ui.pagination.menu {
-  color: rgba(0, 0, 0, 0.87);
-  font-family: "Raleway";
-}
-
-.ui.pagination.menu .item:hover {
-  color: #fff;
-  background-color: #4582EC;
-  border-color: #4582EC;
-}
-
-.ui.pagination.menu.large > a,
-.ui.pagination.menu.large > span {
-  padding: 14px 24px;
-}
-
-.ui.pagination.menu a {
-  color: rgba(0, 0, 0, 0.87);
-}
-
-.ui.pagination.menu a:hover {
-  border-color: transparent;
-  color: #fff;
-}
-
-.ui.pagination.menu .disabled a {
-  border-color: #ddd;
-}
-
-.ui.menu:not(.pointing) .form,
-.ui.menu:not(.pointing) .input {
-  margin-left: 0;
-  margin-right: 0;
-}
-
-.ui.menu:not(.pointing) > a,
-.ui.menu:not(.pointing) > .item {
-  margin: 12.5px 0px;
+.ui.menu:not(.pointing) .item {
+  margin: 10px 0px;
   padding: 8px 12px;
-  border-radius: 4px !important;
-}
-
-.ui.menu:not(.pointing) > .active > a:hover,
-.ui.menu:not(.pointing) > .active > .item:hover {
-  color: #4183C4;
-}
-
-.ui.menu:not(.pointing).inverted > .active > a:hover,
-.ui.menu:not(.pointing).inverted > .active > .item:hover {
-  color: rgba(0, 0, 0, 0.87);
-}
-
-.ui.menu:not(.pointing) .dropdown > a,
-.ui.menu:not(.pointing) .dropdown > a:hover,
-.ui.menu:not(.pointing) .dropdown > a:focus {
-  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 .ui.item.menu:not(.pointing) {
@@ -23049,25 +22976,12 @@ Floated Menu / Item
 }
 
 .ui.item.menu:not(.pointing) .active.item {
-  border: 1px solid  #ddd;
+  border: 1px solid #ddd;
 }
 
-.ui.vertical.menu .item {
-  border: none;
-}
-
-@media (min-width: 768px) {
-  .ui.menu > a,
-  .ui.menu > .item {
-    padding: 8px 12px;
-  }
-}
-
-@media (max-width: 767px) {
-  .ui.menu > a,
-  .ui.menu > .item {
-    margin: 0;
-  }
+.ui.vertical.menu .active.item {
+  color: #1559cf;
+  font-weight: bold;
 }
 
 /*******************************
@@ -23098,7 +23012,7 @@ Floated Menu / Item
   -webkit-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
   transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
   border-radius: 0.25rem;
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: none !important;
 }
 
 .ui.message:first-child {
@@ -23609,11 +23523,9 @@ Floated Menu / Item
 
 .ui.message {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: none !important;
 }
 
 .ui.message a {
-  color: #fff;
   text-decoration: underline;
 }
 
@@ -31338,14 +31250,6 @@ select.ui.dropdown {
     width: 1140px;
     margin: 0em 0em 0em -570px;
   }
-}
-
-.ui.modal {
-  padding: 20px;
-}
-
-.ui.modal .close {
-  color: rgba(0, 0, 0, 0.87);
 }
 
 /*******************************

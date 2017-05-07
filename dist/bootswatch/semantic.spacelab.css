@@ -4602,22 +4602,6 @@ input::selection {
   border-radius: 0.28571429rem;
 }
 
-.ui.button {
-  border: #474949;
-}
-
-.ui.button.primary {
-  border: #446E9B;
-}
-
-.ui.button.positive {
-  border: #3CB521;
-}
-
-.ui.button.negative {
-  border: #CD0200;
-}
-
 .ui.button,
 .ui.input .button {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
@@ -6491,11 +6475,11 @@ i.flag.zimbabwe:before {
   border: none;
   margin: calc(2rem -  0.14285714em ) 0em 1rem;
   padding: 0em 0em;
-  font-family: "Open Sans", 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: bold;
   line-height: 1.28571429em;
   text-transform: none;
-  color: #666;
+  color: #2d2d2d;
 }
 
 .ui.header:first-child {
@@ -7283,11 +7267,6 @@ a.ui.inverted.grey.header:hover {
 
 .ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
   font-size: 1.28571429em;
-}
-
-.ui.header {
-  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #2d2d2d;
 }
 
 /*******************************
@@ -12441,7 +12420,7 @@ img.ui.bordered.image {
   background-color: #3399F3;
   background-image: none;
   padding: 0.5833em 0.833em;
-  color: rgba(0, 0, 0, 0.6);
+  color: #fff;
   text-transform: none;
   font-weight: bold;
   border: 0px solid transparent;
@@ -16634,10 +16613,6 @@ ol.ui.horizontal.list li:before,
 .ui.massive.segments .segment,
 .ui.massive.segment {
   font-size: 1.71428571rem;
-}
-
-.ui.segment.primary .header {
-  color: #fff;
 }
 
 /*******************************
@@ -23170,34 +23145,12 @@ Floated Menu / Item
   color: #446E9B;
 }
 
-.ui.menu .label {
-  text-shadow: none;
-}
-
-.ui.menu > a,
-.ui.menu > .item,
-.ui.menu > a:hover,
-.ui.menu > .item:hover {
+.ui.menu .item,
+.ui.menu .item:hover {
   padding-top: 17px;
   padding-bottom: 17px;
   -webkit-transition: color ease-in-out 0.2s;
   transition: color ease-in-out 0.2s;
-}
-
-.ui.menu,
-.ui.menu:hover {
-  -webkit-transition: color ease-in-out 0.2s;
-  transition: color ease-in-out 0.2s;
-}
-
-.ui.menu .icon,
-.ui.menu .icon:hover {
-  -webkit-transition: border-color ease-in-out 0.2s;
-  transition: border-color ease-in-out 0.2s;
-}
-
-.ui.menu .dropdown {
-  text-shadow: none;
 }
 
 /*******************************
@@ -23228,7 +23181,7 @@ Floated Menu / Item
   -webkit-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
   transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
   border-radius: 0.28571429rem;
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: none !important;
 }
 
 .ui.message:first-child {
@@ -23739,7 +23692,6 @@ Floated Menu / Item
 
 .ui.message {
   border: 1px solid rgba(0, 0, 0, 0.1);
-  box-shadow: none !important;
 }
 
 /*******************************
@@ -31463,10 +31415,6 @@ select.ui.dropdown {
     width: 1140px;
     margin: 0em 0em 0em -570px;
   }
-}
-
-.ui.modal {
-  padding: 20px;
 }
 
 /*******************************

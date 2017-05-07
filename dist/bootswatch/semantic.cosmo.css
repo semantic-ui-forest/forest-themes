@@ -742,10 +742,10 @@ body {
 ---------------*/
 
 .ui.button:hover {
-  background-color: #CACBCD;
+  background-color: #000;
   background-image: none;
   box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(34, 36, 38, 0.15) inset;
-  color: rgba(0, 0, 0, 0.8);
+  color: #e6e6e6;
 }
 
 .ui.button:hover .icon {
@@ -757,7 +757,7 @@ body {
 ---------------*/
 
 .ui.button:focus {
-  background-color: #CACBCD;
+  background-color: #000;
   color: rgba(0, 0, 0, 0.8);
   background-image: '' !important;
   box-shadow: '' !important;
@@ -1085,7 +1085,7 @@ body {
 .ui.inverted.button:hover {
   background: #FFFFFF;
   box-shadow: 0px 0px 0px 2px #FFFFFF inset !important;
-  color: rgba(0, 0, 0, 0.8);
+  color: #e6e6e6;
 }
 
 /* Active / Focus */
@@ -1484,7 +1484,7 @@ body {
 .ui.basic.buttons .button,
 .ui.basic.button {
   background: transparent none !important;
-  color: #fff !important;
+  color: #000 !important;
   font-weight: normal;
   border-radius: 0;
   text-transform: none;
@@ -1505,14 +1505,14 @@ body {
 .ui.basic.buttons .button:hover,
 .ui.basic.button:hover {
   background: #FFFFFF !important;
-  color: rgba(0, 0, 0, 0.8) !important;
+  color: #1a1a1a !important;
   box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
 .ui.basic.buttons .button:focus,
 .ui.basic.button:focus {
   background: #FFFFFF !important;
-  color: rgba(0, 0, 0, 0.8) !important;
+  color: #1a1a1a !important;
   box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px rgba(34, 36, 38, 0.15) inset;
 }
 
@@ -1635,7 +1635,7 @@ body {
   text-align: center;
   margin: 0em;
   width: 2.46666667em;
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: #494949;
   color: '';
   box-shadow: -1px 0px 0px 0px transparent inset;
 }
@@ -4631,29 +4631,8 @@ body {
   border-radius: 0;
 }
 
-.ui.button {
-  border: #222222;
-  border-width: 2px;
-}
-
-.ui.button.primary {
-  border: #2780E3;
-}
-
-.ui.button.positive {
-  border: #3FB618;
-}
-
-.ui.button.negative {
-  border: #FF0039;
-}
-
-.ui.button.basic {
-  color: rgba(0, 0, 0, 0.7) !important;
-}
-
-.ui.button.basic:hover {
-  color: rgba(0, 0, 0, 0.8) !important;
+.ui.inverted.button:hover {
+  background: #222222 none;
 }
 
 /*******************************
@@ -7170,10 +7149,6 @@ a.ui.inverted.grey.header:hover {
 
 .ui.header:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
   font-size: 1.28571429em;
-}
-
-.header {
-  font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
 }
 
 /*******************************
@@ -12778,15 +12753,15 @@ a.ui.label {
 
 a.ui.labels .label:hover,
 a.ui.label:hover {
-  background-color: #E0E0E0;
-  border-color: #E0E0E0;
+  background-color: #000;
+  border-color: #000;
   background-image: none;
-  color: rgba(0, 0, 0, 0.8);
+  color: #fff;
 }
 
 .ui.labels a.label:hover:before,
 a.ui.label:hover:before {
-  color: rgba(0, 0, 0, 0.8);
+  color: #fff;
 }
 
 /*-------------------
@@ -13721,18 +13696,6 @@ a.ui.basic.label:hover {
 .ui.massive.labels .label,
 .ui.massive.label {
   font-size: 1.73333333rem;
-}
-
-.ui.label {
-  border-radius: 0;
-}
-
-.ui.label i.close.icon {
-  color: white !important;
-}
-
-.ui.label:hover .close.icon {
-  color: #222222 !important;
 }
 
 /*******************************
@@ -14806,51 +14769,6 @@ ol.ui.horizontal.list li:before,
 .ui.massive.horizontal.list .list > .item,
 .ui.massive.horizontal.list > .item {
   font-size: 1.73333333rem;
-}
-
-.ui.list a.active,
-.ui.list .item.active,
-.ui.list a.active:hover,
-.ui.list .item.active:hover,
-.ui.list a.active:focus,
-.ui.list .item.active:focus {
-  border-color: #ddd;
-}
-
-.ui.list a.positive.active,
-.ui.list .item.positive.active {
-  background-color: #3FB618;
-}
-
-.ui.list a.positive.active:hover,
-.ui.list .item.positive.active:hover,
-.ui.list a.positive.active:focus,
-.ui.list .item.positive.active:focus {
-  background-color: #379f15;
-}
-
-.ui.list a.warning.active,
-.ui.list .item.warning.active {
-  background-color: #FF7518;
-}
-
-.ui.list a.warning.active:hover,
-.ui.list .item.warning.active:hover,
-.ui.list a.warning.active:focus,
-.ui.list .item.warning.active:focus {
-  background-color: #fe6600;
-}
-
-.ui.list a.negative.active,
-.ui.list .item.negative.active {
-  background-color: #FF0039;
-}
-
-.ui.list a.negative.active:hover,
-.ui.list .item.negative.active:hover,
-.ui.list a.negative.active:focus,
-.ui.list .item.negative.active:focus {
-  background-color: #e60033;
 }
 
 /*******************************
@@ -16575,16 +16493,6 @@ ol.ui.horizontal.list li:before,
   font-size: 1.73333333rem;
 }
 
-.ui.segment .header,
-.ui.segment .footer {
-  border-top-right-radius: 0;
-  border-top-left-radius: 0;
-}
-
-.ui.segment .close {
-  color: #000;
-}
-
 /*******************************
          Site Overrides
 *******************************/
@@ -16660,8 +16568,8 @@ ol.ui.horizontal.list li:before,
   justify-content: center;
   margin: 0em 0em;
   padding: 1.13333333em 2em;
-  background: #222222;
-  color: #000;
+  background: #333333;
+  color: #d9d9d9;
   box-shadow: none;
   border-radius: 0em;
   border: none;
@@ -16680,7 +16588,7 @@ ol.ui.horizontal.list li:before,
   top: 50%;
   right: 0%;
   border: medium none;
-  background-color: #222222;
+  background-color: #333333;
   width: 1.13333333em;
   height: 1.13333333em;
   border-style: solid;
@@ -16955,7 +16863,7 @@ ol.ui.horizontal.list li:before,
 .ui.steps a.step:hover::after,
 .ui.steps a.step:hover {
   background: #333333;
-  color: rgba(0, 0, 0, 0.8);
+  color: #fff;
 }
 
 /* Link Down */
@@ -16980,12 +16888,12 @@ ol.ui.horizontal.list li:before,
 }
 
 .ui.steps .step.active .title {
-  color: #4183C4;
+  color: #fff;
 }
 
 .ui.ordered.steps .step.active:before,
 .ui.steps .active.step .icon {
-  color: rgba(0, 0, 0, 0.85);
+  color: #FFFFFF;
 }
 
 /* Active Arrow */
@@ -17013,8 +16921,8 @@ ol.ui.horizontal.list li:before,
 .ui.steps a.active.step:hover::after,
 .ui.steps a.active.step:hover {
   cursor: pointer;
-  background: #333333;
-  color: #000;
+  background: #222222;
+  color: #d9d9d9;
 }
 
 /* Completed */
@@ -17256,22 +17164,6 @@ ol.ui.horizontal.list li:before,
   font-size: 1.73333333rem;
 }
 
-.ui.steps .step .title {
-  color: #e6e6e6;
-}
-
-.ui.ordered.steps .step:before {
-  color: #FFFFFF;
-}
-
-.ui.vertical.steps .active.step:before {
-  color: #FFFFFF;
-}
-
-.ui.steps .active.step .icon {
-  color: #FFFFFF;
-}
-
 /*******************************
          Site Overrides
 *******************************/
@@ -17315,7 +17207,7 @@ ol.ui.horizontal.list li:before,
   opacity: 0.7;
   margin: 0em 0.2rem 0em;
   font-size: 0.93333333em;
-  color: rgba(0, 0, 0, 0.4);
+  color: #999999;
   vertical-align: baseline;
 }
 
@@ -17404,16 +17296,20 @@ ol.ui.horizontal.list li:before,
   padding: 0.6em;
 }
 
-.ui.breadcrumb .divider {
-  color: #999999;
+.ui.breadcrumb .section {
+  color: #e6e6e6;
 }
 
-.ui.breadcrumb .active.section {
+.ui.breadcrumb .section:hover {
+  color: #d9d9d9;
+}
+
+.ui.breadcrumb .section.active {
   color: #FFFFFF;
 }
 
-.ui.breadcrumb .active.section:hover {
-  color: #cccccc;
+.ui.breadcrumb .section.active:hover {
+  color: #f2f2f2;
 }
 
 /*******************************
@@ -17691,7 +17587,7 @@ ol.ui.horizontal.list li:before,
   white-space: normal;
   background: #FFFFFF !important;
   border: 1px solid #f0005e !important;
-  color: #fff !important;
+  color: #FF0039 !important;
 }
 
 .ui.form .inline.fields .field .prompt,
@@ -17769,27 +17665,27 @@ ol.ui.horizontal.list li:before,
 /* Error Placeholder */
 
 .ui.form .error ::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #ffccd7;
 }
 
 .ui.form .error :-ms-input-placeholder {
-  color: #ffffff !important;
+  color: #ffccd7 !important;
 }
 
 .ui.form .error ::-moz-placeholder {
-  color: #ffffff;
+  color: #ffccd7;
 }
 
 .ui.form .error :focus::-webkit-input-placeholder {
-  color: #ffffff;
+  color: #ff99b0;
 }
 
 .ui.form .error :focus:-ms-input-placeholder {
-  color: #ffffff !important;
+  color: #ff99b0 !important;
 }
 
 .ui.form .error :focus::-moz-placeholder {
-  color: #ffffff;
+  color: #ff99b0;
 }
 
 /*--------------------
@@ -17890,12 +17786,12 @@ ol.ui.horizontal.list li:before,
 .ui.form .field.error label,
 .ui.form .fields.error .field .input,
 .ui.form .field.error .input {
-  color: #fff;
+  color: #FF0039;
 }
 
 .ui.form .fields.error .field .corner.label,
 .ui.form .field.error .corner.label {
-  border-color: #fff;
+  border-color: #FF0039;
   color: #FFFFFF;
 }
 
@@ -17929,7 +17825,7 @@ ol.ui.horizontal.list li:before,
 .ui.form .field.error input[type="url"] {
   background: #ff0039;
   border-color: #f0005e;
-  color: #fff;
+  color: #FF0039;
   border-radius: '';
   box-shadow: none;
 }
@@ -17950,7 +17846,7 @@ ol.ui.horizontal.list li:before,
 .ui.form .field.error input[type="url"]:focus {
   background: #ff0039;
   border-color: #f0005e;
-  color: #fff;
+  color: #FF0039;
   -webkit-appearance: none;
   box-shadow: none;
 }
@@ -17971,7 +17867,7 @@ ol.ui.horizontal.list li:before,
 .ui.form .field.error .ui.dropdown .text,
 .ui.form .field.error .ui.dropdown .item {
   background: #ff0039;
-  color: #fff;
+  color: #FF0039;
 }
 
 .ui.form .fields.error .field .ui.dropdown,
@@ -18024,7 +17920,7 @@ ol.ui.horizontal.list li:before,
 .ui.form .field.error .checkbox:not(.toggle):not(.slider) label,
 .ui.form .fields.error .field .checkbox:not(.toggle):not(.slider) .box,
 .ui.form .field.error .checkbox:not(.toggle):not(.slider) .box {
-  color: #fff;
+  color: #FF0039;
 }
 
 .ui.form .fields.error .field .checkbox:not(.toggle):not(.slider) label:before,
@@ -18039,7 +17935,7 @@ ol.ui.horizontal.list li:before,
 .ui.form .field.error .checkbox label:after,
 .ui.form .fields.error .field .checkbox .box:after,
 .ui.form .field.error .checkbox .box:after {
-  color: #fff;
+  color: #FF0039;
 }
 
 /*--------------------
@@ -18578,66 +18474,66 @@ ol.ui.horizontal.list li:before,
   font-size: 1.73333333rem;
 }
 
-.form.warning .field label,
-.form.warning .field .label,
-.form.warning .field .radio,
-.form.warning .field .checkbox,
-.form.warning .field .inline .radio,
-.form.warning .field .inline .checkbox,
-.form.warning .field.radio label,
-.form.warning .field.checkbox label,
-.form.warning .field.inline .radio label,
-.form.warning .field.inline .checkbox label,
-.form.warning .field .icon {
+.ui.form.warning .field label,
+.ui.form.warning .field .label,
+.ui.form.warning .field .radio,
+.ui.form.warning .field .checkbox,
+.ui.form.warning .field .inline .radio,
+.ui.form.warning .field .inline .checkbox,
+.ui.form.warning .field.radio label,
+.ui.form.warning .field.checkbox label,
+.ui.form.warning .field.inline .radio label,
+.ui.form.warning .field.inline .checkbox label,
+.ui.form.warning .field .icon {
   color: #FF7518;
 }
 
-.form.warning .field .input,
-.form.warning .field input {
+.ui.form.warning .field .input,
+.ui.form.warning .field input {
   border: 1px solid #FF7518;
 }
 
-.form.error .field.error label,
-.form.error .field.error .label,
-.form.error .field.error .radio,
-.form.error .field.error .checkbox,
-.form.error .field.error .inline .radio,
-.form.error .field.error .inline .checkbox,
-.form.error .field.error.radio label,
-.form.error .field.error.checkbox label,
-.form.error .field.error.inline .radio label,
-.form.error .field.error.inline .checkbox label,
-.form.error .field.error .icon {
+.ui.form.error .field.error label,
+.ui.form.error .field.error .label,
+.ui.form.error .field.error .radio,
+.ui.form.error .field.error .checkbox,
+.ui.form.error .field.error .inline .radio,
+.ui.form.error .field.error .inline .checkbox,
+.ui.form.error .field.error.radio label,
+.ui.form.error .field.error.checkbox label,
+.ui.form.error .field.error.inline .radio label,
+.ui.form.error .field.error.inline .checkbox label,
+.ui.form.error .field.error .icon {
   color: #FF0039;
 }
 
-.form.error .field.error .input,
-.form.error .field.error input {
+.ui.form.error .field.error .input,
+.ui.form.error .field.error input {
   border: 1px solid #FF0039;
   background-color: #fff!important;
 }
 
-.form.success .field label,
-.form.success .field .label,
-.form.success .field .radio,
-.form.success .field .checkbox,
-.form.success .field .inline .radio,
-.form.success .field .inline .checkbox,
-.form.success .field.radio label,
-.form.success .field.checkbox label,
-.form.success .field.inline .radio label,
-.form.success .field.inline .checkbox label,
-.form.success .field .icon {
+.ui.form.success .field label,
+.ui.form.success .field .label,
+.ui.form.success .field .radio,
+.ui.form.success .field .checkbox,
+.ui.form.success .field .inline .radio,
+.ui.form.success .field .inline .checkbox,
+.ui.form.success .field.radio label,
+.ui.form.success .field.checkbox label,
+.ui.form.success .field.inline .radio label,
+.ui.form.success .field.inline .checkbox label,
+.ui.form.success .field .icon {
   color: #3FB618;
 }
 
-.form.success .field .input,
-.form.success .field input {
+.ui.form.success .field .input,
+.ui.form.success .field input {
   border: 1px solid #3FB618;
 }
 
-.form .field,
-.form .fields {
+.ui.form .field,
+.ui.form .fields {
   border: none;
 }
 
@@ -20941,7 +20837,7 @@ ol.ui.horizontal.list li:before,
   display: flex;
   margin: 1rem 0em;
   font-family: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
-  background: #222222;
+  background: #333333;
   font-weight: normal;
   border: 1px solid rgba(34, 36, 38, 0.15);
   box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
@@ -21266,15 +21162,15 @@ ol.ui.horizontal.list li:before,
 ---------------*/
 
 .ui.menu .item > .label {
-  background: #fff;
-  color: #FFFFFF;
+  background: #595959;
+  color: #fff;
   margin-left: 1em;
   padding: 0.3em 0.8em;
 }
 
 .ui.vertical.menu .item > .label {
-  background: #fff;
-  color: #FFFFFF;
+  background: #595959;
+  color: #fff;
   margin-top: -0.15em;
   margin-bottom: -0.15em;
   padding: 0.3em 0.8em;
@@ -21387,8 +21283,8 @@ ol.ui.horizontal.list li:before,
 
 .ui.menu .active.item:hover,
 .ui.vertical.menu .active.item:hover {
-  background-color: rgba(0, 0, 0, 0.05);
-  color: rgba(0, 0, 0, 0.95);
+  background-color: #222222;
+  color: #fff;
 }
 
 /*--------------
@@ -21448,7 +21344,7 @@ Floated Menu / Item
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  background: #FFFFFF;
+  background: #333333;
   box-shadow: 0px 1px 2px 0 rgba(34, 36, 38, 0.15);
 }
 
@@ -21554,7 +21450,7 @@ Floated Menu / Item
 .ui.vertical.menu .item .menu .active.item {
   background-color: transparent;
   font-weight: bold;
-  color: #fff;
+  color: #000;
 }
 
 /*--------------
@@ -21580,7 +21476,7 @@ Floated Menu / Item
   border-right: 1px solid transparent;
   border-top: 2px solid transparent;
   padding: 0.93333333em 1.4em;
-  color: #fff;
+  color: #1a1a1a;
 }
 
 .ui.tabular.menu .item:before {
@@ -21591,7 +21487,7 @@ Floated Menu / Item
 
 .ui.tabular.menu .item:hover {
   background-color: transparent;
-  color: rgba(0, 0, 0, 0.8);
+  color: #262626;
 }
 
 /* Active */
@@ -22058,7 +21954,7 @@ Floated Menu / Item
   margin: 0em 0em;
   padding: 0.33333333em 0.46666667em;
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.6);
+  color: #b3b3b3;
   -webkit-transition: opacity 0.1s ease;
   transition: opacity 0.1s ease;
 }
@@ -22147,7 +22043,7 @@ Floated Menu / Item
   border: none;
   box-shadow: none;
   font-weight: normal;
-  color: rgba(0, 0, 0, 0.95);
+  color: #000;
 }
 
 /*--- active hover ---*/
@@ -23152,92 +23048,20 @@ Floated Menu / Item
   width: 25rem;
 }
 
-.ui.menu .label:hover {
-  background-color: none;
-}
-
-.ui.pagination.menu .item.active {
-  border-color: #ddd;
-}
-
-.ui.menu:not(.secondary).inverted .label {
-  background-color: #fff;
-  color: #2780E3;
-}
-
-.ui.menu:not(.secondary).secondary > a,
-.ui.menu:not(.secondary).secondary > .item {
-  border-radius: 0;
-}
-
-.ui.menu:not(.secondary).dropdown > a:hover,
-.ui.menu:not(.secondary).dropdown > a:focus,
-.ui.menu:not(.secondary).dropdown > .item:hover,
-.ui.menu:not(.secondary).dropdown > .item:focus {
-  background-image: none;
-}
-
-.ui.menu:not(.secondary) .item .label {
-  background-color: #000;
-}
-
-.ui.menu:not(.secondary) .item.active:hover {
-  color: #e6e6e6;
-  background-color: #333333;
-}
-
-.ui.rail .ui.vertical.menu .item {
-  background-color: #fff;
-}
-
-.ui.rail .ui.vertical.menu .item.active {
-  color: #000;
-  background-color: #fff;
-}
-
-.ui.rail .ui.vertical.menu .item:hover {
+.ui.menu .item .input {
   color: #999999;
-  background-color: #fff;
 }
 
-.ui.vertical.menu:not(.secondary) .item {
-  background-color: #222222;
-}
-
-.ui.vertical.menu:not(.secondary) .item > .label {
-  background-color: #222222;
-}
-
-.ui.vertical.menu:not(.secondary) .item.active {
-  background-color: #090909;
-}
-
-.ui.vertical.menu:not(.secondary) .item.active > .label {
-  background-color: #090909;
-}
-
-.ui.vertical.menu:not(.secondary) .item.active:hover {
+.ui.menu .item .input input {
   color: #fff;
 }
 
-.ui.vertical.menu:not(.secondary) .item:hover {
-  background-color: #161616;
-}
-
-.ui.secondary.menu .item,
-.ui.tabular.menu .item,
-.ui.accordion.menu .item {
-  color: rgba(0, 0, 0, 0.4);
-}
-
-.ui.tabular.menu .active.item:hover {
-  background-color: #fff;
-  color: #555555;
+.ui.secondary.menu .item {
+  color: #999999;
 }
 
 .ui.text.menu .item:hover {
-  background-color: #fff;
-  color: #222222;
+  color: #333333;
 }
 
 /*******************************
@@ -23261,14 +23085,14 @@ Floated Menu / Item
   position: relative;
   min-height: 1em;
   margin: 1em 0em;
-  background: #F8F8F9;
+  background: #f2f2f2;
   padding: 1em 1.5em;
   line-height: 1.4285em;
   color: #000;
   -webkit-transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
   transition: opacity 0.1s ease, color 0.1s ease, background 0.1s ease, box-shadow 0.1s ease;
   border-radius: 0;
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.22) inset, 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  box-shadow: none;
 }
 
 .ui.message:first-child {
@@ -23572,7 +23396,7 @@ Floated Menu / Item
 }
 
 .ui.info.message .header {
-  color: #0E566C;
+  color: #fff;
 }
 
 /* Warning */
@@ -23588,7 +23412,7 @@ Floated Menu / Item
 }
 
 .ui.warning.message .header {
-  color: #794B02;
+  color: #fff;
 }
 
 /* Error */
@@ -23604,7 +23428,7 @@ Floated Menu / Item
 }
 
 .ui.error.message .header {
-  color: #912D2B;
+  color: #fff;
 }
 
 /* Success */
@@ -23620,7 +23444,7 @@ Floated Menu / Item
 }
 
 .ui.success.message .header {
-  color: #1A531B;
+  color: #fff;
 }
 
 /* Colors */
@@ -23779,28 +23603,10 @@ Floated Menu / Item
 
 .ui.message {
   border: none;
-  box-shadow: none !important;
 }
 
 .ui.message a {
   text-decoration: underline;
-  color: #fff;
-}
-
-.ui.message.warning .header {
-  color: #7e3300;
-}
-
-.ui.message.info .header {
-  color: #442254;
-}
-
-.ui.message.error .header {
-  color: #660017;
-}
-
-.ui.message.success .header {
-  color: #102f06;
 }
 
 /*******************************
@@ -25073,20 +24879,6 @@ Floated Menu / Item
 
 .ui.table .dropdown a {
   text-decoration: none;
-}
-
-.ui.table .positive,
-.ui.table .warning,
-.ui.table .negative,
-.ui.table .info {
-  color: #fff;
-}
-
-.ui.table .positive a,
-.ui.table .warning a,
-.ui.table .negative a,
-.ui.table .info a {
-  color: #fff;
 }
 
 /*******************************
@@ -28440,57 +28232,17 @@ a.ui.card:hover,
   color: rgba(255, 255, 255, 0.9);
 }
 
-.ui.accordion.menu:not(.following) .title,
-.ui.accordion.menu:not(.following) a,
-.ui.accordion.menu:not(.following) label,
-.ui.accordion.menu:not(.following) .lable,
-.ui.accordion.menu:not(.following) .item,
-.ui.accordion.menu:not(.following) .dropdown,
-.ui.accordion.menu:not(.following) .icon,
-.ui.accordion.menu:not(.following) .radio,
-.ui.accordion.menu:not(.following) .checkbox {
+.ui.vertical.accordion.menu:not(.following) * {
   color: #e6e6e6;
 }
 
-.ui.accordion.menu:not(.following) .title:hover,
-.ui.accordion.menu:not(.following) a:hover,
-.ui.accordion.menu:not(.following) label:hover,
-.ui.accordion.menu:not(.following) .lable:hover,
-.ui.accordion.menu:not(.following) .item:hover,
-.ui.accordion.menu:not(.following) .dropdown:hover,
-.ui.accordion.menu:not(.following) .icon:hover,
-.ui.accordion.menu:not(.following) .radio:hover,
-.ui.accordion.menu:not(.following) .checkbox:hover {
+.ui.vertical.accordion.menu:not(.following) *:hover {
   color: #cccccc;
 }
 
-.ui.accordion.menu:not(.following) .title:active,
-.ui.accordion.menu:not(.following) a:active,
-.ui.accordion.menu:not(.following) label:active,
-.ui.accordion.menu:not(.following) .lable:active,
-.ui.accordion.menu:not(.following) .item:active,
-.ui.accordion.menu:not(.following) .dropdown:active,
-.ui.accordion.menu:not(.following) .icon:active,
-.ui.accordion.menu:not(.following) .radio:active,
-.ui.accordion.menu:not(.following) .checkbox:active,
-.ui.accordion.menu:not(.following) .title.checked,
-.ui.accordion.menu:not(.following) a.checked,
-.ui.accordion.menu:not(.following) label.checked,
-.ui.accordion.menu:not(.following) .lable.checked,
-.ui.accordion.menu:not(.following) .item.checked,
-.ui.accordion.menu:not(.following) .dropdown.checked,
-.ui.accordion.menu:not(.following) .icon.checked,
-.ui.accordion.menu:not(.following) .radio.checked,
-.ui.accordion.menu:not(.following) .checkbox.checked,
-.ui.accordion.menu:not(.following) .title.active,
-.ui.accordion.menu:not(.following) a.active,
-.ui.accordion.menu:not(.following) label.active,
-.ui.accordion.menu:not(.following) .lable.active,
-.ui.accordion.menu:not(.following) .item.active,
-.ui.accordion.menu:not(.following) .dropdown.active,
-.ui.accordion.menu:not(.following) .icon.active,
-.ui.accordion.menu:not(.following) .radio.active,
-.ui.accordion.menu:not(.following) .checkbox.active {
+.ui.vertical.accordion.menu:not(.following) *:active,
+.ui.vertical.accordion.menu:not(.following) *.checked,
+.ui.vertical.accordion.menu:not(.following) *.active {
   color: #FFFFFF;
 }
 
@@ -31110,7 +30862,7 @@ select.ui.dropdown {
   z-index: 1;
   opacity: 0.8;
   font-size: 1.25em;
-  color: #FFFFFF;
+  color: #fff;
   width: 2.25rem;
   height: 2.25rem;
   padding: 0.625rem 0rem 0rem 0rem;
@@ -31591,14 +31343,6 @@ select.ui.dropdown {
     width: 1140px;
     margin: 0em 0em 0em -570px;
   }
-}
-
-.ui.modal {
-  padding: 20px;
-}
-
-.ui.modal .close {
-  color: #000;
 }
 
 /*******************************
@@ -32553,10 +32297,6 @@ a.ui.nag {
   font-size: 1.4rem;
 }
 
-.ui.popup {
-  color: #000;
-}
-
 /*******************************
         User Overrides
 *******************************/
@@ -33115,7 +32855,7 @@ a.ui.nag {
 }
 
 .ui.progress .bar {
-  height: 1.75em;
+  height: 8px;
 }
 
 .ui.large.progress {
@@ -33132,17 +32872,6 @@ a.ui.nag {
 
 .ui.big.progress .bar {
   height: 3.5em;
-}
-
-.ui.progress {
-  height: 8px!important;
-  box-shadow: none;
-}
-
-.ui.progress .bar {
-  font-size: 8px;
-  height: 8px;
-  line-height: 8px;
 }
 
 /*******************************

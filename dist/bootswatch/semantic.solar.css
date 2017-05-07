@@ -656,6 +656,10 @@ input::selection {
   color: #839496;
 }
 
+.ui.rating .icon {
+  color: #839496 !important;
+}
+
 /*******************************
          Site Overrides
 *******************************/
@@ -693,7 +697,7 @@ input::selection {
   text-align: center;
   text-decoration: none;
   border-radius: 0.28571429rem;
-  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -715,7 +719,7 @@ input::selection {
 .ui.button:hover {
   background-color: #0c5c70;
   background-image: none;
-  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
   color: #ffffff;
 }
 
@@ -1108,7 +1112,7 @@ input::selection {
   margin: 0px 0px 0px -1px !important;
   padding: '';
   font-size: 1em;
-  border-color: #094959;
+  border-color: rgba(0, 0, 0, 0.05);
 }
 
 /* Tag */
@@ -1153,7 +1157,7 @@ input::selection {
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.facebook.button:hover {
@@ -1175,7 +1179,7 @@ input::selection {
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.twitter.button:hover {
@@ -1197,7 +1201,7 @@ input::selection {
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.google.plus.button:hover {
@@ -1239,7 +1243,7 @@ input::selection {
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.youtube.button:hover {
@@ -1261,7 +1265,7 @@ input::selection {
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.instagram.button:hover {
@@ -1283,7 +1287,7 @@ input::selection {
   color: #FFFFFF;
   text-shadow: none;
   background-image: none;
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.pinterest.button:hover {
@@ -1304,7 +1308,7 @@ input::selection {
   background-color: #4D7198;
   color: #FFFFFF;
   background-image: none;
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.vk.button:hover {
@@ -1460,12 +1464,12 @@ input::selection {
   border-radius: 0.28571429rem;
   text-transform: none;
   text-shadow: none !important;
-  box-shadow: 0px 0px 0px 1px #094959 inset;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.basic.buttons {
   box-shadow: none;
-  border: 1px solid #094959;
+  border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 0.28571429rem;
 }
 
@@ -1477,21 +1481,21 @@ input::selection {
 .ui.basic.button:hover {
   background: #839496 !important;
   color: #ffffff !important;
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px #094959 inset;
+  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.basic.buttons .button:focus,
 .ui.basic.button:focus {
   background: #839496 !important;
   color: #ffffff !important;
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px #094959 inset;
+  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.basic.buttons .button:active,
 .ui.basic.button:active {
   background: #F8F8F8 !important;
   color: #ffffff !important;
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset, 0px 1px 4px 0px #094959 inset;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset, 0px 1px 4px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.basic.buttons .active.button,
@@ -1509,11 +1513,11 @@ input::selection {
 /* Vertical */
 
 .ui.basic.buttons .button:hover {
-  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px #094959 inset inset;
+  box-shadow: 0px 0px 0px 1px rgba(34, 36, 38, 0.35) inset, 0px 0px 0px 0px rgba(0, 0, 0, 0.05) inset inset;
 }
 
 .ui.basic.buttons .button:active {
-  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset, 0px 1px 4px 0px #094959 inset inset;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset, 0px 1px 4px 0px rgba(0, 0, 0, 0.05) inset inset;
 }
 
 .ui.basic.buttons .active.button {
@@ -1565,7 +1569,7 @@ input::selection {
 /* Basic Group */
 
 .ui.basic.buttons .button {
-  border-left: 1px solid #094959;
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
   box-shadow: none;
 }
 
@@ -1575,7 +1579,7 @@ input::selection {
 
 .ui.basic.vertical.buttons .button {
   border-left-width: 0px;
-  border-top: 1px solid #094959;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .ui.basic.vertical.buttons .button:first-child {
@@ -1770,7 +1774,7 @@ input::selection {
   display: block;
   margin: 0em;
   border-radius: 0em;
-  box-shadow: 0px 0px 0px 1px #094959 !important;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.05) !important;
 }
 
 /* Top / Bottom */
@@ -2064,7 +2068,7 @@ input::selection {
 }
 
 .ui.black.button {
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.black.buttons .button:hover,
@@ -2226,7 +2230,7 @@ input::selection {
 }
 
 .ui.grey.button {
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.grey.buttons .button:hover,
@@ -2388,7 +2392,7 @@ input::selection {
 }
 
 .ui.brown.button {
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.brown.buttons .button:hover,
@@ -2550,7 +2554,7 @@ input::selection {
 }
 
 .ui.blue.button {
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.blue.buttons .button:hover,
@@ -2712,7 +2716,7 @@ input::selection {
 }
 
 .ui.green.button {
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.green.buttons .button:hover,
@@ -2874,7 +2878,7 @@ input::selection {
 }
 
 .ui.orange.button {
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.orange.buttons .button:hover,
@@ -3036,7 +3040,7 @@ input::selection {
 }
 
 .ui.pink.button {
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.pink.buttons .button:hover,
@@ -3198,7 +3202,7 @@ input::selection {
 }
 
 .ui.violet.button {
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.violet.buttons .button:hover,
@@ -3360,7 +3364,7 @@ input::selection {
 }
 
 .ui.purple.button {
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.purple.buttons .button:hover,
@@ -3522,7 +3526,7 @@ input::selection {
 }
 
 .ui.red.button {
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.red.buttons .button:hover,
@@ -3684,7 +3688,7 @@ input::selection {
 }
 
 .ui.teal.button {
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.teal.buttons .button:hover,
@@ -3846,7 +3850,7 @@ input::selection {
 }
 
 .ui.olive.button {
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.olive.buttons .button:hover,
@@ -4008,7 +4012,7 @@ input::selection {
 }
 
 .ui.yellow.button {
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.yellow.buttons .button:hover,
@@ -4174,7 +4178,7 @@ input::selection {
 }
 
 .ui.primary.button {
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.primary.buttons .button:hover,
@@ -4261,7 +4265,7 @@ input::selection {
 }
 
 .ui.secondary.button {
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.secondary.buttons .button:hover,
@@ -4348,7 +4352,7 @@ input::selection {
 }
 
 .ui.positive.button {
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.positive.buttons .button:hover,
@@ -4435,7 +4439,7 @@ input::selection {
 }
 
 .ui.negative.button {
-  box-shadow: 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.negative.buttons .button:hover,
@@ -4551,7 +4555,7 @@ input::selection {
 
 .ui.buttons > .ui.button:not(.basic):not(.inverted),
 .ui.buttons:not(.basic):not(.inverted) > .button {
-  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px #094959 inset;
+  box-shadow: 0px 0px 0px 1px transparent inset, 0px 0em 0px 0px rgba(0, 0, 0, 0.05) inset;
 }
 
 .ui.buttons .button:first-child {
@@ -4602,8 +4606,8 @@ input::selection {
   border-radius: 0.28571429rem;
 }
 
-.ui.button {
-  border: rgba(0, 0, 0, 0.05);
+.ui.inverted.button:hover {
+  color: #000;
 }
 
 /*******************************
@@ -12222,6 +12226,10 @@ img.ui.bordered.image {
   font-size: 1.71428571em;
 }
 
+.ui.menu .ui.transparent.input input {
+  color: #839496 !important;
+}
+
 /*******************************
          Site Overrides
 *******************************/
@@ -15580,7 +15588,7 @@ ol.ui.horizontal.list li:before,
 
 .ui.segment {
   position: relative;
-  background: transparent;
+  background: #002B36;
   box-shadow: 0px 1px 2px 0 #094959;
   margin: 1rem 0em;
   padding: 1em 1em;
@@ -15662,7 +15670,7 @@ ol.ui.horizontal.list li:before,
 /* Table */
 
 .ui.basic.table.segment {
-  background: transparent;
+  background: #002B36;
   border: 1px solid #094959;
   box-shadow: 0px 1px 2px 0 #094959;
 }
@@ -15947,9 +15955,10 @@ ol.ui.horizontal.list li:before,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  background-color: transparent;
   border-radius: 0px;
   padding: 0em;
-  background-color: transparent;
+  background-color: #002B36;
   box-shadow: 0px 1px 2px 0 #094959;
   margin: 1rem 0em;
   border-radius: 0.28571429rem;
@@ -16320,7 +16329,7 @@ ol.ui.horizontal.list li:before,
 /* Secondary */
 
 .ui.secondary.segment {
-  background: transparent;
+  background: #002B36;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -16333,7 +16342,7 @@ ol.ui.horizontal.list li:before,
 /* Tertiary */
 
 .ui.tertiary.segment {
-  background: transparent;
+  background: #002B36;
   color: rgba(255, 255, 255, 0.8);
 }
 
@@ -17115,22 +17124,6 @@ ol.ui.horizontal.list li:before,
   font-size: 1.71428571rem;
 }
 
-.ui.steps .step .title {
-  color: #FDF6E3;
-}
-
-.ui.ordered.steps .step:before {
-  color: #FFFFFF;
-}
-
-.ui.vertical.steps .active.step:before {
-  color: #FFFFFF;
-}
-
-.ui.steps .active.step .icon {
-  color: #FFFFFF;
-}
-
 /*******************************
          Site Overrides
 *******************************/
@@ -17650,7 +17643,7 @@ ol.ui.horizontal.list li:before,
 .ui.form input[type="text"]:focus,
 .ui.form input[type="file"]:focus,
 .ui.form input[type="url"]:focus {
-  color: #ffffff;
+  color: #000;
   border-color: #85B7D9;
   border-radius: 0.28571429rem;
   background: #A9BDBD;
@@ -21585,7 +21578,7 @@ Floated Menu / Item
 .ui.secondary.menu .dropdown.item:hover,
 .ui.secondary.menu .link.item:hover,
 .ui.secondary.menu a.item:hover {
-  background: rgba(0, 0, 0, 0.05);
+  background: #00171c;
   color: #ffffff;
 }
 
@@ -21593,7 +21586,7 @@ Floated Menu / Item
 
 .ui.secondary.menu .active.item {
   box-shadow: none;
-  background: rgba(0, 0, 0, 0.05);
+  background: #00171c;
   color: #ffffff;
   border-radius: 0.28571429rem;
 }
@@ -21602,7 +21595,7 @@ Floated Menu / Item
 
 .ui.secondary.menu .active.item:hover {
   box-shadow: none;
-  background: rgba(0, 0, 0, 0.05);
+  background: #00171c;
   color: #ffffff;
 }
 
