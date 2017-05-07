@@ -23,12 +23,12 @@
 }
 
 .ui.menu .item .input {
-  color: @gray-light;
+  color: darken(#fff, 10%);
   input {
     color: #fff;
   }
 }
 
 .ui.text.menu .item:hover {
-  color: @gray-dark;
+  color: lighten(#000, 10%);
 }
