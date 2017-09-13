@@ -1,5 +1,5 @@
  /*
- * # Semantic UI - 2.2.10
+ * # Semantic UI - 2.2.9
  * https://github.com/Semantic-Org/Semantic-UI
  * http://www.semantic-ui.com/
  *
@@ -9,7 +9,7 @@
  *
  */
 /*!
- * # Semantic UI 2.2.10 - Reset
+ * # Semantic UI 2.2.9 - Reset
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -495,7 +495,7 @@ th {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Site
+ * # Semantic UI 2.2.9 - Site
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -684,7 +684,7 @@ input::selection {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Button
+ * # Semantic UI 2.2.9 - Button
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -1523,6 +1523,7 @@ input::selection {
   background: rgba(0, 0, 0, 0.05) !important;
   box-shadow: '' !important;
   color: #000;
+  box-shadow: rgba(34, 36, 38, 0.35);
 }
 
 .ui.basic.buttons .active.button:hover,
@@ -1541,7 +1542,7 @@ input::selection {
 }
 
 .ui.basic.buttons .active.button {
-  box-shadow: '' !important;
+  box-shadow: rgba(34, 36, 38, 0.35) inset;
 }
 
 /* Standard Basic Inverted */
@@ -4640,7 +4641,7 @@ input::selection {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Container
+ * # Semantic UI 2.2.9 - Container
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -4801,7 +4802,7 @@ input::selection {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Divider
+ * # Semantic UI 2.2.9 - Divider
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -5068,7 +5069,7 @@ input::selection {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Flag
+ * # Semantic UI 2.2.9 - Flag
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -6339,7 +6340,7 @@ i.flag.zimbabwe:before {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Header
+ * # Semantic UI 2.2.9 - Header
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -7160,7 +7161,7 @@ a.ui.inverted.grey.header:hover {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Icon
+ * # Semantic UI 2.2.9 - Icon
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -11410,7 +11411,7 @@ i.icon.times.rectangle.outline:before {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Image
+ * # Semantic UI 2.2.9 - Image
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -11727,7 +11728,7 @@ img.ui.bordered.image {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Input
+ * # Semantic UI 2.2.9 - Input
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -12282,11 +12283,15 @@ img.ui.bordered.image {
   font-size: 1.73333333em;
 }
 
+.ui.labeled.input:not(.corner) .label {
+  line-height: 1.21428571em;
+}
+
 /*******************************
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Label
+ * # Semantic UI 2.2.9 - Label
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -13703,11 +13708,15 @@ a.ui.basic.label:hover {
   font-size: 1.73333333rem;
 }
 
+.ui.corner.label .icon {
+  color: #b4bcc2;
+}
+
 /*******************************
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - List
+ * # Semantic UI 2.2.9 - List
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -14776,11 +14785,64 @@ ol.ui.horizontal.list li:before,
   font-size: 1.73333333rem;
 }
 
+.ui.list {
+  border-color: #ecf0f1;
+}
+
+.ui.list .item:hover {
+  background-color: #ecf0f1;
+}
+
+.ui.list a.active,
+.ui.list .item.active,
+.ui.list a.active:hover,
+.ui.list .item.active:hover,
+.ui.list a.active:focus,
+.ui.list .item.active:focus {
+  border-color: #ecf0f1;
+}
+
+.ui.list a.positive.active,
+.ui.list .item.positive.active {
+  background-color: #18BC9C;
+}
+
+.ui.list a.positive.active:hover,
+.ui.list .item.positive.active:hover,
+.ui.list a.positive.active:focus,
+.ui.list .item.positive.active:focus {
+  background-color: #15a589;
+}
+
+.ui.list a.warning.active,
+.ui.list .item.warning.active {
+  background-color: #F39C12;
+}
+
+.ui.list a.warning.active:hover,
+.ui.list .item.warning.active:hover,
+.ui.list a.warning.active:focus,
+.ui.list .item.warning.active:focus {
+  background-color: #e08e0b;
+}
+
+.ui.list a.negative.active,
+.ui.list .item.negative.active {
+  background-color: #E74C3C;
+}
+
+.ui.list a.negative.active:hover,
+.ui.list .item.negative.active:hover,
+.ui.list a.negative.active:focus,
+.ui.list .item.negative.active:focus {
+  background-color: #e43725;
+}
+
 /*******************************
     User Variable Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Loader
+ * # Semantic UI 2.2.9 - Loader
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -15158,7 +15220,7 @@ ol.ui.horizontal.list li:before,
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Rail
+ * # Semantic UI 2.2.9 - Rail
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -15320,7 +15382,7 @@ ol.ui.horizontal.list li:before,
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Reveal
+ * # Semantic UI 2.2.9 - Reveal
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -15625,7 +15687,7 @@ ol.ui.horizontal.list li:before,
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Segment
+ * # Semantic UI 2.2.9 - Segment
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -16509,7 +16571,7 @@ ol.ui.horizontal.list li:before,
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Step
+ * # Semantic UI 2.2.9 - Step
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -17176,11 +17238,27 @@ ol.ui.horizontal.list li:before,
   font-size: 1.73333333rem;
 }
 
+.ui.steps .step .title {
+  color: #ecf0f1;
+}
+
+.ui.ordered.steps .step:before {
+  color: #FFFFFF;
+}
+
+.ui.vertical.steps .active.step:before {
+  color: #FFFFFF;
+}
+
+.ui.steps .active.step .icon {
+  color: #FFFFFF;
+}
+
 /*******************************
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Breadcrumb
+ * # Semantic UI 2.2.9 - Breadcrumb
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -17303,11 +17381,16 @@ ol.ui.horizontal.list li:before,
   font-size: 1.73333333rem;
 }
 
+.ui.breadcrumb {
+  background-color: #ecf0f1;
+  padding: 0.6em;
+}
+
 /*******************************
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Form
+ * # Semantic UI 2.2.9 - Form
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -18465,11 +18548,85 @@ ol.ui.horizontal.list li:before,
   font-size: 1.73333333rem;
 }
 
+.ui.form *,
+input *,
+.input * {
+  border-width: 2px;
+  box-shadow: none;
+}
+
+.ui.form *:focus,
+input *:focus,
+.input *:focus {
+  box-shadow: none;
+}
+
+.form.warning .field label,
+.form.warning .field .label,
+.form.warning .field .radio,
+.form.warning .field .checkbox,
+.form.warning .field .inline .radio,
+.form.warning .field .inline .checkbox,
+.form.warning .field.radio label,
+.form.warning .field.checkbox label,
+.form.warning .field.inline .radio label,
+.form.warning .field.inline .checkbox label,
+.form.warning .field .icon {
+  color: #F39C12;
+}
+
+.form.warning .field .input,
+.form.warning .field input {
+  border: 1px solid #F39C12;
+}
+
+.form.error .field.error label,
+.form.error .field.error .label,
+.form.error .field.error .radio,
+.form.error .field.error .checkbox,
+.form.error .field.error .inline .radio,
+.form.error .field.error .inline .checkbox,
+.form.error .field.error.radio label,
+.form.error .field.error.checkbox label,
+.form.error .field.error.inline .radio label,
+.form.error .field.error.inline .checkbox label,
+.form.error .field.error .icon {
+  color: #E74C3C;
+}
+
+.form.error .field.error .input,
+.form.error .field.error input {
+  border: 1px solid #E74C3C;
+}
+
+.form.success .field label,
+.form.success .field .label,
+.form.success .field .radio,
+.form.success .field .checkbox,
+.form.success .field .inline .radio,
+.form.success .field .inline .checkbox,
+.form.success .field.radio label,
+.form.success .field.checkbox label,
+.form.success .field.inline .radio label,
+.form.success .field.inline .checkbox label,
+.form.success .field .icon {
+  color: #18BC9C;
+}
+
+.form.success .field .input,
+.form.success .field input {
+  border: 1px solid #18BC9C;
+}
+
+.input .icon {
+  color: #2c3e50;
+}
+
 /*******************************
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Grid
+ * # Semantic UI 2.2.9 - Grid
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -22992,7 +23149,7 @@ Floated Menu / Item
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Message
+ * # Semantic UI 2.2.9 - Message
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -23537,7 +23694,7 @@ Floated Menu / Item
         Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Table
+ * # Semantic UI 2.2.9 - Table
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -24809,7 +24966,7 @@ Floated Menu / Item
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Ad
+ * # Semantic UI 2.2.9 - Ad
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -25098,7 +25255,7 @@ Floated Menu / Item
     User Variable Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Item
+ * # Semantic UI 2.2.9 - Item
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -25936,7 +26093,7 @@ a.ui.card:hover,
     margin-right: 0em;
   }
 
-  .ui.two.doubling.cards > .card {
+  .ui.two.doubling.cards .card {
     width: 100%;
     margin-left: 0em;
     margin-right: 0em;
@@ -25947,7 +26104,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.three.doubling.cards > .card {
+  .ui.three.doubling.cards .card {
     width: calc( 50%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -25958,7 +26115,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.four.doubling.cards > .card {
+  .ui.four.doubling.cards .card {
     width: calc( 50%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -25969,7 +26126,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.five.doubling.cards > .card {
+  .ui.five.doubling.cards .card {
     width: calc( 50%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -25980,7 +26137,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.six.doubling.cards > .card {
+  .ui.six.doubling.cards .card {
     width: calc( 50%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -25991,7 +26148,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.seven.doubling.cards > .card {
+  .ui.seven.doubling.cards .card {
     width: calc( 33.33333333%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -26002,7 +26159,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.eight.doubling.cards > .card {
+  .ui.eight.doubling.cards .card {
     width: calc( 33.33333333%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -26013,7 +26170,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.nine.doubling.cards > .card {
+  .ui.nine.doubling.cards .card {
     width: calc( 33.33333333%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -26024,7 +26181,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.ten.doubling.cards > .card {
+  .ui.ten.doubling.cards .card {
     width: calc( 33.33333333%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -26039,7 +26196,7 @@ a.ui.card:hover,
     margin-right: 0em;
   }
 
-  .ui.two.doubling.cards > .card {
+  .ui.two.doubling.cards .card {
     width: 100%;
     margin-left: 0em;
     margin-right: 0em;
@@ -26050,7 +26207,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.three.doubling.cards > .card {
+  .ui.three.doubling.cards .card {
     width: calc( 50%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -26061,7 +26218,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.four.doubling.cards > .card {
+  .ui.four.doubling.cards .card {
     width: calc( 50%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -26072,7 +26229,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.five.doubling.cards > .card {
+  .ui.five.doubling.cards .card {
     width: calc( 33.33333333%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -26083,7 +26240,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.six.doubling.cards > .card {
+  .ui.six.doubling.cards .card {
     width: calc( 33.33333333%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -26094,7 +26251,7 @@ a.ui.card:hover,
     margin-right: -1em;
   }
 
-  .ui.eight.doubling.cards > .card {
+  .ui.eight.doubling.cards .card {
     width: calc( 33.33333333%  -  2em );
     margin-left: 1em;
     margin-right: 1em;
@@ -26105,7 +26262,7 @@ a.ui.card:hover,
     margin-right: -0.75em;
   }
 
-  .ui.eight.doubling.cards > .card {
+  .ui.eight.doubling.cards .card {
     width: calc( 25%  -  1.5em );
     margin-left: 0.75em;
     margin-right: 0.75em;
@@ -26116,7 +26273,7 @@ a.ui.card:hover,
     margin-right: -0.75em;
   }
 
-  .ui.nine.doubling.cards > .card {
+  .ui.nine.doubling.cards .card {
     width: calc( 25%  -  1.5em );
     margin-left: 0.75em;
     margin-right: 0.75em;
@@ -26127,7 +26284,7 @@ a.ui.card:hover,
     margin-right: -0.75em;
   }
 
-  .ui.ten.doubling.cards > .card {
+  .ui.ten.doubling.cards .card {
     width: calc( 20%  -  1.5em );
     margin-left: 0.75em;
     margin-right: 0.75em;
@@ -26172,7 +26329,7 @@ a.ui.card:hover,
     User Variable Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Comment
+ * # Semantic UI 2.2.9 - Comment
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -26457,7 +26614,7 @@ a.ui.card:hover,
     User Variable Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Feed
+ * # Semantic UI 2.2.9 - Feed
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -26771,7 +26928,7 @@ a.ui.card:hover,
     User Variable Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Item
+ * # Semantic UI 2.2.9 - Item
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -27291,7 +27448,7 @@ a.ui.card:hover,
     User Variable Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Statistic
+ * # Semantic UI 2.2.9 - Statistic
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -27927,7 +28084,7 @@ a.ui.card:hover,
     User Variable Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Accordion
+ * # Semantic UI 2.2.9 - Accordion
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -28174,7 +28331,7 @@ a.ui.card:hover,
         User Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Checkbox
+ * # Semantic UI 2.2.9 - Checkbox
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -28842,7 +28999,7 @@ a.ui.card:hover,
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Dimmer
+ * # Semantic UI 2.2.9 - Dimmer
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -29050,7 +29207,7 @@ body.dimmable > .dimmer {
         User Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Dropdown
+ * # Semantic UI 2.2.9 - Dropdown
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -30561,7 +30718,7 @@ select.ui.dropdown {
         User Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Video
+ * # Semantic UI 2.2.9 - Video
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -30726,7 +30883,7 @@ select.ui.dropdown {
   padding-bottom: 42.85714286%;
 }
 /*!
- * # Semantic UI 2.2.10 - Modal
+ * # Semantic UI 2.2.9 - Modal
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -31269,11 +31426,19 @@ select.ui.dropdown {
   }
 }
 
+.ui.modal {
+  padding: 20x;
+}
+
+.ui.modal .close {
+  color: #2c3e50;
+}
+
 /*******************************
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Nag
+ * # Semantic UI 2.2.9 - Nag
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -31418,7 +31583,7 @@ a.ui.nag {
         User Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Popup
+ * # Semantic UI 2.2.9 - Popup
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -32221,11 +32386,15 @@ a.ui.nag {
   font-size: 1.4rem;
 }
 
+.ui.popup {
+  color: #2c3e50;
+}
+
 /*******************************
         User Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Progress Bar
+ * # Semantic UI 2.2.9 - Progress Bar
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -32802,7 +32971,7 @@ a.ui.nag {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Rating
+ * # Semantic UI 2.2.9 - Rating
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -33079,7 +33248,7 @@ a.ui.nag {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Search
+ * # Semantic UI 2.2.9 - Search
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -33513,7 +33682,7 @@ a.ui.nag {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Shape
+ * # Semantic UI 2.2.9 - Shape
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -33672,7 +33841,7 @@ a.ui.nag {
         User Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Sidebar
+ * # Semantic UI 2.2.9 - Sidebar
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -34365,7 +34534,7 @@ html.ios {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Sticky
+ * # Semantic UI 2.2.9 - Sticky
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -34439,7 +34608,7 @@ html.ios {
          Site Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Tab
+ * # Semantic UI 2.2.9 - Tab
  * http://github.com/semantic-org/semantic-ui/
  *
  *
@@ -34526,7 +34695,7 @@ html.ios {
         User Overrides
 *******************************/
 /*!
- * # Semantic UI 2.2.10 - Transition
+ * # Semantic UI 2.2.9 - Transition
  * http://github.com/semantic-org/semantic-ui/
  *
  *
