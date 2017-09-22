@@ -30169,7 +30169,7 @@ select.ui.dropdown {
 
 .ui.selection.visible.dropdown > .text:not(.default) {
   font-weight: normal;
-  color: #ffffff;
+  color: #222222;
 }
 
 /* Visible Hover */

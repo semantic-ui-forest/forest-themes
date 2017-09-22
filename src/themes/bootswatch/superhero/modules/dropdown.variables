@@ -9,3 +9,4 @@
 @pointingArrowBoxShadow: none;
 @selectionTextUnderlayColor: @gray-lighter;
 @selectionTextColor: @gray-darker;
+@selectionVisibleTextColor: @gray-darker;
