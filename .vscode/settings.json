@@ -1,0 +1,6 @@
+{
+  "files.associations": {
+    "*.overrides": "less",
+    "*.variables": "less"
+  }
+}
