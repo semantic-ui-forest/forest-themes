@@ -1,19 +1,19 @@
-@gray-base:              #000;
-@gray-darker:            lighten(@gray-base, 13.5%); // #222
-@gray-dark:              #303030;   // #333
-@gray:                   #464545;
-@gray-light:             #999;   // #999
-@gray-lighter:           #EBEBEB; // #eee
+@gray-base: #000;
+@gray-darker: lighten(@gray-base, 13.5%); // #222
+@gray-dark: #303030; // #333
+@gray: #464545;
+@gray-light: #999; // #999
+@gray-lighter: #ebebeb; // #eee
 
 @primaryColor: #375a7f;
 @positiveColor: #00bc8c;
-@infoColor: #3498DB;
-@warningColor: #F39C12;
-@negativeColor: #E74C3C;
+@infoColor: #3498db;
+@warningColor: #f39c12;
+@negativeColor: #e74c3c;
 
 @pageBackground: @gray-darker;
 @textColor: #fff;
-@linkColor: desaturate(lighten(@positiveColor, 10%),10%);
+@linkColor: desaturate(lighten(@positiveColor, 10%), 10%);
 @linkHoverColor: @linkColor;
 @emSize: 15px;
 @fontSize: 15px;
@@ -41,25 +41,25 @@
 @negativeBackgroundColor: #e74c3c;
 @negativeBorderColor: @negativeColor;
 
-@line-height-computed:    floor((@emSize * 1.428571429)); // ~20px
+@line-height-computed: floor((@emSize * 1.428571429)); // ~20px
 
-@darkTextColor               : rgba(255, 255, 255, 0.9);
-@mutedTextColor              : rgba(255, 255, 255, 0.8);
-@lightTextColor              : rgba(255, 255, 255, 0.7);
-@unselectedTextColor         : rgba(255, 255, 255, 0.5);
-@hoveredTextColor            : rgba(255, 255, 255, 1);
-@pressedTextColor            : rgba(255, 255, 255, 1);
-@selectedTextColor           : rgba(255, 255, 255, 1);
-@disabledTextColor           : rgba(255, 255, 255, 0.2);
+@darktextcolor : rgba(255, 255, 255, 0.9);
+@mutedtextcolor : rgba(255, 255, 255, 0.8);
+@lighttextcolor : rgba(255, 255, 255, 0.7);
+@unselectedtextcolor : rgba(255, 255, 255, 0.5);
+@hoveredtextcolor : rgba(255, 255, 255, 1);
+@pressedtextcolor : rgba(255, 255, 255, 1);
+@selectedtextcolor : rgba(255, 255, 255, 1);
+@disabledtextcolor : rgba(255, 255, 255, 0.2);
 
-@invertedTextColor           : rgba(255, 255, 255, 0.9);
-@invertedMutedTextColor      : rgba(255, 255, 255, 0.8);
-@invertedLightTextColor      : rgba(255, 255, 255, 0.7);
-@invertedUnselectedTextColor : rgba(255, 255, 255, 0.5);
-@invertedHoveredTextColor    : rgba(255, 255, 255, 1);
-@invertedPressedTextColor    : rgba(255, 255, 255, 1);
-@invertedSelectedTextColor   : rgba(255, 255, 255, 1);
-@invertedDisabledTextColor   : rgba(255, 255, 255, 0.2);
+@invertedtextcolor : rgba(255, 255, 255, 0.9);
+@invertedmutedtextcolor : rgba(255, 255, 255, 0.8);
+@invertedlighttextcolor : rgba(255, 255, 255, 0.7);
+@invertedunselectedtextcolor : rgba(255, 255, 255, 0.5);
+@invertedhoveredtextcolor : rgba(255, 255, 255, 1);
+@invertedpressedtextcolor : rgba(255, 255, 255, 1);
+@invertedselectedtextcolor : rgba(255, 255, 255, 1);
+@inverteddisabledtextcolor : rgba(255, 255, 255, 0.2);
 
 @borderColor: @gray;
 

@@ -1,4 +1,4 @@
-.ui.form.warning  .field {
+.ui.form.warning .field {
   label,
   .label,
   .radio,
@@ -13,12 +13,13 @@
     color: @warningColor;
   }
 
-  .input, input {
+  .input,
+  input {
     border: 1px solid @warningColor;
   }
 }
 
-.ui.form.error  .field.error {
+.ui.form.error .field.error {
   label,
   .label,
   .radio,
@@ -33,9 +34,10 @@
     color: @negativeColor;
   }
 
-  .input, input {
+  .input,
+  input {
     border: 1px solid @negativeColor;
-    background-color: #fff!important;
+    background-color: #fff !important;
   }
 }
 
@@ -54,13 +56,15 @@
     color: @positiveColor;
   }
 
-  .input, input {
+  .input,
+  input {
     border: 1px solid @positiveColor;
   }
 }
 
 .ui.form {
-  .field, .fields {
+  .field,
+  .fields {
     border: none;
   }
 }

@@ -2,7 +2,7 @@
 @itemTextColor: @gray-light;
 @borderColor: @gray-dark;
 @hoverItemTextColor: #fff;
-@hoverItemBackground: @gray-base; 
+@hoverItemBackground: @gray-base;
 @activeItemTextColor: #fff;
 @activeItemBackground: transparent;
 @activeHoverItemColor: #fff;

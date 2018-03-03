@@ -1,6 +1,6 @@
 .ui.label:not(.corner) {
   font-family: @fontName;
-  border: 1px solid rgba(0,0,0,.1) !important;
+  border: 1px solid rgba(0, 0, 0, 0.1) !important;
   background-color: @white;
 }
 

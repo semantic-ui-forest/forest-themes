@@ -1,25 +1,25 @@
-@gray-base:              #000;
-@gray-darker:            #222; // #222
-@gray-dark:              #282828;   // #333
-@gray:                   #555; // #555
-@gray-light:             #888;   // #999
-@gray-lighter:           #ADAFAE; // #eee
+@gray-base: #000;
+@gray-darker: #222; // #222
+@gray-dark: #282828; // #333
+@gray: #555; // #555
+@gray-light: #888; // #999
+@gray-lighter: #adafae; // #eee
 
-@primaryColor:         #2A9FD6;
-@positiveColor:         #77B300;
-@infoColor:            #9933CC;
-@warningColor:         #FF8800;
-@negativeColor:          #CC0000;
-@primaryBackgroundColor:         #2A9FD6;
-@positiveBackgroundColor:         #77B300;
-@infoBackgroundColor:            #9933CC;
-@warningBackgroundColor:         #FF8800;
-@negativeBackgroundColor:          #CC0000;
+@primaryColor: #2a9fd6;
+@positiveColor: #77b300;
+@infoColor: #9933cc;
+@warningColor: #ff8800;
+@negativeColor: #cc0000;
+@primaryBackgroundColor: #2a9fd6;
+@positiveBackgroundColor: #77b300;
+@infoBackgroundColor: #9933cc;
+@warningBackgroundColor: #ff8800;
+@negativeBackgroundColor: #cc0000;
 
 @pageBackground: #060606;
 @textColor: @gray-light;
-@fontName:  "Roboto";
-@linkColor: #4183C4;
+@fontName: "Roboto";
+@linkColor: #4183c4;
 @linkHoverColor: @linkColor;
 @headerFont: @fontName;
 @padding-base-vertical: 8px;
@@ -36,7 +36,7 @@
 @negativeBorderColor: darken(spin(@negativeBackgroundColor, -10), 3%);
 
 @unselectedTextColor: @gray-light;
-@hoveredTextColor:@gray-lighter;
+@hoveredTextColor: @gray-lighter;
 @pressedTextColor: @white;
 @selectedTextColor: @gray;
 

@@ -2,4 +2,4 @@
 @borderColor: transparent;
 @arrowColor: fadein(@borderColor, 12%);
 @border: none;
-@boxShadow: 0 1px 4px rgba(0,0,0,.3);
+@boxShadow: 0 1px 4px rgba(0, 0, 0, 0.3);

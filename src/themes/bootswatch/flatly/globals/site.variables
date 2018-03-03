@@ -1,15 +1,15 @@
-@gray-base:              #000;
-@gray-darker:            lighten(@gray-base, 13.5%); // #222
-@gray-dark:              #7b8a8b;   // #333
-@gray:                   #95a5a6; // #555
-@gray-light:             #b4bcc2;   // #999
-@gray-lighter:           #ecf0f1; // #eee
+@gray-base: #000;
+@gray-darker: lighten(@gray-base, 13.5%); // #222
+@gray-dark: #7b8a8b; // #333
+@gray: #95a5a6; // #555
+@gray-light: #b4bcc2; // #999
+@gray-lighter: #ecf0f1; // #eee
 
-@primaryColor:         #2C3E50;
-@positiveColor:        #18BC9C;
-@infoColor:            #3498DB;
-@warningColor:         #F39C12;
-@negativeColor:        #E74C3C;
+@primaryColor: #2c3e50;
+@positiveColor: #18bc9c;
+@infoColor: #3498db;
+@warningColor: #f39c12;
+@negativeColor: #e74c3c;
 
 @textColor: #2c3e50;
 @linkColor: #19bc9c;
@@ -41,7 +41,7 @@
 @negativeBackgroundColor: #e74c3c;
 @negativeBorderColor: #e74c3c;
 
-@line-height-computed:    floor((@emSize * 1.428571429)); // ~20px
+@line-height-computed: floor((@emSize * 1.428571429)); // ~20px
 
 @selectedTextColor: @gray-base;
 @mutedTextColor: @gray-light;

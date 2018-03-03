@@ -1,19 +1,19 @@
-@gray-base:              #000;
-@gray-darker:            lighten(@gray-base, 13.5%); // #222
-@gray-dark:              lighten(@gray-base, 20%);   // #333
-@gray:                   lighten(@gray-base, 33.5%); // #555
-@gray-light:             lighten(@gray-base, 60%);   // #999
-@gray-lighter:           lighten(@gray-base, 90%); // #eee
+@gray-base: #000;
+@gray-darker: lighten(@gray-base, 13.5%); // #222
+@gray-dark: lighten(@gray-base, 20%); // #333
+@gray: lighten(@gray-base, 33.5%); // #555
+@gray-light: lighten(@gray-base, 60%); // #999
+@gray-lighter: lighten(@gray-base, 90%); // #eee
 
-@primaryColor: #2780E3;
-@positiveColor: #3FB618;
-@infoColor: #9954BB;
-@warningColor: #FF7518;
-@negativeColor: #FF0039;
-@primaryBackgroundColor: #2780E3;
+@primaryColor: #2780e3;
+@positiveColor: #3fb618;
+@infoColor: #9954bb;
+@warningColor: #ff7518;
+@negativeColor: #ff0039;
+@primaryBackgroundColor: #2780e3;
 @positiveBackgroundColor: #3fb618;
-@infoBackgroundColor: #9954BB;
-@warningBackgroundColor: #FF7518;
+@infoBackgroundColor: #9954bb;
+@warningBackgroundColor: #ff7518;
 @negativeBackgroundColor: #ff0039;
 
 @positiveTextColor: #fff;

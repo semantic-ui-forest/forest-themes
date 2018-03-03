@@ -1,5 +1,5 @@
 @textColor: #333;
 @basicBorder: transparent;
 @textTransform: uppercase;
-@boxShadow: 1px 1px 4px rgba(0,0,0,.4);
+@boxShadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 @transition: all 0.4s;

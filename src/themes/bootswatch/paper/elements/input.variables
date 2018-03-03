@@ -3,4 +3,4 @@
 @lineHeight: 1.846;
 @verticalPadding: 1.3em;
 @borderRadius: 0;
-@borderColor: rgba(0,0,0,0.15);
+@borderColor: rgba(0, 0, 0, 0.15);

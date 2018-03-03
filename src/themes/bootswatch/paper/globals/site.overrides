@@ -9,18 +9,17 @@
   box-shadow: @shadow;
 }
 
-
 .ui.header {
   color: #444;
 }
 
 h6 {
- font-size: 14px;
+  font-size: 14px;
 }
 
 body {
   -webkit-font-smoothing: antialiased;
-  letter-spacing: .1px;
+  letter-spacing: 0.1px;
 }
 
 p {
@@ -30,7 +29,7 @@ p {
 .input,
 .button {
   -webkit-font-smoothing: antialiased;
-  letter-spacing: .1px;
+  letter-spacing: 0.1px;
 }
 
 a {

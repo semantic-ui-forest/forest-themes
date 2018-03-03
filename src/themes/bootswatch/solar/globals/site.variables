@@ -1,15 +1,15 @@
-@gray-base:              #000;
-@gray-darker:            #002B36;
-@gray-dark:              #073642;
-@gray:                   #839496;
-@gray-light:             #EEE8D5;
-@gray-lighter:           #FDF6E3;
+@gray-base: #000;
+@gray-darker: #002b36;
+@gray-dark: #073642;
+@gray: #839496;
+@gray-light: #eee8d5;
+@gray-lighter: #fdf6e3;
 
-@primaryColor: #B58900;
-@positiveColor: #2AA198;
-@infoColor: #268BD2;
-@warningColor: #CB4B16;
-@negativeColor: #D33682;
+@primaryColor: #b58900;
+@positiveColor: #2aa198;
+@infoColor: #268bd2;
+@warningColor: #cb4b16;
+@negativeColor: #d33682;
 
 @fontName: "Source Sans Pro";
 @pageBackground: @gray-darker;
@@ -18,11 +18,11 @@
 @linkColor: @positiveColor;
 @linkHoverColor: @linkColor;
 @inputColor: @gray;
-@inputBackground: #A9BDBD;
+@inputBackground: #a9bdbd;
 @inputPlaceholderColor: @gray-darker;
 @inputPlaceholderFocusColor: @gray-darker;
-@disabledTextColor: rgba(255,255,255,.25);
-@invertedDisabledTextColor: rgba(255,255,255,.25);
+@disabledTextColor: rgba(255, 255, 255, 0.25);
+@invertedDisabledTextColor: rgba(255, 255, 255, 0.25);
 @disabledTextColor: @gray-dark;
 @disabledBorderColor: @gray-dark;
 @positiveTextColor: #fff;
@@ -38,22 +38,22 @@
 @negativeBackgroundColor: @negativeColor;
 @negativeBorderColor: @negativeColor;
 
-@darkTextColor               : rgba(255, 255, 255, 0.9);
-@mutedTextColor              : rgba(255, 255, 255, 0.8);
-@lightTextColor              : rgba(255, 255, 255, 0.7);
-@unselectedTextColor         : rgba(255, 255, 255, 0.5);
-@hoveredTextColor            : rgba(255, 255, 255, 1);  
-@pressedTextColor            : rgba(255, 255, 255, 1);  
-@selectedTextColor           : rgba(255, 255, 255, 1);  
-@disabledTextColor           : rgba(255, 255, 255, 0.2);
+@darktextcolor : rgba(255, 255, 255, 0.9);
+@mutedtextcolor : rgba(255, 255, 255, 0.8);
+@lighttextcolor : rgba(255, 255, 255, 0.7);
+@unselectedtextcolor : rgba(255, 255, 255, 0.5);
+@hoveredtextcolor : rgba(255, 255, 255, 1);
+@pressedtextcolor : rgba(255, 255, 255, 1);
+@selectedtextcolor : rgba(255, 255, 255, 1);
+@disabledtextcolor : rgba(255, 255, 255, 0.2);
 
-@invertedTextColor           : rgba(255, 255, 255, 0.85);
-@invertedMutedTextColor      : rgba(0, 0, 0, 0.6); 
-@invertedLightTextColor      : rgba(0, 0, 0, 0.4); 
-@invertedUnselectedTextColor : rgba(0, 0, 0, 0.4); 
-@invertedHoveredTextColor    : rgba(0, 0, 0, 0.8); 
-@invertedPressedTextColor    : rgba(0, 0, 0, 0.9); 
-@invertedSelectedTextColor   : rgba(0, 0, 0, 0.95);
-@invertedDisabledTextColor   : rgba(0, 0, 0, 0.2); 
+@invertedtextcolor : rgba(255, 255, 255, 0.85);
+@invertedmutedtextcolor : rgba(0, 0, 0, 0.6);
+@invertedlighttextcolor : rgba(0, 0, 0, 0.4);
+@invertedunselectedtextcolor : rgba(0, 0, 0, 0.4);
+@invertedhoveredtextcolor : rgba(0, 0, 0, 0.8);
+@invertedpressedtextcolor : rgba(0, 0, 0, 0.9);
+@invertedselectedtextcolor : rgba(0, 0, 0, 0.95);
+@inverteddisabledtextcolor : rgba(0, 0, 0, 0.2);
 
 @borderColor: lighten(@gray-dark, 5%);

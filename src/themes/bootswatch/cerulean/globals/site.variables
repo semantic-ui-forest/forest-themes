@@ -1,8 +1,8 @@
-@primaryColor: #2FA4E7;
-@positiveColor: #73A839;
-@infoColor: #033C73;
-@warningColor: #DD5600;
-@negativeColor: #C71C22;
+@primaryColor: #2fa4e7;
+@positiveColor: #73a839;
+@infoColor: #033c73;
+@warningColor: #dd5600;
+@negativeColor: #c71c22;
 
 @textcolor: #555;
 @headerFont: @fontName;
@@ -20,6 +20,6 @@
 @negativeTextColor: #b94a48;
 @negativeBorderColor: darken(spin(@negativeBackgroundColor, -10), 3%);
 
-@pageFont: 'Helvetica Neue', Arial, Helvetica, sans-serif;
-@headerFont: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@pageFont: "Helvetica Neue", Arial, Helvetica, sans-serif;
+@headerFont: "Helvetica Neue", Arial, Helvetica, sans-serif;
 @importGoogleFonts: false;

@@ -2,7 +2,7 @@
   * {
     color: @gray;
     &:hover {
-     color: @gray-light;
+      color: @gray-light;
     }
     &:active,
     &.checked,

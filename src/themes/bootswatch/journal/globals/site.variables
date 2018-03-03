@@ -1,15 +1,15 @@
-@gray-base:              #000;
-@gray-darker:            lighten(@gray-base, 13.5%); // #222
-@gray-dark:              lighten(@gray-base, 20%);   // #333
-@gray:                   #777; // #555
-@gray-light:             lighten(@gray-base, 60%);   // #999
-@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+@gray-base: #000;
+@gray-darker: lighten(@gray-base, 13.5%); // #222
+@gray-dark: lighten(@gray-base, 20%); // #333
+@gray: #777; // #555
+@gray-light: lighten(@gray-base, 60%); // #999
+@gray-lighter: lighten(@gray-base, 93.5%); // #eee
 
-@primaryColor:         #EB6864;
-@positiveColor:         #22B24C;
-@infoColor:            #369;
-@warningColor:         #F5E625;
-@negativeColor:          #F57A00;
+@primaryColor: #eb6864;
+@positiveColor: #22b24c;
+@infoColor: #369;
+@warningColor: #f5e625;
+@negativeColor: #f57a00;
 
 @textColor: @gray-darker;
 @fontName: Georgia;
@@ -17,7 +17,7 @@
 @emSize: 15px;
 @fontSize: 15px;
 @headerFont: "News Cycle", "Arial Narrow Bold", sans-serif;
-@googleFontName: 'News Cycle'; // Georgia, Arial, Times are not Open Source
+@googleFontName: "News Cycle"; // Georgia, Arial, Times are not Open Source
 @headerFontWeight: 700;
 @padding-base-vertical: 8px;
 @padding-large-vertical: 14px;

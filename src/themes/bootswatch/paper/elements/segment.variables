@@ -1,6 +1,6 @@
 @border: none;
 @boderRadius: 2px;
-@box-shadow: 0 1px 4px rgba(0,0,0,.3);
+@box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 
 @attachedBorder: @borderWidth solid @gray-light;
 @stackedPageBackground: darken(@pageBackground, 5%);

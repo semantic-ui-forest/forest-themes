@@ -1,16 +1,16 @@
-@gray-base:              #000;
-@gray-darker:            #2d2d2d; // #222
-@gray-dark:              lighten(@gray-base, 20%);   // #333
-@gray:                   #666; // #555
-@gray-light:             lighten(@gray-base, 60%);   // #999
-@gray-lighter:           lighten(@gray-base, 93.5%); // #eee
+@gray-base: #000;
+@gray-darker: #2d2d2d; // #222
+@gray-dark: lighten(@gray-base, 20%); // #333
+@gray: #666; // #555
+@gray-light: lighten(@gray-base, 60%); // #999
+@gray-lighter: lighten(@gray-base, 93.5%); // #eee
 
-@primaryColor:         #446E9B;
-@positiveColor:        #3CB521;
-@infoColor:            #3399F3;
-@warningColor:         #D47500;
-@negativeColor:        #CD0200;
-@negativeTextColor:    #CD0200;
+@primaryColor: #446e9b;
+@positiveColor: #3cb521;
+@infoColor: #3399f3;
+@warningColor: #d47500;
+@negativeColor: #cd0200;
+@negativeTextColor: #cd0200;
 
 @fontName: "Open Sans";
 @textColor: @gray;
@@ -28,4 +28,4 @@
 @negativeTextColor: #b94a48;
 @negativeBorderColor: darken(spin(@negativeBackgroundColor, -10), 3%);
 
-@line-height-computed:    floor((14px * 1.428571429)); // ~20px
+@line-height-computed: floor((14px * 1.428571429)); // ~20px
