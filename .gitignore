@@ -27,3 +27,5 @@ nbproject
 *.sublime-project
 *.sublime-workspace
 .build*
+
+node_modules
