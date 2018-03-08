@@ -1,0 +1,26 @@
+{
+  "name": "semantic-ui-forest-themes",
+  "description": "** Semantic-UI Forest Themes",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build/build.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/semantic-ui-forest/forest-themes.git"
+  },
+  "keywords": ["Semantic-UI", "Themes", "Bootswatch", "CSS"],
+  "author": "PPType, Inc.",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/semantic-ui-forest/forest-themes/issues"
+  },
+  "homepage": "https://github.com/semantic-ui-forest/forest-themes#readme",
+  "dependencies": {
+    "semantic-ui": "^2.3.0"
+  },
+  "devDependencies": {
+    "fs-extra": "^5.0.0"
+  }
+}
