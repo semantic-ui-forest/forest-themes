@@ -7,6 +7,10 @@ fse.ensureDirSync("dist/bootswatch");
 
 const cwd = process.cwd();
 const semantic_ui_dir = path.join(cwd, "node_modules/semantic-ui");
+const semantic_ui_backup_dir = path.join(
+  cwd,
+  "node_modules/semantic-ui-backup"
+);
 
 const semantic_ui_themes = [
   "amazon",
@@ -43,6 +47,9 @@ themes = {
   "semantic-ui": semantic_ui_themes
 };
 
+// backup `node_modules/semantic-ui`
+fse.removeSync(semantic_ui_backup_dir);
+fse.copySync(semantic_ui_dir, semantic_ui_backup_dir);
 fse.copySync("semantic.json", path.join(semantic_ui_dir, "semantic.json"));
 
 for (let theme of bootswatch_themes) {
@@ -61,7 +68,7 @@ for (let category of ["bootswatch", "semantic-ui"]) {
 
     process.chdir(semantic_ui_dir);
 
-    process.stdout.write(`building ${category}/${theme} theme ...`);
+    process.stdout.write(`building ${category}/${theme} theme...`);
     execSync("gulp build-css");
     process.stdout.write(`done.\n`);
 
@@ -77,5 +84,10 @@ for (let category of ["bootswatch", "semantic-ui"]) {
     process.chdir(cwd);
   }
 }
+
+// restore `node_modules/semantic-ui`
+fse.removeSync(semantic_ui_dir);
+fse.copySync(semantic_ui_backup_dir, semantic_ui_dir);
+fse.removeSync(semantic_ui_backup_dir);
 
 process.chdir(cwd);

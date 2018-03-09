@@ -17,25 +17,17 @@ You can check the official
 [documentation](http://learnsemantic.com/guide/expert.html#manual-install)
 for a detailed guide about how to customize Semantic-UI.
 
-Here, we write a shell script to build multiple themes in one pass. You
-need a vanilla Semantic-UI
-[code](https://github.com/Semantic-Org/Semantic-UI) to work with us.
+We have write a build script and wrap it with npm, so you can build tens of
+themes in one shot. The basic workflow:
 
-So basic workflow:
-
-``` {.bash}
+```{.bash}
 git clone https://github.com/semantic-ui-forest/forest-themes.git
-git clone https://github.com/Semantic-Org/Semantic-UI.git
 
-# run a `npm install` and select "skip install" option.
-cd Semantic-UI
-npm install
-
-# now go back to forest-themes repo.
-cd ../forest-themes
+# we prefer yarn, however, npm is also OK
+yarn install
 
 # it takes about 7 minutes to build about 20 themes.
-bash -x build-all-themes.sh ../Semantic-UI
+yarn run build
 
 # all generated theme files are put into `dist` directory in forest-themes repo.
 # ls -lR dist
