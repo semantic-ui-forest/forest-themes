@@ -2,7 +2,7 @@ const fse = require("fs-extra");
 const path = require("path");
 const execSync = require("child_process").execSync;
 
-const output_dir = "output";
+const output_dir = "output/dist";
 fse.ensureDirSync(path.join(output_dir, "bootswatch"));
 fse.ensureDirSync(path.join(output_dir, "semantic-ui"));
 
