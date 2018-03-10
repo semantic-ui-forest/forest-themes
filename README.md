@@ -1,5 +1,7 @@
 ## Semantic-UI Forest Themes
 
+[![CircleCI](https://circleci.com/gh/semantic-ui-forest/forest-themes.svg?style=svg)](https://circleci.com/gh/semantic-ui-forest/forest-themes)
+
 This repo contains lots of third-party themes for
 [Semantic-UI](https://semantic-ui.com/). Right now, it's mainly consist
 of themes ported from [Bootswatch](https://bootswatch.com/). To build
