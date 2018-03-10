@@ -1,8 +1,7 @@
 {
-  "name": "semantic-ui-forest-themes",
-  "description": "** Semantic-UI Forest Themes",
-  "version": "0.0.1",
-  "main": "index.js",
+  "name": "forest-themes",
+  "description": "Semantic-UI Forest Themes",
+  "version": "0.1.0",
   "scripts": {
     "build": "node build/build.js"
   },
