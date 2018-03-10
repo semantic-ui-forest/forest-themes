@@ -29,6 +29,6 @@ yarn install
 # it takes about 7 minutes to build about 20 themes.
 yarn run build
 
-# all generated theme files are put into `dist` directory in forest-themes repo.
-# ls -lR dist
+# all generated theme files are put into `output` directory in forest-themes repo.
+# ls -lR output
 ```

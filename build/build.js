@@ -2,8 +2,9 @@ const fse = require("fs-extra");
 const path = require("path");
 const execSync = require("child_process").execSync;
 
-fse.ensureDirSync("dist/semantic-ui");
-fse.ensureDirSync("dist/bootswatch");
+const output_dir = "output";
+fse.ensureDirSync(path.join(output_dir, "bootswatch"));
+fse.ensureDirSync(path.join(output_dir, "semantic-ui"));
 
 const cwd = process.cwd();
 const semantic_ui_dir = path.join(cwd, "node_modules/semantic-ui");
@@ -62,7 +63,7 @@ for (let theme of bootswatch_themes) {
 for (let category of ["bootswatch", "semantic-ui"]) {
   for (let theme of themes[category]) {
     fse.copySync(
-      path.join("theme-configs", category, `${theme}.theme.config`),
+      path.join("src/theme-configs", category, `${theme}.theme.config`),
       path.join(semantic_ui_dir, "src/theme.config")
     );
 
@@ -74,11 +75,11 @@ for (let category of ["bootswatch", "semantic-ui"]) {
 
     fse.copySync(
       path.join("dist", "semantic.css"),
-      path.join(cwd, "dist", category, `semantic.${theme}.css`)
+      path.join(cwd, output_dir, category, `semantic.${theme}.css`)
     );
     fse.copySync(
       path.join("dist", "semantic.min.css"),
-      path.join(cwd, "dist", category, `semantic.${theme}.min.css`)
+      path.join(cwd, output_dir, category, `semantic.${theme}.min.css`)
     );
 
     process.chdir(cwd);
