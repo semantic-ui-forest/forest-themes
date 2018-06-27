@@ -1,0 +1,15 @@
+@textColor: @white;
+@titleColor: @white;
+@downColor: @white;
+@downBackground: darken(@primaryColor, 5%);
+@descriptionColor: darken(@white, 5%);
+@activeColor: @white;
+@activeIconColor: @white;
+@activeBackground: darken(@primaryColor, 10%);
+@activeHoverBackground: darken(@primaryColor, 20%);
+@hoverColor: @white;
+@hoverBackground: @primaryColor;
+@disabledColor: darken(@white, 5%);
+@disabledBackground: darken(@white, 30%);
+@arrowBackgroundColor: @primaryColor;
+@verticalDivider: none;

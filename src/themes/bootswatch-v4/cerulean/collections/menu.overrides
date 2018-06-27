@@ -1,0 +1,69 @@
+#gradient {
+  .vertical-three-colors(@start-color: #00b3ee; @mid-color: #7a43b6; @color-stop: 50%; @end-color: #c3325f) {
+    background-image: -webkit-linear-gradient(
+      @start-color,
+      @mid-color @color-stop,
+      @end-color
+    );
+    background-image: -o-linear-gradient(
+      @start-color,
+      @mid-color @color-stop,
+      @end-color
+    );
+    background-image: linear-gradient(
+      @start-color,
+      @mid-color @color-stop,
+      @end-color
+    );
+    background-repeat: no-repeat;
+    filter: e(
+      %(
+        "progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",
+        argb(@start-color),
+        argb(@end-color)
+      )
+    ); // IE9 and down, gets no color-stop at all for proper fallback
+  }
+}
+
+.button-shadow(@color) {
+  #gradient
+    > .vertical-three-colors(lighten(@color, 8%), @color, 60%, darken(@color, 4%));
+  filter: none;
+}
+
+.text-shadow {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.ui.menu {
+  .button-shadow(@primaryColor);
+  .active.item, .item:hover {
+    .button-shadow(darken(@primaryColor, 5%));
+  }
+}
+
+.ui.menu .item {
+  .text-shadow;
+}
+
+.ui.secondary.menu .item {
+  color: @secondaryItemColor;
+}
+
+.ui.menu .item .input {
+  color: darken(#fff, 10%);
+  input {
+    color: #fff;
+  }
+}
+
+.ui.text.menu .item:hover {
+  color: lighten(#000, 10%);
+}
+
+.ui.inverted.menu .item:hover {
+  color: #fff;
+}
