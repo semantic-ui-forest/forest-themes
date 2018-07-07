@@ -19,6 +19,6 @@ jobs:
 
       - run: sudo yarn global add gulp-cli
 
-      - run: yarn install
+      - run: yarn install --ignore-scripts
 
       - run: yarn run build
