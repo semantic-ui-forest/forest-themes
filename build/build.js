@@ -3,7 +3,8 @@ const path = require("path");
 const execSync = require("child_process").execSync;
 
 const output_dir = "output/dist";
-fse.ensureDirSync(path.join(output_dir, "bootswatch"));
+fse.ensureDirSync(path.join(output_dir, "bootswatch-v3"));
+fse.ensureDirSync(path.join(output_dir, "bootswatch-v4"));
 fse.ensureDirSync(path.join(output_dir, "semantic-ui"));
 
 const cwd = process.cwd();
@@ -23,7 +24,8 @@ const semantic_ui_themes = [
   "semantic-ui",
   "twitter"
 ];
-const bootswatch_themes = [
+
+const bootswatch_v3_themes = [
   "cerulean",
   "cosmo",
   "cyborg",
@@ -43,8 +45,29 @@ const bootswatch_themes = [
   "yeti"
 ];
 
+const bootswatch_v4_themes = [
+  "cerulean"
+  // "cosmo",
+  // "cyborg",
+  // "darkly",
+  // "flatly",
+  // "journal",
+  // "lumen",
+  // "paper",
+  // "readable",
+  // "sandstone",
+  // "simplex",
+  // "slate",
+  // "solar",
+  // "spacelab",
+  // "superhero",
+  // "united",
+  // "yeti"
+];
+
 themes = {
-  bootswatch: bootswatch_themes,
+  "bootswatch-v3": bootswatch_v3_themes,
+  "bootswatch-v4": bootswatch_v4_themes,
   "semantic-ui": semantic_ui_themes
 };
 
@@ -53,14 +76,14 @@ fse.removeSync(semantic_ui_backup_dir);
 fse.copySync(semantic_ui_dir, semantic_ui_backup_dir);
 fse.copySync("semantic.json", path.join(semantic_ui_dir, "semantic.json"));
 
-for (let theme of bootswatch_themes) {
+for (let category of ["bootswatch-v3", "bootswatch-v4"]) {
   fse.copySync(
-    path.join("src/themes/bootswatch", theme),
-    path.join(semantic_ui_dir, "src/themes", theme)
+    path.join("src/themes/", category),
+    path.join(semantic_ui_dir, "src/themes", category)
   );
 }
 
-for (let category of ["bootswatch", "semantic-ui"]) {
+for (let category of ["bootswatch-v3", "bootswatch-v4", "semantic-ui"]) {
   for (let theme of themes[category]) {
     fse.copySync(
       path.join("src/theme-configs", category, `${theme}.theme.config`),
