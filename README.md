@@ -26,7 +26,7 @@ themes in one shot. The basic workflow:
 git clone https://github.com/semantic-ui-forest/forest-themes.git
 
 # we prefer yarn, however, npm is also OK
-yarn install
+yarn install --ignore-scripts
 
 # it takes about 7 minutes to build about 20 themes.
 yarn run build
