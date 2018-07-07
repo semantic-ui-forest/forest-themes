@@ -3188,9 +3188,9 @@ safe-regex@^1.1.0:
   dependencies:
     ret "~0.1.10"
 
-semantic-ui@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/semantic-ui/-/semantic-ui-2.3.0.tgz#887fc5e43f638f3ab6d64de69c394e15a42571d7"
+semantic-ui@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/semantic-ui/-/semantic-ui-2.3.2.tgz#50b8f800442cc5901faaf297a1aeab55f2ff41ee"
   dependencies:
     better-console "*"
     del "^3.0.0"

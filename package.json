@@ -9,7 +9,12 @@
     "type": "git",
     "url": "git+https://github.com/semantic-ui-forest/forest-themes.git"
   },
-  "keywords": ["Semantic-UI", "Themes", "Bootswatch", "CSS"],
+  "keywords": [
+    "Semantic-UI",
+    "Themes",
+    "Bootswatch",
+    "CSS"
+  ],
   "author": "PPType, Inc.",
   "license": "BSD-3-Clause",
   "bugs": {
@@ -17,7 +22,7 @@
   },
   "homepage": "https://github.com/semantic-ui-forest/forest-themes#readme",
   "dependencies": {
-    "semantic-ui": "^2.3.0"
+    "semantic-ui": "^2.3.2"
   },
   "devDependencies": {
     "fs-extra": "^5.0.0"
