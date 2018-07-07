@@ -32,5 +32,5 @@ yarn install --ignore-scripts
 yarn run build
 
 # all generated theme files are put into `output` directory in forest-themes repo.
-# ls -lR output
+# ls -lR dist
 ```
