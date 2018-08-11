@@ -1,0 +1,6 @@
+@background: #ccc;
+@boxShadow: none;
+@barHeight: 8px;
+@fontSize: 8px;
+@lineHeight: 8px;
+@height: 0.5rem;

@@ -1,0 +1,39 @@
+@gray-base: #000;
+@gray-darker: #373a3c;
+@gray-dark: #868e96;
+@gray: #adb5bd;
+@gray-light: #ced4da;
+@gray-lighter: #e9ecef;
+
+@primaryColor: #2780e3;
+@positiveColor: #3fb618;
+@infoColor: #9954bb;
+@warningColor: #ff7518;
+@negativeColor: #ff0039;
+@primaryBackgroundColor: #2780e3;
+@positiveBackgroundColor: #3fb618;
+@infoBackgroundColor: #9954bb;
+@warningBackgroundColor: #ff7518;
+@negativeBackgroundColor: #ff0039;
+
+@positiveTextColor: #fff;
+@infoTextColor: #fff;
+@warningTextColor: #fff;
+@warningBorderColor: darken(spin(@warningBackgroundColor, -10), 3%);
+@negativeTextColor: #fff;
+@negativeBorderColor: darken(spin(@negativeBackgroundColor, -10), 3%);
+
+@emSize: 15px;
+@fontSize: 0.9375rem;
+@fontName: "Source Sans Pro";
+@headerFont: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+@pageFont: "Source Sans Pro", Calibri, Candara, Arial, sans-serif;
+@headerFontWeight: 300;
+@padding-base-vertical: 10px;
+@padding-base-horizontal: 18px;
+@padding-large-vertical: 18px;
+@padding-large-horizontal: 30px;
+@absoluteBorderRadius: 0;
+@textColor: @gray-darker;
+@inputColor: @textColor;
+@invertedDisabledTextColor: #fff;

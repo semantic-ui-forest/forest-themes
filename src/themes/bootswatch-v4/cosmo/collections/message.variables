@@ -1,0 +1,8 @@
+@boxShadow: none;
+@textColor: #000;
+@background: darken(#fff, 5%);
+
+@successHeaderColor: #fff;
+@warningHeaderColor: #fff;
+@errorHeaderColor: #fff;
+@infoHeaderColor: #fff;

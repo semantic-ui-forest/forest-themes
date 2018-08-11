@@ -1,0 +1,9 @@
+.ui.table {
+  a:not(.button) {
+    text-decoration: underline;
+  }
+
+  .dropdown a {
+    text-decoration: none;
+  }
+}

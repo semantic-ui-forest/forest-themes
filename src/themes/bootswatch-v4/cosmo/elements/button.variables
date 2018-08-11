@@ -1,0 +1,13 @@
+@textColor: #fff;
+@backgroundColor: @gray-darker;
+@primaryTextColor: #fff;
+@positiveTextColor: #fff;
+@negativeTextColor: #fff;
+
+@basicTextColor: #000;
+@basicHoverTextColor: lighten(#000, 10%);
+
+@hoverBackgroundColor: @gray-base;
+@hoverColor: darken(#fff, 10%);
+
+@labeledIconBackgroundColor: lighten(@gray-darker, 15%);
