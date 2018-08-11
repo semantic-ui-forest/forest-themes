@@ -1,0 +1,14 @@
+.ui.menu .item .input {
+  color: @gray-light;
+  input {
+    color: #fff;
+  }
+}
+
+.ui.secondary.menu .item {
+  color: @secondaryItemColor;
+}
+
+.ui.text.menu .item:hover {
+  color: @gray-dark;
+}

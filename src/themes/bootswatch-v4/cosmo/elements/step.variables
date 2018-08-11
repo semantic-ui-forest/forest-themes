@@ -1,0 +1,16 @@
+@textColor: darken(@white, 15%);
+@backgroundColor: @gray-dark;
+@descriptionColor: @gray-light;
+
+@activeColor: #fff;
+@activeIconColor: @white;
+@activeHoverBackground: @gray-darker;
+@activeBackground: @gray-base;
+
+@hoverColor: #fff;
+@hoverBackground: @gray-dark;
+
+@disabledColor: darken(@white, 30%);
+@disabledBackground: @gray;
+
+@arrowBackgroundColor: @backgroundColor;

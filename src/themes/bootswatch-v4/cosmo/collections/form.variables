@@ -1,0 +1,2 @@
+@formErrorColor: @negativeColor;
+@inputErrorFocusColor: @formErrorColor;
