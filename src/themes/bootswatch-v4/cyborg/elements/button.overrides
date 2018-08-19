@@ -1,0 +1,7 @@
+.ui.inverted.button:hover {
+  background: @background;
+}
+
+.ui.warning.button {
+  color: @white;
+}
