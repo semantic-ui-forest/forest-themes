@@ -1,0 +1,9 @@
+.ui.popup {
+  border: none;
+  color: @white;
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,12 @@
+@background: darken(@gray-darker, 4%);
+@headerBackground: @gray-darker;
+@footerBackground: @gray-darker;
+@definitionPageBackground: @pageBackground;
+@activeBackgroundColor: lighten(@gray-darker, 5%);
+@stripedBackground: rgba(255,255,255,0.5);
+@activeBackgroundHover: rgba(255,255,255,0.75);
+@borderColor: @gray-700;
+@internalBorderColor: lighten(@gray-darker, 2%);
+@invertedBackground: @gray-500;
+@invertedBorder: darken(@gray-500, 7.5%);
+@invertedCellColor: @pageBackground;

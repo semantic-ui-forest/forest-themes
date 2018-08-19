@@ -1,0 +1,4 @@
+@border: transparent;
+@placeholderColor: @gray-light;
+@borderWidth: 0;
+@focusColor: black;

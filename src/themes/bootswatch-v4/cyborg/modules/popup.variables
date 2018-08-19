@@ -1,0 +1,6 @@
+@tooltipBackground: @gray-700;
+@background: @gray-700;
+@borderColor: @gray-dark;
+@arrowColor: @borderColor;
+@arrowBackground: @background;
+@color: white;
