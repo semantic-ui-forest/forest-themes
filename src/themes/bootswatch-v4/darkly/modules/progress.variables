@@ -1,0 +1,3 @@
+@background: @gray-700;
+@barHeight: 0.625rem;
+@fontSize: 0.625rem;
