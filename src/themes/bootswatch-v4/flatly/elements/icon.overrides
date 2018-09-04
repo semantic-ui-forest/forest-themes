@@ -1,0 +1,11 @@
+.windows.close.icon {
+  text-decoration: none;
+  text-shadow: none;
+  opacity: 0.4;
+  color: @white;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}

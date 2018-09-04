@@ -1,0 +1,11 @@
+@activeBackgroundHover: @gray-lighter;
+@borderColor: @gray-lighter;
+@disabledTextColor: @gray-light;
+
+@cellBorder: 1px solid @internalBorderColor;
+@sortableBorder: 1px solid @borderColor;
+
+@rowBorder: 0px solid @internalBorderColor;
+@headerBorder: 0px solid @internalBorderColor;
+@footerBorder: 0px solid @borderColor;
+@basicTableBorder: 0px solid @borderColor;

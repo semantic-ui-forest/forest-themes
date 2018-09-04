@@ -1,0 +1,4 @@
+@focusBorderColor: @primaryColor;
+@placeholderColor: #acb6c0;
+@focusColor: black;
+@verticalPadding: 1.5em;

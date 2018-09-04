@@ -1,0 +1,85 @@
+@white:    #fff;
+@gray-100: #f8f9fa;
+@gray-200: #ecf0f1;
+@gray-300: #dee2e6;
+@gray-400: #ced4da;
+@gray-500: #b4bcc2;
+@gray-600: #95a5a6;
+@gray-700: #7b8a8b;
+@gray-800: #343a40;
+@gray-900: #212529;
+@black:    #000;
+
+@blue:    #2C3E50;
+@indigo:  #6610f2;
+@purple:  #6f42c1;
+@pink:    #e83e8c;
+@red:     #E74C3C;
+@orange:  #fd7e14;
+@yellow:  #F39C12;
+@green:   #18BC9C;
+@teal:    #20c997;
+@cyan:    #3498DB;
+
+@primary:       @blue;
+@secondary:     @gray-600;
+@success:       @green;
+@info:          @cyan;
+@warning:       @yellow;
+@danger:        @red;
+@light:         @gray-200;
+@dark:          @gray-700;
+
+@gray-base: #000;
+@gray-darker: lighten(@gray-base, 13.5%); // #222
+@gray-dark: #7b8a8b; // #333
+@gray: #95a5a6; // #555
+@gray-light: #b4bcc2; // #999
+@gray-lighter: #ecf0f1; // #eee
+
+@primaryColor: #2c3e50;
+@positiveColor: #18bc9c;
+@infoColor: #3498db;
+@warningColor: #f39c12;
+@negativeColor: #e74c3c;
+
+@textColor: #2c3e50;
+@linkColor: #18bc9c;
+@linkHoverColor: #18bc9c;
+@emSize: 15px;
+@fontSize: 0.9375rem;
+@h1: 3rem;
+@h2: 2.5rem;
+@h3: 2rem;
+@pageFont: "Lato", "Segeo UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+@headerFont: "Lato", "Segeo UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+@importGoogleFonts: false;
+@headerFontWeight: 400;
+@padding-base-vertical: 10px;
+@padding-base-horizontal: 15px;
+@padding-large-vertical: 18px;
+@padding-large-horizontal: 27px;
+@padding-small-vertical: 6px;
+@padding-small-horizontal: 9px;
+@inputColor: @textColor;
+@invertedDisabledTextColor: #ccc;
+@disabledTextColor: @gray-lighter;
+@disabledBorderColor: transparent;
+@positiveTextColor: #fff;
+@positiveBackgroundColor: #19bc9c;
+@positiveBorderColor: #19bc9c;
+@infoTextColor: #fff;
+@infoBackgroundColor: #3498db;
+@infoBorderColor: #3498db;
+@warningTextColor: #fff;
+@warningBackgroundColor: #f39c12;
+@warningBorderColor: #f39c12;
+@negativeTextColor: #fff;
+@negativeBackgroundColor: #e74c3c;
+@negativeBorderColor: #e74c3c;
+
+@line-height-computed: floor((@emSize * 1.428571429)); // ~20px
+
+@selectedTextColor: @gray-base;
+@mutedTextColor: @gray-light;
+@inputPlaceholderColor: @gray-light;

@@ -1,0 +1,39 @@
+.ui.menu.primary {
+  .active.item {
+    color: @success !important;
+  }
+}
+
+.ui.menu.inverted {
+  background-color: @success !important;
+    .item:focus,
+    .item:hover,
+    .active.item {
+      color: @primary !important;
+    }
+}
+
+.ui.menu .item .input {
+  color: @gray-light;
+  input {
+    color: #fff;
+  }
+}
+
+.ui.secondary.menu .item {
+  color: @secondaryItemColor;
+}
+
+.ui.tabular.menu {
+  .active.item
+  .active.item:focus,
+  .active.item:hover {
+    color: @primary;
+  }
+}
+
+.ui.pagination.menu {
+  a:hover {
+    text-decoration: none;
+  }
+}

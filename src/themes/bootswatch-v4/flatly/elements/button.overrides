@@ -1,0 +1,9 @@
+.ui.basic.buttons .button:hover,
+.ui.basic.button:hover {
+  text-decoration: underline;
+  box-shadow: @basicBoxShadow;
+}
+
+.ui.inverted.button:hover {
+  background: @gray-darker;
+}
