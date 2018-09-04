@@ -1,0 +1,55 @@
+.ui.table {
+  a:not(.button) {
+    text-decoration: underline;
+  }
+
+  .dropdown a {
+    text-decoration: none;
+  }
+
+  &.inverted th {
+    background-color: @primary;
+  }
+
+  &.positive,
+  &.warning,
+  &.error {
+    color: #fff;
+  }
+
+  &.positive {
+    &, > th, > td {
+      backgroud-color: @success;
+    }
+  }
+
+  &.positive:hover {
+    &, > th, > td {
+      backgroud-color: darken(@success, 5%);
+    }
+  }
+
+  &.error {
+    &, > th, > td {
+      backgroud-color: @negativeColor;
+    }
+  }
+
+  &.error:hover {
+    &, > th, > td {
+      backgroud-color: darken(@negativeColor, 5%);
+    }
+  }
+
+  &.warning {
+    &, > th, > td {
+      backgroud-color: @warning;
+    }
+  }
+
+  &.warning:hover {
+    &, > th, > td {
+      backgroud-color: darken(@warning, 5%);
+    }
+  }
+}

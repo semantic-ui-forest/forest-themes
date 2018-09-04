@@ -1,0 +1,46 @@
+@minHeight: 60px;
+@itemTextColor: #fff;
+@background: @primaryColor;
+@border: transparent;
+@itemTextColor: #fff;
+@borderRadius: 0;
+
+@itemVerticalPadding: 1.5rem;
+@itemHorizontalPadding: 0.5rem;
+
+@hoverItemTextColor: @positiveColor;
+@hoverItemBackground: darken(@primaryColor, 5%);
+
+@activeItemTextColor: #fff;
+@activeHoverItemColor: #fff;
+@activeItemBackground: darken(@primaryColor, 10%);
+@activeHoverItemBackground: darken(@primaryColor, 15%);
+
+@labelTextColor: #fff;
+@labelBackground: @positiveColor;
+
+@pressedItemBackground: darken(@primaryColor, 10%);
+@invertedItemTextColor: #fff;
+@invertedBackground: @positiveColor;
+@invertedBorder: transparent;
+@invertedItemTextColor: #fff;
+@invertedHoverColor: @primaryColor;
+@invertedActiveColor: #fff;
+@invertedActiveBackground: darken(@positiveColor, 5%);
+@invertedMenuPressedBackground: darken(@positiveColor, 10%);
+@paginationActiveBackground: darken(@positiveColor, 15%);
+
+@tabularTextColor: @gray-light;
+@tabularBorderColor: @gray-lighter;
+@tabularActiveColor: @primaryColor;
+@tabularHoveredTextColor: lighten(#000, 15%);
+
+@secondaryItemColor: @gray-light;
+@secondaryPointingBorderColor: @gray-light;
+@secondaryPointingActiveBorderColor: @primaryColor;
+
+@verticalBackground: @background;
+@subMenuActiveTextColor: #000;
+
+@textMenuItemColor: darken(#fff, 30%);
+@textMenuActiveItemColor: #000;
