@@ -1,0 +1,4 @@
+@color: #fff;
+@backgroundColor: @gray-light;
+@ribbonShadowColor: @gray-light;
+@fontSize: 10px;

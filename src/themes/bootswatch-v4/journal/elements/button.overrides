@@ -1,0 +1,19 @@
+.ui.basic.buttons .button:hover,
+.ui.basic.button:hover {
+  text-decoration: underline;
+  box-shadow: @basicBoxShadow;
+}
+
+.ui.inverted.button:hover {
+  background: @background;
+}
+
+.ui.button {
+  font-family: @headerFont;
+  font-weight: @headerFontWeight;
+
+  &.secondary,
+  &.warning {
+    color: #fff;
+  }
+}
