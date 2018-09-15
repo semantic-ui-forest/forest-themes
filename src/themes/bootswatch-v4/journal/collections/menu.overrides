@@ -1,0 +1,13 @@
+.ui.menu {
+  font-size: 18px;
+}
+
+.ui.menu.inverted {
+  background-color: #000 !important;
+}
+
+.ui.pagination.menu {
+  a:hover {
+    text-decoration: none;
+  }
+}
