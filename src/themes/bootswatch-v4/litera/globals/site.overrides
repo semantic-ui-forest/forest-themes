@@ -1,0 +1,16 @@
+p {
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif !default;
+}
+
+blockquote {
+  font-style: italic;
+}
+
+footer {
+  font-size: 0.875em;
+}
+
+.lead {
+  color: @gray-600;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif !default;
+}
