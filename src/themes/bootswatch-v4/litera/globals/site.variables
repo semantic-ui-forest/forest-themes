@@ -1,0 +1,22 @@
+@primaryColor: #4582ec;
+@positiveColor: #02b875;
+@infoColor: #17a2b8;
+@warningColor: #f0ad4e;
+@negativeColor: #d9534f;
+
+@textcolor: #343a40;
+@fontSize: 1.063rem;
+@headerFont: @fontName;
+@headerFontWeight: 700;
+@headerLineHeight: 1.2;
+
+@positiveTextColor: #4582ec;
+@infoTextColor: #17a2b8;
+@warningTextColor: #f0ad4e;
+@warningBorderColor: darken(spin(@warningBackgroundColor, -10), 3%);
+@negativeTextColor: #d9534f;
+@negativeBorderColor: darken(spin(@negativeBackgroundColor, -10), 3%);
+
+@pageFont: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+@headerFont: @pageFont;
+@importGoogleFonts: false;

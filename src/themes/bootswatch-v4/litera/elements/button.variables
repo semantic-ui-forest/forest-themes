@@ -1,0 +1,5 @@
+@textColor: #555;
+@basicBorder: rgba(0, 0, 0, 0.1);
+@textShadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+@orBackgroundColor: darken(#fff, 10%);
+@borderRadius: 0.25rem;

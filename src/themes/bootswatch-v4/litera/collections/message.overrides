@@ -1,0 +1,11 @@
+.ui.message {
+  border: none;
+  color: #fff;
+  font-size: 0.875em;
+
+  a, .link {
+    color: #fff;
+    font-weight: normal;
+    text-decoration: underline;
+  }
+}

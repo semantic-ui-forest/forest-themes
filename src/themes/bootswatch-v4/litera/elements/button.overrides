@@ -1,0 +1,83 @@
+#gradient {
+  .vertical-three-colors(@start-color: #00b3ee; @mid-color: #7a43b6; @color-stop: 50%; @end-color: #c3325f) {
+    background-image: -webkit-linear-gradient(
+      @start-color,
+      @mid-color @color-stop,
+      @end-color
+    );
+    background-image: -o-linear-gradient(
+      @start-color,
+      @mid-color @color-stop,
+      @end-color
+    );
+    background-image: linear-gradient(
+      @start-color,
+      @mid-color @color-stop,
+      @end-color
+    );
+    background-repeat: no-repeat;
+    filter: e(
+      %(
+        "progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",
+        argb(@start-color),
+        argb(@end-color)
+      )
+    ); // IE9 and down, gets no color-stop at all for proper fallback
+  }
+}
+
+.button-shadow(@color) {
+  #gradient
+    > .vertical-three-colors(lighten(@color, 8%), @color, 60%, darken(@color, 4%));
+  filter: none;
+  border: 1px solid darken(@color, 10%);
+}
+
+.text-shadow {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.ui.button {
+  border-radius: 1.078em;
+  font-family: Georgia, Cambria, "Times New Roman", Times, serif !default;
+  font-size: 0.875em;
+;
+  .button-shadow(#fff);
+  .text-shadow;
+
+  &.primary {
+    .button-shadow(@primaryColor);
+  }
+
+  &.positive {
+    .button-shadow(@positiveColor);
+  }
+
+  &.info {
+    .button-shadow(@infoColor);
+  }
+
+  &.warning {
+    .button-shadow(@warningColor);
+    color: #fff;
+  }
+
+  &.negative {
+    .button-shadow(@negativeColor);
+  }
+
+  &.large {
+    border-radius: 2.688em;
+  }
+
+  &.small {
+    border-radius: 0.844em;
+    font-size: 0.688em;
+  }
+}
+
+// left border of the first button in buttons group
+.ui.buttons .button:first-child {
+  border-left: 1px solid darken(#fff, 10%);
+  margin-left: 1px;
+}
