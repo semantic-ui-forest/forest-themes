@@ -1,0 +1,64 @@
+.ui.table {
+  a:not(.button) {
+    text-decoration: underline;
+  }
+
+  .dropdown a {
+    text-decoration: none;
+  }
+
+  &.positive,
+  &.info,
+  &.warning,
+  &.negative {
+    color: #fff;
+  }
+
+  &.positive {
+    &, > th, > td {
+      background-color: @positiveColor;
+    }
+  }
+
+  &.positive:hover {
+    &, > th, > td {
+      background-color: darken(@positiveColor, 5%);
+    }
+  }
+
+  &.info {
+    &, > th, > td {
+      background-color: @infoColor;
+    }
+  }
+
+  &.info:hover {
+    &, > th, > td {
+      background-color: darken(@infoColor, 5%);
+    }
+  }
+
+  &.negative {
+    &, > th, > td {
+      background-color: @negativeColor;
+    }
+  }
+
+  &.negative:hover {
+    &, > th, > td {
+      background-color: darken(@negativeColor, 5%);
+    }
+  }
+
+  &.warning {
+    &, > th, > td {
+      background-color: @warningColor;
+    }
+  }
+
+  &.warning:hover {
+    &, > th, > td {
+      background-color: darken(@warningColor, 5%);
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.ui.message {
+  border-width: 0 1px 4px 1px;
+  border-color: rgba(0, 0, 0, 0.15);
+  border-style: solid;
+  box-shadow: none !important;
+
+  a {
+    text-decoration: underline;
+  }
+
+  &.primary {
+    background-color: @primaryColor;
+    border-color: darken(@primaryColor, 5%);
+  }
+
+  &.positive {
+    background-color: @positiveColor;
+    border-color: darken(@positiveColor, 5%);
+  }
+
+  &.info {
+    background-color: @infoColor;
+    border-color: darken(@infoColor, 5%);
+  }
+
+  &.warning {
+    background-color: @warningColor;
+    border-color: darken(@warningColor, 5%);
+  }
+
+  &.negative {
+    background-color: @negativeColor;
+    border-color: darken(@negativeColor, 5%);
+  }
+
+  &.inverted {
+    border-color: darken(#000, 5%);
+  }
+}

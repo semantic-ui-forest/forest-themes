@@ -1,0 +1,35 @@
+.ui.list .item,
+.ui.list a {
+  &.positive {
+    &.active {
+      background-color: @positiveColor;
+    }
+
+    &.active:hover,
+    &.active:focus {
+      background-color: darken(@positiveColor, 5%);
+    }
+  }
+
+  &.warning {
+    &.active {
+      background-color: @warningColor;
+    }
+
+    &.active:hover,
+    &.active:focus {
+      background-color: darken(@warningColor, 5%);
+    }
+  }
+
+  &.negative {
+    &.active {
+      background-color: @negativeColor;
+    }
+
+    &.active:hover,
+    &.active:focus {
+      background-color: darken(@negativeColor, 5%);
+    }
+  }
+}

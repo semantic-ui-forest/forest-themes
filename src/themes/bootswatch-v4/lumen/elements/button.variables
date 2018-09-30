@@ -1,0 +1,15 @@
+@textColor: @gray;
+@backgroundColor: @gray-lighter;
+@verticalPadding: @inputVerticalPadding * 1.2;
+@textTransform: uppercase;
+@boxShadow: none;
+@fontSize: 12px;
+
+@mini: @miniSize * 12px;
+@tiny: @tinySize * 12px;
+@small: @smallSize * 12px;
+@medium: @mediumSize * 12px;
+@large: @largeSize * 12px;
+@big: @bigSize * 12px;
+@huge: @hugeSize * 12px;
+@massive: @massiveSize * 12px;

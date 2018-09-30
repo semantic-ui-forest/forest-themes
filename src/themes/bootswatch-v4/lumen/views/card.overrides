@@ -1,0 +1,6 @@
+.ui.card,
+.ui.cards .card {
+  border-color: rgba(0, 0, 0, 0.15);
+  border-width: 0 1px 4px 1px;
+  border-style: solid;
+}

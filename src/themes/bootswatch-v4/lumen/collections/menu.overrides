@@ -1,0 +1,72 @@
+.ui.menu {
+  border-width: 0 1px 4px 1px;
+  border-style: solid;
+  border-bottom-style: solid;
+
+  .primary {
+    border-color: @darken(@primaryColor, 5%);
+  }
+
+  .inverted {
+    border-color: @darken(#000, 5%);
+  }
+}
+
+.ui.tabular.menu {
+  &,
+  &.disabled,
+  &.disabled:hover,
+  &.disabled:focus {
+    margin-top: 6px;
+    border-color: @tabularBorderColor;
+    transition: all 0.2s ease-in-out;
+  }
+}
+
+.ui.dropdown.menu {
+  margin-top: 0;
+  border-width: 0 1px 4px 1px;
+  border-style: solid;
+  box-shadow: none;
+}
+
+.ui.pagination.menu {
+  > li > a,
+  > li > span {
+    position: relative;
+    top: 0;
+    border-width: 0 1px 4px 1px;
+    border-style: solid;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    &:hover,
+    &:focus {
+      top: 1px;
+      border-bottom-width: 3px;
+      text-decoration: none;
+    }
+
+    &:active {
+      top: 2px;
+      border-bottom-width: 2px;
+    }
+  }
+
+  > .disabled > a,
+  > .disabled > span {
+
+    &:hover {
+      top: 0;
+      border-width: 0 1px 4px 1px;
+      border-style: solid;
+    }
+
+    &:active {
+      top: 0;
+      border-width: 0 1px 4px 1px;
+      border-style: solid;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@itemTextColor: @textColor;
+@hoverItemTextColor: @gray-dark;
+@activeItemTextColor: @gray-dark;
+@activeItemBackground: darken(@white, 3%);
+@labelTextColor: @hoverItemTextColor;
+@pressedItemBackground: #fff;
+@hoverItemBackground: #fff;
+@tabularBorderColor: #f0f0f0;
+@tabularActiveBackground: #fff;
+@tabularActiveColor: #222;
+
+@paginationActiveBorder: @primaryColor;
+@paginationActiveBackground: @gray-lighter;

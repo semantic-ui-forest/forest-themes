@@ -1,0 +1,5 @@
+@menuBorder: darken(#f8f8f8, 6.5%);
+@itemColor: rgba(0,0,0,.5);
+@hoveredItemColor: @gray-dark;
+@hoverItemBackground: transparent;
+@selectionTextUnderlayColor: @gray-darker;
