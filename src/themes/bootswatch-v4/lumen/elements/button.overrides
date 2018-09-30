@@ -1,0 +1,75 @@
+.ui.button,
+.ui.basic.button {
+  border-width: 0 1px 4px 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.15); // bind border color with background color
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+
+  &:hover {
+    margin-top: 1px;
+    border-bottom-width: 3px;
+  }
+
+  &:active {
+    margin-top: 2px;
+    border-bottom-width: 2px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: @backgroundColor;
+    border-color: rgba(0, 0, 0, 0.25);
+  }
+}
+
+.ui.menu .button {
+  &:hover {
+    margin-top: 8px;
+  }
+
+  &:active {
+    margin-top: 9px;
+  }
+}
+
+.ui.button {
+  &.primary {
+    border-color: darken(@primaryColor, 5%);
+  }
+
+  &.positive {
+    border-color: darken(@positiveColor, 5%);
+  }
+
+  &.info {
+    border-color: darken(@infoColor, 5%);
+  }
+
+  &.warning {
+    border-color: darken(@warningColor, 5%);
+  }
+
+  &.negative {
+    border-color: darken(@negativeColor, 5%);
+  }
+
+  &.inverted {
+    border-color: darken(#000, 5%);
+  }
+}
+
+.ui.vertical.buttons {
+  .button + .button {
+    &:hover {
+      margin-top: -1px;
+      border-top-width: 1px;
+    }
+
+    &:active {
+      margin-top: -1px;
+      border-top-width: 2px;
+    }
+  }
+}
