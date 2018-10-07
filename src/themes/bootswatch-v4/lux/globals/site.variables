@@ -1,0 +1,32 @@
+@gray-base: #000;
+@gray-darker: #1a1a1a;
+@gray-dark: #919aa1;
+@gray: #adb5bd;
+@gray-light: #eceeef;
+@gray-lighter: #f9f9fa;
+
+@primaryColor: #1a1a1a;
+@positiveColor: #4bbf73;
+@infoColor: #1f9bcf;
+@warningColor: #f0ad4e;
+@negativeColor: #d9534f;
+
+@pageBackground: #fcfcfc;
+@textColor: @gray-dark;
+@emSize: 12.25px;
+@fontSize: @emSize;
+@fontName: "Nunito Sans";
+@borderRadius: 0;
+@headerFontWeight: 600;
+@verticalPadding: 8px;
+@largeVerticalPadding: 14px;
+@inputColor: @textColor;
+@disabledTextColor: #444;
+@invertedDisabledTextColor: #ccc;
+@disabledTextColor: @gray-lighter;
+@positiveTextColor: #468847;
+@infoTextColor: #3a87ad;
+@warningTextColor: #c09853;
+@warningBorderColor: darken(spin(@warningBackgroundColor, -10), 3%);
+@negativeTextColor: #b94a48;
+@negativeBorderColor: darken(spin(@negativeBackgroundColor, -10), 3%);

@@ -1,0 +1,16 @@
+@textColor: #fff;
+@backgroundColor: #474949;
+@primaryTextColor: #fff;
+@positiveTextColor: #fff;
+@negativeTextColor: #fff;
+@basicTextColor: @gray-dark;
+@hoverColor: @gray-lighter;
+
+@border: 1px solid darken(#474949, 10%);
+@hoverBackgroundImage: linear-gradient(lighten(#474949, 3%), #474949 6%, darken(#474949, 3%));
+
+@verticalPadding: 0.75rem;
+@horizontalPadding: 2rem;
+@lineHeight: 1.5rem;
+@fontWeight: 600;
+@borderRadius: 0;
