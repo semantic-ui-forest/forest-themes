@@ -1,0 +1,19 @@
+.ui.menu {
+  font-size: @emSize;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  .item {
+    padding: 1.5rem 1rem;
+    margin-right: 2rem;
+  }
+
+  &.primary {
+    background-color: #1a1a1a;
+  }
+
+  &.dropdown {
+    font-size: @emSize;
+    text-transform: none;
+  }
+}

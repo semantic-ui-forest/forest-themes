@@ -1,0 +1,3 @@
+@placeholderColor: @gray-lighter;
+@lineHeight: 1.5rem;
+@background: #f7f7f9;

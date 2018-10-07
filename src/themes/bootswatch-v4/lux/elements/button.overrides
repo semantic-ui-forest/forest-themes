@@ -1,0 +1,17 @@
+.ui.button {
+  font-size: @emSize;
+  text-transform: uppercase;
+
+  &.small {
+    font-size: 10px;
+  }
+
+  &.warning {
+    &,
+    &:hover,
+    &:not([disabled]):not(.disabled):active,
+    &:focus {
+      color: #fff;
+    }
+  }
+}

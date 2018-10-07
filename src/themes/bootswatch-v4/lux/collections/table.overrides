@@ -1,0 +1,10 @@
+.ui.table {
+  th, td {
+    padding: 1.5rem;
+  }
+}
+
+th {
+  font-size: 0.765rem;
+  text-transform: uppercase;
+}
