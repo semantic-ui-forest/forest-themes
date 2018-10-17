@@ -1,0 +1,4 @@
+@border: transparent;
+@borderRadius: 0.2rem;
+@boxShadow: 0 1px 4px rgba(0,0,0,.3);
+
