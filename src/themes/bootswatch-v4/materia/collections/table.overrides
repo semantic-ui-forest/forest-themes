@@ -1,0 +1,19 @@
+.ui.table {
+  th, td {
+    padding: 1.5rem;
+  }
+}
+
+th {
+  font-size: 0.765rem;
+  text-transform: uppercase;
+}
+
+.ui.table:hover {
+  > tbody > tr,
+  > tbody > tr > th,
+  > tbody > tr > td {
+    transition: all 0.2s;
+  }
+}
+

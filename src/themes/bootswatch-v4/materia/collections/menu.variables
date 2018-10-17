@@ -1,0 +1,18 @@
+@itemTextColor: @gray;
+@invertedItemTextColor: rgba(255,255,255,.75);
+@invertedHoverColor: #fff;
+@disabledTextColor: #bbb;
+@background: #fff;
+@itemTextColor: @gray;
+@hoverItemTextColor: @primaryColor;
+@activeItemTextColor: @primaryColor;
+@activeItemBackground: transparent;
+@labelBackground: @primaryColor;
+@invertedItemTextColor: lighten(@primaryColor, 40%);
+@invertedBackground: @primaryColor;
+@invertedItemTextColor: lighten(@primaryColor, 40%);
+@invertedActiveBackground: transparent;
+@invertedMenuPressedBackground: darken(@primaryColor, 10%);
+@borderRadius: 0;
+@borderColor: transparent;
+@verticalPadding: 1rem;

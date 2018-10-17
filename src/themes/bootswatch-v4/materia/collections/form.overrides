@@ -1,0 +1,59 @@
+textarea,
+.ui.form textarea,
+.ui.form input,
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=number],
+.ui.form [type=text],
+.ui.form [type=password],
+.ui.form [type=email],
+.ui.form [type=tel],
+.ui.form [contenteditable] {
+  font-size: 1rem;
+  box-shadow: inset 0 -1px 0 #ddd;
+  transition: all 0.2s;
+
+  &:focus {
+    box-shadow: inset 0 -2px 0 @primaryColor;
+  }
+
+  &[disabled],
+  &[readonly] {
+    box-shadow: none;
+    border-bottom: 1px dotted #ddd;
+  }
+
+  &:not(textarea) {
+    height: @lineHeight;
+  }
+}
+
+select,
+.ui.form select {
+  appearance: none;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAJ1BMVEVmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmZmaP/QSjAAAADHRSTlMAAgMJC0uWpKa6wMxMdjkoAAAANUlEQVR4AeXJyQEAERAAsNl7Hf3X6xt0QL6JpZWq30pdvdadme+0PMdzvHm8YThHcT1H7K0BtOMDniZhWOgAAAAASUVORK5CYII=);
+  background-size: 13px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  box-shadow: inset 0 -1px 0 #ddd;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:focus {
+    box-shadow: inset 0 -2px 0 @primaryColor;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAMAAACelLz8AAAAJ1BMVEUhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISF8S9ewAAAADHRSTlMAAgMJC0uWpKa6wMxMdjkoAAAANUlEQVR4AeXJyQEAERAAsNl7Hf3X6xt0QL6JpZWq30pdvdadme+0PMdzvHm8YThHcT1H7K0BtOMDniZhWOgAAAAASUVORK5CYII=);
+  }
+
+  &[multiple] {
+    background: none;
+  }
+}
+
+.ui.large.form {
+  select {
+    line-height: 1.5;
+  }
+}
