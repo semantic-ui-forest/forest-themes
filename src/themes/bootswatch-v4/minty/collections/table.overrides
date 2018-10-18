@@ -1,0 +1,55 @@
+.ui.table {
+
+  &.positive {
+    &, > th, > td {
+      background-color: @positiveColor;
+    }
+
+    &:hover {
+      &, > th, > td {
+        background-color: darken(@positiveColor, 5%);
+      }
+  }
+
+  &.info {
+    &, > th, > td {
+      background-color: @infoColor;
+    }
+
+    &:hover {
+      &, > th, > td {
+        background-color: darken(@infoColor, 5%);
+      }
+    }
+  }
+
+  &.negative {
+    &, > th, > td {
+      background-color: @negativeColor;
+    }
+
+    &:hover {
+      &, > th, > td {
+        background-color: darken(@negativeColor, 5%);
+      }
+    }
+  }
+
+  &.warning {
+    &, > th, > td {
+      background-color: @warningColor;
+    }
+
+    &:hover {
+      &, > th, > td {
+        background-color: darken(@warningColor, 5%);
+      }
+    }
+  }
+
+  &.inverted th {
+    background-color: @primaryColor;
+    border-color: @borderColor;
+    font-family: @headerFont;
+  }
+}

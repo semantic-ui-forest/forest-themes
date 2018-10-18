@@ -1,0 +1,10 @@
+@headerFont: "Montserrat", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+@primaryColor: #78C2AD;
+@positiveColor: #56CC9D;
+@infoColor: #6CC3D5;
+@warningColor: #FFCE67;
+@negativeColor: #FF7851;
+
+@textColor: #888;
+@borderRadius: 0.4rem;

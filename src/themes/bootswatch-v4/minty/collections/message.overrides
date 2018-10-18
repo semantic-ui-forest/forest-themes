@@ -1,0 +1,42 @@
+.ui.message {
+
+  &, h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+
+  &.primary {
+    &, > th, > td {
+      background-color: @primaryColor;
+    }
+  }
+
+  &.positive {
+    &, > th, > td {
+      background-color: @positiveColor;
+    }
+  }
+
+  &.info {
+    &, > th, > td {
+      background-color: @infoColor;
+    }
+  }
+
+  &.negative {
+    &, > th, > td {
+      background-color: @negativeColor;
+    }
+  }
+
+  &.warning {
+    &, > th, > td {
+      background-color: @warningColor;
+    }
+  }
+
+  &.inverted {
+    &, > th, > td {
+      background-color: @invertedTextColor;
+    }
+  }
+}
