@@ -1,0 +1,2 @@
+@fontFamily: @headerFont;
+@textColor: #5a5a5a;

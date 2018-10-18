@@ -1,0 +1,3 @@
+legend {
+  font-family: @headerFont;
+}

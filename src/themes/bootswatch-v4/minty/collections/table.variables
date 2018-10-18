@@ -1,0 +1,2 @@
+@borderColor: rgba(0,0,0,0.05);
+@color: #fff;
