@@ -1,0 +1,17 @@
+.ui.tabular.menu {
+  .item,
+  .item.active, {
+    border-width: 0 0 1px 0;
+  }
+
+  .item:hover,
+  .item.active,
+  .item.active:hover,
+  .item.active:focus {
+    border-bottom: 1px solid @primaryColor;
+  }
+
+  .item + .item {
+    margin-left: 0;
+  }
+}

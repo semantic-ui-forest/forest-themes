@@ -1,0 +1,3 @@
+.ui.breadcrumb .active.section {
+  color: #444;
+}

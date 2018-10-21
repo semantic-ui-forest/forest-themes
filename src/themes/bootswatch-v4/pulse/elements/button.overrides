@@ -1,0 +1,37 @@
+.ui.button {
+
+  &:focus,
+  &:active,
+  &:active:focus,
+  &.active:focus {
+    outline: none;
+  }
+
+  &.warning {
+    color: #fff;
+  }
+
+  &.primary:focus {
+    box-shadow: 0 0 5px lighten(@primaryColor, 10%);
+  }
+
+  &.positive:focus {
+    box-shadow: 0 0 5px lighten(@positiveColor, 10%);
+  }
+
+  &.info:focus {
+    box-shadow: 0 0 5px lighten(@infoColor, 10%);
+  }
+
+  &.warning:focus {
+    box-shadow: 0 0 5px lighten(@warningColor, 10%);
+  }
+
+  &.negative:focus {
+    box-shadow: 0 0 5px lighten(@negativeColor, 10%);
+  }
+
+  &.disabled:focus {
+    box-shadow: none;
+  }
+}
