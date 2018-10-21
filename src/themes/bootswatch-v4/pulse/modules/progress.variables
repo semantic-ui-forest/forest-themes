@@ -1,0 +1,4 @@
+@background: #ededed;
+@barBackground: @primaryColor;
+@barHeight: 8px;
+@borderRadius: 0;

@@ -1,0 +1,39 @@
+.ui.list {
+  background-color: #17141F;
+  border-color: transparent;
+
+  &:hover {
+    background-color: lighten(#17141F, 10%);
+  }
+
+  &:active {
+    color: #fff;
+    background-color: #17141F;
+  }
+
+  &:disabled {
+    color: lighten(#17141F, 30%);
+  }
+
+  &.item {
+    color: rgba(255, 255, 255, 0.8);
+
+    &.active,
+    &:hover,
+    &:focus {
+      color: #fff;
+    }
+
+    &.active {
+      font-weight: bold;
+
+      &:hover {
+        background-color: lighten(#17141F, 10%);
+      }
+    }
+
+    &.disabled:hover {
+      color: lighten(#17141F, 30%);
+    }
+  }
+}

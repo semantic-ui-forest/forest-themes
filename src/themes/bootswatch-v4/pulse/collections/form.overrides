@@ -1,0 +1,8 @@
+.field {
+  box-shadow: 0 0 5px rgba(100,65,164,.4);
+}
+
+input:focus,
+.input:focus {
+  border-color: @primaryColor;
+}

@@ -1,0 +1,6 @@
+.ui.table {
+  &.inverted th {
+    background-color: #A991D4;
+    border-color: rgba(0, 0, 0, 0.05);
+  }
+}
