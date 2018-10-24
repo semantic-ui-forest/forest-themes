@@ -1,0 +1,57 @@
+.sandstone() {
+  font-size: 11px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.ui.menu .item {
+  .sandstone;
+}
+
+.ui.menu.primary {
+  background-color: #3E3F3A !important;
+}
+
+.ui.menu.inverted {
+  background-color: #8E8C84 !important;
+}
+
+.ui.secondary.menu:not(.pointing) .active.item,
+.ui.secondary.menu:not(.pointing) .item:hover {
+  border: 1px solid @gray-light;
+}
+
+.ui.menu input,
+.ui.menu input:focus,
+.ui.menu input:active,
+.ui.menu .ui.form input,
+.ui.menu .ui.form input:focus,
+.ui.menu .ui.form input:active {
+  color: #fff;
+  border: none;
+}
+
+.ui.secondary.menu .item {
+  color: @secondaryItemColor;
+}
+
+.ui.menu i.icon {
+  color: @gray-light !important;
+}
+
+.ui.text.menu .item:hover {
+  color: @gray-dark;
+}
+
+.ui.menu.pagination {
+  .sandstone;
+
+  a:hover {
+    text-decoration: none;
+  }
+}
+
+.ui.dropdown.menu .item {
+  .sandstone;
+}

@@ -1,0 +1,13 @@
+.ui.vertical.accordion.menu:not(.following) {
+  * {
+    color: @gray;
+    &:hover {
+      color: @gray-light;
+    }
+    &:active,
+    &.checked,
+    &.active {
+      color: @gray-light;
+    }
+  }
+}

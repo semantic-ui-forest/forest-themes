@@ -1,0 +1,3 @@
+@stripedBackground: @gray-lighter;
+@activeBackgroundHover: @gray-lighter;
+@border: @gray-light;

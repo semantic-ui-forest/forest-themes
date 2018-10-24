@@ -1,0 +1,2 @@
+@textColor: @gray-dark;
+@fontWeight: 500;

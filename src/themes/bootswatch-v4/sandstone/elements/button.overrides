@@ -1,0 +1,33 @@
+.sandstone() {
+  font-size: 11px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.ui.button {
+  .sandstone;
+
+  &:hover {
+    border-color: transparent;
+  }
+
+  &.positive,
+  &.warning {
+    color: #fff;
+  }
+}
+
+.ui.circular.button {
+  width: 44px;
+}
+
+.ui.buttons .or:before {
+  margin-top: auto;
+  top: 45%;
+}
+
+.ui.inverted.button:focus,
+.ui.inverted.button:hover {
+  background-color: black;
+}

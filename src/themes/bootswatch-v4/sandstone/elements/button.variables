@@ -1,0 +1,17 @@
+@textColor: #fff;
+@backgroundColor: @gray-darker;
+@basicTextColor: #000;
+@textTransform: uppercase;
+@basicTextTransform: uppercase;
+@hoverBackgroundColor: @gray-base;
+@hoverColor: #fff;
+@fontWeight: 500;
+@lineHeight: 26px;
+@mini : (11 / 14) * 11px;
+@tiny : (12 / 14) * 11px;
+@small : (13 / 14) * 11px;
+@medium : (14 / 14) * 11px;
+@large : (16 / 14) * 11px;
+@big : (18 / 14) * 11px;
+@huge : (20 / 14) * 11px;
+@massive : (24 / 14) * 11px;

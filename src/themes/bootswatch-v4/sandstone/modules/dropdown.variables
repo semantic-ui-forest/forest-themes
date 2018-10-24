@@ -1,0 +1,10 @@
+@menuBorder: @gray-light;
+@itemColor: @gray;
+@hoveredItemColor: @gray;
+@hoveredItemBackground: @gray-lighter;
+@selectionTextUnderlayColor: lighten(black, 10%);
+
+@itemFontSize: 11px;
+@itemLineHeight: 22px;
+@itemFontWeight: 500;
+@itemTextTransform: uppercase;

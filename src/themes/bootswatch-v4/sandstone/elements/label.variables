@@ -1,0 +1,6 @@
+@backgroundColor: @positiveColor;
+@labelActiveTextColor: #fff;
+@labelActiveBackgroundColor: @positiveColor;
+@fontWeight: normal;
+@color: @white;
+@ribbonShadowColor: @positiveColor;
