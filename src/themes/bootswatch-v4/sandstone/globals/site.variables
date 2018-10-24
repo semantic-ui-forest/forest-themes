@@ -1,0 +1,27 @@
+@gray-base: #000;
+@gray-darker: #3e3f3a;
+@gray-dark: #8e8c84;
+@gray: #98978b;
+@gray-light: #dfd7ca;
+@gray-lighter: #f8f5f0;
+
+@primaryColor: #325d88;
+@positiveColor: #93c54b;
+@positiveTextColor: #93c54b;
+@infoColor: #29abe0;
+@infoTextColor: #29abe0;
+@warningColor: #f47c3c;
+@warningTextColor: #f47c3c;
+@negativeColor: #d9534f;
+@negativeTextColor: #d9534f;
+
+@textColor: #3e3f3a;
+@fontName: "Roboto";
+@emSize: 12.25px;
+@linkColor: @positiveColor;
+@linkHoverColor: darken(@linkColor, 10%);
+@headerFontWeight: 400;
+@inputColor: @textColor;
+@disabledBorderColor: @gray-light;
+@mutedTextColor: @gray;
+@inputPlaceholderColor: @gray-light;

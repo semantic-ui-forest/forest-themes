@@ -1,0 +1,7 @@
+.ui.steps,
+.ui.step,
+.ui.steps .step {
+  .title {
+    text-transform: uppercase;
+  }
+}

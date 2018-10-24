@@ -1,0 +1,19 @@
+.ui.breadcrumb {
+  background-color: @gray-lighter;
+  width: 100%;
+  padding: 0.5em;
+  border-radius: 4px;
+  border: 1px solid #dfd7ca;
+
+  font-size: 11px;
+  line-height: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  .active.section {
+    color: darken(@linkColor, 10%);
+    &:hover {
+      color: darken(@linkHoverColor, 10%);
+    }
+  }
+}

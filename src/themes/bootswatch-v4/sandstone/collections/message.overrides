@@ -1,0 +1,39 @@
+.ui.message {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #fff;
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  &.primary {
+    &, > th, > td {
+      background-color: @primaryColor;
+    }
+  }
+
+  &.positive {
+    &, > th, > td {
+      background-color: @positiveColor;
+    }
+  }
+
+  &.info {
+    &, > th, > td {
+      background-color: @infoColor;
+    }
+  }
+
+  &.negative {
+    &, > th, > td {
+      background-color: @negativeColor;
+    }
+  }
+
+  &.warning {
+    &, > th, > td {
+      background-color: @warningColor;
+    }
+  }
+}

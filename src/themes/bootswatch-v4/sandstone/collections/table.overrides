@@ -1,0 +1,5 @@
+.ui.table {
+  &.inverted th {
+    background-color: #000;
+  }
+}

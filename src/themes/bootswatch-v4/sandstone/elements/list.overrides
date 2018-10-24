@@ -1,0 +1,18 @@
+.ui.list {
+  border: #DFD7CA;
+
+  &:hover {
+    background: #F8F5F0;
+    color: @textColor;
+  }
+
+  &:active {
+    background: #F8F5F0;
+    color: #DFD7CA;
+  }
+
+  &:disabled {
+    background: #fff;
+    color: #98978B;
+  }
+ 

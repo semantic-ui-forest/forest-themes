@@ -1,0 +1,2 @@
+@borderColor: @gray-light;
+@boxShadow: none;

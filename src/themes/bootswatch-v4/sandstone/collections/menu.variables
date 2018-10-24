@@ -1,0 +1,40 @@
+@horizontalPadding: 0.9rem;
+
+@minHeight: 60px;
+@itemTextColor: @gray;
+@background: @gray-darker;
+@border: @gray-darker;
+
+@hoverItemTextColor: #fff;
+@hoverItemBackground: @gray-base;
+
+@activeItemTextColor: #fff;
+@activeItemBackground: @gray-base;
+@activeHoverItemColor: @gray-light;
+@activeHoverItemBackground: @gray-base;
+
+@labelTextColor: #fff;
+@labelBackground: #000;
+@pressedItemBackground: darken(@gray-darker, 2%);
+
+@paginationActiveTextColor: @gray-dark;
+@paginationActiveBackground: @gray-light;
+
+@verticalBackground: @background;
+@subMenuActiveTextColor: #000;
+
+@itemTextTransform: uppercase;
+@fontWeight: 500;
+@itemFontWeight: 500;
+
+@tabularTextColor: @gray-light;
+@tabularBorderColor: @gray-light;
+@tabularActiveColor: @primaryColor;
+@tabularHoveredTextColor: lighten(#000, 15%);
+
+@secondaryItemColor: @gray-light;
+@secondaryPointingBorderColor: @gray-light;
+@secondaryPointingActiveBorderColor: @primaryColor;
+
+@textMenuItemColor: darken(#fff, 30%);
+@textMenuActiveItemColor: #000;
