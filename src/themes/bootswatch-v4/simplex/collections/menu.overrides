@@ -1,0 +1,44 @@
+.ui.tabular.menu {
+  border-color: darken(#fff,6.5%);
+}
+
+.ui.pagination.menu {
+  border-color: darken(#fff, 6.5%);
+  text-decoration: none;
+
+  .item {
+    &:hover {
+      color: #fff;
+      background: @primaryColor;
+      border-color: @primaryColor;
+    }
+    &.disabled,
+    &:disabled {
+      color: @gray-light;
+      border-color: darken(#fff, 6.5%);
+    }
+  }
+}
+
+.ui.menu {
+  border-width: 1px;
+  border-style: solid;
+
+  &.fixed.top {
+    border-width: 0 0 1px 0;
+  }
+
+  &.fixed.bottom {
+    border-top-width: 1px 0 0 0;
+    border-style: solid;
+  }
+
+  &.primary {
+    background-color: @primaryColor !important;
+    border-color: darken(@primaryColor, 6.5%) !important;
+  }
+
+  &.inverted {
+    border-color: darken(@gray-darker, 6.5%) !important;
+  }
+}

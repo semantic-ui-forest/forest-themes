@@ -1,0 +1,7 @@
+.ui.list {
+  border: darken(#fff, 6.5%);
+
+  &:disabled {
+    background: darken(#fff, 6.5%);
+  }
+ 
