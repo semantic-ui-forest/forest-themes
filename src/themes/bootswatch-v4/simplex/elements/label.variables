@@ -1,0 +1,4 @@
+@backgroundColor: @linkColor;
+@ribbonShadowColor: @linkColor;
+@fontWeight: normal;
+@color: #fff;

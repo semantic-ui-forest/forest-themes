@@ -1,0 +1,2 @@
+@border: darken(#fff, 6.5%);
+@headerColor: @border;

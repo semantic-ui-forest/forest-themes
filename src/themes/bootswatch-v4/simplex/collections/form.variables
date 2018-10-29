@@ -1,0 +1,2 @@
+@inputErrorFocusBorder: @negativeColor;
+@formErrorBorder: @negativeColor;

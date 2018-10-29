@@ -1,0 +1,3 @@
+.ui.breadcrumb {
+  border: 1px solid darken(#fff, 6.5%);
+}
