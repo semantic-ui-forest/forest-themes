@@ -1,0 +1,4 @@
+@menuBorder: @gray-darker;
+@borderColor: @gray-darker;
+@hoveredItemColor: #fff;
+@hoveredItemBackground: @gray-dark;

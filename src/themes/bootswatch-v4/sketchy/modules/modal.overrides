@@ -1,0 +1,6 @@
+.ui.modal .content {
+  border-top-left-radius: 15px 5px !important;
+  border-top-right-radius: 5px 25px !important;
+  border-bottom-right-radius: 5px 25px !important;
+  border-bottom-left-radius:  25px 5px !important;
+}

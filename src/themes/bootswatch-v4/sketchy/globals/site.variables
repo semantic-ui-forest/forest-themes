@@ -1,0 +1,19 @@
+@gray-base: #000;
+@gray-darker: #333;
+@gray-dark: #555;
+@gray: #aaa;
+@gray-light: #ccc;
+@gray-lighter: #f7f7f9;
+
+@primaryColor: #333;
+@positiveColor: #28a745;
+@positiveTextColor: #28a745;
+@infoColor: #17a2b8;
+@infoTextColor: #17a2b8;
+@warningColor: #ffc107;
+@warningTextColor: #ffc107;
+@negativeColor: #dc3545;
+@negativeTextColor: #dc3545;
+
+@linkUnderline: underline;
+@fontName: 'Cabin Sketch';

@@ -1,0 +1,3 @@
+.ui.progress {
+  border: 2px solid @gray-darker;
+}

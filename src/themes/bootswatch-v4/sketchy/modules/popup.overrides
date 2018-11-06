@@ -1,0 +1,6 @@
+.ui.popup {
+  border-top-left-radius: 45px 15px !important;
+  border-top-right-radius: 85px 10px !important;
+  border-bottom-right-radius: 15px 35px !important;
+  border-bottom-left-radius:  25px 555px !important;
+}

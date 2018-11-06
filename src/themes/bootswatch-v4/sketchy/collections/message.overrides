@@ -1,0 +1,50 @@
+.ui.message {
+  .close {
+    color: transparent;
+
+    &:before {
+      right: 1rem;
+      top: 0.8rem;
+    }
+  }
+
+  &.positive {
+    border-color: @positiveColor;
+
+    &,
+    .item,
+    .close:before {
+      color: @positiveColor;
+    }
+  }
+
+  &.info {
+    border-color: @infoColor;
+
+    &,
+    .item,
+    .close:before {
+      color: @infoColor;
+    }
+  }
+
+  &.warning {
+    border-color: @warningColor;
+
+    &,
+    .item,
+    .close:before {
+      color: @warningColor;
+    }
+  }
+
+  &.negative {
+    border-color: @negativeColor;
+
+    &,
+    .item,
+    .close:before {
+      color: @negativeColor;
+    }
+  }
+}

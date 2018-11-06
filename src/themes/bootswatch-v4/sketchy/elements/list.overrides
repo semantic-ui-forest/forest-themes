@@ -1,0 +1,36 @@
+.ui.list {
+  border-color: @gray-darker;
+  overflow: hidden;
+  border-top-left-radius: 45px 15px;
+  border-top-right-radius: 15px 5px;
+  border-bottom-right-radius: 35px 15px;
+  border-bottom-left-radius:  5px 65px;
+
+  .item {
+    text-decoration: none;
+    border-left: none;
+    border-right: none;
+    border-top: 2px solid @gray-darker;
+    border-top-left-radius: 255px 25px;
+    border-top-right-radius: 5px 225px;
+    border-bottom-right-radius: 225px 25px;
+    border-bottom-left-radius:  5px 255px;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  &:hover {
+    background: @gray-lighter;
+  }
+
+  &:active {
+    background: @gray-darker;
+    color: #fff;
+  }
+}

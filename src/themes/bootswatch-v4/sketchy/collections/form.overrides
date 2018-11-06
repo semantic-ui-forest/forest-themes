@@ -1,0 +1,83 @@
+input {
+  border-top-left-radius: 255px 25px !important;
+  border-top-right-radius: 25px 225px !important;
+  border-bottom-right-radius: 225px 25px !important;
+  border-bottom-left-radius:  25px 255px !important;
+}
+
+textarea,
+select {
+  border-top-left-radius: 555px 25px;
+  border-top-right-radius: 25px 5px;
+  border-bottom-right-radius: 15px 35px;
+  border-bottom-left-radius:  25px 555px;
+}
+
+[type="checkbox"] {
+  position: relative;
+  appearance: none;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -1.2em;
+    top: -0.9em;
+    display: inline-block;
+    width: 15px;
+    height: 16px;
+    border: 2px solid @gray-darker;
+    border-top-left-radius: 2px 5px;
+    border-top-right-radius: 8px 3px;
+    border-bottom-right-radius: 2px 5px;
+    border-bottom-left-radius: 4px 3px;
+  }
+
+  &:checked:after {
+    content: "x";
+    position: absolute;
+    left: -0.64em;
+    top: -0.48em;
+    font-size: 1.5rem;
+    line-height: 0.5;
+    color: @gray-darker;
+  }
+
+  &:disabled {
+    &:before {
+      border: 2px solid @gray;
+    }
+  }
+}
+
+[type="radio"] {
+  position: relative;
+  appearance: none;
+  cursor: pointer;
+
+  &:before {
+    content: "";
+    position: absolute;
+    left: -1.2em;
+    top: -0.9em;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 2px solid @gray-darker;
+    border-radius: 50% 45% 40% 50% / 40% 50% 50% 45%;
+    border-top-left-radius: 50% 40%;
+    border-top-right-radius: 45% 50%;
+    border-bottom-right-radius: 40% 50%;
+    border-bottom-left-radius: 50% 45%;
+  }
+
+  &:checked:before {
+    background-color: @gray-darker;
+  }
+
+  &:disabled {
+    &:before {
+      border: 2px solid @gray;
+    }
+  }
+}

@@ -1,0 +1,46 @@
+.ui.table {
+  border-width: 1px;
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+table {
+  th,
+  td {
+    background-color: #fff;
+  }
+}
+
+.ui.table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-top-left-radius: 5px 25px !important;
+  border-top-right-radius: 25px 5px !important;
+  border-bottom-right-radius: 5px 25px !important;
+  border-bottom-left-radius:  25px 5px !important;
+  overflow: hidden;
+
+  th,
+  td {
+    border-radius: 5px 5px 25px 4px/5px 4px 3px 5px;
+    border-top-left-radius: 5px 5px !important;
+    border-top-right-radius: 5px 4px !important;
+    border-bottom-right-radius: 25px 3px !important;
+    border-bottom-left-radius: 4px 5px !important;
+  }
+
+  &.positive,
+  &.positive:hover {
+    td, th {
+      background-color: @positiveColor;
+      color: #fff;
+  }
+
+  &.warning,
+  &.warning:hover {
+    td, th {
+      background-color: @warningColor;
+      color: #fff;
+  }
+}

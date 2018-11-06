@@ -1,0 +1,63 @@
+.ui.menu.pagination {
+  border-color: @gray-darker;
+
+  .item {
+    border-top-left-radius: 425px 25px;
+    border-top-right-radius: 255px 25px;
+    border-bottom-right-radius: 25px 5px;
+    border-bottom-left-radius:  25px 25px;
+  }
+
+  &:hover {
+    color: #fff;
+    background-color: @gray-darker;
+    border-color: @gray-darker;
+  }
+
+  &:disabled {
+    color: @gray-light;
+    border-color: @gray-darker;
+  }
+}
+
+.ui.tabular.menu .item {
+  border-top-left-radius: 45px 25px;
+  border-top-right-radius: 15px 225px;
+  border-bottom-right-radius: 225px 25px;
+  border-bottom-left-radius:  5px 255px;
+}
+
+.ui.inverted.menu {
+  color: #fff;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.ui.menu {
+  border-width: 2px;
+  border-style: solid;
+  border-color: @gray-darker;
+  border-top-left-radius: 25px 5px;
+  border-top-right-radius: 25px 55px;
+  border-bottom-right-radius: 55px 25px;
+  border-bottom-left-radius:  5px 25px;
+
+  &.fixed.top {
+    border-radius: 0 25px 225px 0/25px 0 25px 255px;
+    border-width: 0 0 2px 0;
+    border-top-left-radius: 0px 25px;
+    border-top-right-radius: 25px 0px;
+    border-bottom-right-radius: 225px 25px;
+    border-bottom-left-radius:  0px 255px;
+  }
+
+  &.fixed.bottom {
+    border-radius: 255px 25px 0 25px/25px 225px 25px 0;
+    border-width: 2px 0 0 0;
+    border-top-left-radius: 255px 25px;
+    border-top-right-radius: 25px 225px;
+    border-bottom-right-radius: 0px 25px;
+    border-bottom-left-radius:  25px 0px;
+  }
+}

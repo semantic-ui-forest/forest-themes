@@ -1,0 +1,7 @@
+.ui.button {
+  text-decoration: none;
+  border-top-left-radius: 255px 25px !important;
+  border-top-right-radius: 25px 225px !important;
+  border-bottom-right-radius: 225px 25px !important;
+  border-bottom-left-radius:  25px 255px !important;
+}
