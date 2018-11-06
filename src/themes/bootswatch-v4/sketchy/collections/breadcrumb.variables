@@ -1,0 +1,2 @@
+@linkColor: @positiveColor;
+@linkHoverColor: darken(@positiveColor, 10%);

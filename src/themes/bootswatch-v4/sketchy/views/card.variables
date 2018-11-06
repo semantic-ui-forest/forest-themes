@@ -1,0 +1,2 @@
+@border: @gray-darker;
+@borderWidth: 2px;

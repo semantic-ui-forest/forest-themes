@@ -1,0 +1,43 @@
+body {
+  border-width: 2px;
+  font-weight: 700;
+  border-top-left-radius: 255px 25px;
+  border-top-right-radius: 25px 225px;
+  border-bottom-right-radius: 225px 25px;
+  border-bottom-left-radius:  25px 255px;
+}
+
+.large {
+  border-top-left-radius: 555px 25px;
+  border-top-right-radius: 25px 5px;
+  border-bottom-right-radius: 15px 35px;
+  border-bottom-left-radius:  25px 555px;
+}
+
+.small {
+  border-top-left-radius: 255px 25px;
+  border-top-right-radius: 25px 225px;
+  border-bottom-right-radius: 225px 25px;
+  border-bottom-left-radius:  25px 255px;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: 'Neucha', -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+blockquote {
+  border-radius: 15px 27px 25px 25px/25px 25px 305px 635px;
+  border-top-left-radius: 15px 25px;
+  border-top-right-radius: 27px 25px;
+  border-bottom-right-radius: 25px 305px;
+  border-bottom-left-radius:  25px 635px;
+}
+
+pre {
+  border: 2px solid @gray-darker;
+  border-radius: 15px 5px 5px 25px/5px 25px 25px 5px;
+  border-top-left-radius: 15px 5px !important;
+  border-top-right-radius: 5px 25px !important;
+  border-bottom-right-radius: 5px 25px !important;
+  border-bottom-left-radius:  25px 5px !important;
+}

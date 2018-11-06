@@ -1,0 +1,16 @@
+.ui.dropdown .divider {
+  background-color: @gray-lighter;
+  border-top-width: 2px;
+}
+
+.ui.dropdown.menu {
+  overflow: hidden;
+  border-top-left-radius: 555px 25px;
+  border-top-right-radius: 25px 25px;
+  border-bottom-right-radius: 25px 25px;
+  border-bottom-left-radius:  25px 555px;
+
+  .item {
+    text-decoration: none;
+  }
+}

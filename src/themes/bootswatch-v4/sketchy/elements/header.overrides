@@ -1,0 +1,7 @@
+h1, h2, h3, h4, h5, h6,
+.ui.header {
+  font-family: "Cabin Sketch";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 700;
+}
