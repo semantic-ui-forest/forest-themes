@@ -1,0 +1,2 @@
+@background: darken(@pageBackground, 5%);
+@barBackground: #7a8288;
