@@ -1,0 +1,7 @@
+.ui.active.search.dropdown input.search:focus + .text {
+  color: @gray-dark !important;
+}
+
+.ui.dropdown .divider {
+  background: rgba(0,0,0,.15);
+}

@@ -1,0 +1,121 @@
+#gradient {
+  .vertical-three-colors(@start-color: #00b3ee; @mid-color: #7a43b6; @color-stop: 50%; @end-color: #c3325f) {
+    background-image: -webkit-linear-gradient(
+      @start-color,
+      @mid-color @color-stop,
+      @end-color
+    );
+    background-image: -o-linear-gradient(
+      @start-color,
+      @mid-color @color-stop,
+      @end-color
+    );
+    background-image: linear-gradient(
+      @start-color,
+      @mid-color @color-stop,
+      @end-color
+    );
+    background-repeat: no-repeat;
+    filter: e(
+      %(
+        "progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",
+        argb(@start-color),
+        argb(@end-color)
+      )
+    ); // IE9 and down, gets no color-stop at all for proper fallback
+  }
+}
+
+.button-shadow(@color) {
+  #gradient
+    > .vertical-three-colors(lighten(@color, 6%), @color, 60%, darken(@color, 4%));
+  filter: none;
+}
+
+.button-shadow-inverse(@color) {
+  #gradient
+    > .vertical-three-colors(darken(@color, 24%), darken(@color, 18%), 40%, darken(@color, 16%));
+  filter: none;
+}
+
+.ui.menu {
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.6);
+
+  .button-shadow(@gray-dark);
+
+  &.fixed.top {
+    border-width: 0 0 1px 0;
+  }
+
+  &.fixed.bottom {
+    border-width: 1px 0 0 0;
+  }
+
+  .item:hover {
+    .button-shadow-inverse(@gray-dark);
+  }
+
+  &.inverted {
+    .button-shadow(@primaryColor);
+
+    .item:hover {
+      .button-shadow-inverse(@primaryColor);
+    }
+  }
+
+  .item {
+    padding: 1rem;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+
+    &:hover,
+    &:focus {
+      .button-shadow-inverse(@gray-dark);
+      border-left: 1px solid rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.ui.tabular.menu {
+  border-color: rgba(0,0,0,.6);
+
+  .item:hover {
+    border-color: rgba(0,0,0,.6);
+    color: #fff;
+  }
+
+  .item:active {
+    color: #fff;
+    border-color: rgba(0,0,0,.6);
+  }
+}
+
+.ui.pagination.menu {
+  color: #fff;
+  background: transparent;
+  border-color: rgba(0,0,0,.6);
+
+  &:hover {
+    color: #fff;
+    background: transparent;
+    border-color: rgba(0,0,0,.6);
+  }
+
+  &:active {
+    background: transparent;
+    border-color: rgba(0,0,0,.6);
+  }
+
+  &:disabled {
+    background: transparent;
+    border-color: rgba(0,0,0,.6);
+  }
+
+  .item.active {
+    .button-shadow-inverse(@gray-dark);
+  }
+
+  .item.disabled {
+    .button-shadow-inverse(@gray-dark);
+  }
+}
