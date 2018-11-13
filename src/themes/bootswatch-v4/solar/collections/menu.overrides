@@ -1,0 +1,25 @@
+.ui.pagination.menu {
+  background: transparent;
+  border-color: @gray-dark;
+  color: #fff;
+
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  &:hover {
+    background: @gray-dark;
+    border-color: @gray-dark;
+  }
+
+  &:active {
+    border-color: @gray-dark;
+  }
+
+  &:disabled {
+    color: @gray-dark;
+    background: transparent;
+    border-color: @gray-dark;
+  }
+}

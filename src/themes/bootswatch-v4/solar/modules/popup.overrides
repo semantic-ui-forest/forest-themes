@@ -1,0 +1,3 @@
+.ui.popup .header {
+  border-color: @gray-darker;
+}

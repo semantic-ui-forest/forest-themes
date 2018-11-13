@@ -1,0 +1,59 @@
+@gray-base: #000;
+@gray-darker: #002b36;
+@gray-dark: #073642;
+@gray: #839496;
+@gray-light: #eee8d5;
+@gray-lighter: #fdf6e3;
+
+@primaryColor: #b58900;
+@positiveColor: #2aa198;
+@infoColor: #268bd2;
+@warningColor: #cb4b16;
+@negativeColor: #d33682;
+
+@fontName: "Source Sans Pro";
+@pageBackground: @gray-darker;
+@textColor: @gray;
+@inactiveColor: @gray;
+@linkColor: @positiveColor;
+@linkHoverColor: @linkColor;
+@inputColor: @gray;
+@inputBackground: #a9bdbd;
+@inputPlaceholderColor: @gray-darker;
+@inputPlaceholderFocusColor: @gray-darker;
+@disabledTextColor: rgba(255, 255, 255, 0.25);
+@invertedDisabledTextColor: rgba(255, 255, 255, 0.25);
+@disabledTextColor: @gray-dark;
+@disabledBorderColor: @gray-dark;
+@positiveTextColor: #fff;
+@positiveBackgroundColor: @positiveColor;
+@positiveBorderColor: @positiveColor;
+@infoTextColor: #fff;
+@infoBackgroundColor: @infoColor;
+@infoBorderColor: @infoColor;
+@warningTextColor: #fff;
+@warningBackgroundColor: @warningColor;
+@warningBorderColor: @warningColor;
+@negativeTextColor: #fff;
+@negativeBackgroundColor: @negativeColor;
+@negativeBorderColor: @negativeColor;
+
+@darktextcolor : rgba(255, 255, 255, 0.9);
+@mutedtextcolor : rgba(255, 255, 255, 0.8);
+@lighttextcolor : rgba(255, 255, 255, 0.7);
+@unselectedtextcolor : rgba(255, 255, 255, 0.5);
+@hoveredtextcolor : rgba(255, 255, 255, 1);
+@pressedtextcolor : rgba(255, 255, 255, 1);
+@selectedtextcolor : rgba(255, 255, 255, 1);
+@disabledtextcolor : rgba(255, 255, 255, 0.2);
+
+@invertedtextcolor : rgba(255, 255, 255, 0.85);
+@invertedmutedtextcolor : rgba(0, 0, 0, 0.6);
+@invertedlighttextcolor : rgba(0, 0, 0, 0.4);
+@invertedunselectedtextcolor : rgba(0, 0, 0, 0.4);
+@invertedhoveredtextcolor : rgba(0, 0, 0, 0.8);
+@invertedpressedtextcolor : rgba(0, 0, 0, 0.9);
+@invertedselectedtextcolor : rgba(0, 0, 0, 0.95);
+@inverteddisabledtextcolor : rgba(0, 0, 0, 0.2);
+
+@borderColor: lighten(@gray-dark, 5%);

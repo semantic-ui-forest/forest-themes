@@ -1,0 +1,12 @@
+.ui.rating .icon {
+  color: @gray !important;
+}
+
+.close.icon {
+  color: @textColor;
+  text-shadow: none;
+}
+
+pre {
+  color: inheri;
+}
