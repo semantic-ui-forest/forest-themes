@@ -1,0 +1,3 @@
+@background: rgba(93,91,84,.125);
+@borderColor: rgba(0,17,21,.95);
+@descriptionColor: @gray-lighter;
