@@ -1,0 +1,70 @@
+#gradient {
+  .vertical-three-colors(@start-color: #00b3ee; @mid-color: #7a43b6; @color-stop: 50%; @end-color: #c3325f) {
+    background-image: -webkit-linear-gradient(
+      @start-color,
+      @mid-color @color-stop,
+      @end-color
+    );
+    background-image: -o-linear-gradient(
+      @start-color,
+      @mid-color @color-stop,
+      @end-color
+    );
+    background-image: linear-gradient(
+      @start-color,
+      @mid-color @color-stop,
+      @end-color
+    );
+    background-repeat: no-repeat;
+    filter: e(
+      %(
+        "progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",
+        argb(@start-color),
+        argb(@end-color)
+      )
+    ); // IE9 and down, gets no color-stop at all for proper fallback
+  }
+}
+
+.button-shadow(@color) {
+  #gradient
+    > .vertical-three-colors(lighten(@color, 15%), @color, 50%, darken(@color, 4%));
+  filter: none;
+  border: 1px solid darken(@color, 10%);
+}
+
+.transition(@transition) {
+  -webkit-transition: @transition;
+  -o-transition: @transition;
+  transition: @transition;
+}
+
+.ui.pagination.menu .item.active {
+  border-color: #ddd;
+}
+
+.ui.menu {
+  .button-shadow(#eee);
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.1);
+
+  &.primary {
+    .button-shadow(@primaryColor);
+  }
+
+  &.inverted {
+    .button-shadow(@primaryColor);
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+
+    .label {
+      background-color: #fff;
+      color: @primaryColor;
+    }
+  }
+
+  .item,
+  .item:hover {
+    padding-top: (((50px - @line-height-computed) / 2)+ 2px);
+    padding-bottom: (((50px - @line-height-computed) / 2)+ 2px);
+    .transition(color ease-in-out 0.2s);
+  }
+}

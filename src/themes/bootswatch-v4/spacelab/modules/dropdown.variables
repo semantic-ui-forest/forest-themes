@@ -1,0 +1,3 @@
+@hoveredItemColor: #fff;
+@hoveredItemBackground: @primaryColor;
+@selectionTextUnderlayColor: @gray-dark;
