@@ -1,0 +1,42 @@
+#gradient {
+  .vertical-three-colors(@start-color: #00b3ee; @mid-color: #7a43b6; @color-stop: 50%; @end-color: #c3325f) {
+    background-image: -webkit-linear-gradient(
+      @start-color,
+      @mid-color @color-stop,
+      @end-color
+    );
+    background-image: -o-linear-gradient(
+      @start-color,
+      @mid-color @color-stop,
+      @end-color
+    );
+    background-image: linear-gradient(
+      @start-color,
+      @mid-color @color-stop,
+      @end-color
+    );
+    background-repeat: no-repeat;
+    filter: e(
+      %(
+        "progid:DXImageTransform.Microsoft.gradient(startColorstr='%d', endColorstr='%d', GradientType=0)",
+        argb(@start-color),
+        argb(@end-color)
+      )
+    ); // IE9 and down, gets no color-stop at all for proper fallback
+  }
+}
+
+.button-shadow(@color) {
+  #gradient
+    > .vertical-three-colors(lighten(@color, 15%), @color, 50%, darken(@color, 4%));
+  filter: none;
+  border: 1px solid darken(@color, 10%);
+}
+
+.ui.steps .step:not(.disabled) {
+  .button-shadow(@background);
+}
+
+.ui.steps .active.step {
+  .button-shadow(@activeBackground);
+}

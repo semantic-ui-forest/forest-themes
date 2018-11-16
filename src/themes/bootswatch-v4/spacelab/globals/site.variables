@@ -1,0 +1,31 @@
+@gray-base: #000;
+@gray-darker: #2d2d2d; // #222
+@gray-dark: lighten(@gray-base, 20%); // #333
+@gray: #666; // #555
+@gray-light: lighten(@gray-base, 60%); // #999
+@gray-lighter: lighten(@gray-base, 93.5%); // #eee
+
+@primaryColor: #446e9b;
+@positiveColor: #3cb521;
+@infoColor: #3399f3;
+@warningColor: #d47500;
+@negativeColor: #cd0200;
+@negativeTextColor: #cd0200;
+
+@fontName: "Open Sans";
+@textColor: @gray;
+@linkColor: @infoColor;
+@linkHoverColor: @linkColor;
+@padding-base-vertical: 8px;
+@padding-large-vertical: 14px;
+@inputColor: @textColor;
+@disabledTextColor: #444;
+@invertedDisabledTextColor: #ccc;
+@positiveTextColor: #468847;
+@infoTextColor: #3a87ad;
+@warningTextColor: #c09853;
+@warningBorderColor: darken(spin(@warningBackgroundColor, -10), 3%);
+@negativeTextColor: #b94a48;
+@negativeBorderColor: darken(spin(@negativeBackgroundColor, -10), 3%);
+
+@line-height-computed: floor((14px * 1.428571429)); // ~20px

@@ -1,0 +1,7 @@
+@textColor: #fff;
+@backgroundColor: #474949;
+@primaryTextColor: #fff;
+@positiveTextColor: #fff;
+@negativeTextColor: #fff;
+@basicTextColor: #000;
+@hoverColor: darken(#fff, 10%);
