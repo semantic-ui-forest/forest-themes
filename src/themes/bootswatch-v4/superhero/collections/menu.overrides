@@ -1,0 +1,64 @@
+.ui.menu {
+  font-size: 12px !important;
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+
+  .item:disabled,
+  .disabled.item {
+    color: rgba(255,255,255,.4);
+  }
+
+  &.inverted {
+    color: rgba(255,255,255,.75);
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  i.icon {
+    color: @gray-lighter;
+  }
+}
+
+.ui.tabular.menu {
+  color: @gray-light;
+
+  .item,
+  .item:active,
+  .active.item {
+    color: @textColor;
+    border-color: @gray-light;
+  }
+
+  .disabled.item {
+    color: rgba(255,255,255,.4);
+  }
+}
+
+.ui.menu.pagination {
+  color: #fff;
+  background: @gray-light;
+  border-color: transparent;
+
+  &:hover {
+    color: #fff;
+    background: rgba(255,255,255,.4);
+    border-color: transparent;
+    text-decoration: none;
+  }
+
+  &:disabled {
+    color: #fff;
+    background: @gray-light;
+    border-color: transparent;
+  }
+}
+
+.ui.dropdown.menu {
+  font-size: 12px !important;
+
+  .header {
+    font-size: 12px !important;
+  }
+}

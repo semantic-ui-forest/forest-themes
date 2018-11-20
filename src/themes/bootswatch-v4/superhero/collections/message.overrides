@@ -1,0 +1,26 @@
+.ui.message {
+  border: none;
+  color: #fff;
+
+  a,
+  .item {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  &.positive .item {
+    background-color: @positiveColor;
+  }
+
+  &.info .item {
+    background-color: @infoColor;
+  }
+
+  &.warning .item {
+    background-color: @warningColor;
+  }
+
+  &.negative .item {
+    background-color: @negativeColor;
+  }
+}

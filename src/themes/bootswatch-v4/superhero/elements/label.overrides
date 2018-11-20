@@ -1,0 +1,5 @@
+label,
+.radio label,
+.checkbox label {
+  font-size: 12px;
+}

@@ -1,0 +1,17 @@
+.ui.modal {
+  .header,
+  .footer {
+    background-color: rgba(255,255,255,.75);
+
+    .close {
+      color: #fff;
+      text-shadow: none;
+      opacity: 0.5;
+
+      &:hover,
+      &:focus {
+        opacity: 1;
+      }
+    }
+  }
+}

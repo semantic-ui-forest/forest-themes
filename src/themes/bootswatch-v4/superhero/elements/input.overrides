@@ -1,0 +1,14 @@
+.error input {
+  border-width: 4px !important;
+}
+
+.warning input {
+  border-width: 4px !important;
+  &:focus {
+    border-color: @warningColor !important;
+  }
+}
+
+.ui.menu .ui.transparent.input input {
+  color: @gray-lighter;
+}
