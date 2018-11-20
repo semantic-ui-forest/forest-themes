@@ -1,0 +1,6 @@
+@color: @textColor;
+@fontWeight: 300;
+@backgroundColor: darken(@gray-light, 5%);
+@labelHoverBackgroundColor: @gray;
+@labelHoverTextColor: white;
+@ribbonShadowColor: darken(@gray-light, 5%);

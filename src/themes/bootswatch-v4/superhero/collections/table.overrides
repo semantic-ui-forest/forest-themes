@@ -1,0 +1,90 @@
+.ui.table {
+  font-size: 12px;
+  a:not(.button) {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  a.not(.button) {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  &:hover {
+    background-color: rgba(255,255,255,0.075);
+  }
+
+  &.inverted {
+    color: #2B3E50;
+    border-color: #4E5D6C;
+    background-color: lighten(#4E5D6C, 25%);
+  }
+
+  .dropdown a {
+    text-decoration: none;
+  }
+
+  > thead > tr > th,
+  > tbody > tr > th,
+  > tfoot > tr > th,
+  > thead > tr > td,
+  > tbody > tr > td,
+  > tfoot > tr > td {
+    border-color: transparent;
+  }
+}
+
+.ui.table {
+
+  .inverted th {
+    color: #fff;
+  }
+
+  &.positive {
+    &, > th, > td {
+      background-color: @positiveColor;
+    }
+  }
+
+  &.info {
+    &, > th, > td {
+      background-color: @infoColor;
+    }
+  }
+
+  &.negative {
+    &, > th, > td {
+      background-color: @negativeColor;
+    }
+  }
+
+  &.warning {
+    &, > th, > td {
+      background-color: @warningColor;
+    }
+  }
+
+  &.positive:hover {
+    &, > th, > td {
+      background-color: darken(@positiveColor, 5%);
+    }
+  }
+
+  &.info:hover {
+    &, > th, > td {
+      background-color: darken(@infoColor, 5%);
+    }
+  }
+
+  &.negative:hover {
+    &, > th, > td {
+      background-color: darken(@negativeColor, 5%);
+    }
+  }
+
+  &.warning:hover {
+    &, > th, > td {
+      background-color: darken(@warningColor, 5%);
+    }
+  }
+}

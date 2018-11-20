@@ -1,0 +1,9 @@
+.ui.inverted.button:focus,
+.ui.inverted.button:hover {
+  background-color: @gray-dark;
+}
+
+.ui.info.button,
+.ui.warning.button {
+  color: #fff;
+}

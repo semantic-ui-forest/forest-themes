@@ -1,0 +1,8 @@
+.close.icon {
+  opacity: 0.5;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,7 @@
+@inputColor: @gray-darker;
+@inputFocusColor: @gray-darker;
+@border: transparent;
+@focusBorderColor: transparent;
+@placeholderColor: #ccc;
+@borderWidth: 0;
+@focusColor: black;

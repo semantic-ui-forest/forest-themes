@@ -1,0 +1,12 @@
+.ui.list {
+  background: @gray-light;
+  border-color: transparent;
+
+  &:hover {
+    background: rgba(255,255,255,.4);
+  }
+
+  &:disabled {
+    background: rgba(255,255,255,.4);
+  }
+}

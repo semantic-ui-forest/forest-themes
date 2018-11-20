@@ -1,0 +1,13 @@
+.ui.breadcrumb {
+  background-color: @gray-light;
+  color: @textColor;
+  padding: 0.6em;
+
+  .divider {
+    color: @textColor;
+  }
+
+  &:active {
+    color: @textColor;
+  }
+}

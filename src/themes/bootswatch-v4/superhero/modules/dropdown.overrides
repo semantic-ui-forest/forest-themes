@@ -1,0 +1,14 @@
+.ui.dropdown .divider {
+  background-color: rgba(0,0,0,.15);
+}
+
+.ui.dropdown,
+.ui.dropdown .menu,
+.ui.dropdown .item,
+.ui.dropdown .menu .item {
+  font-size: 12px !important;
+}
+
+.ui.active.search.dropdown input.search:focus + .text {
+  color: @gray-base !important;
+}

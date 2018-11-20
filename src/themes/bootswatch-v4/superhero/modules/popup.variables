@@ -1,0 +1,4 @@
+@background: @gray-light;
+@borderColor: transparent;
+@arrowColor: transparent;
+@arrowBackground: @gray-light;
