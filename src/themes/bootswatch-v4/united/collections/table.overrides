@@ -1,0 +1,4 @@
+.ui.inverted.table {
+  background-color: #772953;
+  border-color: darken(#772953, 5%);
+}
