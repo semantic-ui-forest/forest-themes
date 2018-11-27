@@ -1,0 +1,14 @@
+.ui.dropdown {
+  border-color: rgba(0,0,0,.1);
+
+  .divider {
+    background: rgba(0,0,0,.1);
+  }
+
+  .item {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: 12px;
+    font-weight: 300;
+  }
+}

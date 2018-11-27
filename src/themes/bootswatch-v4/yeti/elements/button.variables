@@ -1,0 +1,3 @@
+@textColor: @gray-dark;
+@backgroundColor: #e7e7e7;
+@boxShadow: 0 0 0 1px @borderColor inset;

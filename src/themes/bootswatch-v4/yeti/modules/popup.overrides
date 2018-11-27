@@ -1,0 +1,3 @@
+.ui.popup {
+  font-size: 12px;
+}

@@ -1,0 +1,51 @@
+.ui.message {
+  font-size: 12px;
+  font-weight: 300;
+
+  a {
+    font-weight: normal;
+    text-decoration: underline;
+  }
+}
+
+.ui.message {
+  font-size: 12px;
+  font-weight: 300;
+  color: #fff;
+
+  &.primary {
+    &, > th, > td {
+      background-color: @primaryColor;
+    }
+  }
+
+  &.positive {
+    &, > th, > td {
+      background-color: @positiveColor;
+    }
+  }
+
+  &.info {
+    &, > th, > td {
+      background-color: @infoColor;
+    }
+  }
+
+  &.negative {
+    &, > th, > td {
+      background-color: @negativeColor;
+    }
+  }
+
+  &.warning {
+    &, > th, > td {
+      background-color: @warningColor;
+    }
+  }
+
+  a {
+    font-weight: normal;
+    color: #fff;
+    text-decoration: underline;
+  }
+}

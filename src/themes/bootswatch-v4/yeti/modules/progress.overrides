@@ -1,0 +1,6 @@
+.ui.progress {
+  padding: 2px;
+  background-color: #f6f6f6;
+  border: 1px solid #ccc;
+  box-shadow: none;
+}

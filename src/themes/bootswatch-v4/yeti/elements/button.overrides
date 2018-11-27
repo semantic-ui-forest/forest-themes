@@ -1,0 +1,42 @@
+.ui.button {
+  font-weight: 300;
+}
+
+.input .button {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.ui.button {
+  &.primary {
+    border-color: darken(@primaryColor, 5%);
+  }
+
+  &.positive {
+    border-color: darken(@positiveColor, 5%);
+  }
+
+  &.info {
+    border-color: darken(@infoColor, 5%);
+    color: #fff;
+  }
+
+  &.negative {
+    border-color: darken(@negativeColor, 5%);
+  }
+
+  &.warning {
+    border-color: darken(@warningColor, 5%);
+    color: #fff;
+  }
+
+  &.inverted {
+    border-color: darken(#222, 5%);
+  }
+}
+
+.ui.buttons {
+  .dropdown.menu {
+    border-top-width: 0;
+  }
+}

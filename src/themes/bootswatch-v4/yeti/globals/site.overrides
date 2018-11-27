@@ -1,0 +1,13 @@
+cite {
+  font-style: italic;
+}
+
+blockquote {
+  border-left-width: 1px;
+  color: @gray;
+
+  small {
+    font-size: 12px;
+    font-weight: 300;
+  }
+}
