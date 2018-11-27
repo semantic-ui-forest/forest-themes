@@ -1,0 +1,8 @@
+.ui.form {
+  label,
+  .control,
+  .checkbox,
+  .radio {
+    font-size: 12px;
+  }
+}

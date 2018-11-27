@@ -1,0 +1,13 @@
+.ui.vertical.accordion.menu:not(.following) {
+  * {
+    color: darken(@white, 10%);
+    &:hover {
+      color: darken(@white, 20%);
+    }
+    &:active,
+    &.checked,
+    &.active {
+      color: @white;
+    }
+  }
+}

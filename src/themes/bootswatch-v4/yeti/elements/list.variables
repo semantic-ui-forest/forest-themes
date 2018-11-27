@@ -1,0 +1,4 @@
+@fontWeight: 300;
+@borderColor: #ddd;
+@relativeMedium: 12px;
+@medium: 12px;

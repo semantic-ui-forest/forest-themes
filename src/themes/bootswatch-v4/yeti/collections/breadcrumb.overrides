@@ -1,0 +1,7 @@
+.ui.breadcrumb {
+  font-weight: 300;
+  text-transform: uppercase;
+  border-radius: 3px;
+  font-size: 12px;
+  text-transform: uppercase;
+}

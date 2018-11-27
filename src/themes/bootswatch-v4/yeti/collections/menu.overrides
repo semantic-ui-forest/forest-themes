@@ -1,0 +1,114 @@
+.ui.menu {
+  font-size: 13px;
+  font-weight: 300;
+
+  .disabled.item {
+    color: #ccc;
+  }
+}
+
+.ui.secondary.menu .item {
+  color: @secondaryItemColor;
+}
+
+.ui.text.menu .item:hover {
+  color: @gray-dark;
+}
+
+.ui.menu .item .input {
+  color: @gray-light;
+  input {
+    color: #fff;
+  }
+}
+
+.ui.tabular.menu {
+  border-color: rgba(0,0,0,.1);
+
+  .item:hover,
+  .item:focus,
+  .item:active {
+    border-color: rgba(0,0,0,.1);
+    background-color: lighten(#eee, 5%);
+  }
+
+  .item.disabled,
+  .item.disabled:hover,
+  .item.disabled:focus {
+    border-color: rgba(0,0,0,.1);
+    background-color: #eee;
+  }
+}
+
+.ui.inverted.menu {
+  color: rgba(255,255,255,.7);
+
+  .item:hover {
+    color: #fff;
+  }
+}
+
+.ui.pagination.menu {
+  color: #888;
+  border-color: rgba(0,0,0,.1);
+  font-weight: 300;
+
+  .item {
+    border-color: transparent;
+    border-radius: 3px;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+
+    &:hover,
+    &:focus {
+      text-decoration: none;
+    }
+
+    &.disabled {
+      border-color: transparent;
+    }
+  }
+
+  .item:active {
+    border-color: darken(@primaryColor, 5%);
+  }
+
+  .item:disabled,
+  .disabled.item {
+    color: #eee;
+  }
+}
+
+.ui.primary.menu .dropdown {
+  background-color: @primaryColor;
+
+  .item {
+    color: rgba(255,255,255,.7);
+  }
+
+  .item.active,
+  .item:hover,
+  .item:focus {
+    background-color: darken(@primaryColor, 5%);
+    color:#fff;
+  }
+}
+
+.ui.inverted.menu {
+  background-color: @gray-darker;
+
+  .dropdown {
+    background-color: @gray-darker;
+
+    .item {
+      color: rgba(255,255,255,.7);
+    }
+
+    .item.active,
+    .item:hover,
+    .item:focus {
+      background-color: darken(@gray-darker, 5%);
+      color:#fff;
+    }
+  }
+}

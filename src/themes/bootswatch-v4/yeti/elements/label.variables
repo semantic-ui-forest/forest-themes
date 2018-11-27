@@ -1,0 +1,9 @@
+@backgroundColor: @primaryColor;
+@ribbonShadowColor: @primaryColor;
+@fontWeight: 300;
+@horizontalPadding: 1em;
+@borderRadius: 0;
+@color: #fff;
+@labelActiveTextColor: #fff;
+@labelHoverBackgroundColor: darken(@primaryColor, 5%);
+@labelHoverTextColor: #fff;
