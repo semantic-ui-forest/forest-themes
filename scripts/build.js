@@ -46,23 +46,27 @@ const bootswatch_v3_themes = [
 ];
 
 const bootswatch_v4_themes = [
-  "cerulean"
-  // "cosmo",
-  // "cyborg",
-  // "darkly",
-  // "flatly",
-  // "journal",
-  // "lumen",
-  // "paper",
-  // "readable",
-  // "sandstone",
-  // "simplex",
-  // "slate",
-  // "solar",
-  // "spacelab",
-  // "superhero",
-  // "united",
-  // "yeti"
+  "cerulean",
+  "cosmo",
+  "cyborg",
+  "darkly",
+  "flatly",
+  "journal",
+  "litera",
+  "lumen",
+  "lux",
+  "materia",
+  "minty",
+  "pulse",
+  "sandstone",
+  "simplex",
+  "sketchy",
+  "slate",
+  "solar",
+  "spacelab",
+  "superhero",
+  "united",
+  "yeti",
 ];
 
 themes = {
