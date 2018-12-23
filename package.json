@@ -3,7 +3,8 @@
   "description": "Semantic-UI Forest Themes",
   "version": "0.1.0",
   "scripts": {
-    "build": "node scripts/build.js"
+    "build": "node scripts/build.js",
+    "format": "prettier --parser less --write src/themes/**/*"
   },
   "repository": {
     "type": "git",
@@ -25,6 +26,7 @@
     "semantic-ui": "^2.4.2"
   },
   "devDependencies": {
-    "fs-extra": "^5.0.0"
+    "fs-extra": "^5.0.0",
+    "prettier": "^1.15.3"
   }
 }
