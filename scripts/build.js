@@ -3,9 +3,9 @@ const path = require("path");
 const execSync = require("child_process").execSync;
 
 const output_dir = "dist";
-fse.ensureDirSync(path.join(output_dir, "bootswatch-v3"));
-fse.ensureDirSync(path.join(output_dir, "bootswatch-v4"));
-fse.ensureDirSync(path.join(output_dir, "semantic-ui"));
+fse.ensureDirSync(path.join(output_dir, "bootswatch/v3"));
+fse.ensureDirSync(path.join(output_dir, "bootswatch/v4"));
+fse.ensureDirSync(path.join(output_dir, "semantic-ui/v2"));
 
 const cwd = process.cwd();
 const semantic_ui_dir = path.join(cwd, "node_modules/semantic-ui");
@@ -14,7 +14,7 @@ const semantic_ui_backup_dir = path.join(
   "node_modules/semantic-ui-backup"
 );
 
-const semantic_ui_themes = [
+const semantic_ui_v2_themes = [
   "amazon",
   "bootstrap3",
   "chubby",
@@ -66,13 +66,13 @@ const bootswatch_v4_themes = [
   "spacelab",
   "superhero",
   "united",
-  "yeti",
+  "yeti"
 ];
 
 themes = {
-  "bootswatch-v3": bootswatch_v3_themes,
-  "bootswatch-v4": bootswatch_v4_themes,
-  "semantic-ui": semantic_ui_themes
+  "bootswatch/v3": bootswatch_v3_themes,
+  "bootswatch/v4": bootswatch_v4_themes,
+  "semantic-ui/v2": semantic_ui_v2_themes
 };
 
 // backup `node_modules/semantic-ui`
@@ -80,17 +80,17 @@ fse.removeSync(semantic_ui_backup_dir);
 fse.copySync(semantic_ui_dir, semantic_ui_backup_dir);
 fse.copySync("semantic.json", path.join(semantic_ui_dir, "semantic.json"));
 
-for (let category of ["bootswatch-v3", "bootswatch-v4"]) {
+for (let category of ["bootswatch/v3", "bootswatch/v4"]) {
   fse.copySync(
     path.join("src/themes/", category),
     path.join(semantic_ui_dir, "src/themes", category)
   );
 }
 
-for (let category of ["bootswatch-v3", "bootswatch-v4", "semantic-ui"]) {
+for (let category of ["bootswatch/v3", "bootswatch/v4", "semantic-ui/v2"]) {
   for (let theme of themes[category]) {
     fse.copySync(
-      path.join("src/theme-configs", category, `${theme}.theme.config`),
+      path.join("src/configs", category, `${theme}.theme.config`),
       path.join(semantic_ui_dir, "src/theme.config")
     );
 
