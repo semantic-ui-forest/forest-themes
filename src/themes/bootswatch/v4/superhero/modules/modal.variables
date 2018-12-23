@@ -1,5 +1,5 @@
 @contentBackground: @gray-light;
 @border: transparent;
-@headerBorder: rgba(0,0,0,.2);
+@headerBorder: rgba(0, 0, 0, 0.2);
 @headerBackground: @gray-dark;
 @borderRadius: 0;

@@ -1,5 +1,6 @@
 .ui.table {
-  th, td {
+  th,
+  td {
     padding: 1.5rem;
   }
 }

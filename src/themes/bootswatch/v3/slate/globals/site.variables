@@ -1,8 +1,8 @@
 @gray-base: #000;
-@gray-darker: #272B30;
-@gray-dark: #3A3F44;
-@gray: #52575C;
-@gray-light: #7A8288;
+@gray-darker: #272b30;
+@gray-dark: #3a3f44;
+@gray: #52575c;
+@gray-light: #7a8288;
 @gray-lighter: #999;
 @primaryColor: @gray-light;
 @positiveColor: #62c462;
@@ -27,25 +27,24 @@
 @negativeBackgroundColor: #ee5f5b;
 @negativeBorderColor: darken(spin(@negativeBackgroundColor, -10), 3%);
 
+@darktextcolor : rgba(255, 255, 255, 0.85);
+@invertedmutedtextcolor : rgba(0, 0, 0, 0.6);
+@invertedlighttextcolor : rgba(0, 0, 0, 0.4);
 
-@darkTextColor               : rgba(255, 255, 255, 0.85);
-@invertedMutedTextColor              : rgba(0, 0, 0, 0.6);
-@invertedLightTextColor              : rgba(0, 0, 0, 0.4);
+@invertedunselectedtextcolor : rgba(0, 0, 0, 0.4);
+@invertedhoveredtextcolor : rgba(0, 0, 0, 0.8);
+@invertedpressedtextcolor : rgba(0, 0, 0, 0.9);
+@invertedselectedtextcolor : rgba(0, 0, 0, 0.95);
+@inverteddisabledtextcolor : rgba(0, 0, 0, 0.2);
 
-@invertedUnselectedTextColor         : rgba(0, 0, 0, 0.4);
-@invertedHoveredTextColor            : rgba(0, 0, 0, 0.8);
-@invertedPressedTextColor            : rgba(0, 0, 0, 0.9);
-@invertedSelectedTextColor           : rgba(0, 0, 0, 0.95);
-@invertedDisabledTextColor           : rgba(0, 0, 0, 0.2);
-
-@textColor           : rgba(255, 255, 255, 0.9);
-@mutedTextColor      : rgba(255, 255, 255, 0.8);
-@lightTextColor      : rgba(255, 255, 255, 0.7);
-@unselectedTextColor : rgba(255, 255, 255, 0.5);
-@hoveredTextColor    : rgba(255, 255, 255, 1);
-@pressedTextColor    : rgba(255, 255, 255, 1);
-@selectedTextColor   : rgba(255, 255, 255, 1);
-@disabledTextColor   : rgba(255, 255, 255, 0.2);
+@textcolor : rgba(255, 255, 255, 0.9);
+@mutedtextcolor : rgba(255, 255, 255, 0.8);
+@lighttextcolor : rgba(255, 255, 255, 0.7);
+@unselectedtextcolor : rgba(255, 255, 255, 0.5);
+@hoveredtextcolor : rgba(255, 255, 255, 1);
+@pressedtextcolor : rgba(255, 255, 255, 1);
+@selectedtextcolor : rgba(255, 255, 255, 1);
+@disabledtextcolor : rgba(255, 255, 255, 0.2);
 
 @borderColor: @gray;
 

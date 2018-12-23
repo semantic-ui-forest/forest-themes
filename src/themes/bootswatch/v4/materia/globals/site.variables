@@ -5,9 +5,9 @@
 @gray-light: #dee2e6;
 @gray-lighter: #f8f9fa;
 
-@primaryColor: #2196F3;
-@positiveColor: #4CAF50;
-@infoColor: #9C27B0;
+@primaryColor: #2196f3;
+@positiveColor: #4caf50;
+@infoColor: #9c27b0;
 @warningColor: #ff9800;
 @negativeColor: #e51c23;
 

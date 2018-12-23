@@ -1,6 +1,6 @@
 .ui.tabular.menu {
   .item,
-  .item.active, {
+  .item.active {
     border-width: 0 0 1px 0;
   }
 

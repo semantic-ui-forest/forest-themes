@@ -6,11 +6,11 @@
 
 .ui.menu.inverted {
   background-color: @success !important;
-    .item:focus,
-    .item:hover,
-    .active.item {
-      color: @primary !important;
-    }
+  .item:focus,
+  .item:hover,
+  .active.item {
+    color: @primary !important;
+  }
 }
 
 .ui.pagination.menu {

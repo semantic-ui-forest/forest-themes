@@ -27,14 +27,19 @@
 }
 
 .button-shadow(@color) {
-  #gradient
-    > .vertical-three-colors(lighten(@color, 6%), @color, 60%, darken(@color, 4%));
+  #gradient >
+    .vertical-three-colors(lighten(@color, 6%), @color, 60%, darken(@color, 4%));
   filter: none;
 }
 
 .button-shadow-inverse(@color) {
-  #gradient
-    > .vertical-three-colors(darken(@color, 24%), darken(@color, 18%), 40%, darken(@color, 16%));
+  #gradient >
+    .vertical-three-colors(
+      darken(@color, 24%),
+      darken(@color, 18%),
+      40%,
+      darken(@color, 16%)
+    );
   filter: none;
 }
 

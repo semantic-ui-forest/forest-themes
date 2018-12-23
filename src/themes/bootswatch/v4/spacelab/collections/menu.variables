@@ -4,7 +4,7 @@
 @activeItemBackground: transparent;
 @labelBackground: @infoColor;
 @pressedItemBackground: darken(#eee, 6.5%);
-@invertedItemTextColor: rgba(255,255,255,.75);
+@invertedItemTextColor: rgba(255, 255, 255, 0.75);
 @invertedBackground: @primaryColor;
 @invertedActiveBackground: transparent;
 @invertedMenuPressedBackground: darken(@primaryColor, 10%);

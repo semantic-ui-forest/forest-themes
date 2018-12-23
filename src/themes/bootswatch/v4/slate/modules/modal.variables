@@ -1,5 +1,5 @@
 @contentBackground: lighten(@pageBackground, 5%);
-@headerBorder: rgba(0,0,0,.2);
+@headerBorder: rgba(0, 0, 0, 0.2);
 @background: @gray-dark;
 @headerBackground: @gray-dark;
 @actionBackground: @gray-dark;

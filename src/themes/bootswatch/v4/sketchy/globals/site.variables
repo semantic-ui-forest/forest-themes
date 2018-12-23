@@ -16,4 +16,4 @@
 @negativeTextColor: #dc3545;
 
 @linkUnderline: underline;
-@fontName: 'Cabin Sketch';
+@fontName: "Cabin Sketch";

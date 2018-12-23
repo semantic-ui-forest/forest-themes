@@ -6,11 +6,11 @@
 
 .ui.menu.inverted {
   background-color: @success !important;
-    .item:focus,
-    .item:hover,
-    .active.item {
-      color: @primary !important;
-    }
+  .item:focus,
+  .item:hover,
+  .active.item {
+    color: @primary !important;
+  }
 }
 
 .ui.menu .item .input {
@@ -25,8 +25,7 @@
 }
 
 .ui.tabular.menu {
-  .active.item
-  .active.item:focus,
+  .active.item .active.item:focus,
   .active.item:hover {
     color: @primary;
   }

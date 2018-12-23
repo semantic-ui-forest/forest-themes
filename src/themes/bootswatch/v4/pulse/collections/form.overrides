@@ -1,5 +1,5 @@
 .field {
-  box-shadow: 0 0 5px rgba(100,65,164,.4);
+  box-shadow: 0 0 5px rgba(100, 65, 164, 0.4);
 }
 
 input:focus,

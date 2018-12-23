@@ -8,31 +8,41 @@
   }
 
   &.primary {
-    &, > th, > td {
+    &,
+    > th,
+    > td {
       background-color: @primaryColor;
     }
   }
 
   &.positive {
-    &, > th, > td {
+    &,
+    > th,
+    > td {
       background-color: @positiveColor;
     }
   }
 
   &.info {
-    &, > th, > td {
+    &,
+    > th,
+    > td {
       background-color: @infoColor;
     }
   }
 
   &.negative {
-    &, > th, > td {
+    &,
+    > th,
+    > td {
       background-color: @negativeColor;
     }
   }
 
   &.warning {
-    &, > th, > td {
+    &,
+    > th,
+    > td {
       background-color: @warningColor;
     }
   }

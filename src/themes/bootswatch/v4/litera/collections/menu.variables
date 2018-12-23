@@ -20,7 +20,7 @@
 @dropdownHoveredItemBackground: darken(@primaryColor, 10%);
 @dropdownBackground: #fff;
 
-@invertedItemTextColor: rgba(0,0,0,0.8);
+@invertedItemTextColor: rgba(0, 0, 0, 0.8);
 @invertedBorder: darken(@infoColor, 5%);
 
 @invertedHoverBackground: darken(@infoColor, 5%);

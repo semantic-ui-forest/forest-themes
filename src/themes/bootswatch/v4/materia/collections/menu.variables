@@ -1,5 +1,5 @@
 @itemTextColor: @gray;
-@invertedItemTextColor: rgba(255,255,255,.75);
+@invertedItemTextColor: rgba(255, 255, 255, 0.75);
 @invertedHoverColor: #fff;
 @disabledTextColor: #bbb;
 @background: #fff;

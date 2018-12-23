@@ -27,14 +27,19 @@
 }
 
 .button-shadow(@color) {
-  #gradient
-    > .vertical-three-colors(lighten(@color, 6%), @color, 60%, darken(@color, 4%));
+  #gradient >
+    .vertical-three-colors(lighten(@color, 6%), @color, 60%, darken(@color, 4%));
   filter: none;
 }
 
 .button-shadow-inverse(@color) {
-  #gradient
-    > .vertical-three-colors(darken(@color, 24%), darken(@color, 18%), 40%, darken(@color, 16%));
+  #gradient >
+    .vertical-three-colors(
+      darken(@color, 24%),
+      darken(@color, 18%),
+      40%,
+      darken(@color, 16%)
+    );
   filter: none;
 }
 
@@ -77,38 +82,38 @@
 }
 
 .ui.tabular.menu {
-  border-color: rgba(0,0,0,.6);
+  border-color: rgba(0, 0, 0, 0.6);
 
   .item:hover {
-    border-color: rgba(0,0,0,.6);
+    border-color: rgba(0, 0, 0, 0.6);
     color: #fff;
   }
 
   .item:active {
     color: #fff;
-    border-color: rgba(0,0,0,.6);
+    border-color: rgba(0, 0, 0, 0.6);
   }
 }
 
 .ui.pagination.menu {
   color: #fff;
   background: transparent;
-  border-color: rgba(0,0,0,.6);
+  border-color: rgba(0, 0, 0, 0.6);
 
   &:hover {
     color: #fff;
     background: transparent;
-    border-color: rgba(0,0,0,.6);
+    border-color: rgba(0, 0, 0, 0.6);
   }
 
   &:active {
     background: transparent;
-    border-color: rgba(0,0,0,.6);
+    border-color: rgba(0, 0, 0, 0.6);
   }
 
   &:disabled {
     background: transparent;
-    border-color: rgba(0,0,0,.6);
+    border-color: rgba(0, 0, 0, 0.6);
   }
 
   .item.active {

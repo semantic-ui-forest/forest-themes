@@ -3,8 +3,8 @@
 @footerBackground: @gray-darker;
 @definitionPageBackground: @pageBackground;
 @activeBackgroundColor: lighten(@gray-darker, 5%);
-@stripedBackground: rgba(255,255,255,0.5);
-@activeBackgroundHover: rgba(255,255,255,0.75);
+@stripedBackground: rgba(255, 255, 255, 0.5);
+@activeBackgroundHover: rgba(255, 255, 255, 0.75);
 @borderColor: @gray-700;
 @internalBorderColor: lighten(@gray-darker, 2%);
 @invertedBackground: @gray-500;

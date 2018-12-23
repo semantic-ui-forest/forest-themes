@@ -6,37 +6,49 @@
   }
 
   &.positive {
-    &, > th, > td {
+    &,
+    > th,
+    > td {
       background-color: @success;
     }
   }
 
   &.negative {
-    &, > th, > td {
+    &,
+    > th,
+    > td {
       background-color: @danger;
     }
   }
 
   &.warning {
-    &, > th, > td {
+    &,
+    > th,
+    > td {
       background-color: @warning;
     }
   }
 
   .positive:hover {
-    &, > th, > td {
+    &,
+    > th,
+    > td {
       background-color: darken(@success, 5%);
     }
   }
 
   .negative:hover {
-    &, > th, > td {
+    &,
+    > th,
+    > td {
       background-color: darken(@danger, 5%);
     }
   }
 
   .warning:hover {
-    &, > th, > td {
+    &,
+    > th,
+    > td {
       background-color: darken(@warning, 5%);
     }
   }

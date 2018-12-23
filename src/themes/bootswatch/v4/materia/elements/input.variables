@@ -1,5 +1,5 @@
 @inputColor: #666;
-@placeholderColor: rgba(0,0,0,0.4);
+@placeholderColor: rgba(0, 0, 0, 0.4);
 @lineHeight: 1.5rem;
 @background: transparent;
 @borderColor: transparent;

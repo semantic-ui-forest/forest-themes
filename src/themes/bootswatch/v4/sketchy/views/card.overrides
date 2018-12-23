@@ -2,9 +2,8 @@
   border-top-left-radius: 5px 25px !important;
   border-top-right-radius: 5px 25px !important;
   border-bottom-right-radius: 5px 25px !important;
-  border-bottom-left-radius:  5px 5px !important;
+  border-bottom-left-radius: 5px 5px !important;
   border-width: 2px;
-
 
   .header {
     border-bottom-width: 2px;
@@ -14,7 +13,7 @@
       border-top-left-radius: 3px 23px !important;
       border-top-right-radius: 3px 23px !important;
       border-bottom-right-radius: 0 0 !important;
-      border-bottom-left-radius:  0 0 !important;
+      border-bottom-left-radius: 0 0 !important;
     }
   }
 

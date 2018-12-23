@@ -1,5 +1,5 @@
 .ui.list {
-  border-color: rgba(0,0,0,.6);
+  border-color: rgba(0, 0, 0, 0.6);
 
   &:hover {
     background-color: lighten(@pageBackground, 10%);
@@ -8,7 +8,7 @@
   &:active {
     color: #fff;
     background-color: lighten(@pageBackground, 10%);
-    border-color: rgba(0,0,0,.6);
+    border-color: rgba(0, 0, 0, 0.6);
   }
 
   &:disabled {

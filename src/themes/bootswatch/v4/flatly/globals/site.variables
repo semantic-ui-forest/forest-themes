@@ -1,4 +1,4 @@
-@white:    #fff;
+@white: #fff;
 @gray-100: #f8f9fa;
 @gray-200: #ecf0f1;
 @gray-300: #dee2e6;
@@ -8,27 +8,27 @@
 @gray-700: #7b8a8b;
 @gray-800: #343a40;
 @gray-900: #212529;
-@black:    #000;
+@black: #000;
 
-@blue:    #2C3E50;
-@indigo:  #6610f2;
-@purple:  #6f42c1;
-@pink:    #e83e8c;
-@red:     #E74C3C;
-@orange:  #fd7e14;
-@yellow:  #F39C12;
-@green:   #18BC9C;
-@teal:    #20c997;
-@cyan:    #3498DB;
+@blue: #2c3e50;
+@indigo: #6610f2;
+@purple: #6f42c1;
+@pink: #e83e8c;
+@red: #e74c3c;
+@orange: #fd7e14;
+@yellow: #f39c12;
+@green: #18bc9c;
+@teal: #20c997;
+@cyan: #3498db;
 
-@primary:       @blue;
-@secondary:     @gray-600;
-@success:       @green;
-@info:          @cyan;
-@warning:       @yellow;
-@danger:        @red;
-@light:         @gray-200;
-@dark:          @gray-700;
+@primary: @blue;
+@secondary: @gray-600;
+@success: @green;
+@info: @cyan;
+@warning: @yellow;
+@danger: @red;
+@light: @gray-200;
+@dark: @gray-700;
 
 @gray-base: #000;
 @gray-darker: lighten(@gray-base, 13.5%); // #222

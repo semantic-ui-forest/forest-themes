@@ -1,7 +1,7 @@
 @background: lighten(@pageBackground, 3%);
 @stripedBackground: lighten(@background, 3%);
 @activeBackgroundHover: lighten(@background, 12%);
-@border: rgab(0,0,0,.6);
+@border: rgab(0, 0, 0, 0.6);
 @headerBackground: darken(@pageBackground, 5%);
 @definitionPageBackground: transparent;
 @footerBackground: darken(@pageBackground, 5%);

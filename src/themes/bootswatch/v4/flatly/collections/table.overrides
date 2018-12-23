@@ -18,37 +18,49 @@
   }
 
   &.positive {
-    &, > th, > td {
+    &,
+    > th,
+    > td {
       backgroud-color: @success;
     }
   }
 
   &.positive:hover {
-    &, > th, > td {
+    &,
+    > th,
+    > td {
       backgroud-color: darken(@success, 5%);
     }
   }
 
   &.error {
-    &, > th, > td {
+    &,
+    > th,
+    > td {
       backgroud-color: @negativeColor;
     }
   }
 
   &.error:hover {
-    &, > th, > td {
+    &,
+    > th,
+    > td {
       backgroud-color: darken(@negativeColor, 5%);
     }
   }
 
   &.warning {
-    &, > th, > td {
+    &,
+    > th,
+    > td {
       backgroud-color: @warning;
     }
   }
 
   &.warning:hover {
-    &, > th, > td {
+    &,
+    > th,
+    > td {
       backgroud-color: darken(@warning, 5%);
     }
   }

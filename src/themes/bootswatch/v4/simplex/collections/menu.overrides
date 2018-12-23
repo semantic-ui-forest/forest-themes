@@ -1,5 +1,5 @@
 .ui.tabular.menu {
-  border-color: darken(#fff,6.5%);
+  border-color: darken(#fff, 6.5%);
 }
 
 .ui.pagination.menu {

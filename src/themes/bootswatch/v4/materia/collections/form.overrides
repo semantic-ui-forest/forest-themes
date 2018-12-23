@@ -1,14 +1,14 @@
 textarea,
 .ui.form textarea,
 .ui.form input,
-input[type=text],
-input[type=password],
-input[type=email],
-input[type=number],
-.ui.form [type=text],
-.ui.form [type=password],
-.ui.form [type=email],
-.ui.form [type=tel],
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+.ui.form [type="text"],
+.ui.form [type="password"],
+.ui.form [type="email"],
+.ui.form [type="tel"],
 .ui.form [contenteditable] {
   font-size: 1rem;
   box-shadow: inset 0 -1px 0 #ddd;

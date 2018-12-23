@@ -5,11 +5,11 @@
 
   .item:disabled,
   .disabled.item {
-    color: rgba(255,255,255,.4);
+    color: rgba(255, 255, 255, 0.4);
   }
 
   &.inverted {
-    color: rgba(255,255,255,.75);
+    color: rgba(255, 255, 255, 0.75);
 
     &:hover {
       color: #fff;
@@ -32,7 +32,7 @@
   }
 
   .disabled.item {
-    color: rgba(255,255,255,.4);
+    color: rgba(255, 255, 255, 0.4);
   }
 }
 
@@ -43,7 +43,7 @@
 
   &:hover {
     color: #fff;
-    background: rgba(255,255,255,.4);
+    background: rgba(255, 255, 255, 0.4);
     border-color: transparent;
     text-decoration: none;
   }

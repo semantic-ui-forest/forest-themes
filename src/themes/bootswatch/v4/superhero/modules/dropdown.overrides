@@ -1,5 +1,5 @@
 .ui.dropdown .divider {
-  background-color: rgba(0,0,0,.15);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 .ui.dropdown,

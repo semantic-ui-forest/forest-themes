@@ -23,25 +23,25 @@
 }
 
 .ui.tabular.menu {
-  border-color: rgba(0,0,0,.1);
+  border-color: rgba(0, 0, 0, 0.1);
 
   .item:hover,
   .item:focus,
   .item:active {
-    border-color: rgba(0,0,0,.1);
+    border-color: rgba(0, 0, 0, 0.1);
     background-color: lighten(#eee, 5%);
   }
 
   .item.disabled,
   .item.disabled:hover,
   .item.disabled:focus {
-    border-color: rgba(0,0,0,.1);
+    border-color: rgba(0, 0, 0, 0.1);
     background-color: #eee;
   }
 }
 
 .ui.inverted.menu {
-  color: rgba(255,255,255,.7);
+  color: rgba(255, 255, 255, 0.7);
 
   .item:hover {
     color: #fff;
@@ -50,7 +50,7 @@
 
 .ui.pagination.menu {
   color: #888;
-  border-color: rgba(0,0,0,.1);
+  border-color: rgba(0, 0, 0, 0.1);
   font-weight: 300;
 
   .item {
@@ -83,14 +83,14 @@
   background-color: @primaryColor;
 
   .item {
-    color: rgba(255,255,255,.7);
+    color: rgba(255, 255, 255, 0.7);
   }
 
   .item.active,
   .item:hover,
   .item:focus {
     background-color: darken(@primaryColor, 5%);
-    color:#fff;
+    color: #fff;
   }
 }
 
@@ -101,14 +101,14 @@
     background-color: @gray-darker;
 
     .item {
-      color: rgba(255,255,255,.7);
+      color: rgba(255, 255, 255, 0.7);
     }
 
     .item.active,
     .item:hover,
     .item:focus {
       background-color: darken(@gray-darker, 5%);
-      color:#fff;
+      color: #fff;
     }
   }
 }

@@ -1,5 +1,4 @@
 .ui.button {
-
   &:focus,
   &:active,
   &:active:focus,

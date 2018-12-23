@@ -1,5 +1,6 @@
 .ui.table {
-  th, td {
+  th,
+  td {
     padding: 1.5rem;
   }
 }
@@ -16,4 +17,3 @@ th {
     transition: all 0.2s;
   }
 }
-
