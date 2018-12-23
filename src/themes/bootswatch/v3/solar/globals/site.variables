@@ -38,22 +38,22 @@
 @negativeBackgroundColor: @negativeColor;
 @negativeBorderColor: @negativeColor;
 
-@darktextcolor : rgba(255, 255, 255, 0.9);
-@mutedtextcolor : rgba(255, 255, 255, 0.8);
-@lighttextcolor : rgba(255, 255, 255, 0.7);
-@unselectedtextcolor : rgba(255, 255, 255, 0.5);
-@hoveredtextcolor : rgba(255, 255, 255, 1);
-@pressedtextcolor : rgba(255, 255, 255, 1);
-@selectedtextcolor : rgba(255, 255, 255, 1);
-@disabledtextcolor : rgba(255, 255, 255, 0.2);
+@darktextcolor: rgba(255, 255, 255, 0.9);
+@mutedtextcolor: rgba(255, 255, 255, 0.8);
+@lighttextcolor: rgba(255, 255, 255, 0.7);
+@unselectedtextcolor: rgba(255, 255, 255, 0.5);
+@hoveredtextcolor: rgba(255, 255, 255, 1);
+@pressedtextcolor: rgba(255, 255, 255, 1);
+@selectedtextcolor: rgba(255, 255, 255, 1);
+@disabledtextcolor: rgba(255, 255, 255, 0.2);
 
-@invertedtextcolor : rgba(255, 255, 255, 0.85);
-@invertedmutedtextcolor : rgba(0, 0, 0, 0.6);
-@invertedlighttextcolor : rgba(0, 0, 0, 0.4);
-@invertedunselectedtextcolor : rgba(0, 0, 0, 0.4);
-@invertedhoveredtextcolor : rgba(0, 0, 0, 0.8);
-@invertedpressedtextcolor : rgba(0, 0, 0, 0.9);
-@invertedselectedtextcolor : rgba(0, 0, 0, 0.95);
-@inverteddisabledtextcolor : rgba(0, 0, 0, 0.2);
+@invertedtextcolor: rgba(255, 255, 255, 0.85);
+@invertedmutedtextcolor: rgba(0, 0, 0, 0.6);
+@invertedlighttextcolor: rgba(0, 0, 0, 0.4);
+@invertedunselectedtextcolor: rgba(0, 0, 0, 0.4);
+@invertedhoveredtextcolor: rgba(0, 0, 0, 0.8);
+@invertedpressedtextcolor: rgba(0, 0, 0, 0.9);
+@invertedselectedtextcolor: rgba(0, 0, 0, 0.95);
+@inverteddisabledtextcolor: rgba(0, 0, 0, 0.2);
 
 @borderColor: lighten(@gray-dark, 5%);
