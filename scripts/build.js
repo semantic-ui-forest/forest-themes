@@ -5,10 +5,7 @@ const execSync = require("child_process").execSync;
 const cwd = process.cwd();
 const outputDir = "dist";
 const semanticUIDir = path.join(cwd, "node_modules/semantic-ui");
-const semanticUIBackupDir = path.join(
-  cwd,
-  "node_modules/semantic-ui-backup"
-);
+const semanticUIBackupDir = path.join(cwd, "node_modules/semantic-ui-backup");
 
 function ensureDistDir() {
   fse.ensureDirSync(path.join(outputDir, "bootswatch/v3"));
