@@ -2,120 +2,136 @@ const fse = require("fs-extra");
 const path = require("path");
 const execSync = require("child_process").execSync;
 
-const output_dir = "dist";
-fse.ensureDirSync(path.join(output_dir, "bootswatch/v3"));
-fse.ensureDirSync(path.join(output_dir, "bootswatch/v4"));
-fse.ensureDirSync(path.join(output_dir, "semantic-ui/v2"));
-
 const cwd = process.cwd();
-const semantic_ui_dir = path.join(cwd, "node_modules/semantic-ui");
-const semantic_ui_backup_dir = path.join(
+const outputDir = "dist";
+const semanticUIDir = path.join(cwd, "node_modules/semantic-ui");
+const semanticUIBackupDir = path.join(
   cwd,
   "node_modules/semantic-ui-backup"
 );
 
-const semantic_ui_v2_themes = [
-  "amazon",
-  "bootstrap3",
-  "chubby",
-  "flat",
-  "github",
-  "material",
-  "semantic-ui",
-  "twitter"
-];
-
-const bootswatch_v3_themes = [
-  "cerulean",
-  "cosmo",
-  "cyborg",
-  "darkly",
-  "flatly",
-  "journal",
-  "lumen",
-  "paper",
-  "readable",
-  "sandstone",
-  "simplex",
-  "slate",
-  "solar",
-  "spacelab",
-  "superhero",
-  "united",
-  "yeti"
-];
-
-const bootswatch_v4_themes = [
-  "cerulean",
-  "cosmo",
-  "cyborg",
-  "darkly",
-  "flatly",
-  "journal",
-  "litera",
-  "lumen",
-  "lux",
-  "materia",
-  "minty",
-  "pulse",
-  "sandstone",
-  "simplex",
-  "sketchy",
-  "slate",
-  "solar",
-  "spacelab",
-  "superhero",
-  "united",
-  "yeti"
-];
-
-themes = {
-  "bootswatch/v3": bootswatch_v3_themes,
-  "bootswatch/v4": bootswatch_v4_themes,
-  "semantic-ui/v2": semantic_ui_v2_themes
-};
-
-// backup `node_modules/semantic-ui`
-fse.removeSync(semantic_ui_backup_dir);
-fse.copySync(semantic_ui_dir, semantic_ui_backup_dir);
-fse.copySync("semantic.json", path.join(semantic_ui_dir, "semantic.json"));
-
-for (let category of ["bootswatch/v3", "bootswatch/v4"]) {
-  fse.copySync(
-    path.join("src/themes/", category),
-    path.join(semantic_ui_dir, "src/themes", category)
-  );
+function ensureDistDir() {
+  fse.ensureDirSync(path.join(outputDir, "bootswatch/v3"));
+  fse.ensureDirSync(path.join(outputDir, "bootswatch/v4"));
+  fse.ensureDirSync(path.join(outputDir, "semantic-ui/v2"));
 }
 
-for (let category of ["bootswatch/v3", "bootswatch/v4", "semantic-ui/v2"]) {
-  for (let theme of themes[category]) {
+function backupSemanticUI() {
+  fse.removeSync(semanticUIBackupDir);
+  fse.copySync(semanticUIDir, semanticUIBackupDir);
+  fse.copySync("semantic.json", path.join(semanticUIDir, "semantic.json"));
+}
+
+function build() {
+  const semanticUIV2Themes = [
+    "amazon",
+    "bootstrap3",
+    "chubby",
+    "flat",
+    "github",
+    "material",
+    "semantic-ui",
+    "twitter"
+  ];
+
+  const bootswatchV3Themes = [
+    "cerulean",
+    "cosmo",
+    "cyborg",
+    "darkly",
+    "flatly",
+    "journal",
+    "lumen",
+    "paper",
+    "readable",
+    "sandstone",
+    "simplex",
+    "slate",
+    "solar",
+    "spacelab",
+    "superhero",
+    "united",
+    "yeti"
+  ];
+
+  const bootswatchV4Themes = [
+    "cerulean",
+    "cosmo",
+    "cyborg",
+    "darkly",
+    "flatly",
+    "journal",
+    "litera",
+    "lumen",
+    "lux",
+    "materia",
+    "minty",
+    "pulse",
+    "sandstone",
+    "simplex",
+    "sketchy",
+    "slate",
+    "solar",
+    "spacelab",
+    "superhero",
+    "united",
+    "yeti"
+  ];
+
+  themes = {
+    "bootswatch/v3": bootswatchV3Themes,
+    "bootswatch/v4": bootswatchV4Themes,
+    "semantic-ui/v2": semanticUIV2Themes
+  };
+
+  for (let category of ["bootswatch/v3", "bootswatch/v4"]) {
     fse.copySync(
-      path.join("src/configs", category, `${theme}.theme.config`),
-      path.join(semantic_ui_dir, "src/theme.config")
+      path.join("src/themes/", category),
+      path.join(semanticUIDir, "src/themes", category)
     );
+  }
 
-    process.chdir(semantic_ui_dir);
+  for (let category of ["bootswatch/v3", "bootswatch/v4", "semantic-ui/v2"]) {
+    for (let theme of themes[category]) {
+      fse.copySync(
+        path.join("src/configs", category, `${theme}.theme.config`),
+        path.join(semanticUIDir, "src/theme.config")
+      );
 
-    process.stdout.write(`building ${category}/${theme} theme...`);
-    execSync("gulp build-css");
-    process.stdout.write(`done.\n`);
+      process.chdir(semanticUIDir);
 
-    fse.copySync(
-      path.join("dist", "semantic.css"),
-      path.join(cwd, output_dir, category, `semantic.${theme}.css`)
-    );
-    fse.copySync(
-      path.join("dist", "semantic.min.css"),
-      path.join(cwd, output_dir, category, `semantic.${theme}.min.css`)
-    );
+      process.stdout.write(`building ${category}/${theme} theme...`);
+      execSync("gulp build-css");
+      process.stdout.write(`done.\n`);
 
-    process.chdir(cwd);
+      fse.copySync(
+        path.join("dist", "semantic.css"),
+        path.join(cwd, outputDir, category, `semantic.${theme}.css`)
+      );
+      fse.copySync(
+        path.join("dist", "semantic.min.css"),
+        path.join(cwd, outputDir, category, `semantic.${theme}.min.css`)
+      );
+
+      process.chdir(cwd);
+    }
   }
 }
 
-// restore `node_modules/semantic-ui`
-fse.removeSync(semantic_ui_dir);
-fse.copySync(semantic_ui_backup_dir, semantic_ui_dir);
-fse.removeSync(semantic_ui_backup_dir);
+function restoreSemanticUI() {
+  // restore `node_modules/semantic-ui`
+  fse.removeSync(semanticUIDir);
+  fse.copySync(semanticUIBackupDir, semanticUIDir);
+  fse.removeSync(semanticUIBackupDir);
 
-process.chdir(cwd);
+  process.chdir(cwd);
+}
+
+function main() {
+  ensureDistDir();
+  backupSemanticUI();
+  build();
+  restoreSemanticUI();
+}
+
+main();
