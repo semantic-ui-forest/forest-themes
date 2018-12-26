@@ -13,6 +13,24 @@ function ensureDistDir() {
   fse.ensureDirSync(path.join(outputDir, "semantic-ui/v2"));
 }
 
+function preprocessSemanticUIDir() {
+  const semanticUIThemes = fse.readdirSync(
+    path.join(semanticUIDir, "src/themes")
+  );
+  const semanticUIV2ThemeDir = path.join(
+    semanticUIDir,
+    "src/themes",
+    "semantic-ui/v2"
+  );
+  fse.ensureDirSync(semanticUIV2ThemeDir);
+  for (let theme of semanticUIThemes) {
+    fse.moveSync(
+      path.join(semanticUIDir, "src/themes", theme),
+      path.join(semanticUIV2ThemeDir, theme)
+    );
+  }
+}
+
 function backupSemanticUI() {
   fse.removeSync(semanticUIBackupDir);
   fse.copySync(semanticUIDir, semanticUIBackupDir);
@@ -126,6 +144,7 @@ function restoreSemanticUI() {
 
 function main() {
   ensureDistDir();
+  preprocessSemanticUIDir();
   backupSemanticUI();
   build();
   restoreSemanticUI();
