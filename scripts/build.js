@@ -74,7 +74,7 @@ function getAllFiles(dir) {
   }, []);
 }
 
-function build() {
+function build(forceBuild) {
   const semanticUIV2Themes = [
     "amazon",
     "bootstrap3",
@@ -151,7 +151,7 @@ function build() {
 
       process.chdir(semanticUIDir);
 
-      if (toBuildOrNotToBuild(category, theme)) {
+      if (forceBuild || toBuildOrNotToBuild(category, theme)) {
         process.stdout.write(`building ${category}/${theme} theme...`);
         execSync("gulp build-css");
 
@@ -196,12 +196,13 @@ function beforeExitSetup() {
 }
 
 function main() {
+  const forceBuild = process.argv.length === 3 && process.argv[2] === '-f'
   beforeExitSetup();
 
   ensureDistDir();
   backupSemanticUI();
   preprocessSemanticUIDir();
-  build();
+  build(forceBuild);
   restoreSemanticUI();
 }
 
