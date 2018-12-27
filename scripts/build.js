@@ -1,3 +1,4 @@
+const fs = require("fs");
 const fse = require("fs-extra");
 const path = require("path");
 const execSync = require("child_process").execSync;
@@ -41,6 +42,38 @@ function backupSemanticUI() {
   process.stdout.write("done.\n");
 }
 
+function toBuildOrNotToBuild(category, theme) {
+  // That is a question
+  // :-)
+  const themeDistCSSFile = path.join(
+    cwd,
+    outputDir,
+    category,
+    `semantic.${theme}.css`
+  );
+  const themeSrcDir = path.join(semanticUIDir, "src/themes", category, theme);
+
+  const themeDistCSSFileMtime = fs.statSync(themeDistCSSFile).mtimeMs;
+
+  for (let themeSrcFile of getAllFiles(themeSrcDir)) {
+    const themeSrcFileMtime = fs.statSync(themeSrcFile).mtimeMs;
+
+    if (themeSrcFileMtime > themeDistCSSFileMtime) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+function getAllFiles(dir) {
+  return fs.readdirSync(dir).reduce((files, file) => {
+    const name = path.join(dir, file);
+    const isDirectory = fs.statSync(name).isDirectory();
+    return isDirectory ? [...files, ...getAllFiles(name)] : [...files, name];
+  }, []);
+}
+
 function build() {
   const semanticUIV2Themes = [
     "amazon",
@@ -49,7 +82,6 @@ function build() {
     "flat",
     "github",
     "material",
-    "semantic-ui",
     "twitter"
   ];
 
@@ -119,18 +151,23 @@ function build() {
 
       process.chdir(semanticUIDir);
 
-      process.stdout.write(`building ${category}/${theme} theme...`);
-      execSync("gulp build-css");
-      process.stdout.write("done.\n");
+      if (toBuildOrNotToBuild(category, theme)) {
+        process.stdout.write(`building ${category}/${theme} theme...`);
+        execSync("gulp build-css");
 
-      fse.copySync(
-        path.join("dist", "semantic.css"),
-        path.join(cwd, outputDir, category, `semantic.${theme}.css`)
-      );
-      fse.copySync(
-        path.join("dist", "semantic.min.css"),
-        path.join(cwd, outputDir, category, `semantic.${theme}.min.css`)
-      );
+        fse.copySync(
+          path.join("dist", "semantic.css"),
+          path.join(cwd, outputDir, category, `semantic.${theme}.css`)
+        );
+        fse.copySync(
+          path.join("dist", "semantic.min.css"),
+          path.join(cwd, outputDir, category, `semantic.${theme}.min.css`)
+        );
+
+        process.stdout.write("done.\n");
+      } else {
+        process.stdout.write(`skip building ${category}/${theme} theme.\n`);
+      }
 
       process.chdir(cwd);
     }
@@ -147,10 +184,11 @@ function restoreSemanticUI() {
   process.chdir(cwd);
 }
 
-function beforeExit() {
-  const exitSignals = [`exit`, `SIGINT`, `SIGTERM`];
+function beforeExitSetup() {
+  const exitSignals = [`SIGINT`, `SIGTERM`];
   exitSignals.forEach(eventType => {
     process.on(eventType, () => {
+      console.error(`exit with ${eventType}`);
       restoreSemanticUI();
       process.exit(0);
     });
@@ -158,7 +196,7 @@ function beforeExit() {
 }
 
 function main() {
-  beforeExit();
+  beforeExitSetup();
 
   ensureDistDir();
   backupSemanticUI();
