@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "scripts": {
     "build": "node scripts/build.js",
-    "format": "prettier --parser less --write src/themes/**/*.*; prettier --write scripts/*.*"
+    "format-less": "prettier --parser less --write src/themes/**/*.*",
+    "format-js": "prettier --write scripts/*.*"
   },
   "repository": {
     "type": "git",
