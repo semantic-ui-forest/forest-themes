@@ -22,7 +22,9 @@ function preprocessSemanticUIDir() {
     "src/themes",
     "semantic-ui/v2"
   );
+
   fse.ensureDirSync(semanticUIV2ThemeDir);
+
   for (let theme of semanticUIThemes) {
     fse.moveSync(
       path.join(semanticUIDir, "src/themes", theme),
@@ -32,9 +34,11 @@ function preprocessSemanticUIDir() {
 }
 
 function backupSemanticUI() {
+  process.stdout.write("backup node_modules/semantic-ui...");
   fse.removeSync(semanticUIBackupDir);
   fse.copySync(semanticUIDir, semanticUIBackupDir);
   fse.copySync("semantic.json", path.join(semanticUIDir, "semantic.json"));
+  process.stdout.write("done.\n");
 }
 
 function build() {
@@ -117,7 +121,7 @@ function build() {
 
       process.stdout.write(`building ${category}/${theme} theme...`);
       execSync("gulp build-css");
-      process.stdout.write(`done.\n`);
+      process.stdout.write("done.\n");
 
       fse.copySync(
         path.join("dist", "semantic.css"),
@@ -134,18 +138,31 @@ function build() {
 }
 
 function restoreSemanticUI() {
-  // restore `node_modules/semantic-ui`
+  process.stdout.write("restore node_modules/semantic-ui...");
   fse.removeSync(semanticUIDir);
   fse.copySync(semanticUIBackupDir, semanticUIDir);
   fse.removeSync(semanticUIBackupDir);
+  process.stdout.write("done.\n");
 
   process.chdir(cwd);
 }
 
+function beforeExit() {
+  const exitSignals = [`exit`, `SIGINT`, `SIGTERM`];
+  exitSignals.forEach(eventType => {
+    process.on(eventType, () => {
+      restoreSemanticUI();
+      process.exit(0);
+    });
+  });
+}
+
 function main() {
+  beforeExit();
+
   ensureDistDir();
-  preprocessSemanticUIDir();
   backupSemanticUI();
+  preprocessSemanticUIDir();
   build();
   restoreSemanticUI();
 }
