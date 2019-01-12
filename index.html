@@ -27,10 +27,19 @@
         text-rendering: optimizeLegibility;
       }
 
+      .ui.vertical.heading.segment {
+        padding-top: 4rem;
+        padding-bottom: 2rem;
+      }
+
       .example {
         margin: 2rem 0;
         padding: 2rem 0;
         position: relative;
+      }
+
+      .example:first-child {
+        margin-top: 0;
       }
 
       .dimmer.dremo:not(.page) {
@@ -248,7 +257,7 @@
   </head>
   <body>
     <div class="pusher">
-      <div class="ui vertical segment">
+      <div class="ui heading vertical segment">
         <div class="ui container">
           <h2 class="ui huge header">
             Chubby
