@@ -20,10 +20,233 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
       type="text/css"
     />
+    <style>
+      body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+      }
+
+      .example {
+        margin: 2rem 0;
+        padding: 2rem 0;
+        position: relative;
+      }
+
+      .dimmer.dremo:not(.page) {
+        margin: 2rem 0;
+      }
+      h4 + .dimmer.dremo {
+        margin-top: 0;
+      }
+
+      /* Shaded */
+      .demo .grid.shaded.examples .row {
+        position: relative;
+      }
+      .demo .grid.shaded.examples .grid > .column {
+        position: relative;
+        z-index: 11;
+      }
+      .demo .grid.shaded.examples .grid .column:not(.row):after {
+        background-color: #aaaaaa;
+        content: "";
+        display: block;
+        min-height: 1rem;
+      }
+
+      .demo .grid.divided.examples .grid .column:not(.row):after {
+        background-color: rgba(0, 0, 0, 0.1);
+        content: "";
+        display: block;
+        min-height: 1rem;
+      }
+
+      .demo .grid.nested.examples .grid .grid {
+        box-shadow: 0px 0px 0px 1px #f0f0f0 inset;
+      }
+      .demo .grid.nested.examples .grid .grid .column:after {
+        background-color: #aaaaaa;
+        content: "";
+        display: block;
+        min-height: 1rem;
+      }
+
+      .demo .grid.simple.examples .grid .column:not(.row):not(.grid):after {
+        content: "";
+        display: block;
+        min-height: 50px;
+      }
+
+      /* Animation */
+      .demo .grid.examples {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+
+      .dremo.icons .icon {
+        font-size: 16px;
+        margin: 0 4px 8px;
+      }
+
+      .transition.demo .button {
+        margin-bottom: 0.5rem;
+      }
+      /* Dont hide on hide */
+      .transition.demo .ui.hidden.image {
+        display: inline-block !important;
+      }
+
+      /* Popup, 8 heart icons in square */
+      .position.no.example .segment {
+        width: 250px;
+        height: 250px;
+      }
+
+      .position.example .icon {
+        position: absolute;
+        margin: 0;
+        width: auto;
+        font-size: 1.5rem;
+        height: auto;
+        padding: 0.5rem !important;
+      }
+
+      .position.no.example .segment .icon:nth-of-type(1) {
+        top: 0;
+        left: 0;
+      }
+
+      .position.no.example .segment .icon:nth-of-type(2) {
+        top: 0;
+        left: 50%;
+        margin-left: -1rem;
+      }
+
+      .position.no.example .segment .icon:nth-of-type(3) {
+        top: 0;
+        right: 0;
+      }
+
+      .position.no.example .segment .icon:nth-of-type(4) {
+        top: 50%;
+        right: 0;
+        margin-top: -1rem;
+      }
+
+      .position.no.example .segment .icon:nth-of-type(5) {
+        bottom: 0;
+        right: 0;
+      }
+
+      .position.no.example .segment .icon:nth-of-type(6) {
+        bottom: 0;
+        left: 50%;
+        margin-left: -1rem;
+      }
+
+      .position.no.example .segment .icon:nth-of-type(7) {
+        bottom: 0;
+        left: 0;
+      }
+
+      .position.no.example .segment .icon:nth-of-type(8) {
+        top: 50%;
+        left: 0;
+        margin-top: -1rem;
+      }
+
+      /* Style for "View Source" code icon */
+      .example > i.icon.code {
+        cursor: pointer;
+        position: absolute;
+        top: 2rem;
+        right: 0;
+        margin: 0;
+        opacity: 0.5;
+        font-size: 20px;
+        transition: opacity 0.3s ease-out;
+      }
+
+      /* Style for top attached "Example" label segment */
+      .example > .html.segment {
+        padding: 3.5rem 1rem 1rem;
+        margin-top: 2rem;
+        transition: box-shadow 0.2s ease, padding 0.2s ease;
+      }
+
+      .example > .html > .top.attached.label {
+        margin-bottom: 0;
+        display: none;
+        user-select: none;
+        background-color: #f8f8f8;
+        box-shadow: 0px 0px 0px 1px #dddddd;
+      }
+
+      .example > .html.segment > .attached.label {
+        display: block;
+      }
+
+      /* Style for the copy icon in "Example" label segment */
+      .example > .html > .top.attached.label .copy:hover {
+        color: #666;
+      }
+
+      .example > .html > .top.attached.label .copy {
+        float: right;
+        position: absolute;
+        top: 9px;
+        right: 8px;
+      }
+
+      /* Style for code displaying area */
+      .annotation .instructive pre .code {
+        display: block;
+        margin: 0;
+        padding: 0;
+        border-radius: 3px;
+        max-height: 610px;
+        min-width: 500px;
+        overflow: auto;
+        color: #555;
+        font-weight: normal;
+        font-size: 1em;
+        font-family: "Monaco", "Menlo", "Ubuntu Mono", "Consolas",
+          "source-code-pro", monospace;
+        background-color: transparent;
+        transform: rotateZ(0deg);
+        transition: 0.5s color ease;
+      }
+
+      /* Style modification of the Grid example */
+      .demo .ui.grid.examples > .grid {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      /* Make piled segment work correctly */
+      .example .html.ui.top.attached.segment {
+        z-index: 1;
+      }
+
+      /* Let code icon be '\f121' on Material theme, same with others */
+      .example > i.code.icon:before {
+        content: "\f121";
+      }
+
+      /* Tab component's last bottom attached segment's margin-bottom */
+      .ui.segment[class*="bottom attached"]:last-child {
+        margin-bottom: 1rem;
+      }
+
+      .ui.tab.segment:last-child {
+        margin-bottom: 1rem;
+      }
+    </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   </head>
-  <body class="theme">
+  <body>
     <div class="pusher">
       <div class="ui vertical segment">
         <div class="ui container">
