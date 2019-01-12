@@ -6,7 +6,8 @@
     "build": "node scripts/build.js",
     "demo": "browser-sync start --server --files=\"**/*\"",
     "format-less": "prettier --parser less --write src/themes/**/*.*",
-    "format-js": "prettier --write scripts/*.*"
+    "format-js": "prettier --write scripts/*.*",
+    "format-html": "prettier --write index.html"
   },
   "repository": {
     "type": "git",
