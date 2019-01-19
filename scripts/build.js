@@ -9,7 +9,7 @@ const semanticUIDir = path.join(cwd, "node_modules/semantic-ui");
 const semanticUIBackupDir = path.join(cwd, "node_modules/semantic-ui-backup");
 
 function now() {
-  return `[${(new Date).toLocaleString()}]`;
+  return `[${new Date().toLocaleString()}]`;
 }
 
 function ensureDistDir() {
@@ -150,10 +150,19 @@ function build(forceBuild) {
   }
 
   for (let category of ["bootswatch/v3", "bootswatch/v4", "semantic-ui/v2"]) {
-    fse.copySync(
-      path.join(semanticUIDir, "dist/themes"),
-      path.join(outputDir, category, "themes")
-    );
+    if (category === "bootswatch/v3" || category === "bootswatch/v4") {
+      // bootswatch themes only need assets from semantic-ui's default theme
+      fse.copySync(
+        path.join(semanticUIDir, "dist/themes/default"),
+        path.join(outputDir, category, "themes/default")
+      );
+    } else {
+      fse.copySync(
+        path.join(semanticUIDir, "dist/themes"),
+        path.join(outputDir, category, "themes")
+      );
+    }
+
     for (let theme of themes[category]) {
       fse.copySync(
         path.join("src/configs", category, `${theme}.theme.config`),
@@ -177,7 +186,9 @@ function build(forceBuild) {
 
         process.stdout.write("done.\n");
       } else {
-        process.stdout.write(`${now()} skip building ${category}/${theme} theme.\n`);
+        process.stdout.write(
+          `${now()} skip building ${category}/${theme} theme.\n`
+        );
       }
 
       process.chdir(cwd);
