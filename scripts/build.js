@@ -33,29 +33,30 @@ function backupSemanticUI() {
 function toBuildOrNotToBuild(category, theme) {
   // That is a question
   // :-)
-  const themeDistCSSFile = path.join(
-    cwd,
-    outputDir,
-    category,
-    `semantic.${theme}.css`
-  );
+  const themeDistCSSFiles = [
+    path.join(cwd, outputDir, category, `semantic.${theme}.css`),
+    path.join(cwd, outputDir, category, `semantic.${theme}.min.css`)
+  ];
+
   const themeSrcDir = path.join(
     semanticUIDir,
     "src/themes",
     getThemeDirInSemanticUISrc(category, theme)
   );
 
-  if (!fs.existsSync(themeDistCSSFile)) {
-    return true;
-  }
-
-  const themeDistCSSFileMtime = fs.statSync(themeDistCSSFile).mtimeMs;
-
-  for (let themeSrcFile of getAllFiles(themeSrcDir)) {
-    const themeSrcFileMtime = fs.statSync(themeSrcFile).mtimeMs;
-
-    if (themeSrcFileMtime > themeDistCSSFileMtime) {
+  for (let themeDistCSSFile of themeDistCSSFiles) {
+    if (!fs.existsSync(themeDistCSSFile)) {
       return true;
+    }
+
+    const themeDistCSSFileMtime = fs.statSync(themeDistCSSFile).mtimeMs;
+
+    for (let themeSrcFile of getAllFiles(themeSrcDir)) {
+      const themeSrcFileMtime = fs.statSync(themeSrcFile).mtimeMs;
+
+      if (themeSrcFileMtime > themeDistCSSFileMtime) {
+        return true;
+      }
     }
   }
 
