@@ -14,23 +14,11 @@ function ensureDistDir() {
   fse.ensureDirSync(path.join(outputDir, "semantic-ui/v2"));
 }
 
-function preprocessSemanticUIDir() {
-  const semanticUIThemes = fse.readdirSync(
-    path.join(semanticUIDir, "src/themes")
-  );
-  const semanticUIV2ThemeDir = path.join(
-    semanticUIDir,
-    "src/themes",
-    "semantic-ui/v2"
-  );
-
-  fse.ensureDirSync(semanticUIV2ThemeDir);
-
-  for (let theme of semanticUIThemes) {
-    fse.moveSync(
-      path.join(semanticUIDir, "src/themes", theme),
-      path.join(semanticUIV2ThemeDir, theme)
-    );
+function getThemeDirInSemanticUISrc(category, theme) {
+  if (category === "semantic-ui/v2") {
+    return theme;
+  } else if (category === "bootswatch/v3" || category === "bootswatch/v4") {
+    return `${category.replace("/", "-")}-${theme}`;
   }
 }
 
@@ -51,7 +39,11 @@ function toBuildOrNotToBuild(category, theme) {
     category,
     `semantic.${theme}.css`
   );
-  const themeSrcDir = path.join(semanticUIDir, "src/themes", category, theme);
+  const themeSrcDir = path.join(
+    semanticUIDir,
+    "src/themes",
+    getThemeDirInSemanticUISrc(category, theme)
+  );
 
   const themeDistCSSFileMtime = fs.statSync(themeDistCSSFile).mtimeMs;
 
@@ -136,10 +128,16 @@ function build(forceBuild) {
   };
 
   for (let category of ["bootswatch/v3", "bootswatch/v4"]) {
-    fse.copySync(
-      path.join("src/themes/", category),
-      path.join(semanticUIDir, "src/themes", category)
-    );
+    for (let theme of themes[category]) {
+      fse.copySync(
+        path.join("src/themes/", category, theme),
+        path.join(
+          semanticUIDir,
+          "src/themes",
+          getThemeDirInSemanticUISrc(category, theme)
+        )
+      );
+    }
   }
 
   for (let category of ["bootswatch/v3", "bootswatch/v4", "semantic-ui/v2"]) {
@@ -205,7 +203,6 @@ function main() {
 
   ensureDistDir();
   backupSemanticUI();
-  preprocessSemanticUIDir();
   build(forceBuild);
   restoreSemanticUI();
 }
