@@ -45,6 +45,10 @@ function toBuildOrNotToBuild(category, theme) {
     getThemeDirInSemanticUISrc(category, theme)
   );
 
+  if (!fs.existsSync(themeDistCSSFile)) {
+    return true;
+  }
+
   const themeDistCSSFileMtime = fs.statSync(themeDistCSSFile).mtimeMs;
 
   for (let themeSrcFile of getAllFiles(themeSrcDir)) {
