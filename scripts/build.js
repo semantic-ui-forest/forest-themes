@@ -143,6 +143,10 @@ function build(forceBuild) {
   }
 
   for (let category of ["bootswatch/v3", "bootswatch/v4", "semantic-ui/v2"]) {
+    fse.copySync(
+      path.join(semanticUIDir, "dist/themes"),
+      path.join(outputDir, category, "themes")
+    );
     for (let theme of themes[category]) {
       fse.copySync(
         path.join("src/configs", category, `${theme}.theme.config`),
@@ -196,7 +200,7 @@ function beforeExitSetup() {
 }
 
 function main() {
-  const forceBuild = process.argv.length === 3 && process.argv[2] === '-f'
+  const forceBuild = process.argv.length === 3 && process.argv[2] === "-f";
   beforeExitSetup();
 
   ensureDistDir();
