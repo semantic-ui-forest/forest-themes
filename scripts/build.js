@@ -8,6 +8,10 @@ const outputDir = "dist";
 const semanticUIDir = path.join(cwd, "node_modules/semantic-ui");
 const semanticUIBackupDir = path.join(cwd, "node_modules/semantic-ui-backup");
 
+function now() {
+  return `[${(new Date).toLocaleString()}]`;
+}
+
 function ensureDistDir() {
   fse.ensureDirSync(path.join(outputDir, "bootswatch/v3"));
   fse.ensureDirSync(path.join(outputDir, "bootswatch/v4"));
@@ -23,7 +27,7 @@ function getThemeDirInSemanticUISrc(category, theme) {
 }
 
 function backupSemanticUI() {
-  process.stdout.write("backup node_modules/semantic-ui...");
+  process.stdout.write(`${now()} backup node_modules/semantic-ui...`);
   fse.removeSync(semanticUIBackupDir);
   fse.copySync(semanticUIDir, semanticUIBackupDir);
   fse.copySync("semantic.json", path.join(semanticUIDir, "semantic.json"));
@@ -159,7 +163,7 @@ function build(forceBuild) {
       process.chdir(semanticUIDir);
 
       if (forceBuild || toBuildOrNotToBuild(category, theme)) {
-        process.stdout.write(`building ${category}/${theme} theme...`);
+        process.stdout.write(`${now()} building ${category}/${theme} theme...`);
         execSync("gulp build-css");
 
         fse.copySync(
@@ -173,7 +177,7 @@ function build(forceBuild) {
 
         process.stdout.write("done.\n");
       } else {
-        process.stdout.write(`skip building ${category}/${theme} theme.\n`);
+        process.stdout.write(`${now()} skip building ${category}/${theme} theme.\n`);
       }
 
       process.chdir(cwd);
@@ -182,7 +186,7 @@ function build(forceBuild) {
 }
 
 function restoreSemanticUI() {
-  process.stdout.write("restore node_modules/semantic-ui...");
+  process.stdout.write(`${now()} restore node_modules/semantic-ui...`);
   fse.removeSync(semanticUIDir);
   fse.copySync(semanticUIBackupDir, semanticUIDir);
   fse.removeSync(semanticUIBackupDir);
