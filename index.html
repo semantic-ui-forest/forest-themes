@@ -210,6 +210,7 @@
       }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   </head>
   <body>
@@ -5350,10 +5351,7 @@
               </div>
               <script>
                 $(document).ready(function() {
-                  $(".tab.demo .menu .item").tab({
-                    history: true,
-                    context: $(".tab.demo")
-                  });
+                  $(".tab.demo .menu .item").tab();
                 });
               </script>
             </div>
@@ -5461,7 +5459,10 @@
     </div>
     <script>
       $(document).ready(function() {
-        $(".item[data-tab]").tab();
+        $(".ui.four.item.tabs.menu .item").tab({
+          history: true
+        });
+
         $(".ui.menu .item:not(.dropdown)").on("click", function() {
           $(this)
             .addClass("active")
