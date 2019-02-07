@@ -83,6 +83,7 @@ function build(forceBuild) {
     "flat",
     "github",
     "material",
+    "semantic-ui",
     "twitter"
   ];
 
