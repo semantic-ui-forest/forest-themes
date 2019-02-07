@@ -3,12 +3,60 @@ const path = require("path");
 
 const puppeteer = require("puppeteer");
 
-const { now, sleep } = require("./common");
+const { getAllFiles, now, sleep } = require("./common");
 
 const captureInterval = 20000;
 const httpPort = 4567;
 
-async function capture(theme) {
+function toCaptureOrNotToCapture(theme) {
+  // That is a question
+  // :-)
+  let screenshotFile;
+  let [category, version, name] = theme.split("/");
+
+  if (category === "semantic-ui") {
+    // by default, do not capture semantic-ui's screenshot cause this doesn't
+    // change too much, you just capture once, then keep it.
+    return false;
+  }
+
+  screenshotFile = path.join(
+    "screenshots",
+    `${theme.replace(/\//g, "-")}-1440x900.png`
+  );
+
+  const themeSrcDir = path.join(
+    process.cwd(),
+    "src/themes",
+    category,
+    version,
+    name
+  );
+
+  if (!fse.existsSync(screenshotFile)) {
+    return true;
+  }
+
+  const screenshotFileMtime = fse.statSync(screenshotFile).mtimeMs;
+
+  for (let themeSrcFile of getAllFiles(themeSrcDir)) {
+    const themeSrcFileMtime = fse.statSync(themeSrcFile).mtimeMs;
+
+    if (themeSrcFileMtime > screenshotFileMtime) {
+      return true;
+    }
+  }
+
+  return false;
+}
+
+async function captureTheme(forceCapture, theme) {
+  if (!(forceCapture || toCaptureOrNotToCapture(theme))) {
+    console.log(`${now()} skip capturing screenshot for ${theme} theme...`);
+    await sleep(100);
+    return;
+  }
+
   let screenshotPath;
 
   const url = `http:/localhost:${httpPort}`;
@@ -244,6 +292,10 @@ async function capture(theme) {
     }
   };
 
+  process.stdout.write(
+    `${now()} capturing screenshot for ${theme} theme with 1440x900 viewport...`
+  );
+
   // 1440 x 990, computer size screen
   await page.setViewport({ width: 1440, height: 900, deviceScaleFactor: 2 });
   await page.goto(url);
@@ -258,9 +310,6 @@ async function capture(theme) {
   );
 
   await page.waitFor(captureInterval);
-  process.stdout.write(
-    `${now()} capturing screenshot for ${theme} theme with 1440x900 viewport...`
-  );
   screenshotPath = path.join(
     "screenshots",
     `${theme.replace(/\//g, "-")}-1440x900.png`
@@ -271,20 +320,7 @@ async function capture(theme) {
   process.stdout.write("done.\n");
 }
 
-async function main() {
-  fse.ensureDirSync("screenshots");
-
-  const handler = require("serve-handler");
-  const http = require("http");
-
-  const server = http.createServer((request, response) => {
-    return handler(request, response);
-  });
-
-  server.listen(httpPort, () => {
-    console.log(`${now()} SERVE running at http://localhost:${httpPort}`);
-  });
-
+async function capture(forceCapture) {
   const themes = [
     "bootswatch/v3/cerulean",
     "bootswatch/v3/cosmo",
@@ -334,9 +370,33 @@ async function main() {
   ];
 
   for (let theme of themes) {
-    capture(theme);
-    await sleep(captureInterval);
+    await captureTheme(forceCapture, theme);
   }
+}
+
+function startHttpServer() {
+  const handler = require("serve-handler");
+  const http = require("http");
+
+  const server = http.createServer((request, response) => {
+    return handler(request, response);
+  });
+
+  server.listen(httpPort, () => {
+    console.log(`${now()} SERVE running at http://localhost:${httpPort}`);
+  });
+
+  return server;
+}
+
+async function main() {
+  const forceCapture = process.argv.length === 3 && process.argv[2] === "-f";
+
+  fse.ensureDirSync("screenshots");
+
+  server = startHttpServer();
+
+  await capture(forceCapture);
 
   server.close();
 }

@@ -2,7 +2,7 @@ const fs = require("fs");
 const fse = require("fs-extra");
 const path = require("path");
 const execSync = require("child_process").execSync;
-const { now } = require("./common");
+const { getAllFiles, now } = require("./common");
 
 const cwd = process.cwd();
 const outputDir = "dist";
@@ -62,14 +62,6 @@ function toBuildOrNotToBuild(category, theme) {
   }
 
   return false;
-}
-
-function getAllFiles(dir) {
-  return fs.readdirSync(dir).reduce((files, file) => {
-    const name = path.join(dir, file);
-    const isDirectory = fs.statSync(name).isDirectory();
-    return isDirectory ? [...files, ...getAllFiles(name)] : [...files, name];
-  }, []);
 }
 
 function build(forceBuild) {
