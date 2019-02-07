@@ -2,12 +2,11 @@ const fse = require("fs-extra");
 const path = require("path");
 
 const puppeteer = require("puppeteer");
+
+const { now, sleep } = require("./common");
+
 const captureInterval = 20000;
 const httpPort = 4567;
-
-function sleep(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
 
 async function capture(theme) {
   let screenshotPath;
@@ -259,8 +258,8 @@ async function capture(theme) {
   );
 
   await page.waitFor(captureInterval);
-  console.log(
-    `capturing screenshot for ${theme} theme with 1440x900 viewport...`
+  process.stdout.write(
+    `${now()} capturing screenshot for ${theme} theme with 1440x900 viewport...`
   );
   screenshotPath = path.join(
     "screenshots",
@@ -268,8 +267,8 @@ async function capture(theme) {
   );
 
   await page.screenshot({ path: screenshotPath });
-
   await browser.close();
+  process.stdout.write("done.\n");
 }
 
 async function main() {
@@ -283,7 +282,7 @@ async function main() {
   });
 
   server.listen(httpPort, () => {
-    console.log(`Running at http://localhost:${httpPort}`);
+    console.log(`${now()} SERVE running at http://localhost:${httpPort}`);
   });
 
   const themes = [
