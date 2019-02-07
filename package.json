@@ -4,6 +4,7 @@
   "version": "0.1.0",
   "scripts": {
     "build": "node scripts/build.js",
+    "capture": "node scripts/capture.js",
     "demo": "browser-sync start --server --files=\"**/*\"",
     "format-less": "prettier --parser less --write src/themes/**/*.*",
     "format-js": "prettier --write scripts/*.*",
@@ -30,7 +31,9 @@
   },
   "devDependencies": {
     "browser-sync": "^2.26.3",
-    "fs-extra": "^5.0.0",
-    "prettier": "^1.15.3"
+    "fs-extra": "^7.0.1",
+    "prettier": "^1.15.3",
+    "puppeteer": "^1.12.2",
+    "serve": "^10.1.2"
   }
 }
