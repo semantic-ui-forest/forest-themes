@@ -5463,7 +5463,7 @@
           history: true
         });
 
-        $(".ui.menu .item:not(.dropdown)").on("click", function() {
+        $(".ui.menu .item:not(.dropdown):not(.header)").on("click", function() {
           $(this)
             .addClass("active")
             .siblings()
