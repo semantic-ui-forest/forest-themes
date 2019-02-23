@@ -276,9 +276,14 @@ async function captureTheme(forceCapture, theme) {
       subtitle: "Semantic-UI/v2 chubby theme"
     },
     "semantic-ui/v2/flat": {
-      title: "Github",
+      title: "Flat",
       path: "/dist/semantic-ui/v2/semantic.flat.css",
       subtitle: "Semantic-UI/v2 flat theme"
+    },
+    "semantic-ui/v2/github": {
+      title: "Github",
+      path: "/dist/semantic-ui/v2/semantic.github.css",
+      subtitle: "Semantic-UI/v2 github theme"
     },
     "semantic-ui/v2/material": {
       title: "Material",
@@ -386,6 +391,7 @@ async function capture(forceCapture) {
     "semantic-ui/v2/bootstrap3",
     "semantic-ui/v2/chubby",
     "semantic-ui/v2/flat",
+    "semantic-ui/v2/github",
     "semantic-ui/v2/material",
     "semantic-ui/v2/semantic-ui",
     "semantic-ui/v2/twitter"
