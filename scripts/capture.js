@@ -1,5 +1,6 @@
 const fse = require("fs-extra");
 const path = require("path");
+const sharp = require("sharp");
 
 const puppeteer = require("puppeteer");
 
@@ -7,12 +8,13 @@ const { getAllFiles, now, sleep } = require("./common");
 
 const captureInterval = 20000;
 const httpPort = 4567;
+const screenshotsDir = "screenshots";
 
 function toCaptureOrNotToCapture(theme) {
   // That is a question
   // :-)
-  let screenshotFile;
-  let [category, version, name] = theme.split("/");
+  let screenshotPath;
+  const [category, version, name] = theme.split("/");
 
   if (category === "semantic-ui") {
     // by default, do not capture semantic-ui's screenshot cause this doesn't
@@ -20,9 +22,11 @@ function toCaptureOrNotToCapture(theme) {
     return false;
   }
 
-  screenshotFile = path.join(
-    "screenshots",
-    `${theme.replace(/\//g, "-")}-1440x900.png`
+  screenshotPath = path.join(
+    screenshotsDir,
+    category,
+    version,
+    `${name}-1440x900.png`
   );
 
   const themeSrcDir = path.join(
@@ -33,16 +37,16 @@ function toCaptureOrNotToCapture(theme) {
     name
   );
 
-  if (!fse.existsSync(screenshotFile)) {
+  if (!fse.existsSync(screenshotPath)) {
     return true;
   }
 
-  const screenshotFileMtime = fse.statSync(screenshotFile).mtimeMs;
+  const screenshotPathMtime = fse.statSync(screenshotPath).mtimeMs;
 
   for (let themeSrcFile of getAllFiles(themeSrcDir)) {
     const themeSrcFileMtime = fse.statSync(themeSrcFile).mtimeMs;
 
-    if (themeSrcFileMtime > screenshotFileMtime) {
+    if (themeSrcFileMtime > screenshotPathMtime) {
       return true;
     }
   }
@@ -57,8 +61,9 @@ async function captureTheme(forceCapture, theme) {
     return;
   }
 
-  let screenshotPath;
+  let screenshotPath, thumbnailPath;
 
+  const [category, version, name] = theme.split("/");
   const url = `http:/localhost:${httpPort}`;
 
   const browser = await puppeteer.launch({ headless: true });
@@ -311,12 +316,29 @@ async function captureTheme(forceCapture, theme) {
 
   await page.waitFor(captureInterval);
   screenshotPath = path.join(
-    "screenshots",
-    `${theme.replace(/\//g, "-")}-1440x900.png`
+    screenshotsDir,
+    category,
+    version,
+    `${name}-1440x900.png`
   );
+
+  thumbnailPath = path.join(
+    screenshotsDir,
+    category,
+    version,
+    `${name}-640x400.png`
+  );
+
+  fse.ensureDirSync(path.join(screenshotsDir, category, version))
 
   await page.screenshot({ path: screenshotPath });
   await browser.close();
+
+  sharp(screenshotPath)
+  .resize(640, 400)
+  .png({ quality: 100 })
+  .toFile(thumbnailPath);
+
   process.stdout.write("done.\n");
 }
 
@@ -392,7 +414,7 @@ function startHttpServer() {
 async function main() {
   const forceCapture = process.argv.length === 3 && process.argv[2] === "-f";
 
-  fse.ensureDirSync("screenshots");
+  fse.ensureDirSync(screenshotsDir);
 
   server = startHttpServer();
 
