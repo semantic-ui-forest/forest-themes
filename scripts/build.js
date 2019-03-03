@@ -2,6 +2,9 @@ const fs = require("fs");
 const fse = require("fs-extra");
 const path = require("path");
 const execSync = require("child_process").execSync;
+
+require('console-stamp')(console, { colors: { stamp: 'yellow' } });
+
 const { getAllFiles, now } = require("./common");
 
 const cwd = process.cwd();

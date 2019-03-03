@@ -1,10 +1,6 @@
 const fs = require("fs");
 const path = require("path");
 
-function now() {
-  return `[${new Date().toLocaleString()}]`;
-}
-
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -17,4 +13,4 @@ function getAllFiles(dir) {
   }, []);
 }
 
-module.exports = { getAllFiles, now, sleep };
+module.exports = { getAllFiles, sleep };

@@ -2,9 +2,11 @@ const fse = require("fs-extra");
 const path = require("path");
 const sharp = require("sharp");
 
+require('console-stamp')(console, { colors: { stamp: 'yellow' } });
+
 const puppeteer = require("puppeteer");
 
-const { getAllFiles, now, sleep } = require("./common");
+const { getAllFiles, sleep } = require("./common");
 
 const captureInterval = 20000;
 const httpPort = 4567;
@@ -56,7 +58,7 @@ function toCaptureOrNotToCapture(theme) {
 
 async function captureTheme(forceCapture, theme) {
   if (!(forceCapture || toCaptureOrNotToCapture(theme))) {
-    console.log(`${now()} skip capturing screenshot for ${theme} theme...`);
+    console.log(`skip capturing screenshot for ${theme} theme.`);
     await sleep(100);
     return;
   }
@@ -303,7 +305,7 @@ async function captureTheme(forceCapture, theme) {
   };
 
   process.stdout.write(
-    `${now()} capturing screenshot for ${theme} theme with 1440x900 viewport...`
+    `capture screenshot for ${theme} theme with 1440x900 viewport.`
   );
 
   // 1440 x 990, computer size screen
@@ -411,7 +413,7 @@ function startHttpServer() {
   });
 
   server.listen(httpPort, () => {
-    console.log(`${now()} SERVE running at http://localhost:${httpPort}`);
+    console.log(`SERVE running at http://localhost:${httpPort}.`);
   });
 
   return server;
