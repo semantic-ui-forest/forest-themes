@@ -13,4 +13,8 @@ function getAllFiles(dir) {
   }, []);
 }
 
-module.exports = { getAllFiles, sleep };
+function now() {
+  return new Date();
+}
+
+module.exports = { getAllFiles, sleep, now };
