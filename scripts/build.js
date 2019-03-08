@@ -5,7 +5,7 @@ const execSync = require("child_process").execSync;
 
 require('console-stamp')(console, { colors: { stamp: 'yellow' } });
 
-const { getAllFiles, now } = require("./common");
+const { getAllFiles } = require("./common");
 
 const cwd = process.cwd();
 const outputDir = "dist";
@@ -27,11 +27,10 @@ function getThemeDirInSemanticUISrc(category, theme) {
 }
 
 function backupSemanticUI() {
-  process.stdout.write(`${now()} backup node_modules/semantic-ui...`);
+  console.log(`backup node_modules/semantic-ui...`);
   fse.removeSync(semanticUIBackupDir);
   fse.copySync(semanticUIDir, semanticUIBackupDir);
   fse.copySync("semantic.json", path.join(semanticUIDir, "semantic.json"));
-  process.stdout.write("done.\n");
 }
 
 function toBuildOrNotToBuild(category, theme) {
@@ -75,7 +74,6 @@ function build(forceBuild) {
     "flat",
     "github",
     "material",
-    "semantic-ui",
     "twitter"
   ];
 
@@ -165,7 +163,7 @@ function build(forceBuild) {
       process.chdir(semanticUIDir);
 
       if (forceBuild || toBuildOrNotToBuild(category, theme)) {
-        process.stdout.write(`${now()} building ${category}/${theme} theme...`);
+        console.log(`building ${category}/${theme} theme...`);
         execSync("gulp build-css");
 
         fse.copySync(
@@ -176,11 +174,9 @@ function build(forceBuild) {
           path.join("dist", "semantic.min.css"),
           path.join(cwd, outputDir, category, `semantic.${theme}.min.css`)
         );
-
-        process.stdout.write("done.\n");
       } else {
-        process.stdout.write(
-          `${now()} skip building ${category}/${theme} theme.\n`
+        console.log(
+          `skip building ${category}/${theme} theme.`
         );
       }
 
@@ -190,11 +186,10 @@ function build(forceBuild) {
 }
 
 function restoreSemanticUI() {
-  process.stdout.write(`${now()} restore node_modules/semantic-ui...`);
+  console.log(`restore node_modules/semantic-ui...`);
   fse.removeSync(semanticUIDir);
   fse.copySync(semanticUIBackupDir, semanticUIDir);
   fse.removeSync(semanticUIBackupDir);
-  process.stdout.write("done.\n");
 
   process.chdir(cwd);
 }
